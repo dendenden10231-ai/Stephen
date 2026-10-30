@@ -12,8 +12,8 @@ our code, what we reported after running **your** probe on **our** instruments.
 Python 3.8+ only, no dependencies, Windows / macOS / Linux:
 
 ```bash
-git clone <this repository>
-cd stephen-hope-helix-probe
+git clone https://github.com/dendenden10231-ai/Stephen
+cd Stephen
 python verify.py
 ```
 
