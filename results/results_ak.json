@@ -1,0 +1,286 @@
+{
+ "instrument": "ak",
+ "verdict": "SENSITIVE",
+ "seed": 20261028,
+ "n_positions": 12,
+ "positions": [
+  {
+   "position": 0,
+   "id": "AK-00",
+   "class": "scene",
+   "origin": null,
+   "model": null,
+   "human_label": null,
+   "real": "F0|W0|10.2.4,2.VTO-ROUTER,3.CDV,6.TST-DV,9.SYN",
+   "arms": {
+    "empty": "F1|W0|",
+    "neutral": "F0|W0|6.TST-DV,6.TST-EV,9.SYN",
+    "noise": "F0|W0|6.TST-DV,6.TST-EV,9.SYN",
+    "deranged": "F3|W0|10.1-OPENING,10.2.2+3,6.TST-DV,6.TST-EV,9.SYN",
+    "refusal": "F0|W0|6.TST-DV,6.TST-EV,9.SYN"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 1,
+   "id": "AK-01",
+   "class": "scene",
+   "origin": null,
+   "model": null,
+   "human_label": null,
+   "real": "F3|W0|10.1-OPENING,10.2.2+3,6.TST-DV,6.TST-EV,9.SYN",
+   "arms": {
+    "empty": "F1|W0|",
+    "neutral": "F0|W0|6.TST-DV,6.TST-EV,9.SYN",
+    "noise": "F0|W0|6.TST-DV,6.TST-EV,9.SYN",
+    "deranged": "F2|W0|10.2.2+3,6.TST-DV,6.TST-EV,9.SYN",
+    "refusal": "F0|W0|6.TST-DV,6.TST-EV,9.SYN"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 2,
+   "id": "AK-02",
+   "class": "scene",
+   "origin": null,
+   "model": null,
+   "human_label": null,
+   "real": "F2|W0|10.2.2+3,6.TST-DV,6.TST-EV,9.SYN",
+   "arms": {
+    "empty": "F1|W0|",
+    "neutral": "F0|W0|6.TST-DV,6.TST-EV,9.SYN",
+    "noise": "F0|W0|6.TST-DV,6.TST-EV,9.SYN",
+    "deranged": "F0|W0|10.2.2+3,6.TST-DV,6.TST-EV,9.SYN",
+    "refusal": "F0|W0|6.TST-DV,6.TST-EV,9.SYN"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 3,
+   "id": "AK-03",
+   "class": "scene",
+   "origin": null,
+   "model": null,
+   "human_label": null,
+   "real": "F0|W0|10.2.2+3,6.TST-DV,6.TST-EV,9.SYN",
+   "arms": {
+    "empty": "F1|W0|",
+    "neutral": "F0|W0|6.TST-DV,6.TST-EV,9.SYN",
+    "noise": "F0|W0|6.TST-DV,6.TST-EV,9.SYN",
+    "deranged": "F1|W0|10.2.2+3,6.TST-DV,9.SYN",
+    "refusal": "F0|W0|6.TST-DV,6.TST-EV,9.SYN"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 4,
+   "id": "AK-04",
+   "class": "scene",
+   "origin": null,
+   "model": null,
+   "human_label": null,
+   "real": "F1|W0|10.2.2+3,6.TST-DV,9.SYN",
+   "arms": {
+    "empty": "F1|W0|",
+    "neutral": "F0|W0|6.TST-DV,6.TST-EV,9.SYN",
+    "noise": "F0|W0|6.TST-DV,6.TST-EV,9.SYN",
+    "deranged": "F1|W0|10.2-DD,10.2.2+3,6.TST-DV,6.TST-EV,9.SYN",
+    "refusal": "F0|W0|6.TST-DV,6.TST-EV,9.SYN"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 5,
+   "id": "AK-05",
+   "class": "scene",
+   "origin": null,
+   "model": null,
+   "human_label": null,
+   "real": "F1|W0|10.2-DD,10.2.2+3,6.TST-DV,6.TST-EV,9.SYN",
+   "arms": {
+    "empty": "F1|W0|",
+    "neutral": "F0|W0|6.TST-DV,6.TST-EV,9.SYN",
+    "noise": "F0|W0|6.TST-DV,6.TST-EV,9.SYN",
+    "deranged": "F2|W0|10.2.2+3,10.2.4,2.VTO-ROUTER,6.TST-DV,6.TST-EV,9.SYN",
+    "refusal": "F0|W0|6.TST-DV,6.TST-EV,9.SYN"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 6,
+   "id": "AK-06",
+   "class": "scene",
+   "origin": null,
+   "model": null,
+   "human_label": null,
+   "real": "F2|W0|10.2.2+3,10.2.4,2.VTO-ROUTER,6.TST-DV,6.TST-EV,9.SYN",
+   "arms": {
+    "empty": "F1|W0|",
+    "neutral": "F0|W0|6.TST-DV,6.TST-EV,9.SYN",
+    "noise": "F0|W0|6.TST-DV,6.TST-EV,9.SYN",
+    "deranged": "F1|W0|10.2.2+3,6.TST-DV,6.TST-EV,9.SYN",
+    "refusal": "F0|W0|6.TST-DV,6.TST-EV,9.SYN"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 7,
+   "id": "AK-07",
+   "class": "scene",
+   "origin": null,
+   "model": null,
+   "human_label": null,
+   "real": "F1|W0|10.2.2+3,6.TST-DV,6.TST-EV,9.SYN",
+   "arms": {
+    "empty": "F1|W0|",
+    "neutral": "F0|W0|6.TST-DV,6.TST-EV,9.SYN",
+    "noise": "F0|W0|6.TST-DV,6.TST-EV,9.SYN",
+    "deranged": "F2|W0|10.2.2+3,6.TST-DV,6.TST-EV,9.SYN",
+    "refusal": "F0|W0|6.TST-DV,6.TST-EV,9.SYN"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 8,
+   "id": "AK-08",
+   "class": "scene",
+   "origin": null,
+   "model": null,
+   "human_label": null,
+   "real": "F2|W0|10.2.2+3,6.TST-DV,6.TST-EV,9.SYN",
+   "arms": {
+    "empty": "F1|W0|",
+    "neutral": "F0|W0|6.TST-DV,6.TST-EV,9.SYN",
+    "noise": "F0|W0|6.TST-DV,6.TST-EV,9.SYN",
+    "deranged": "F1|W0|10.1-OPENING,6.TST-DV,6.TST-EV,9.SYN",
+    "refusal": "F0|W0|6.TST-DV,6.TST-EV,9.SYN"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 9,
+   "id": "AK-09",
+   "class": "scene",
+   "origin": null,
+   "model": null,
+   "human_label": null,
+   "real": "F1|W0|10.1-OPENING,6.TST-DV,6.TST-EV,9.SYN",
+   "arms": {
+    "empty": "F1|W0|",
+    "neutral": "F0|W0|6.TST-DV,6.TST-EV,9.SYN",
+    "noise": "F0|W0|6.TST-DV,6.TST-EV,9.SYN",
+    "deranged": "F2|W0|10.2.2+3,10.2.4,2.VTO-ROUTER,6.TST-DV,6.TST-EV,9.SYN",
+    "refusal": "F0|W0|6.TST-DV,6.TST-EV,9.SYN"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 10,
+   "id": "AK-10",
+   "class": "scene",
+   "origin": null,
+   "model": null,
+   "human_label": null,
+   "real": "F2|W0|10.2.2+3,10.2.4,2.VTO-ROUTER,6.TST-DV,6.TST-EV,9.SYN",
+   "arms": {
+    "empty": "F1|W0|",
+    "neutral": "F0|W0|6.TST-DV,6.TST-EV,9.SYN",
+    "noise": "F0|W0|6.TST-DV,6.TST-EV,9.SYN",
+    "deranged": "F2|W0|10.2.2+3,6.TST-DV,6.TST-EV,9.SYN",
+    "refusal": "F0|W0|6.TST-DV,6.TST-EV,9.SYN"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 11,
+   "id": "AK-11",
+   "class": "scene",
+   "origin": null,
+   "model": null,
+   "human_label": null,
+   "real": "F2|W0|10.2.2+3,6.TST-DV,6.TST-EV,9.SYN",
+   "arms": {
+    "empty": "F1|W0|",
+    "neutral": "F0|W0|6.TST-DV,6.TST-EV,9.SYN",
+    "noise": "F0|W0|6.TST-DV,6.TST-EV,9.SYN",
+    "deranged": "F0|W0|10.2.4,2.VTO-ROUTER,3.CDV,6.TST-DV,9.SYN",
+    "refusal": "F0|W0|6.TST-DV,6.TST-EV,9.SYN"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  }
+ ],
+ "inert_ids": [],
+ "moved_count": 12
+}

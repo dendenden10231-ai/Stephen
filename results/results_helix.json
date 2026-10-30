@@ -1,0 +1,1285 @@
+{
+ "instrument": "helix",
+ "verdict": "SENSITIVE (partial)",
+ "seed": 20261028,
+ "n_positions": 60,
+ "positions": [
+  {
+   "position": 0,
+   "id": "b359-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NEEDS_RECOVERY",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 1,
+   "id": "b349-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NEEDS_RECOVERY",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 2,
+   "id": "b333-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "CONTRADICTED",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 3,
+   "id": "b330-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NEEDS_RECOVERY",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 4,
+   "id": "b305-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "CONTRADICTED",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 5,
+   "id": "b292-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "CONTRADICTED",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 6,
+   "id": "b279-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NEEDS_RECOVERY",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 7,
+   "id": "b213-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NEEDS_RECOVERY",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 8,
+   "id": "b203-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "CONTRADICTED",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 9,
+   "id": "b166-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NEEDS_RECOVERY",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 10,
+   "id": "b153-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "CONTRADICTED",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 11,
+   "id": "b149-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NEEDS_RECOVERY",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 12,
+   "id": "b136-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "CONTRADICTED",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 13,
+   "id": "b104-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NEEDS_RECOVERY",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 14,
+   "id": "b92-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NEEDS_RECOVERY",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 15,
+   "id": "b70-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NEEDS_RECOVERY",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 16,
+   "id": "b40-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NEEDS_RECOVERY",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 17,
+   "id": "b28-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NEEDS_RECOVERY",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 18,
+   "id": "b8-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NEEDS_RECOVERY",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 19,
+   "id": "b5-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NEEDS_RECOVERY",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 20,
+   "id": "b0-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "BOUND",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "refusal"
+   ]
+  },
+  {
+   "position": 21,
+   "id": "1-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NEEDS_RECOVERY",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 22,
+   "id": "4-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NEEDS_RECOVERY",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 23,
+   "id": "19-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NEEDS_RECOVERY",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 24,
+   "id": "68-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NEEDS_RECOVERY",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 25,
+   "id": "91-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NEEDS_RECOVERY",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 26,
+   "id": "149-10",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NEEDS_RECOVERY",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 27,
+   "id": "8764fb95bfad8ee849274873a92fb8d6b400eee2",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "T5",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "BOUND",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "refusal"
+   ]
+  },
+  {
+   "position": 28,
+   "id": "8764fb95bfad8ee849274873a92fb8d6b400eee2",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "Pegasus",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NEEDS_RECOVERY",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 29,
+   "id": "f26d8400ae49b90d109c165d0f44b8f6ca253c08",
+   "class": "numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "BOUND",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "refusal"
+   ]
+  },
+  {
+   "position": 30,
+   "id": "b377-10",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NO_NUMBERS",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 31,
+   "id": "b314-10",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "NO_NUMBERS",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NO_NUMBERS",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": []
+  },
+  {
+   "position": 32,
+   "id": "b233-10",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "NO_NUMBERS",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NO_NUMBERS",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": []
+  },
+  {
+   "position": 33,
+   "id": "b52-10",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "NO_NUMBERS",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NO_NUMBERS",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": []
+  },
+  {
+   "position": 34,
+   "id": "6-10",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "NO_NUMBERS",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NO_NUMBERS",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": []
+  },
+  {
+   "position": 35,
+   "id": "145-10",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "NO_NUMBERS",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "CORE_BOUND_AUX_PRUNED",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "deranged"
+   ]
+  },
+  {
+   "position": 36,
+   "id": "147-10",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NO_NUMBERS",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 37,
+   "id": "0f0789390d67698283cc87b2e046b5c5cd77edb7",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "NO_NUMBERS",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NO_NUMBERS",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": []
+  },
+  {
+   "position": 38,
+   "id": "0f0789390d67698283cc87b2e046b5c5cd77edb7",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "PegasusDynamic",
+   "human_label": "верно",
+   "real": "NO_NUMBERS",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NO_NUMBERS",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": []
+  },
+  {
+   "position": 39,
+   "id": "f37fd6e9b6cc18a7132568e307ef3b130931e809",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "NO_NUMBERS",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NO_NUMBERS",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": []
+  },
+  {
+   "position": 40,
+   "id": "9afda3cde191a883d8c166ceb5765eb53205d8f4",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "PegasusDynamic",
+   "human_label": "верно",
+   "real": "NO_NUMBERS",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "BOUND",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "deranged"
+   ]
+  },
+  {
+   "position": 41,
+   "id": "4fb64a2298e18626db776fccf834be87388827e0",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "T5",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NO_NUMBERS",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 42,
+   "id": "4fb64a2298e18626db776fccf834be87388827e0",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "Pegasus",
+   "human_label": "верно",
+   "real": "NO_NUMBERS",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "BOUND",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "deranged"
+   ]
+  },
+  {
+   "position": 43,
+   "id": "bd4684a0f5af5dd6ac88d2fb50f902bd7f10217b",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "T5",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NO_NUMBERS",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 44,
+   "id": "bd4684a0f5af5dd6ac88d2fb50f902bd7f10217b",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "Pegasus",
+   "human_label": "верно",
+   "real": "NO_NUMBERS",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "BOUND",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "deranged"
+   ]
+  },
+  {
+   "position": 45,
+   "id": "d75b043ebefc3098aea84d92bb8bec0f509b1563",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NO_NUMBERS",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 46,
+   "id": "d75b043ebefc3098aea84d92bb8bec0f509b1563",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "PegasusDynamic",
+   "human_label": "верно",
+   "real": "NO_NUMBERS",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NO_NUMBERS",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": []
+  },
+  {
+   "position": 47,
+   "id": "e2bccd4dec93c9bb7b327827dae004c2d494ec31",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "T5",
+   "human_label": "верно",
+   "real": "NO_NUMBERS",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NO_NUMBERS",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": []
+  },
+  {
+   "position": 48,
+   "id": "e2bccd4dec93c9bb7b327827dae004c2d494ec31",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "Pegasus",
+   "human_label": "верно",
+   "real": "NO_NUMBERS",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NO_NUMBERS",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": []
+  },
+  {
+   "position": 49,
+   "id": "2cf8c2d1d2ceb1980249f77e703f9039e63799d0",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "NO_NUMBERS",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NO_NUMBERS",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": []
+  },
+  {
+   "position": 50,
+   "id": "4001b252a072ac149c70840b22299cc6cfab3bae",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "T5",
+   "human_label": "верно",
+   "real": "NO_NUMBERS",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NO_NUMBERS",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": []
+  },
+  {
+   "position": 51,
+   "id": "b5925c1a02fa9a8f6b1d5ad764c19a732deac0df",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "BART",
+   "human_label": "верно",
+   "real": "NO_NUMBERS",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NO_NUMBERS",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": []
+  },
+  {
+   "position": 52,
+   "id": "b5925c1a02fa9a8f6b1d5ad764c19a732deac0df",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "PegasusDynamic",
+   "human_label": "верно",
+   "real": "NO_NUMBERS",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NO_NUMBERS",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": []
+  },
+  {
+   "position": 53,
+   "id": "7cba80e83b222801fed8d6f96e8c0aa381c54b28",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "Pegasus",
+   "human_label": "верно",
+   "real": "NO_NUMBERS",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "CORE_BOUND_AUX_PRUNED",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "deranged"
+   ]
+  },
+  {
+   "position": 54,
+   "id": "3ba3bde4a1440134bb38ec22ba50db59986b544c",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "T5",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "CORE_BOUND_AUX_PRUNED",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 55,
+   "id": "8bc8f134bc3ceaeec0df8f29e96e13d319717ab8",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "T5",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NO_NUMBERS",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 56,
+   "id": "e43eef75de38d246db9d80216ca9f5487215a78b",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "T5",
+   "human_label": "верно",
+   "real": "NO_NUMBERS",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "BOUND",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "deranged"
+   ]
+  },
+  {
+   "position": 57,
+   "id": "e43eef75de38d246db9d80216ca9f5487215a78b",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "Pegasus",
+   "human_label": "верно",
+   "real": "BOUND",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NO_NUMBERS",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 58,
+   "id": "a02e362c5b8f049848ce718b37b96117485461cf",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "T5",
+   "human_label": "верно",
+   "real": "NO_NUMBERS",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NO_NUMBERS",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": []
+  },
+  {
+   "position": 59,
+   "id": "a02e362c5b8f049848ce718b37b96117485461cf",
+   "class": "non_numeric",
+   "origin": "cnndm",
+   "model": "Pegasus",
+   "human_label": "верно",
+   "real": "NO_NUMBERS",
+   "arms": {
+    "empty": "NO_NUMBERS",
+    "neutral": "NO_NUMBERS",
+    "noise": "NO_NUMBERS",
+    "deranged": "NEEDS_RECOVERY",
+    "refusal": "NO_NUMBERS"
+   },
+   "moved": [
+    "deranged"
+   ]
+  }
+ ],
+ "inert_ids": [
+  "b314-10",
+  "b233-10",
+  "b52-10",
+  "6-10",
+  "0f0789390d67698283cc87b2e046b5c5cd77edb7",
+  "0f0789390d67698283cc87b2e046b5c5cd77edb7",
+  "f37fd6e9b6cc18a7132568e307ef3b130931e809",
+  "d75b043ebefc3098aea84d92bb8bec0f509b1563",
+  "e2bccd4dec93c9bb7b327827dae004c2d494ec31",
+  "e2bccd4dec93c9bb7b327827dae004c2d494ec31",
+  "2cf8c2d1d2ceb1980249f77e703f9039e63799d0",
+  "4001b252a072ac149c70840b22299cc6cfab3bae",
+  "b5925c1a02fa9a8f6b1d5ad764c19a732deac0df",
+  "b5925c1a02fa9a8f6b1d5ad764c19a732deac0df",
+  "a02e362c5b8f049848ce718b37b96117485461cf"
+ ],
+ "moved_count": 45
+}

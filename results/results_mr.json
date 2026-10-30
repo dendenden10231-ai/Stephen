@@ -1,0 +1,148 @@
+{
+ "instrument": "mr",
+ "verdict": "SENSITIVE",
+ "seed": 20261028,
+ "n_positions": 6,
+ "positions": [
+  {
+   "position": 0,
+   "id": "MR-00",
+   "class": "dossier",
+   "origin": null,
+   "model": null,
+   "human_label": null,
+   "real": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"контракт подписан в пятницу\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"сумма окончательна\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 0, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+   "arms": {
+    "empty": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+    "neutral": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+    "noise": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+    "deranged": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+    "refusal": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 1,
+   "id": "MR-01",
+   "class": "dossier",
+   "origin": null,
+   "model": null,
+   "human_label": null,
+   "real": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"мы потеряли 120 рабочих мест\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"линия убыточна с 2024 года\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 0, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+   "arms": {
+    "empty": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+    "neutral": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+    "noise": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+    "deranged": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+    "refusal": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 2,
+   "id": "MR-02",
+   "class": "dossier",
+   "origin": null,
+   "model": null,
+   "human_label": null,
+   "real": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"очередь выросла вдвое\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"туман съел неделю\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 0, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+   "arms": {
+    "empty": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+    "neutral": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+    "noise": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+    "deranged": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+    "refusal": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 3,
+   "id": "MR-03",
+   "class": "dossier",
+   "origin": null,
+   "model": null,
+   "human_label": null,
+   "real": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"списание очищает баланс\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"резерв создан заранее\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 0, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+   "arms": {
+    "empty": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+    "neutral": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+    "noise": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+    "deranged": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+    "refusal": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 4,
+   "id": "MR-04",
+   "class": "dossier",
+   "origin": null,
+   "model": null,
+   "human_label": null,
+   "real": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"засуха срезала треть\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"цена компенсирует объём\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 0, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+   "arms": {
+    "empty": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+    "neutral": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+    "noise": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+    "deranged": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+    "refusal": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  },
+  {
+   "position": 5,
+   "id": "MR-05",
+   "class": "dossier",
+   "origin": null,
+   "model": null,
+   "human_label": null,
+   "real": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"метан превысил норму вдвое\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"датчик заменён\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 0, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+   "arms": {
+    "empty": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+    "neutral": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+    "noise": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+    "deranged": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}",
+    "refusal": "{\"actors\": [{\"gains\": \"\", \"kind\": \"company\", \"loses\": \"долю рынка\", \"name\": \"сторона A\", \"quote\": \"\"}, {\"gains\": \"\", \"kind\": \"other\", \"loses\": \"спор\", \"name\": \"сторона B\", \"quote\": \"\"}], \"claims\": [], \"cnm\": [], \"dropped_unverified\": 2, \"hypotheses\": [], \"money_flows\": [], \"origin\": {\"first_publisher\": \"\", \"retold_by\": []}, \"pre_positioning\": [], \"topics_present\": []}"
+   },
+   "moved": [
+    "empty",
+    "neutral",
+    "noise",
+    "deranged",
+    "refusal"
+   ]
+  }
+ ],
+ "inert_ids": [],
+ "moved_count": 6
+}

@@ -1,0 +1,22 @@
+
+  positions: 12
+  === per position ===
+  0                            ref=F0|W0|10.2.4,2.VTO-ROUTER,3.CDV,6.TST-DV,9.SYN empty=F1|W0| noise=F0|W0|6.TST-DV,6.TST-EV,9.SYN wrong=F3|W0|10.1-OPENING,10.2.2+3,6.TST-DV,6.TST-EV,9.SYN refusal=F0|W0|6.TST-DV,6.TST-EV,9.SYN  moved:empty,neutral,noise,deranged,refusal
+  1                            ref=F3|W0|10.1-OPENING,10.2.2+3,6.TST-DV,6.TST-EV,9.SYN empty=F1|W0| noise=F0|W0|6.TST-DV,6.TST-EV,9.SYN wrong=F2|W0|10.2.2+3,6.TST-DV,6.TST-EV,9.SYN refusal=F0|W0|6.TST-DV,6.TST-EV,9.SYN  moved:empty,neutral,noise,deranged,refusal
+  2                            ref=F2|W0|10.2.2+3,6.TST-DV,6.TST-EV,9.SYN empty=F1|W0| noise=F0|W0|6.TST-DV,6.TST-EV,9.SYN wrong=F0|W0|10.2.2+3,6.TST-DV,6.TST-EV,9.SYN refusal=F0|W0|6.TST-DV,6.TST-EV,9.SYN  moved:empty,neutral,noise,deranged,refusal
+  3                            ref=F0|W0|10.2.2+3,6.TST-DV,6.TST-EV,9.SYN empty=F1|W0| noise=F0|W0|6.TST-DV,6.TST-EV,9.SYN wrong=F1|W0|10.2.2+3,6.TST-DV,9.SYN refusal=F0|W0|6.TST-DV,6.TST-EV,9.SYN  moved:empty,neutral,noise,deranged,refusal
+  4                            ref=F1|W0|10.2.2+3,6.TST-DV,9.SYN empty=F1|W0| noise=F0|W0|6.TST-DV,6.TST-EV,9.SYN wrong=F1|W0|10.2-DD,10.2.2+3,6.TST-DV,6.TST-EV,9.SYN refusal=F0|W0|6.TST-DV,6.TST-EV,9.SYN  moved:empty,neutral,noise,deranged,refusal
+  5                            ref=F1|W0|10.2-DD,10.2.2+3,6.TST-DV,6.TST-EV,9.SYN empty=F1|W0| noise=F0|W0|6.TST-DV,6.TST-EV,9.SYN wrong=F2|W0|10.2.2+3,10.2.4,2.VTO-ROUTER,6.TST-DV,6.TST-EV,9.SYN refusal=F0|W0|6.TST-DV,6.TST-EV,9.SYN  moved:empty,neutral,noise,deranged,refusal
+  6                            ref=F2|W0|10.2.2+3,10.2.4,2.VTO-ROUTER,6.TST-DV,6.TST-EV,9.SYN empty=F1|W0| noise=F0|W0|6.TST-DV,6.TST-EV,9.SYN wrong=F1|W0|10.2.2+3,6.TST-DV,6.TST-EV,9.SYN refusal=F0|W0|6.TST-DV,6.TST-EV,9.SYN  moved:empty,neutral,noise,deranged,refusal
+  7                            ref=F1|W0|10.2.2+3,6.TST-DV,6.TST-EV,9.SYN empty=F1|W0| noise=F0|W0|6.TST-DV,6.TST-EV,9.SYN wrong=F2|W0|10.2.2+3,6.TST-DV,6.TST-EV,9.SYN refusal=F0|W0|6.TST-DV,6.TST-EV,9.SYN  moved:empty,neutral,noise,deranged,refusal
+  8                            ref=F2|W0|10.2.2+3,6.TST-DV,6.TST-EV,9.SYN empty=F1|W0| noise=F0|W0|6.TST-DV,6.TST-EV,9.SYN wrong=F1|W0|10.1-OPENING,6.TST-DV,6.TST-EV,9.SYN refusal=F0|W0|6.TST-DV,6.TST-EV,9.SYN  moved:empty,neutral,noise,deranged,refusal
+  9                            ref=F1|W0|10.1-OPENING,6.TST-DV,6.TST-EV,9.SYN empty=F1|W0| noise=F0|W0|6.TST-DV,6.TST-EV,9.SYN wrong=F2|W0|10.2.2+3,10.2.4,2.VTO-ROUTER,6.TST-DV,6.TST-EV,9.SYN refusal=F0|W0|6.TST-DV,6.TST-EV,9.SYN  moved:empty,neutral,noise,deranged,refusal
+  10                           ref=F2|W0|10.2.2+3,10.2.4,2.VTO-ROUTER,6.TST-DV,6.TST-EV,9.SYN empty=F1|W0| noise=F0|W0|6.TST-DV,6.TST-EV,9.SYN wrong=F2|W0|10.2.2+3,6.TST-DV,6.TST-EV,9.SYN refusal=F0|W0|6.TST-DV,6.TST-EV,9.SYN  moved:empty,neutral,noise,deranged,refusal
+  11                           ref=F2|W0|10.2.2+3,6.TST-DV,6.TST-EV,9.SYN empty=F1|W0| noise=F0|W0|6.TST-DV,6.TST-EV,9.SYN wrong=F0|W0|10.2.4,2.VTO-ROUTER,3.CDV,6.TST-DV,9.SYN refusal=F0|W0|6.TST-DV,6.TST-EV,9.SYN  moved:empty,neutral,noise,deranged,refusal
+
+  === baseline coverage: 12 of 12 positions had a genuine reply ===
+
+  === VERDICT: SENSITIVE ===
+  the score moved under at least one perturbation at all 12 tested positions
+
+  SHORT_OUTPUT: 0 of 12 real replies were under three words. This is a length heuristic, NOT claim detection — a short reply may assert something and a long one may assert nothing. The rule it supports stands: silence or a bare refusal must not be scored as compliance, so count these separately and keep them out of the denominator.

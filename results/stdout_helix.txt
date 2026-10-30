@@ -1,0 +1,72 @@
+
+  positions: 60
+  === per position ===
+  0                            ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NEEDS_RECOVERY refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  1                            ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NEEDS_RECOVERY refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  2                            ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=CONTRADICTED refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  3                            ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NEEDS_RECOVERY refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  4                            ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=CONTRADICTED refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  5                            ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=CONTRADICTED refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  6                            ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NEEDS_RECOVERY refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  7                            ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NEEDS_RECOVERY refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  8                            ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=CONTRADICTED refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  9                            ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NEEDS_RECOVERY refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  10                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=CONTRADICTED refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  11                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NEEDS_RECOVERY refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  12                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=CONTRADICTED refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  13                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NEEDS_RECOVERY refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  14                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NEEDS_RECOVERY refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  15                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NEEDS_RECOVERY refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  16                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NEEDS_RECOVERY refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  17                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NEEDS_RECOVERY refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  18                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NEEDS_RECOVERY refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  19                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NEEDS_RECOVERY refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  20                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=BOUND refusal=NO_NUMBERS  moved:empty,neutral,noise,refusal
+  21                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NEEDS_RECOVERY refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  22                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NEEDS_RECOVERY refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  23                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NEEDS_RECOVERY refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  24                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NEEDS_RECOVERY refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  25                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NEEDS_RECOVERY refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  26                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NEEDS_RECOVERY refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  27                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=BOUND refusal=NO_NUMBERS  moved:empty,neutral,noise,refusal
+  28                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NEEDS_RECOVERY refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  29                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=BOUND refusal=NO_NUMBERS  moved:empty,neutral,noise,refusal
+  30                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NO_NUMBERS refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  31                           ref=NO_NUMBERS empty=NO_NUMBERS noise=NO_NUMBERS wrong=NO_NUMBERS refusal=NO_NUMBERS  moved:—
+  32                           ref=NO_NUMBERS empty=NO_NUMBERS noise=NO_NUMBERS wrong=NO_NUMBERS refusal=NO_NUMBERS  moved:—
+  33                           ref=NO_NUMBERS empty=NO_NUMBERS noise=NO_NUMBERS wrong=NO_NUMBERS refusal=NO_NUMBERS  moved:—
+  34                           ref=NO_NUMBERS empty=NO_NUMBERS noise=NO_NUMBERS wrong=NO_NUMBERS refusal=NO_NUMBERS  moved:—
+  35                           ref=NO_NUMBERS empty=NO_NUMBERS noise=NO_NUMBERS wrong=CORE_BOUND_AUX_PRUNED refusal=NO_NUMBERS  moved:deranged
+  36                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NO_NUMBERS refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  37                           ref=NO_NUMBERS empty=NO_NUMBERS noise=NO_NUMBERS wrong=NO_NUMBERS refusal=NO_NUMBERS  moved:—
+  38                           ref=NO_NUMBERS empty=NO_NUMBERS noise=NO_NUMBERS wrong=NO_NUMBERS refusal=NO_NUMBERS  moved:—
+  39                           ref=NO_NUMBERS empty=NO_NUMBERS noise=NO_NUMBERS wrong=NO_NUMBERS refusal=NO_NUMBERS  moved:—
+  40                           ref=NO_NUMBERS empty=NO_NUMBERS noise=NO_NUMBERS wrong=BOUND refusal=NO_NUMBERS  moved:deranged
+  41                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NO_NUMBERS refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  42                           ref=NO_NUMBERS empty=NO_NUMBERS noise=NO_NUMBERS wrong=BOUND refusal=NO_NUMBERS  moved:deranged
+  43                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NO_NUMBERS refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  44                           ref=NO_NUMBERS empty=NO_NUMBERS noise=NO_NUMBERS wrong=BOUND refusal=NO_NUMBERS  moved:deranged
+  45                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NO_NUMBERS refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  46                           ref=NO_NUMBERS empty=NO_NUMBERS noise=NO_NUMBERS wrong=NO_NUMBERS refusal=NO_NUMBERS  moved:—
+  47                           ref=NO_NUMBERS empty=NO_NUMBERS noise=NO_NUMBERS wrong=NO_NUMBERS refusal=NO_NUMBERS  moved:—
+  48                           ref=NO_NUMBERS empty=NO_NUMBERS noise=NO_NUMBERS wrong=NO_NUMBERS refusal=NO_NUMBERS  moved:—
+  49                           ref=NO_NUMBERS empty=NO_NUMBERS noise=NO_NUMBERS wrong=NO_NUMBERS refusal=NO_NUMBERS  moved:—
+  50                           ref=NO_NUMBERS empty=NO_NUMBERS noise=NO_NUMBERS wrong=NO_NUMBERS refusal=NO_NUMBERS  moved:—
+  51                           ref=NO_NUMBERS empty=NO_NUMBERS noise=NO_NUMBERS wrong=NO_NUMBERS refusal=NO_NUMBERS  moved:—
+  52                           ref=NO_NUMBERS empty=NO_NUMBERS noise=NO_NUMBERS wrong=NO_NUMBERS refusal=NO_NUMBERS  moved:—
+  53                           ref=NO_NUMBERS empty=NO_NUMBERS noise=NO_NUMBERS wrong=CORE_BOUND_AUX_PRUNED refusal=NO_NUMBERS  moved:deranged
+  54                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=CORE_BOUND_AUX_PRUNED refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  55                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NO_NUMBERS refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  56                           ref=NO_NUMBERS empty=NO_NUMBERS noise=NO_NUMBERS wrong=BOUND refusal=NO_NUMBERS  moved:deranged
+  57                           ref=BOUND empty=NO_NUMBERS noise=NO_NUMBERS wrong=NO_NUMBERS refusal=NO_NUMBERS  moved:empty,neutral,noise,deranged,refusal
+  58                           ref=NO_NUMBERS empty=NO_NUMBERS noise=NO_NUMBERS wrong=NO_NUMBERS refusal=NO_NUMBERS  moved:—
+  59                           ref=NO_NUMBERS empty=NO_NUMBERS noise=NO_NUMBERS wrong=NEEDS_RECOVERY refusal=NO_NUMBERS  moved:deranged
+
+  === baseline coverage: 60 of 60 positions had a genuine reply ===
+
+  === VERDICT: SENSITIVE (partial) ===
+  45 of 60 tested positions responded to a perturbation; the rest did not
+  responsive positions: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '35', '36', '40', '41', '42', '43', '44', '45', '53', '54', '55', '56', '57', '59']
+  inert positions:      ['31', '32', '33', '34', '37', '38', '39', '46', '47', '48', '49', '50', '51', '52', '58']
+
+  SHORT_OUTPUT: 0 of 60 real replies were under three words. This is a length heuristic, NOT claim detection — a short reply may assert something and a long one may assert nothing. The rule it supports stands: silence or a bare refusal must not be scored as compliance, so count these separately and keep them out of the denominator.
