@@ -1,0 +1,312 @@
+[
+ {
+  "id": "c01",
+  "type": "verifiable_fact_primary_source_online",
+  "claim": "East Coast (PADD 1) US distillate inventories were 19.3 million barrels in the week ending 28 August 2026, the lowest on record back to 1990",
+  "evidence": [
+   {
+    "text": "East Coast (PADD 1) distillate inventories 19.3M bbl week ending 28 August — lowest on record (back to 1990); EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+    "as_cited": "EIA"
+   }
+  ],
+  "topic_noise": [
+   {
+    "text": "Harvest is running now — diesel for combines and grain trucks across the farm states. Northeast heating season starts in October, and heating oil is, industrially, diesel.",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "unrelated": [
+   {
+    "text": "Caribbean capacity collapse. 1.6M b/d (1990s) → ~160k b/d today; St. Croix (600–650k) closed, Curaçao Isla (335k) idle, Aruba (235k) being dismantled.",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ]
+ },
+ {
+  "id": "c02",
+  "type": "verifiable_fact_source_not_online",
+  "claim": "Russia produces about 70 per cent of its own gasoline needs",
+  "evidence": [
+   {
+    "text": "\"Russia producing 70% of its gasoline needs\" rests on one analysis chain (video + DW figures) — directionally supported by the Türkiye import, kept as [AS GIVEN]. Gasoline production ~80k t/d vs 115k t/d domestic demand (~70%)",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+    "as_cited": "DW via Kyiv Post, avi-go, AInvest; held below sourcing bar"
+   }
+  ],
+  "topic_noise": [
+   {
+    "text": "Russia, historically one of the world's top diesel exporters, collapsed to near-zero diesel exports by late July.",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "unrelated": [
+   {
+    "text": "Egypt: Damietta LNG terminal's FSRU Energos Winter and carrier GasLog Salem struck by drone(s) 29 July; no casualties; no group claimed it.",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "contradicting": [
+   {
+    "text": "Average gasoline production in August stood at about 90,000 tons per day, equivalent to roughly 80% of estimated summer demand of 115,000 tons per day. With gasoline exports banned until January 31 and imports supplementing domestic production, supplies to the domestic market could average about 97,000 tons per day in August, or around 85% of demand.",
+    "source": "https://www.reuters.com/business/energy/russias-gasoline-output-drops-70-domestic-demand-late-august-after-drone-attacks-2026-08-28/"
+   }
+  ]
+ },
+ {
+  "id": "c03",
+  "type": "number_correct_unit_wrong",
+  "claim": "Aramco's Jazan refinery has a capacity of 400,000 barrels per week",
+  "evidence": [
+   {
+    "text": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex; nine storage tanks damaged/destroyed by late August",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+    "as_cited": "BusinessTech, AInvest"
+   }
+  ],
+  "topic_noise": [
+   {
+    "text": "Jazan is the single largest identifiable piece of recoverable refining capacity in the region, which is why its restart is the most-watched non-headline in the oil market.",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "unrelated": [
+   {
+    "text": "NDRC ordered export suspension 4–5 March 2026; exports fell to 350k b/d (April, 5-year low), removing 1.5–2.0M t/month of diesel.",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ]
+ },
+ {
+  "id": "c04",
+  "type": "number_correct_date_wrong_one_year",
+  "claim": "The AAA US national average diesel price reached $5.85 a gallon on 4 September 2025, breaking the June 2022 record",
+  "evidence": [
+   {
+    "text": "AAA national average: $5.85/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+    "as_cited": "AAA via Reuters, ABC"
+   }
+  ],
+  "topic_noise": [
+   {
+    "text": "California is near $8.",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "unrelated": [
+   {
+    "text": "Sudan: fighting set the country's largest refinery ablaze (AP satellite analysis via Ahram).",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ]
+ },
+ {
+  "id": "c05",
+  "type": "true_but_paywalled_source",
+  "claim": "The US diesel crack spread hit a record $112.17 a barrel in September 2026, against a pre-war baseline of about $20",
+  "evidence": [
+   {
+    "text": "US diesel crack spread record $112.17/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September; pre-war baseline ~$20",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+    "as_cited": "LSEG (terminal, paywalled) via Edge/Reuters"
+   }
+  ],
+  "topic_noise": [
+   {
+    "text": "That is not a price. That is a market screaming that it cannot make enough of something.",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "unrelated": [
+   {
+    "text": "Libya: Zawiya refinery (120k b/d, the country's largest) hit by a week of unclaimed drone strikes 8–14 August — naphtha tank, 4.5M-litre petrol tank, blending plant.",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "contradicting": [
+   {
+    "text": "As of publication, the diesel crack soared even higher, closing at a new record high of $107.72/bbl on September 10.",
+    "source": "https://rbnenergy.com/daily-posts/blog/us-refiners-already-running-hard-relief-diesel-remains-elusive"
+   }
+  ]
+ },
+ {
+  "id": "c06",
+  "type": "two_genuine_sources_conflict",
+  "claim": "Iranian missile strikes in 2026 had no significant impact on Israel's Haifa (Bazan) refinery",
+  "evidence": [
+   {
+    "text": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\"",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+    "as_cited": "Bazan statements via Hellenic Shipping News/Platts"
+   },
+   {
+    "text": "Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 m3 tank destroyed beyond repair); the June strike killed three workers and took the plant fully offline",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+    "as_cited": "gtvnewshd document report — [AS GIVEN], single chain"
+   }
+  ],
+  "topic_noise": [
+   {
+    "text": "Israel: Haifa (Bazan, 197k b/d, ~64% of national processing).",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "unrelated": [
+   {
+    "text": "Venezuela 2%→10% of US crude imports, Merey ~$4 under comparable Canadian grades (Kpler).",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "contradicting": [
+   {
+    "text": "Israel's largest refinery, Haifa, has confirmed it was affected by an Iranian missile strike that hit infrastructure \"essential to its operations\" on March 20, and is in the process of restoring production.",
+    "source": "https://www.spglobal.com/energy/en/news-research/latest-news/crude-oil/032026-israels-haifa-refinery-confirms-damage-to-essential-infrastructure"
+   }
+  ]
+ },
+ {
+  "id": "c07",
+  "type": "opinion_or_forecast_as_fact",
+  "claim": "The global refined-product deficit will not close when the Gulf war ends",
+  "evidence": [
+   {
+    "text": "Vitol and Phillips 66 executives: refined-product deficit structural, more pronounced than crude deficit, into winter",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+    "as_cited": "EnergyNews.pro (APPEC)"
+   }
+  ],
+  "topic_noise": [
+   {
+    "text": "Washington is weighing a ban on roughly 3 million barrels a day of refined-product exports.",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "unrelated": [
+   {
+    "text": "Fed hike odds 86.7% (CME FedWatch, via Al Jazeera).",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ]
+ },
+ {
+  "id": "c08",
+  "type": "plausible_fabricated_citation",
+  "claim": "The IEA Oil Market Report of 15 September 2026 listed nine damaged Gulf refineries totalling 11.7 million barrels a day",
+  "evidence": [
+   {
+    "text": "\"At least nine Gulf refineries damaged and shut\"; region's 11.7M b/d refining capacity with uncertain restart (JPMorgan, via AInvest). Exact identity of the nine damaged Gulf refineries is JPMorgan-via-AInvest — named source, no list; kept as [AS GIVEN]",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+    "as_cited": "JPMorgan via AInvest"
+   }
+  ],
+  "topic_noise": [
+   {
+    "text": "The same conflict constrains the Strait of Hormuz, which carries roughly a fifth of global oil transit, so even undamaged refineries cannot reliably ship.",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "unrelated": [
+   {
+    "text": "Coking+hydrocracking ~29% of US capacity; complex refiners ~33% distillate yield vs ~30% medium (Bloomberg Professional).",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ]
+ },
+ {
+  "id": "c09",
+  "type": "figure_superseded_by_newer_estimate",
+  "claim": "The all-time record US national average diesel price is $5.85 a gallon",
+  "evidence": [
+   {
+    "text": "AAA national average: $5.85/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819; crossed $6 on 10–11 September (AAA $6.06, +63% YoY vs ~$3.71)",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+    "as_cited": "AAA via Reuters, ABC"
+   }
+  ],
+  "topic_noise": [
+   {
+    "text": "Reported by AAA via Reuters, ABC, Jamaica Observer, Sedaily.",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "unrelated": [
+   {
+    "text": "Kuwait: Iranian drones hit Mina al-Ahmadi and Mina Abdullah on 19 March 2026; a third strike in early April suspended ~346k b/d of al-Ahmadi's capacity.",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ]
+ },
+ {
+  "id": "c10",
+  "type": "trivially_true",
+  "claim": "Diesel is made from crude oil in refineries",
+  "evidence": [
+   {
+    "text": "The number that measures this is the crack spread — the margin between a barrel of crude and the diesel it becomes.",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "topic_noise": [
+   {
+    "text": "Diesel is the fuel of the harvest, the freight truck, the heating boiler, and the runway.",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "unrelated": [
+   {
+    "text": "10y ~4.95%, 30y 5.36% highest since 2004 (Reuters, MarketScreener).",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ]
+ },
+ {
+  "id": "c11",
+  "type": "adversarial_real_source_misquoted",
+  "claim": "Rystad's Claudio Galimberti said diesel is \"the main reason why the government bond yields in the United States are so high\"",
+  "evidence": [
+   {
+    "text": "Rystad's Claudio Galimberti: diesel is \"one of the reasons why the government bond yields in the United States are so high\"",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+    "as_cited": "Rystad via CNBC"
+   }
+  ],
+  "topic_noise": [
+   {
+    "text": "August CPI +0.4% m/m, 3.4% y/y, gasoline >1/3 of the monthly increase.",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "unrelated": [
+   {
+    "text": "Global floating storage −150M bbl since mid-July (Kpler).",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ]
+ },
+ {
+  "id": "c12",
+  "type": "adversarial_real_source_correct_quote_wrong_inference",
+  "claim": "Canada's total crude exports fell in the first half of 2026 because Trans Mountain diverted heavy crude to Asia",
+  "evidence": [
+   {
+    "text": "Canadian crude to PADD 3: 526k b/d (2024) → 416k (2025) → ~337k (H1 2026, EIA Jan–Jun); total Canadian exports rose — US imports 4M+ b/d H1 2026, June exports +6.4% YoY",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+    "as_cited": "OilPrice/CGI; Vortexa/Bloomberg via Globe & Mail"
+   }
+  ],
+  "topic_noise": [
+   {
+    "text": "Carney–Smith 1M b/d second West Coast pipeline announced July 2026.",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "unrelated": [
+   {
+    "text": "~3M b/d refined-product exports under consideration; Rapidan 35% probability; CSIS: Gulf refiners would cut runs.",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ]
+ }
+]
