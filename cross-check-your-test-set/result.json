@@ -1,0 +1,198 @@
+﻿{
+ "baseline (no system prompt)": {
+  "positions": 500,
+  "with_reply": 500,
+  "A_success": {
+   "verdict": "NO_CHANGE_OBSERVED",
+   "tested": 500,
+   "moved": 0,
+   "inert": 500,
+   "moved_by_arm": {
+    "empty": 0,
+    "neutral": 0,
+    "noise": 0,
+    "deranged": 0,
+    "refusal": 0
+   }
+  },
+  "B_markers": {
+   "verdict": "SENSITIVE (partial)",
+   "tested": 500,
+   "moved": 83,
+   "inert": 417,
+   "moved_by_arm": {
+    "empty": 54,
+    "neutral": 54,
+    "noise": 54,
+    "deranged": 83,
+    "refusal": 54
+   }
+  },
+  "ours_markers_only_same_score": 500,
+  "marker_distribution_top": [
+   [
+    "none",
+    446
+   ],
+   [
+    "FACT",
+    15
+   ],
+   [
+    "FACT+ASSUMPTION",
+    10
+   ],
+   [
+    "HYPOTHESIS",
+    9
+   ]
+  ]
+ },
+ "run 1: point-form invariants": {
+  "positions": 500,
+  "with_reply": 500,
+  "A_success": {
+   "verdict": "NO_CHANGE_OBSERVED",
+   "tested": 500,
+   "moved": 0,
+   "inert": 500,
+   "moved_by_arm": {
+    "empty": 0,
+    "neutral": 0,
+    "noise": 0,
+    "deranged": 0,
+    "refusal": 0
+   }
+  },
+  "B_markers": {
+   "verdict": "SENSITIVE (partial)",
+   "tested": 500,
+   "moved": 408,
+   "inert": 92,
+   "moved_by_arm": {
+    "empty": 329,
+    "neutral": 329,
+    "noise": 329,
+    "deranged": 279,
+    "refusal": 329
+   }
+  },
+  "ours_markers_only_same_score": 500,
+  "marker_distribution_top": [
+   [
+    "none",
+    171
+   ],
+   [
+    "FACT",
+    151
+   ],
+   [
+    "FACT+HYPOTHESIS+ASSUMPTION",
+    111
+   ],
+   [
+    "FACT+ASSUMPTION",
+    32
+   ]
+  ]
+ },
+ "run 2: Helix-TTD strict": {
+  "positions": 500,
+  "with_reply": 500,
+  "A_success": {
+   "verdict": "NO_CHANGE_OBSERVED",
+   "tested": 500,
+   "moved": 0,
+   "inert": 500,
+   "moved_by_arm": {
+    "empty": 0,
+    "neutral": 0,
+    "noise": 0,
+    "deranged": 0,
+    "refusal": 0
+   }
+  },
+  "B_markers": {
+   "verdict": "SENSITIVE",
+   "tested": 500,
+   "moved": 500,
+   "inert": 0,
+   "moved_by_arm": {
+    "empty": 499,
+    "neutral": 499,
+    "noise": 499,
+    "deranged": 130,
+    "refusal": 499
+   }
+  },
+  "ours_markers_only_same_score": 500,
+  "marker_distribution_top": [
+   [
+    "VERIFIED+INFERENCE+PREMISE",
+    421
+   ],
+   [
+    "HYPOTHESIS+VERIFIED+INFERENCE+PREMISE",
+    14
+   ],
+   [
+    "VERIFIED+PREMISE",
+    11
+   ],
+   [
+    "PREMISE",
+    8
+   ]
+  ]
+ },
+ "run 3: canonical whitepaper": {
+  "positions": 500,
+  "with_reply": 500,
+  "A_success": {
+   "verdict": "NO_CHANGE_OBSERVED",
+   "tested": 500,
+   "moved": 0,
+   "inert": 500,
+   "moved_by_arm": {
+    "empty": 0,
+    "neutral": 0,
+    "noise": 0,
+    "deranged": 0,
+    "refusal": 0
+   }
+  },
+  "B_markers": {
+   "verdict": "SENSITIVE",
+   "tested": 500,
+   "moved": 500,
+   "inert": 0,
+   "moved_by_arm": {
+    "empty": 499,
+    "neutral": 499,
+    "noise": 499,
+    "deranged": 234,
+    "refusal": 499
+   }
+  },
+  "ours_markers_only_same_score": 500,
+  "marker_distribution_top": [
+   [
+    "FACT+HYPOTHESIS+ASSUMPTION",
+    355
+   ],
+   [
+    "FACT+ASSUMPTION",
+    88
+   ],
+   [
+    "FACT",
+    33
+   ],
+   [
+    "HYPOTHESIS+ASSUMPTION",
+    16
+   ]
+  ]
+ }
+}

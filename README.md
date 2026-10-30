@@ -63,6 +63,7 @@ row reader-verifiable rather than reported, see the hosted-endpoint offer in
 | `results/` | per-position grades (`*.json`, `results-per-position.md`) and the probe's unedited stdout |
 | `docs/PROBE_PROVENANCE.md`, `docs/corpus-license-note.md` | hashes, dates, licence reasoning |
 | `OFFER.md` | further cross-checks we can run with you, free and paid |
+| `cross-check-your-test-set/` | your probe, unmodified, on your Helix Standard Test Set v1.1 (Zenodo 19501062) — script, result, how to reproduce |
 | `passports/HELIX_PASSPORT.md` | product passport: HELIX (audit of model output) — accuracy measurements, specs, limits, failures |
 | `passports/MR_HELIX_PASSPORT.md` | product passport: Mr. Helix (investigation) — 99 capsules, live path, forecasts, limits |
 | `passports/AK_MASTER_PASSPORT.md` | product passport: AK-MASTER (literary engine) — canon enforcement, battery, limits |
