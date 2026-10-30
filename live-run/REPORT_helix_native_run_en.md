@@ -32,10 +32,10 @@ The ranking is stated by the product as low-confidence: dropping one piece of ev
 
 ## 3. Where our run and your article meet
 
-We set these down as things we learned from your work, and as questions we would be glad to hear your view on. You have spent four decades in this field; we have spent two years building a tool, so we hold our reading loosely.
+Here is what we found. We would like you to assess whether each finding is true, and to tell us where it is not.
 
-1. **The $28 gap.** Your sourcing note held this figure back as `[AS GIVEN]`, an analysis-site computation against a Brent range. That caution was well placed: HELIX, comparing a **WTI monthly average with the WTI single-day peak**, arrived at about $24.8. The two numbers use different benchmarks and different windows, so they may simply be answering different questions. We would value your view on which window is the right one for the claim.
-2. **"Capacity" and "exports" may be two ends of one chain.** HELIX's best-scoring hypothesis says exports drained US stocks. Your article names a possible ban on roughly 3 mb/d of US refined-product exports as a live policy question. One reading, which we have not verified: a surge in US distillate exports could be the **channel** through which the foreign refinery losses in your five vectors reach the US pump. If so, the two accounts would fit together. HELIX tested neither the foreign losses nor that link. It tested only the headline sentence, and mostly on US-domestic evidence. Your five vectors deserve a run of their own.
+1. **The $28 gap.** Your sourcing note held this figure back as `[AS GIVEN]`, an analysis-site computation against a Brent range. Our finding: HELIX, comparing a **WTI monthly average with the WTI single-day peak**, arrived at about $24.8. The two numbers use different benchmarks and different windows, so they may simply be answering different questions. Is this finding true? Which window is the right one for the claim?
+2. **"Capacity" and "exports" may be two ends of one chain.** HELIX's best-scoring hypothesis says exports drained US stocks. Your article names a possible ban on roughly 3 mb/d of US refined-product exports as a live policy question. Our finding, not yet verified: a surge in US distillate exports could be the **channel** through which the foreign refinery losses in your five vectors reach the US pump. If so, the two accounts would fit together. Is this true? HELIX tested neither the foreign losses nor that link. It tested only the headline sentence, and mostly on US-domestic evidence. Your five vectors deserve a run of their own.
 3. **Scope.** HELIX's 1.7 mb/d is distillate exports. Your 3 mb/d is all refined products, so the two figures count different things.
 
 ## 4. What HELIX said about its own answer
@@ -60,7 +60,7 @@ This section is about HELIX, not about your article.
 
 ## 6. Our own spot-checks, outside the HELIX run
 
-Done by hand, with pages we opened ourselves, to see how your sourcing holds up. In each case we are reporting what we found, and the sourcing you chose looks careful:
+Done by hand, with pages we opened ourselves. For each line, this is what we found; please tell us whether it is right:
 
 | Your figure | What we found |
 |---|---|

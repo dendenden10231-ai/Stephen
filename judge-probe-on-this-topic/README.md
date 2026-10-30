@@ -32,7 +32,7 @@ Your design asks for "a genuine passage that refutes the claim". We did not inve
 - **c07** (forecast presented as fact): the one candidate we found was a fleet-software vendor's marketing blog dated three months before the events. We rejected it as evidence.
 - **c09** (superseded figure): the superseding figure is already in A.
 
-We would be grateful for your advice here. For the spoiled-claim types, how would you build E so that it stays genuine and still moves the label in the opposite direction? You know this design far better than we do, and we would rather follow your answer than guess.
+Our finding: for the spoiled-claim types a genuine E that points the opposite way does not seem to exist. Is that true? If not, how would you build E for them so that it stays genuine and still moves the label in the opposite direction?
 
 ## Permutation direction
 

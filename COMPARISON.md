@@ -21,7 +21,7 @@ Topic for both: your article "No second refinery".
 
 ## Where they already touch
 
-- Your `[AS GIVEN]` on the $28 crude gap: your caution held. File 1 could not reproduce the figure on the benchmark it used (about $24.8, different window).
-- Your `[AS GIVEN]` on "Russia produces 70% of its gasoline": file 1 did not test it. Our manual check (file 1, section 6) found it holds as a late-August low, which fits the way you held it back. In file 2 it is claim c02, where your design expects a refusal rather than a label.
+- On the $28 crude gap (`[AS GIVEN]` in your sourcing): file 1 could not reproduce the figure on the benchmark it used (about $24.8, different window). Is that finding true?
+- On "Russia produces 70% of its gasoline" (`[AS GIVEN]`): file 1 did not test it. Our manual check (file 1, section 6) found it holds as a late-August low, not an average. Is that right? In file 2 it is claim c02, where your design expects a refusal rather than a label.
 
 Everything here is a single run on one topic. Twelve claims are twelve.
