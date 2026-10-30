@@ -21,7 +21,7 @@ Topic for both: your article "No second refinery".
 
 ## Where they already touch
 
-- Your `[AS GIVEN]` on the $28 crude gap: file 1 independently declined to confirm it (it found about $24.8 on a different benchmark and window).
-- Your `[AS GIVEN]` on "Russia produces 70% of its gasoline": file 1 did not test it. Our manual check (file 1, section 6) found it holds as a late-August low, not an average. In file 2 it is claim c02, expected to be refused rather than labelled.
+- Your `[AS GIVEN]` on the $28 crude gap: your caution held. File 1 could not reproduce the figure on the benchmark it used (about $24.8, different window).
+- Your `[AS GIVEN]` on "Russia produces 70% of its gasoline": file 1 did not test it. Our manual check (file 1, section 6) found it holds as a late-August low, which fits the way you held it back. In file 2 it is claim c02, where your design expects a refusal rather than a label.
 
 Everything here is a single run on one topic. Twelve claims are twelve.

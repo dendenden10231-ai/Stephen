@@ -24,19 +24,19 @@ Run cost (the product's own spend counter, an estimate from tokens × list price
 |---|---|---|
 | Diesel at an all-time record in September 2026 | Confirmed. Retail diesel reached $6.53/gal in the week of 21 September. | ECT-4 |
 | "Above $6.05" on 11 September specifically | **NON LIQUET.** That figure appears only in AAA trackers, not in the official EIA tables it could read. | not established |
-| Crude "about $28 cheaper" than June 2022 | **Not confirmed as stated.** EIA: WTI averaged $97.31 in September 2026 against a $122.11 peak on 8 June 2022, a gap of about **$24.8**. | ECT-4 for the $24.8; $28 is NON LIQUET |
+| Crude "about $28 cheaper" than June 2022 | **Not reproduced on the benchmark HELIX used.** EIA: WTI averaged $97.31 in September 2026 against a $122.11 peak on 8 June 2022, a gap of about **$24.8**. | ECT-4 for the $24.8; $28 is NON LIQUET |
 | Refining capacity was lost | Partly. It found US closures (LyondellBasell, Phillips 66, Valero, 540 kb/d over 2025–26), reported via trade press, not an EIA table. | ECT-3 |
-| So the crisis is "at the refinery" | **Not proven, and not the leading hypothesis.** The best-scoring hypothesis (H3) was an **export-driven stock draw**: distillate exports up to a record 1.7 mb/d (norm 1.3) drew inventories down about 29 mb while the remaining refineries ran at 96.8–98%. The pure-capacity hypothesis (H1) was listed as "not found in this run". | confidence in the ranking: low |
+| So the crisis is "at the refinery" | **Not established in this run, and not the leading hypothesis.** The best-scoring hypothesis (H3) was an **export-driven stock draw**: distillate exports up to a record 1.7 mb/d (norm 1.3) drew inventories down about 29 mb while the remaining refineries ran at 96.8–98%. The pure-capacity hypothesis (H1) was listed as "not found in this run". | confidence in the ranking: low |
 
 The ranking is stated by the product as low-confidence: dropping one piece of evidence from one independent source would change the leader.
 
-## 3. How this sits against your article
+## 3. Where our run and your article meet
 
-Read these as observations to check, not as a rebuttal.
+We set these down as things we learned from your work, and as questions we would be glad to hear your view on. You have spent four decades in this field; we have spent two years building a tool, so we hold our reading loosely.
 
-1. **The $28 gap.** Your own sourcing note already holds it back as `[AS GIVEN]`, an analysis-site computation against a Brent range. HELIX compared a **WTI monthly average with the WTI single-day peak**. The two numbers use different benchmarks and different windows, so they may not contradict each other. HELIX's own report does not resolve this.
-2. **"Capacity" versus "exports" may not be rivals.** HELIX's H3 says exports drained US stocks. Your article names a possible ban on roughly 3 mb/d of US refined-product exports as a live policy question. Our reading, not verified: a surge in US distillate exports could be the **channel** through which the foreign refinery losses in your five vectors reach the US pump. HELIX tested neither the foreign losses nor that link. It tested only the thesis as typed, and it did so with mostly US-domestic evidence.
-3. **Scope difference.** HELIX's 1.7 mb/d is distillate exports. Your 3 mb/d is all refined products. They are not the same quantity.
+1. **The $28 gap.** Your sourcing note held this figure back as `[AS GIVEN]`, an analysis-site computation against a Brent range. That caution was well placed: HELIX, comparing a **WTI monthly average with the WTI single-day peak**, arrived at about $24.8. The two numbers use different benchmarks and different windows, so they may simply be answering different questions. We would value your view on which window is the right one for the claim.
+2. **"Capacity" and "exports" may be two ends of one chain.** HELIX's best-scoring hypothesis says exports drained US stocks. Your article names a possible ban on roughly 3 mb/d of US refined-product exports as a live policy question. One reading, which we have not verified: a surge in US distillate exports could be the **channel** through which the foreign refinery losses in your five vectors reach the US pump. If so, the two accounts would fit together. HELIX tested neither the foreign losses nor that link. It tested only the headline sentence, and mostly on US-domestic evidence. Your five vectors deserve a run of their own.
+3. **Scope.** HELIX's 1.7 mb/d is distillate exports. Your 3 mb/d is all refined products, so the two figures count different things.
 
 ## 4. What HELIX said about its own answer
 
@@ -48,7 +48,9 @@ Read these as observations to check, not as a rebuttal.
 - Risk Index: `NOT_RUN`. It needs two bands (HMP, RDI) that a person chooses, and the product refuses to invent them. TRACE ran 15 of 36 protocols.
 - A falsifier it wrote for its own leading hypothesis: crack spread holding above $90 in October–November with free exports.
 
-## 5. Search coverage, honestly
+## 5. Where our own tool fell short
+
+This section is about HELIX, not about your article.
 
 - 159 links from 103 sites. Of 73 pages it tried to read, **56 were read; 14 returned HTTP 403 and 3 were empty.**
 - Sources the product itself classed as primary: `eia.gov`, `sec.gov`. It also reached `aaa.com` and `stlouisfed.org`, classed as reference. Most of the rest are secondary or aggregator sites.
@@ -58,7 +60,7 @@ Read these as observations to check, not as a rebuttal.
 
 ## 6. Our own spot-checks, outside the HELIX run
 
-Done by hand to see whether your numbers hold, using pages we opened ourselves:
+Done by hand, with pages we opened ourselves, to see how your sourcing holds up. In each case we are reporting what we found, and the sourcing you chose looks careful:
 
 | Your figure | What we found |
 |---|---|
