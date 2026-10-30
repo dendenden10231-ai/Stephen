@@ -63,6 +63,13 @@ row reader-verifiable rather than reported, see the hosted-endpoint offer in
 | `results/` | per-position grades (`*.json`, `results-per-position.md`) and the probe's unedited stdout |
 | `docs/PROBE_PROVENANCE.md`, `docs/corpus-license-note.md` | hashes, dates, licence reasoning |
 | `OFFER.md` | further cross-checks we can run with you, free and paid |
+| `passports/HELIX_PASSPORT.md` | product passport: HELIX (audit of model output) — accuracy measurements, specs, limits, failures |
+| `passports/MR_HELIX_PASSPORT.md` | product passport: Mr. Helix (investigation) — 99 capsules, live path, forecasts, limits |
+| `passports/AK_MASTER_PASSPORT.md` | product passport: AK-MASTER (literary engine) — canon enforcement, battery, limits |
+
+The three passports are English translations of our Russian product passports
+(30 Oct 2026). Every figure carries its measurement date and command; file paths
+refer to our private repository, so those figures are **assertions** to you.
 
 The same probe package is also public at
 https://github.com/dendenden10231-ai/HELIX_GOVERNANCE/tree/main/probe-package-2026-10-30
