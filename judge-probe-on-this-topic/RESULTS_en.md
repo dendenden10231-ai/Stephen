@@ -25,7 +25,7 @@ Arm E exists for c02, c05, c06 only: for the other claims we could not find a ge
 | c11 | REF | UNT | UNT | NEI | n/a | UNT | NEI |
 | c12 | REF | UNT | UNT | NEI | n/a | NEI | NEI |
 
-## What we found
+## What we found (final run; per-run numbers are in the table below)
 
 1. **Mode 1, content-blind.** Not observed. Where A carries a determinate label (c01, c02, c03, c04, c05, c10, c11, c12), swapping in a neighbour's evidence (G) changed the label in 8 of 8.
 2. **Mode 2, length-sensitive.** Not observed. Length-matched noise (C) returned a refusal in 12 of 12, never the genuine label.
@@ -35,6 +35,23 @@ Arm E exists for c02, c05, c06 only: for the other claims we could not find a ge
 
 On the claim types (arm A): the true and trivial claims came back SUP; the wrong unit (c03), the year shifted by one (c04), the misquote (c11) and the right quote with a wrong inference (c12) came back REF;
 two genuine sources in conflict (c06) were recorded as NEI, not averaged; the forecast (c07), the fabricated citation (c08) and the superseded figure (c09) were not silently labelled.
+
+## Per-run numbers
+
+Recomputed from [`matrix_all_runs.csv`](matrix_all_runs.csv). The model is not deterministic, so the three runs are not identical.
+
+| | Run 1 | Run 2 | Run 3 (final) |
+|---|---|---|---|
+| Cells where A has a determinate label (SUP/REF) | 6 | 8 | 8 |
+| Of those, label changed by the permuted arm G | 6 of 6 | 8 of 8 | 8 of 8 |
+| Length-matched noise C returned a determinate label | 0 of 12 | 0 of 12 | 0 of 12 |
+| C equal to A (both refusals, because A itself was refused) | 2 | 2 | 0 |
+| Arm E differs from A (3 claims) | 3 of 3 | 3 of 3 | 3 of 3 |
+| Arm E moved to REFUTED (3 claims) | 3 of 3 | 2 of 3 (c05 gave NEI) | 3 of 3 |
+| Empty arm B gave UNTESTED | 12 of 12 | 12 of 12 | 12 of 12 |
+| c07 under G | NEI | **SUP** | **SUP** |
+
+In runs 1 and 2 a few cells in arm A were refusals caused by defects in our own number check, which we fixed between runs (see below), so the earlier runs are weaker evidence than the final one.
 
 ## The one place we would like your view
 
