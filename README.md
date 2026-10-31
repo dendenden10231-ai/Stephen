@@ -20,9 +20,9 @@ python verify.py
 Expected output, verified on Windows 11 with a default console on 30 Oct 2026:
 
 ```
-1. Deposit files, byte for byte
+1. Deposit files (one disclosed edit: two server paths)
    OK   null_input_probe.py  ebb9bb1bf4fa9378e7faf1ae72df8c519f3026584ef6fd0f0e1c1fd07da9a549
-   OK   null_model_test.py  5a8f3a14313c0edc3357ac652e4826397fc4569e715f166c30954878516301f8
+   OK   null_model_test.py  180babb85e3c3593b3756a78b169e9a53ffca5e2be7fe771d703bc6b11f34d73
 2. Adapter demos
    OK   --demo lookup    expected NO_CHANGE_OBSERVED got NO_CHANGE_OBSERVED
    OK   --demo sensitive expected SENSITIVE          got SENSITIVE
@@ -35,7 +35,7 @@ What each line proves:
 
 | line | proves | does not prove |
 |---|---|---|
-| SHA-256 of your two files | they are your deposit, byte for byte — the hashes you confirmed in your PART 1 | anything about our instruments |
+| SHA-256 of your two files | they are your deposit — `null_input_probe.py` byte for byte; `null_model_test.py` byte for byte except two absolute server paths we replaced with placeholders, both hashes recorded in `docs/PROBE_PROVENANCE.md` | anything about our instruments |
 | `--demo lookup` | your probe catches a scorer whose grade depends only on the position (the answer-key shape you found in your own battery) | — |
 | `--demo sensitive` | a scorer that reads the text is not falsely flagged | — |
 | `--demo untested` | with no genuine reply the verdict is `UNTESTED`, never "pass" | — |

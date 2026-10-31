@@ -31,7 +31,7 @@ import re
 import sys
 import urllib.request
 
-sys.path.insert(0, "/home/steve/helix/repos/lattice/ops")
+sys.path.insert(0, "/path/to/helix/repos/lattice/ops")  # edited by us: the original absolute path is removed, see docs/PROBE_PROVENANCE.md
 from tel_deploy.test_suite import ALL_STRICT_TESTS, ShapeOutcome
 
 EXCLUDED = {"S2-L2-CONTEXT-04", "S2-L2-COERCION-02", "S2-L2-SEMANTIC-04",
@@ -79,7 +79,7 @@ def classify(test, text):
 
 
 def key():
-    for line in pathlib.Path("/home/steve/.config/helix/gate-keys.env").read_text().splitlines():
+    for line in pathlib.Path("gate-keys.env").read_text().splitlines():  # edited by us: the original key-file path is removed, see docs/PROBE_PROVENANCE.md
         m = re.match(r"\s*(?:export\s+)?GOOSE_CORE_KEY\s*=\s*[\"']?([^\"'\s]+)", line)
         if m:
             return m.group(1)
