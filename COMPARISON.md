@@ -10,8 +10,8 @@ Topic for both: your article "No second refinery".
 | Question it answers | What does the product conclude, and how well does it search and hedge? | Does the judge's label depend on the evidence it is given? |
 | Controlled | No, one run, not deterministic | Yes, arms A–G built mechanically from the genuine evidence |
 | Measures | Findings, levels, refusals, coverage | Sensitivity and specificity, refusal contract R1–R5 |
-| Cost of the run | about $2.42 (spend-counter estimate) | about $3 for arms A+G, about $7 for all arms (estimate) |
-| State | **Done** | **Built, not run** |
+| Cost of the run | about $2.42 (spend-counter estimate) | about $1.9 per full run of 63 judge calls (spend-counter estimate) |
+| State | **Done** | **Done: three full runs, [results](judge-probe-on-this-topic/RESULTS_en.md)** |
 
 ## What each can and cannot tell you
 

@@ -3,9 +3,9 @@
 **File 2 of 2.** Topic: "No second refinery" (12 September 2026), the sourcing section at the end of the article.
 Design followed: your issue #1, "Null-Arm Probe Design — HELIX Judge Stage".
 
-## Status: built, **not yet run**
+## Status: **run.** Results are in [`RESULTS_en.md`](RESULTS_en.md)
 
-Nothing in this folder is a result. We say so plainly so that nobody reads the claim set as one.
+Three full runs of 63 judge calls each, live search disabled (0 search calls), about $1.9 per run by the product's spend counter (an estimate from tokens at list price, not a bill). Labels per claim and arm for all three runs: [`matrix_all_runs.csv`](matrix_all_runs.csv).
 
 | Item | State |
 |---|---|
@@ -17,11 +17,8 @@ Nothing in this folder is a result. We say so plainly so that nobody reads the c
 | Arm F (genuine passage about another claim) | 12 of 12, other lines of your sourcing |
 | Arm G (claim *i* gets the evidence of claim *i+1*, cyclic) | 12 of 12, mechanical |
 | Arm E (a genuine passage that refutes the claim) | **3 of 12**: c02, c05, c06 |
-| Judge harness: fixed-evidence mode, search disabled, refusal contract R1–R5 | done; 16 tests with stub judges, no network |
-| Export in the input format of your `grade_judge_probe.py` | done |
-| **Paid run of the judge** | **not run** |
-
-Estimated size of the full run: about 64 judge calls, about 99k input tokens. At list price that is on the order of **$7**, and up to about $11 if the model's replies are long or need retries. If only your first-choice arm is run (G, plus A as the reference), it is 24 calls, on the order of **$3**.
+| Judge: fixed-evidence mode, search disabled, refusal contract R1–R5 | run on the product's server; the harness is in our private repository |
+| Paid run of the judge | **done, three runs** |
 
 ## Why arm E is only 3 of 12
 
@@ -38,8 +35,6 @@ Our finding: for the spoiled-claim types a genuine E that points the opposite wa
 
 Your text and your JSON plan differ on which neighbour's evidence a claim receives. We followed the JSON: claim *i* gets the arm-A evidence of claim *i+1*, cyclic.
 
-## What will be reported when it runs
+## How to read the results
 
-Per your grading section: PASS / FAIL by mode for each claim and arm, sensitivity (E differs from A) and specificity (C does not equal A) **together**, the count and identity of failures (not an interval, twelve is twelve), and the R1–R5 diff for the four refusal-expected claims c02, c07, c08, c11.
-
-Limits you already state apply: this tests dependence on evidence, not truth, and it bypasses retrieval, so it says nothing about whether live search finds the right sources. File 1 is where that is visible.
+Per your grading section the results report sensitivity (E differs from A) and specificity (C does not equal A) **together**, the count and identity of failures (not an interval, twelve is twelve), and the R1–R5 diff for the four refusal-expected claims c02, c07, c08, c11. Limits you already state apply: this tests dependence on evidence, not truth, and it bypasses retrieval, so it says nothing about whether live search finds the right sources. File 1 is where that is visible.
