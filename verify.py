@@ -4,8 +4,7 @@
     python verify.py
 
 1. SHA-256 of the two deposit files must equal the hashes Stephen Hope
-   confirmed against his own deposit; one disclosed edit — two absolute server paths in
-   null_model_test.py were replaced by placeholders on 31 Oct 2026 (docs/PROBE_PROVENANCE.md).
+   confirmed against his own deposit (byte-for-byte, no edits).
 2. The three built-in demos of the adapter must return the verdicts the
    package claims: a deliberately broken scorer is caught, a content-sensitive
    one is not, and with no genuine replies the result is UNTESTED, not "pass".
@@ -31,8 +30,7 @@ PROBE = ROOT / "probe"
 
 EXPECTED_SHA256 = {
     "null_input_probe.py": "ebb9bb1bf4fa9378e7faf1ae72df8c519f3026584ef6fd0f0e1c1fd07da9a549",
-    # published copy: his file with two absolute server paths replaced (see docs/PROBE_PROVENANCE.md)
-    "null_model_test.py": "180babb85e3c3593b3756a78b169e9a53ffca5e2be7fe771d703bc6b11f34d73",
+    "null_model_test.py": "5a8f3a14313c0edc3357ac652e4826397fc4569e715f166c30954878516301f8",
 }
 EXPECTED_DEMOS = {
     "lookup": "NO_CHANGE_OBSERVED",   # broken on purpose: grade depends on position only
@@ -43,7 +41,7 @@ EXPECTED_DEMOS = {
 
 def main() -> int:
     ok = True
-    print("1. Deposit files (one disclosed edit: two server paths)")
+    print("1. Deposit files, byte for byte")
     for name, want in EXPECTED_SHA256.items():
         got = hashlib.sha256((PROBE / name).read_bytes()).hexdigest()
         good = got == want
