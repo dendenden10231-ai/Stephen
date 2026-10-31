@@ -1,0 +1,78 @@
+{
+ "source_article": "2026-09-12_no_second_refinery.md (Stephen Hope, Substack)",
+ "note": "12 numeric claims extracted from our own article; bundled so the live run is reproducible without it.",
+ "claims": [
+  {
+   "id": "c01",
+   "figure": "5.85",
+   "text": "On 4 September, the US national average retail diesel price passed $5.85 a gallon, breaking the June 2022 record.",
+   "kind": "equality"
+  },
+  {
+   "id": "c02",
+   "figure": "2022",
+   "text": "And here is the fact that should stop the scroll: crude oil is trading roughly $28 a barrel *cheaper* than it was during the 2022 record.",
+   "kind": "year"
+  },
+  {
+   "id": "c03",
+   "figure": "400,000",
+   "text": "Aramco's Jazan refinery — 400,000 barrels a day of diesel and gasoline — has not properly run since 27 July, when drones damaged its tank farm and power complex.",
+   "kind": "equality"
+  },
+  {
+   "id": "c04",
+   "figure": "11.7 million",
+   "text": "**Vector two: the war itself.** At least nine Gulf refineries have been damaged and shut by the fighting, and the region's refining capacity — 11.7 million barrels a day — has no credible restart timeline.",
+   "kind": "inequality"
+  },
+  {
+   "id": "c05",
+   "figure": "5 million",
+   "text": "Roughly a third of Russian refining capacity is out — about 5 million barrels a day — and Russian refining has fallen to its lowest level in over two decades.",
+   "kind": "inequality"
+  },
+  {
+   "id": "c06",
+   "figure": "2027,",
+   "text": "Russia, historically one of the world's top diesel exporters, collapsed to near-zero diesel exports by late July, extended its diesel export ban through September, banned gasoline exports through January 2027, and is now importing gasoline from Türkiye — the first time ever.",
+   "kind": "year"
+  },
+  {
+   "id": "c07",
+   "figure": "346,000",
+   "text": "In Kuwait, Iranian drones hit the Mina al-Ahmadi and Mina Abdullah refineries in March — a third strike on al-Ahmadi in early April suspended roughly 346,000 barrels a day of capacity, and Kuwait's crude exports briefly hit zero.",
+   "kind": "equality"
+  },
+  {
+   "id": "c08",
+   "figure": "197,000",
+   "text": "Israel's Haifa refinery — 197,000 barrels a day, two-thirds of the country's processing — took Iranian missile hits in March and June;",
+   "kind": "equality"
+  },
+  {
+   "id": "c09",
+   "figure": "120,000",
+   "text": "Libya's Zawiya refinery, the country's largest at 120,000 barrels a day, absorbed a week of unclaimed drone strikes in August — naphtha tank, petrol tank, blending plant — forcing force-majeure warnings.",
+   "kind": "equality"
+  },
+  {
+   "id": "c10",
+   "figure": "1982,",
+   "text": "Both arrive against buffers that no longer exist: US distillate stocks are the lowest for early September since 1982, and on the East Coast — the region that heats with oil — inventories hit 19.3 million barrels in late August, the lowest in records going back to 1990.",
+   "kind": "year"
+  },
+  {
+   "id": "c11",
+   "figure": "100 million",
+   "text": "The EIA expects national stocks to fall below 100 million barrels this month, first time since 2003, and to stay below the five-year average for most of 2027.",
+   "kind": "inequality"
+  },
+  {
+   "id": "c12",
+   "figure": "526,000",
+   "text": "Canadian crude arriving at the US Gulf Coast fell from about 526,000 barrels a day in 2024 to roughly 337,000 in the first half of this year.",
+   "kind": "equality"
+  }
+ ]
+}

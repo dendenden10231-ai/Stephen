@@ -1,0 +1,487 @@
+{
+  "version": "1.6",
+  "supersedes": "1.5",
+  "v1.1_status": "reviewed and NOT validated. Seven defects found by independent review; all fixed here. The v1.1 file is retained unedited.",
+  "prepared": "2026-10-30",
+  "subject": "Null-arm probe of the HELIX judge stage",
+  "author": "Stephen Hope, Helix AI Innovations Inc.",
+  "defects_fixed_from_v1_1": [
+    {
+      "id": "F1",
+      "defect": "grader loaded the plan from a private absolute path, so the self-contained edition could not run anywhere else",
+      "fix": "plan resolved beside the grader; --plan overrides"
+    },
+    {
+      "id": "F2",
+      "defect": "a missing key normalised to the same value as an explicit refusal, so an arm never run was awarded PASS on B_empty, E2, E3, FORECAST_OWN, FORECAST_PERM",
+      "fix": "ABSENT / ABSTAINED / VERDICT kept distinct; only ABSTAINED can pass a refusal arm"
+    },
+    {
+      "id": "F3",
+      "defect": "topic-matched noise reproducing the verdict was described as evidence of topic-driven judgement and then awarded PASS",
+      "fix": "FAIL:mode3_topic_driven"
+    },
+    {
+      "id": "F4",
+      "defect": "spec said the digest covers the object without the hashes block; the implementation included the component hashes in the hashed body, so spec and implementation digests differed and the verifier accepted the implementation's",
+      "fix": "digest covers the object with `hashes` removed entirely, per spec"
+    },
+    {
+      "id": "F5",
+      "defect": "verify_receipt recomputed input_sha256 but never output_sha256, so a receipt with a deliberately wrong output digest passed",
+      "fix": "both component digests recomputed"
+    },
+    {
+      "id": "F6",
+      "defect": "arm G flagged ANY equality with the donor's verdict; two independent claims can legitimately share a label",
+      "fix": "only movement TOWARD the donor fires: A != donor_A and G == donor_A"
+    },
+    {
+      "id": "F7",
+      "defect": "FAIL:control_failure was recorded and FORECAST_OWN / FORECAST_PERM were still scored",
+      "fix": "a failed control makes those arms N/A with the reason; the prerequisite is enforced"
+    }
+  ],
+  "prerequisites": {
+    "fixed_evidence_mode": "judge.evaluate(claim, evidence, search_enabled=false)",
+    "per_evidence_labels": "per-item bearings, not only the aggregate",
+    "if_absent": "stop. No arm is controlled and nothing here is runnable."
+  },
+  "arm_states": {
+    "note": "six states, all reachable. v1.2 declared UNKNOWN and never produced it.",
+    "ABSENT": "key not present — UNTESTED",
+    "NO_RESPONSE": "key present but null or empty — a failed or missing response, NOT a refusal — UNTESTED",
+    "ABSTAINED": "explicit refusal token: UNTESTED, UNRESOLVED, REFUSED, NO_EVIDENCE, ABSTAIN — the only state that can pass a refusal arm",
+    "VERDICT": "SUPPORTED / REFUTED / NEI",
+    "ERROR": "harness reported transport/execution failure — UNTESTED",
+    "UNKNOWN": "non-empty, not a label and not a refusal — malformed output — FAIL:malformed_label"
+  },
+  "arms": {
+    "A_genuine": {
+      "construction": "the real supporting passage",
+      "requirement": "determinate label; reference for the rest"
+    },
+    "B_empty": {
+      "construction": "evidence = []",
+      "requirement": "ABSTAINED. VERDICT fails:refusal; ABSENT is UNTESTED"
+    },
+    "C_noise_length": {
+      "construction": "random prose, character count within +/-5% of A",
+      "requirement": "must produce NO VERDICT. SUPPORTED or REFUTED fails mode2_length; NEI or a refusal passes"
+    },
+    "D_noise_topic": {
+      "construction": "genuine prose on the same subject with no bearing on the specific claim",
+      "requirement": "must NOT reproduce arm A's verdict. Reproducing it fails mode3_topic_driven — the claim is topic-driven, not evidence-driven"
+    },
+    "E1_contrary": {
+      "construction": "genuine passage that directly refutes the claim",
+      "requirement": "must move the label away from A. Unchanged fails mode3_no_contradiction",
+      "applies_to": [
+        "c02",
+        "c05",
+        "c06"
+      ]
+    },
+    "E2_distorted_source": {
+      "construction": "the ORIGINAL ACCURATE passage; the claim stays distorted (unit changed, date shifted one year, quote altered, inference inverted)",
+      "requirement": "ABSTAINED or REFUTED passes. SUPPORTED fails e2_distortion_missed. Supplying the distorted text instead would make evidence agree with the claim and test nothing",
+      "applies_to": [
+        "c03",
+        "c04",
+        "c11",
+        "c12"
+      ]
+    },
+    "E3_null_search": {
+      "construction": "explicit empty or 'no source found' result, not a passage",
+      "requirement": "ABSTAINED. A verdict fails:refusal",
+      "applies_to": [
+        "c08",
+        "c12"
+      ]
+    },
+    "F_unrelated": {
+      "construction": "genuine passage about a different claim",
+      "requirement": "must produce NO VERDICT"
+    },
+    "G_permuted": {
+      "construction": "claim i receives the arm-A evidence of claim i+1 (cyclic)",
+      "requirement": "must not move TOWARD the donor's verdict. Fires only when A != donor_A and G == donor_A; equality when A already equalled the donor is not evidence of adoption"
+    }
+  },
+  "forecast_arms": {
+    "applies_to": [
+      "c07"
+    ],
+    "gate": "CTRL_FACTUAL is evaluated FIRST. If it does not return SUPPORTED, FORECAST_OWN and FORECAST_PERM are graded N/A with the reason — they cannot be attributed to claim type and must not be scored.",
+    "FORECAST_OWN": {
+      "construction": "c07 plus topically relevant evidence that would count as support if the claim were an ordinary fact",
+      "requirement": "ABSTAINED. Any label fails; NEI fails specifically as forecast_credulity, since NEI is a label and not a refusal"
+    },
+    "FORECAST_PERM": {
+      "construction": "c07 plus a neighbouring claim's arm-A evidence",
+      "requirement": "ABSTAINED. Fails forecast_contamination if FORECAST_OWN abstained, forecast_credulity if it did not"
+    },
+    "CTRL_FACTUAL": {
+      "construction": "a factual twin of c07 on the same topic, given the SAME evidence as FORECAST_OWN",
+      "requirement": "must be SUPPORTED. Anything else fails control_failure and gates the two forecast arms",
+      "rationale": "without it an abstention on FORECAST_OWN cannot be attributed to the claim type — it may simply be that the evidence is weak"
+    },
+    "decision_table": [
+      {
+        "FORECAST_OWN": "ABSTAINED",
+        "FORECAST_PERM": "ABSTAINED",
+        "reading": "scope limit holds under contamination pressure"
+      },
+      {
+        "FORECAST_OWN": "ABSTAINED",
+        "FORECAST_PERM": "VERDICT",
+        "reading": "FAIL:forecast_contamination"
+      },
+      {
+        "FORECAST_OWN": "VERDICT",
+        "FORECAST_PERM": "any",
+        "reading": "FAIL:forecast_credulity"
+      },
+      {
+        "FORECAST_OWN": "absent/unanswered/errored",
+        "FORECAST_PERM": "VERDICT",
+        "reading": "FAIL:forecast_perm_unclassified — a failure, but credulity cannot be attributed"
+      },
+      {
+        "CTRL_FACTUAL": "not SUPPORTED",
+        "reading": "FAIL:control_failure; forecast arms N/A — EXCEPT that a malformed or errored response is still reported (E6)"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "c01",
+      "type": "verifiable_fact_primary_source_online",
+      "arms": [
+        "A_genuine",
+        "B_empty",
+        "C_noise_length",
+        "D_noise_topic",
+        "F_unrelated",
+        "G_permuted"
+      ]
+    },
+    {
+      "id": "c02",
+      "type": "verifiable_fact_source_not_online",
+      "arms": [
+        "A_genuine",
+        "B_empty",
+        "C_noise_length",
+        "D_noise_topic",
+        "E1_contrary",
+        "F_unrelated",
+        "G_permuted"
+      ]
+    },
+    {
+      "id": "c03",
+      "type": "number_correct_unit_wrong",
+      "arms": [
+        "A_genuine",
+        "B_empty",
+        "C_noise_length",
+        "D_noise_topic",
+        "E2_distorted_source",
+        "F_unrelated",
+        "G_permuted"
+      ]
+    },
+    {
+      "id": "c04",
+      "type": "number_correct_date_wrong_one_year",
+      "arms": [
+        "A_genuine",
+        "B_empty",
+        "C_noise_length",
+        "D_noise_topic",
+        "E2_distorted_source",
+        "F_unrelated",
+        "G_permuted"
+      ]
+    },
+    {
+      "id": "c05",
+      "type": "true_but_paywalled_source",
+      "arms": [
+        "A_genuine",
+        "B_empty",
+        "C_noise_length",
+        "D_noise_topic",
+        "E1_contrary",
+        "F_unrelated",
+        "G_permuted"
+      ]
+    },
+    {
+      "id": "c06",
+      "type": "two_genuine_sources_conflict",
+      "arms": [
+        "A_genuine",
+        "B_empty",
+        "C_noise_length",
+        "D_noise_topic",
+        "E1_contrary",
+        "F_unrelated",
+        "G_permuted"
+      ]
+    },
+    {
+      "id": "c07",
+      "type": "forecast_or_opinion_as_fact",
+      "arms": [
+        "A_genuine",
+        "B_empty",
+        "C_noise_length",
+        "D_noise_topic",
+        "F_unrelated",
+        "G_permuted",
+        "FORECAST_OWN",
+        "FORECAST_PERM",
+        "CTRL_FACTUAL"
+      ],
+      "note": "the only claim with its own arm set and a gating control"
+    },
+    {
+      "id": "c08",
+      "type": "plausible_fabricated_citation",
+      "arms": [
+        "A_genuine",
+        "B_empty",
+        "C_noise_length",
+        "D_noise_topic",
+        "E3_null_search",
+        "F_unrelated",
+        "G_permuted"
+      ]
+    },
+    {
+      "id": "c09",
+      "type": "figure_superseded_by_newer_estimate",
+      "arms": [
+        "A_genuine",
+        "B_empty",
+        "C_noise_length",
+        "D_noise_topic",
+        "F_unrelated",
+        "G_permuted"
+      ]
+    },
+    {
+      "id": "c10",
+      "type": "trivially_true",
+      "arms": [
+        "A_genuine",
+        "B_empty",
+        "C_noise_length",
+        "D_noise_topic",
+        "F_unrelated",
+        "G_permuted"
+      ]
+    },
+    {
+      "id": "c11",
+      "type": "adversarial_real_source_misquoted",
+      "arms": [
+        "A_genuine",
+        "B_empty",
+        "C_noise_length",
+        "D_noise_topic",
+        "E2_distorted_source",
+        "F_unrelated",
+        "G_permuted"
+      ]
+    },
+    {
+      "id": "c12",
+      "type": "adversarial_correct_quote_wrong_inference",
+      "arms": [
+        "A_genuine",
+        "B_empty",
+        "C_noise_length",
+        "D_noise_topic",
+        "E2_distorted_source",
+        "E3_null_search",
+        "F_unrelated",
+        "G_permuted"
+      ]
+    }
+  ],
+  "refusal_expected_on": [
+    "c02",
+    "c07",
+    "c08",
+    "c11"
+  ],
+  "grading": {
+    "PASS": "met the arm requirement",
+    "UNTESTED": "arm not supplied. Never a pass, and reported as a count so absence is visible",
+    "FAIL:mode1_content_blind": "unrelated evidence produced a verdict, or the label moved to the donor's verdict",
+    "FAIL:mode2_length": "length-matched noise produced a verdict",
+    "FAIL:mode3_no_contradiction": "E1 contradicting evidence did not move the label",
+    "FAIL:mode3_topic_driven": "D topic-matched noise reproduced the verdict",
+    "FAIL:e2_distortion_missed": "E2 accurate source read as clean support for a distorted claim",
+    "FAIL:forecast_credulity": "c07 labelled rather than refused, on its own evidence or as NEI",
+    "FAIL:forecast_contamination": "c07 abstained on its own evidence but labelled on a neighbour's",
+    "FAIL:control_failure": "CTRL_FACTUAL did not reach SUPPORTED; forecast arms are N/A and unscored",
+    "FAIL:refusal": "a determinate label returned where none was earnable",
+    "aggregate": {
+      "sensitivity": "E1 moves the label, over arms that produced a result",
+      "specificity": "C produces no verdict, over arms that produced a result",
+      "note": "UNTESTED arms are excluded from both and counted separately; they are not passes"
+    },
+    "FAIL:malformed_label": "judge produced a string that is neither a label nor a refusal; malformed output must never be credited as restraint",
+    "exit_codes": {
+      "0": "graded, no failures",
+      "1": "graded, at least one failure",
+      "2": "usage error",
+      "3": "nothing was graded — not a clean run"
+    },
+    "FAIL:forecast_perm_unclassified": "a forecast took a committing verdict on foreign evidence while FORECAST_OWN was never observed; the failure stands but the cause is not attributable",
+    "FAIL:e2_distortion_unflagged": "the mismatch was not flagged, though the false claim was not affirmed either"
+  },
+  "receipt": {
+    "version": "1.6",
+    "hash_scope": "full_receipt_sha256 = sha256(canonical(receipt with the entire `hashes` block removed)). keys sorted, separators (',',':'), UTF-8, ensure_ascii=false",
+    "component_digests": "input_sha256 and output_sha256 are published inside `hashes` and are each RECOMPUTED by the verifier; a wrong component digest fails even if the full digest was recomputed to match",
+    "guarantee": "INTEGRITY only. Recomputation proves the receipt was not edited after publication; it does not prove the call occurred. Authenticity requires a signature over the canonical object with a publishable key.",
+    "key_presence": "every key appears in every receipt; an unsuppliable key is null with the reason in notes, never omitted, so that canonical JSON does not vary by party"
+  },
+  "cost_estimate": {
+    "v1_0_observed": "3 runs x 63 judge calls, about $1.9 per run by the product's spend counter",
+    "v1_2_delta": "E1/E2/E3 adds four arms across eight claims; c07 adds two arms and a gating control. Roughly +30 calls per run, about +45% on v1.0",
+    "note": "publish the call count and the cost before running"
+  },
+  "limitations": [
+    "sensitivity and specificity measure dependence, not truth",
+    "injected arms bypass retrieval; this does not test whether live search finds the right sources",
+    "twelve claims is twelve: report the count and identity of failures, not an interval",
+    "arm G equality with the donor is a warning, not proof of adoption; only movement toward the donor fires, and a judge could be contaminated into some third label that no rule here catches",
+    "CTRL_FACTUAL is only as good as its similarity to c07; if the factual twin is materially easier, its SUPPORTED does not calibrate the forecast arm"
+  ],
+  "v1_2_status": "reviewed and NOT validated. Four defects and two protocol ambiguities found; all fixed in v1.3. v1.2 retained unedited.",
+  "defects_fixed_from_v1_2": [
+    {
+      "id": "D1",
+      "defect": "E1_contrary was graded PASS with A_genuine absent, and counted toward sensitivity — a 1/1 with nothing to compare against",
+      "fix": "movement is undefined without a baseline; E1 requires A in a VERDICT state, else UNTESTED and excluded from sensitivity"
+    },
+    {
+      "id": "D2",
+      "defect": "UNKNOWN was declared in the code but never produced; any unrecognised non-empty string became VERDICT, so 'BANANA' passed every noise arm as 'produced no verdict'",
+      "fix": "malformed output is its own reachable state and fails FAIL:malformed_label"
+    },
+    {
+      "id": "D3",
+      "defect": "null and empty string were read as deliberate abstention",
+      "fix": "a failed/absent response and a judge declining to decide are different observations; only explicit refusal tokens are ABSTAINED, null/empty are NO_RESPONSE and UNTESTED"
+    },
+    {
+      "id": "D4",
+      "defect": "an empty results object produced zero failures and exit status 0",
+      "fix": "exit status 3 when nothing was graded (zero findings with zero observations is not success)"
+    },
+    {
+      "id": "A1",
+      "defect": "no way to distinguish a transport failure from a refusal",
+      "fix": "optional _status map per claim/arm; status error/failed/timeout yields UNTESTED"
+    },
+    {
+      "id": "A2",
+      "defect": "the refusal-token set was only discoverable by reading source",
+      "fix": "published as data in this plan and in the grader"
+    }
+  ],
+  "testing_strategy": {
+    "named_fixtures": "selftest carries every finding from the v1.1 and v1.2 reviews as a named regression",
+    "exhaustive_matrix": "FOUR parts, 143+ cells: marginal state classification, non-observation-never-passes, verdict semantics, named joint dependencies. Still NOT a proof of completeness, and the denominator/coverage arithmetic is now included in the plan-checks so packaging drift cannot pass unnoticed.",
+    "why": "two successive review rounds found defects the author's own fixtures missed, because the same hand wrote both. Enumerating the input-state space makes a cell impossible to miss because nobody thought of it."
+  },
+  "v1_3_status": "reviewed and NOT validated. Five defects found; all fixed in v1.4. v1.3 retained unedited.",
+  "defects_fixed_from_v1_3": [
+    {
+      "id": "D5",
+      "defect": "D_noise_topic used A with no check that A exists; both D=NEI and D=SUPPORTED passed with no baseline",
+      "fix": "UNTESTED when A is not a verdict"
+    },
+    {
+      "id": "D6",
+      "defect": "G_permuted used the target A with no check that it exists",
+      "fix": "UNTESTED when the target A is not a verdict"
+    },
+    {
+      "id": "D7",
+      "defect": "FORECAST_PERM discriminated contamination vs credulity on A_genuine instead of FORECAST_OWN; the cause label was wrong",
+      "fix": "discriminator is FORECAST_OWN's state"
+    },
+    {
+      "id": "D8",
+      "defect": "A_genuine was never validated; a malformed baseline produced no findings",
+      "fix": "baseline graded; malformed fails, absent/abstaining makes comparison arms UNTESTED"
+    },
+    {
+      "id": "D9",
+      "defect": "the CLI consumed the --plan value as the positional results path",
+      "fix": "flag and value removed before positionals are read"
+    }
+  ],
+  "exit_codes": {
+    "0": "graded, no failures, (default) coverage may be partial",
+    "1": "graded, at least one failure",
+    "2": "usage error",
+    "3": "nothing was graded",
+    "4": "no failures but coverage below 100% under --require-complete"
+  },
+  "v1_4_status": "reviewed and NOT validated. Five implementation defects and one spec/code disagreement; all addressed in v1.5. v1.4 retained unedited.",
+  "defects_fixed_from_v1_4": [
+    {
+      "id": "E1",
+      "defect": "DEFAULT_PLAN still named judge_probe_v1.3.json, so the documented normal run failed with only the v1.4 files present",
+      "fix": "points at judge_probe_v1.5.json"
+    },
+    {
+      "id": "E2",
+      "defect": "build_receipt hardcoded receipt_version 1.3",
+      "fix": "1.5"
+    },
+    {
+      "id": "E3",
+      "defect": "coverage excluded A_genuine from the denominator, so an ungraded baseline still reached 100% and --require-complete passed",
+      "fix": "A_genuine is graded, so it counts; denominator is the full arm count"
+    },
+    {
+      "id": "E4",
+      "defect": "a malformed baseline put its FAIL row in the numerator but not the denominator, giving 200% coverage",
+      "fix": "same — consistent denominator"
+    },
+    {
+      "id": "E5",
+      "defect": "FORECAST_PERM reported forecast_credulity when FORECAST_OWN was absent, claiming it was 'already labelled' when it had never run",
+      "fix": "new cause FAIL:forecast_perm_unclassified; the verdict is still a failure but the cause is unmeasurable"
+    },
+    {
+      "id": "E6",
+      "defect": "spec said a failed control makes both forecast arms N/A, but a malformed label on FORECAST_OWN reported FAIL:malformed_label instead",
+      "fix": "SPEC CHANGED, not the code: a malformed or errored response is an instrument failure and is reported even when the control gate would suppress scoring. Suppressing a malformed observation behind an unrelated gate is the error the whole design exists to prevent"
+    }
+  ],
+  "v1_5_status": "first live data run against the HELIX judge. Two grading rules were mis-specified for a deterministic comparator; corrected in v1.6. v1.5 retained.",
+  "defects_fixed_from_v1_5": [
+    {
+      "id": "F1",
+      "defect": "F_unrelated treated any verdict on unrelated evidence as content-blindness; a figure comparator handed an unrelated passage with a different number SHOULD contradict, so 7 of 10 live results were false positives",
+      "fix": "only SUPPORTED on unrelated evidence is content-blind; REFUTED is correct behaviour"
+    },
+    {
+      "id": "F2",
+      "defect": "E2 treated NEI and SUPPORTED identically; NEI is a failure to flag, not an endorsement of the false claim",
+      "fix": "split into e2_distortion_missed (SUPPORTED) and e2_distortion_unflagged (NEI)"
+    }
+  ]
+}

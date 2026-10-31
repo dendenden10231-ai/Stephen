@@ -1,0 +1,5135 @@
+{
+ "results": {
+  "c01": {
+   "A_genuine": "SUPPORTED",
+   "E1_contrary": "REFUTED",
+   "C_noise_length": "NEI",
+   "B_empty": null,
+   "F_unrelated": "REFUTED",
+   "E2_distorted_source": "REFUTED"
+  },
+  "c02": {
+   "A_genuine": "SUPPORTED",
+   "E1_contrary": "REFUTED",
+   "C_noise_length": "NEI",
+   "B_empty": null,
+   "F_unrelated": "NEI",
+   "E2_distorted_source": "REFUTED"
+  },
+  "c03": {
+   "A_genuine": "SUPPORTED",
+   "E1_contrary": "REFUTED",
+   "C_noise_length": "NEI",
+   "B_empty": null,
+   "F_unrelated": "REFUTED",
+   "E2_distorted_source": "REFUTED"
+  },
+  "c04": {
+   "A_genuine": "SUPPORTED",
+   "E1_contrary": "REFUTED",
+   "C_noise_length": "NEI",
+   "B_empty": null,
+   "F_unrelated": "REFUTED",
+   "E2_distorted_source": "REFUTED"
+  },
+  "c05": {
+   "A_genuine": "SUPPORTED",
+   "E1_contrary": "REFUTED",
+   "C_noise_length": "NEI",
+   "B_empty": null,
+   "F_unrelated": "NEI",
+   "E2_distorted_source": "REFUTED"
+  },
+  "c06": {
+   "A_genuine": "SUPPORTED",
+   "E1_contrary": "REFUTED",
+   "C_noise_length": "NEI",
+   "B_empty": null,
+   "F_unrelated": "NEI",
+   "E2_distorted_source": "REFUTED"
+  },
+  "c07": {
+   "A_genuine": "SUPPORTED",
+   "E1_contrary": "REFUTED",
+   "C_noise_length": "NEI",
+   "B_empty": null,
+   "F_unrelated": "REFUTED",
+   "E2_distorted_source": "REFUTED"
+  },
+  "c08": {
+   "A_genuine": "SUPPORTED",
+   "E1_contrary": "REFUTED",
+   "C_noise_length": "NEI",
+   "B_empty": null,
+   "F_unrelated": "REFUTED",
+   "E2_distorted_source": "REFUTED"
+  },
+  "c09": {
+   "A_genuine": "SUPPORTED",
+   "E1_contrary": "REFUTED",
+   "C_noise_length": "NEI",
+   "B_empty": null,
+   "F_unrelated": "REFUTED",
+   "E2_distorted_source": "REFUTED"
+  },
+  "c10": {
+   "A_genuine": "SUPPORTED",
+   "E1_contrary": "SUPPORTED",
+   "C_noise_length": "NEI",
+   "B_empty": null,
+   "F_unrelated": "REFUTED",
+   "E2_distorted_source": "REFUTED"
+  },
+  "c11": {
+   "A_genuine": "SUPPORTED",
+   "E1_contrary": "NEI",
+   "C_noise_length": "NEI",
+   "B_empty": null,
+   "F_unrelated": "NEI",
+   "E2_distorted_source": "NEI"
+  },
+  "c12": {
+   "A_genuine": "SUPPORTED",
+   "E1_contrary": "REFUTED",
+   "C_noise_length": "NEI",
+   "B_empty": null,
+   "F_unrelated": "NEI",
+   "E2_distorted_source": "REFUTED"
+  }
+ },
+ "status": {
+  "c01": {
+   "B_empty": {
+    "status": "error"
+   }
+  },
+  "c02": {
+   "B_empty": {
+    "status": "error"
+   }
+  },
+  "c03": {
+   "B_empty": {
+    "status": "error"
+   }
+  },
+  "c04": {
+   "B_empty": {
+    "status": "error"
+   }
+  },
+  "c05": {
+   "B_empty": {
+    "status": "error"
+   }
+  },
+  "c06": {
+   "B_empty": {
+    "status": "error"
+   }
+  },
+  "c07": {
+   "B_empty": {
+    "status": "error"
+   }
+  },
+  "c08": {
+   "B_empty": {
+    "status": "error"
+   }
+  },
+  "c09": {
+   "B_empty": {
+    "status": "error"
+   }
+  },
+  "c10": {
+   "B_empty": {
+    "status": "error"
+   }
+  },
+  "c11": {
+   "B_empty": {
+    "status": "error"
+   }
+  },
+  "c12": {
+   "B_empty": {
+    "status": "error"
+   }
+  }
+ },
+ "receipts": [
+  {
+   "timestamp_utc": "2026-10-31T07:20:04Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c01",
+   "arm": "A_genuine",
+   "input": {
+    "claim": "On 4 September, the US national average retail diesel price passed $5.85 a gallon, breaking the June 2022 record",
+    "evidence": [
+     {
+      "text": "On 4 September, the US national average retail diesel price passed $5.85 a gallon, breaking the June 2022 record."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "9ec7dca2f95b4036",
+     "verdict": "OK",
+     "message": "The numbers match: the figures in the claim are present in the source. The meaning around the numbers (rise or fall, cause) is not checked by HELIX.",
+     "status": "BOUND",
+     "bindings": [
+      {
+       "number": "4",
+       "class": "EXACT_MATCH",
+       "evidence": "4",
+       "role": "CORE",
+       "text": "4 — present in the source"
+      },
+      {
+       "number": "5.85",
+       "class": "EXACT_MATCH",
+       "evidence": "5.85",
+       "role": "CORE",
+       "text": "5.85 — present in the source"
+      },
+      {
+       "number": "2022",
+       "class": "EXACT_MATCH",
+       "evidence": "2022",
+       "role": "CORE",
+       "text": "2022 — present in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": "On 4 September, the US national average retail diesel price passed $5.85 a gallon, breaking the June 2022 record."
+    },
+    "label": "SUPPORTED",
+    "per_evidence": [
+     {
+      "number": "4",
+      "class": "EXACT_MATCH",
+      "evidence": "4",
+      "role": "CORE",
+      "text": "4 — present in the source"
+     },
+     {
+      "number": "5.85",
+      "class": "EXACT_MATCH",
+      "evidence": "5.85",
+      "role": "CORE",
+      "text": "5.85 — present in the source"
+     },
+     {
+      "number": "2022",
+      "class": "EXACT_MATCH",
+      "evidence": "2022",
+      "role": "CORE",
+      "text": "2022 — present in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "1095ba18c685e363aaee2b482ac89d0fc0c62f98f0eb707ab1700cf37f0c7c7b",
+    "output_sha256": "586aff740e29a74c3777a278260587befec03720cb7cfd184c28acc28f8434ec",
+    "full_receipt_sha256": "cd0a2bd92d69eb36bca2556318f98fc3849db2bebdc890546cbcd2a6930588f3"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:05Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c01",
+   "arm": "E1_contrary",
+   "input": {
+    "claim": "On 4 September, the US national average retail diesel price passed $5.85 a gallon, breaking the June 2022 record",
+    "evidence": [
+     {
+      "text": "On 4 September, the US national average retail diesel price passed $11.7 a gallon, breaking the June 2022 record."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "d1cdfcb6a48c4a99",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "4",
+       "class": "EXACT_MATCH",
+       "evidence": "4",
+       "role": "CORE",
+       "text": "4 — present in the source"
+      },
+      {
+       "number": "5.85",
+       "class": "CONTRADICTED",
+       "evidence": "11.7",
+       "role": "CORE",
+       "text": "5.85 — the source gives a different number: 11.7"
+      },
+      {
+       "number": "2022",
+       "class": "EXACT_MATCH",
+       "evidence": "2022",
+       "role": "CORE",
+       "text": "2022 — present in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": "On 4 September, the US national average retail diesel price passed $11.7 a gallon, breaking the June 2022 record."
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "4",
+      "class": "EXACT_MATCH",
+      "evidence": "4",
+      "role": "CORE",
+      "text": "4 — present in the source"
+     },
+     {
+      "number": "5.85",
+      "class": "CONTRADICTED",
+      "evidence": "11.7",
+      "role": "CORE",
+      "text": "5.85 — the source gives a different number: 11.7"
+     },
+     {
+      "number": "2022",
+      "class": "EXACT_MATCH",
+      "evidence": "2022",
+      "role": "CORE",
+      "text": "2022 — present in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "40c69e86585345a82677dd3b06e974fc10ea188eabd866c074fdba91b016fd03",
+    "output_sha256": "4e5d2cc87bb82b2d50fea3662f3f016a28b9fac367ea750af9b19a405510819e",
+    "full_receipt_sha256": "b1cbf2dad098f0f56d9e0fecade9690c0cd298cf9f992f7c96993dbd96032132"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:05Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c01",
+   "arm": "C_noise_length",
+   "input": {
+    "claim": "On 4 September, the US national average retail diesel price passed $5.85 a gallon, breaking the June 2022 record",
+    "evidence": [
+     {
+      "text": "should might and has figures according may which week would annual is figures with been with for region has suppl"
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "43389fed3eee45ba",
+     "verdict": "UNSUPPORTED_NUMBER",
+     "message": "Unsupported: this number is not in the source.",
+     "status": "NEEDS_RECOVERY",
+     "bindings": [
+      {
+       "number": "4",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "4 — not found in the source"
+      },
+      {
+       "number": "5.85",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "5.85 — not found in the source"
+      },
+      {
+       "number": "2022",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "2022 — not found in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": null
+    },
+    "label": "NEI",
+    "per_evidence": [
+     {
+      "number": "4",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "4 — not found in the source"
+     },
+     {
+      "number": "5.85",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "5.85 — not found in the source"
+     },
+     {
+      "number": "2022",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "2022 — not found in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "2fe1c7bf00cb4299a0711136b50c6b2a597b8d6a942236aed2d8d539c0dfccb1",
+    "output_sha256": "67f8cc39237fbf90d81387f4914a40d17547272dbc6de143084adb10c24de360",
+    "full_receipt_sha256": "65e0a1c6284a575895046936cf799ea8936f7f6d5130775e0c895e4fecc2618f"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:05Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c01",
+   "arm": "B_empty",
+   "input": {
+    "claim": "On 4 September, the US national average retail diesel price passed $5.85 a gallon, breaking the June 2022 record",
+    "evidence": [
+     {
+      "text": ""
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "error": "HTTPError: HTTP Error 422: Unprocessable Entity"
+    },
+    "label": null,
+    "per_evidence": null
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "9bc24f5d2ffca54493882fc7ea139305e3fd16933329b8c28e1136e49f2140b3",
+    "output_sha256": "4b2b538e75e16e9fd6f2a26c3de005a38aa4f73242ee71632f5f2dd6786d03e7",
+    "full_receipt_sha256": "166788de8bc191dcdfb8667ff3bef25c8c8de521bd65d85285d573b12d97ff30"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:05Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c01",
+   "arm": "F_unrelated",
+   "input": {
+    "claim": "On 4 September, the US national average retail diesel price passed $5.85 a gallon, breaking the June 2022 record",
+    "evidence": [
+     {
+      "text": "And here is the fact that should stop the scroll: crude oil is trading roughly $28 a barrel *cheaper* than it was during the 2022 record."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "af11830b53184bf9",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "4",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "4 — not found in the source"
+      },
+      {
+       "number": "5.85",
+       "class": "CONTRADICTED",
+       "evidence": "28",
+       "role": "CORE",
+       "text": "5.85 — the source gives a different number: 28"
+      },
+      {
+       "number": "2022",
+       "class": "EXACT_MATCH",
+       "evidence": "2022",
+       "role": "CORE",
+       "text": "2022 — present in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": "And here is the fact that should stop the scroll: crude oil is trading roughly $28 a barrel *cheaper* than it was during the 2022 record."
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "4",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "4 — not found in the source"
+     },
+     {
+      "number": "5.85",
+      "class": "CONTRADICTED",
+      "evidence": "28",
+      "role": "CORE",
+      "text": "5.85 — the source gives a different number: 28"
+     },
+     {
+      "number": "2022",
+      "class": "EXACT_MATCH",
+      "evidence": "2022",
+      "role": "CORE",
+      "text": "2022 — present in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "624691e286a265d75f1e2a40457a6945793fa689159e841dbdb6e8e7731e1168",
+    "output_sha256": "95b9cb2286f6c4dd36c03e585b58d2c2c2d0e82440476eb4d9f2759b385fed3c",
+    "full_receipt_sha256": "628364ec7356bc7178cffccfc82311844b0f01db3c80b5a645d14bc23b9a65f9"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:05Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c01",
+   "arm": "E2_distorted_source",
+   "input": {
+    "claim": "On 4 September, the US national average retail diesel price passed $11.7 a gallon, breaking the June 2022 record",
+    "evidence": [
+     {
+      "text": "On 4 September, the US national average retail diesel price passed $5.85 a gallon, breaking the June 2022 record."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "648bfa4b1b6b4d01",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "4",
+       "class": "EXACT_MATCH",
+       "evidence": "4",
+       "role": "CORE",
+       "text": "4 — present in the source"
+      },
+      {
+       "number": "11.7",
+       "class": "CONTRADICTED",
+       "evidence": "5.85",
+       "role": "CORE",
+       "text": "11.7 — the source gives a different number: 5.85"
+      },
+      {
+       "number": "2022",
+       "class": "EXACT_MATCH",
+       "evidence": "2022",
+       "role": "CORE",
+       "text": "2022 — present in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": "On 4 September, the US national average retail diesel price passed $5.85 a gallon, breaking the June 2022 record."
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "4",
+      "class": "EXACT_MATCH",
+      "evidence": "4",
+      "role": "CORE",
+      "text": "4 — present in the source"
+     },
+     {
+      "number": "11.7",
+      "class": "CONTRADICTED",
+      "evidence": "5.85",
+      "role": "CORE",
+      "text": "11.7 — the source gives a different number: 5.85"
+     },
+     {
+      "number": "2022",
+      "class": "EXACT_MATCH",
+      "evidence": "2022",
+      "role": "CORE",
+      "text": "2022 — present in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "cef2719ad04657d4d442888ff4417db51fbbe86bf65776d6b90e0c0b1fcd10eb",
+    "output_sha256": "aa3398ee9de76f44cfea4d74b0241592fd0f129d84f537fdc9f0b0a3df96fb69",
+    "full_receipt_sha256": "61d3dd6702d5847c5a5ea9408805845c7cb8fb59d9befd0f3e5dfea7cf185e97"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:06Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c02",
+   "arm": "A_genuine",
+   "input": {
+    "claim": "And here is the fact that should stop the scroll: crude oil is trading roughly $28 a barrel *cheaper* than it was during the 2022 record",
+    "evidence": [
+     {
+      "text": "And here is the fact that should stop the scroll: crude oil is trading roughly $28 a barrel *cheaper* than it was during the 2022 record."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "868a6b5afb26407d",
+     "verdict": "OK",
+     "message": "The numbers match: the figures in the claim are present in the source. The meaning around the numbers (rise or fall, cause) is not checked by HELIX.",
+     "status": "BOUND",
+     "bindings": [
+      {
+       "number": "28",
+       "class": "EXACT_MATCH",
+       "evidence": "28",
+       "role": "CORE",
+       "text": "28 — present in the source"
+      },
+      {
+       "number": "2022",
+       "class": "EXACT_MATCH",
+       "evidence": "2022",
+       "role": "CORE",
+       "text": "2022 — present in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": "And here is the fact that should stop the scroll: crude oil is trading roughly $28 a barrel *cheaper* than it was during the 2022 record."
+    },
+    "label": "SUPPORTED",
+    "per_evidence": [
+     {
+      "number": "28",
+      "class": "EXACT_MATCH",
+      "evidence": "28",
+      "role": "CORE",
+      "text": "28 — present in the source"
+     },
+     {
+      "number": "2022",
+      "class": "EXACT_MATCH",
+      "evidence": "2022",
+      "role": "CORE",
+      "text": "2022 — present in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "a19fde592d1807216e8ef1481effc7aa8bce7d7f8d7ce773425a3de9ba1e0c9c",
+    "output_sha256": "b4c14f736eb59b90e1b39539d7bde6e1a630bfe7883c48ee61e43ef79dff03c6",
+    "full_receipt_sha256": "7a33b544245e6b866dc87e78cae7561e84d673b48fa5e5ee2530b79b4316eba2"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:06Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c02",
+   "arm": "E1_contrary",
+   "input": {
+    "claim": "And here is the fact that should stop the scroll: crude oil is trading roughly $28 a barrel *cheaper* than it was during the 2022 record",
+    "evidence": [
+     {
+      "text": "And here is the fact that should stop the scroll: crude oil is trading roughly $28 a barrel *cheaper* than it was during the 2023 record."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "210b91a93cf24f47",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "28",
+       "class": "EXACT_MATCH",
+       "evidence": "28",
+       "role": "CORE",
+       "text": "28 — present in the source"
+      },
+      {
+       "number": "2022",
+       "class": "CONTRADICTED",
+       "evidence": "2023",
+       "role": "CORE",
+       "text": "2022 — the source gives a different number: 2023"
+      }
+     ],
+     "warnings": [],
+     "quote": "And here is the fact that should stop the scroll: crude oil is trading roughly $28 a barrel *cheaper* than it was during the 2023 record."
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "28",
+      "class": "EXACT_MATCH",
+      "evidence": "28",
+      "role": "CORE",
+      "text": "28 — present in the source"
+     },
+     {
+      "number": "2022",
+      "class": "CONTRADICTED",
+      "evidence": "2023",
+      "role": "CORE",
+      "text": "2022 — the source gives a different number: 2023"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "fce4a8717418e20bb8f4a6194b648787ba877b79fa048c64b461c86b11e365d0",
+    "output_sha256": "31741575b8028819ef32862e63403843a93a4818c777ee867642860020e86830",
+    "full_receipt_sha256": "707d83fe88546e97209d7965a6c31cc0af17f986a29977795b2c9b54fae531ea"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:06Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c02",
+   "arm": "C_noise_length",
+   "input": {
+    "claim": "And here is the fact that should stop the scroll: crude oil is trading roughly $28 a barrel *cheaper* than it was during the 2022 record",
+    "evidence": [
+     {
+      "text": "with quarter in has on according earlier week output should is for according of should reported period the earlier have was annual for it"
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "06d3112664c64f39",
+     "verdict": "UNSUPPORTED_NUMBER",
+     "message": "Unsupported: this number is not in the source.",
+     "status": "NEEDS_RECOVERY",
+     "bindings": [
+      {
+       "number": "28",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "28 — not found in the source"
+      },
+      {
+       "number": "2022",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "2022 — not found in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": null
+    },
+    "label": "NEI",
+    "per_evidence": [
+     {
+      "number": "28",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "28 — not found in the source"
+     },
+     {
+      "number": "2022",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "2022 — not found in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "14e43374bffc182a2e346dabed5d69068e23027132783d7dc72cf15cb5eddbad",
+    "output_sha256": "a6b791314cb6e99aa7d35e5bf77ab156d3f36670323abbf6bee9068cd555c0ff",
+    "full_receipt_sha256": "b99aa2ffbabd007d3554da4eecf7714a54fdf0f841f5ed79fff4e362d3da7c34"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:06Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c02",
+   "arm": "B_empty",
+   "input": {
+    "claim": "And here is the fact that should stop the scroll: crude oil is trading roughly $28 a barrel *cheaper* than it was during the 2022 record",
+    "evidence": [
+     {
+      "text": ""
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "error": "HTTPError: HTTP Error 422: Unprocessable Entity"
+    },
+    "label": null,
+    "per_evidence": null
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "d5314f3b94bae3d2cc487909f71c71b83cea4197f074278ef0d94ac558ac08e3",
+    "output_sha256": "4b2b538e75e16e9fd6f2a26c3de005a38aa4f73242ee71632f5f2dd6786d03e7",
+    "full_receipt_sha256": "1bb0deec38ea7f12ca83280ab66a929b5a1daf87ce5ce189d3663f332c479120"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:06Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c02",
+   "arm": "F_unrelated",
+   "input": {
+    "claim": "And here is the fact that should stop the scroll: crude oil is trading roughly $28 a barrel *cheaper* than it was during the 2022 record",
+    "evidence": [
+     {
+      "text": "Aramco's Jazan refinery — 400,000 barrels a day of diesel and gasoline — has not properly run since 27 July, when drones damaged its tank farm and power complex."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "708b1afb738c4a2c",
+     "verdict": "UNSUPPORTED_NUMBER",
+     "message": "Unsupported: this number is not in the source.",
+     "status": "NEEDS_RECOVERY",
+     "bindings": [
+      {
+       "number": "28",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "28 — not found in the source"
+      },
+      {
+       "number": "2022",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "2022 — not found in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": null
+    },
+    "label": "NEI",
+    "per_evidence": [
+     {
+      "number": "28",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "28 — not found in the source"
+     },
+     {
+      "number": "2022",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "2022 — not found in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "a12e4f86199c68ac91e4c6211e8a5cccfac2e9cad3cab7fbb23ac3770027ea63",
+    "output_sha256": "b101bde9c3ab8583c5b9abddea09ce353308ceb7d0d8b71ff881936d53c02527",
+    "full_receipt_sha256": "29a1c4250da2c3df17d86a6baca185507d8a25b27dba3079e76ecd95c78e50b7"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:07Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c02",
+   "arm": "E2_distorted_source",
+   "input": {
+    "claim": "And here is the fact that should stop the scroll: crude oil is trading roughly $28 a barrel *cheaper* than it was during the 2023 record",
+    "evidence": [
+     {
+      "text": "And here is the fact that should stop the scroll: crude oil is trading roughly $28 a barrel *cheaper* than it was during the 2022 record."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "ac86d8e8c5d14251",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "28",
+       "class": "EXACT_MATCH",
+       "evidence": "28",
+       "role": "CORE",
+       "text": "28 — present in the source"
+      },
+      {
+       "number": "2023",
+       "class": "CONTRADICTED",
+       "evidence": "2022",
+       "role": "CORE",
+       "text": "2023 — the source gives a different number: 2022"
+      }
+     ],
+     "warnings": [],
+     "quote": "And here is the fact that should stop the scroll: crude oil is trading roughly $28 a barrel *cheaper* than it was during the 2022 record."
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "28",
+      "class": "EXACT_MATCH",
+      "evidence": "28",
+      "role": "CORE",
+      "text": "28 — present in the source"
+     },
+     {
+      "number": "2023",
+      "class": "CONTRADICTED",
+      "evidence": "2022",
+      "role": "CORE",
+      "text": "2023 — the source gives a different number: 2022"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "ff5aaa48dad7f7c83f2196b9f256bc9787de232334416db65a2556ac9303c948",
+    "output_sha256": "0d71efddcc3da35433c258b1ac404ed4c3c6bf9313b29ae02a86355fa7897877",
+    "full_receipt_sha256": "3fe545dc8f99b14bfd7b1620a2be2717255d9df1f7be2fbbd2268f6ef18497f2"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:07Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c03",
+   "arm": "A_genuine",
+   "input": {
+    "claim": "Aramco's Jazan refinery — 400,000 barrels a day of diesel and gasoline — has not properly run since 27 July, when drones damaged its tank farm and power complex",
+    "evidence": [
+     {
+      "text": "Aramco's Jazan refinery — 400,000 barrels a day of diesel and gasoline — has not properly run since 27 July, when drones damaged its tank farm and power complex."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "ce03f90a0b774ce5",
+     "verdict": "OK",
+     "message": "The numbers match: the figures in the claim are present in the source. The meaning around the numbers (rise or fall, cause) is not checked by HELIX.",
+     "status": "BOUND",
+     "bindings": [
+      {
+       "number": "400,000",
+       "class": "EXACT_MATCH",
+       "evidence": "400,000",
+       "role": "CORE",
+       "text": "400,000 — present in the source"
+      },
+      {
+       "number": "27",
+       "class": "EXACT_MATCH",
+       "evidence": "27",
+       "role": "CORE",
+       "text": "27 — present in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": "Aramco's Jazan refinery — 400,000 barrels a day of diesel and gasoline — has not properly run since 27 July, when drones damaged its tank farm and power complex."
+    },
+    "label": "SUPPORTED",
+    "per_evidence": [
+     {
+      "number": "400,000",
+      "class": "EXACT_MATCH",
+      "evidence": "400,000",
+      "role": "CORE",
+      "text": "400,000 — present in the source"
+     },
+     {
+      "number": "27",
+      "class": "EXACT_MATCH",
+      "evidence": "27",
+      "role": "CORE",
+      "text": "27 — present in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "01b4c148eb24ac67da736c06d2f2ed44c9d3697c5e5b0565a861ef13604fcf99",
+    "output_sha256": "9c437e1281041806233de9cc9aba7aafbcc8ea8721538145a293baa25c0922a4",
+    "full_receipt_sha256": "aae28a99e3af7dd4694563d47d2b63b29907a8b1c7ca21f38b2e9651b9dd1ec5"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:07Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c03",
+   "arm": "E1_contrary",
+   "input": {
+    "claim": "Aramco's Jazan refinery — 400,000 barrels a day of diesel and gasoline — has not properly run since 27 July, when drones damaged its tank farm and power complex",
+    "evidence": [
+     {
+      "text": "Aramco's Jazan refinery — 800000 barrels a day of diesel and gasoline — has not properly run since 27 July, when drones damaged its tank farm and power complex."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "bf4dea0713334819",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "400,000",
+       "class": "CONTRADICTED",
+       "evidence": "800000",
+       "note": "400,000 barre…: в источнике 800000 при том же существительном",
+       "role": "CORE",
+       "text": "400,000 — the source gives a different number: 800000"
+      },
+      {
+       "number": "27",
+       "class": "EXACT_MATCH",
+       "evidence": "27",
+       "role": "CORE",
+       "text": "27 — present in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": "Aramco's Jazan refinery — 800000 barrels a day of diesel and gasoline — has not properly run since 27 July, when drones damaged its tank farm and power complex."
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "400,000",
+      "class": "CONTRADICTED",
+      "evidence": "800000",
+      "note": "400,000 barre…: в источнике 800000 при том же существительном",
+      "role": "CORE",
+      "text": "400,000 — the source gives a different number: 800000"
+     },
+     {
+      "number": "27",
+      "class": "EXACT_MATCH",
+      "evidence": "27",
+      "role": "CORE",
+      "text": "27 — present in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "185d01ffb52ccca3fd962ed4742aeb6a915ef792d857da237c1c886b9a068f4b",
+    "output_sha256": "457d77d60d5b8dddde3de470b5fecabb10b25ab64c712747bbe96ea16b1fb8bf",
+    "full_receipt_sha256": "117f84d154b2b03cb3fd1eed62b252e190d71465a95e34bf329ef9f17e0e34bb"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:07Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c03",
+   "arm": "C_noise_length",
+   "input": {
+    "claim": "Aramco's Jazan refinery — 400,000 barrels a day of diesel and gasoline — has not properly run since 27 July, when drones damaged its tank farm and power complex",
+    "evidence": [
+     {
+      "text": "to that that could by capacity which has period is period and annual by reported facility may figures could supply earlier figures have and of could this its sho"
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "69718bdb475e4b96",
+     "verdict": "UNSUPPORTED_NUMBER",
+     "message": "Unsupported: this number is not in the source.",
+     "status": "NEEDS_RECOVERY",
+     "bindings": [
+      {
+       "number": "400,000",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "400,000 — not found in the source"
+      },
+      {
+       "number": "27",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "27 — not found in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": null
+    },
+    "label": "NEI",
+    "per_evidence": [
+     {
+      "number": "400,000",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "400,000 — not found in the source"
+     },
+     {
+      "number": "27",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "27 — not found in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "f7b686cead5947c8e4d8c2b1020c182265576734b27430da85d7e468939a297f",
+    "output_sha256": "20acb5fb98c900a5f3f7278fdd4b412afd270463756e3f52646d83c56a68c7f9",
+    "full_receipt_sha256": "c459359ec55953575dd101eee690bf6f0b2335b42a4bff5d7cd6a1a1d2625417"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:07Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c03",
+   "arm": "B_empty",
+   "input": {
+    "claim": "Aramco's Jazan refinery — 400,000 barrels a day of diesel and gasoline — has not properly run since 27 July, when drones damaged its tank farm and power complex",
+    "evidence": [
+     {
+      "text": ""
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "error": "HTTPError: HTTP Error 422: Unprocessable Entity"
+    },
+    "label": null,
+    "per_evidence": null
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "78812174958a1558296d0da73be87b99b9f8654dba2a1e2f61f15be0808468b9",
+    "output_sha256": "4b2b538e75e16e9fd6f2a26c3de005a38aa4f73242ee71632f5f2dd6786d03e7",
+    "full_receipt_sha256": "23ee3226ca5ad219246901c71a083981d4020b388b0f02e09de16f585784009a"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:07Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c03",
+   "arm": "F_unrelated",
+   "input": {
+    "claim": "Aramco's Jazan refinery — 400,000 barrels a day of diesel and gasoline — has not properly run since 27 July, when drones damaged its tank farm and power complex",
+    "evidence": [
+     {
+      "text": "**Vector two: the war itself.** At least nine Gulf refineries have been damaged and shut by the fighting, and the region's refining capacity — 11.7 million barrels a day — has no credible restart timeline."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "494c0387d70f4df1",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "400,000",
+       "class": "CONTRADICTED",
+       "evidence": "11.7 million",
+       "note": "400,000 barre…: в источнике 11.7 million при том же существительном",
+       "role": "CORE",
+       "text": "400,000 — the source gives a different number: 11.7 million"
+      },
+      {
+       "number": "27",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "27 — not found in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": "**Vector two: the war itself.** At least nine Gulf refineries have been damaged and shut by the fighting, and the region's refining capacity — 11.7 million barrels a day — has no credible restart timeline."
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "400,000",
+      "class": "CONTRADICTED",
+      "evidence": "11.7 million",
+      "note": "400,000 barre…: в источнике 11.7 million при том же существительном",
+      "role": "CORE",
+      "text": "400,000 — the source gives a different number: 11.7 million"
+     },
+     {
+      "number": "27",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "27 — not found in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "43974f2e2de2c6715df15baa30310a3da5dc597e3fa4d421c447e26560888cdb",
+    "output_sha256": "1d6ade9afb23d1a4aaa9f75a7ede16d7cb44944e8d7980288073e1b66f61610c",
+    "full_receipt_sha256": "f792e880eb1b85662166a77f558b1a54f3c9e1014fbeb4cbbccb4cb0f03df736"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:08Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c03",
+   "arm": "E2_distorted_source",
+   "input": {
+    "claim": "Aramco's Jazan refinery — 800000 barrels a day of diesel and gasoline — has not properly run since 27 July, when drones damaged its tank farm and power complex",
+    "evidence": [
+     {
+      "text": "Aramco's Jazan refinery — 400,000 barrels a day of diesel and gasoline — has not properly run since 27 July, when drones damaged its tank farm and power complex."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "a6c0d792a44c4a78",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "800000",
+       "class": "CONTRADICTED",
+       "evidence": "400,000",
+       "note": "800000 barre…: в источнике 400,000 при том же существительном",
+       "role": "CORE",
+       "text": "800000 — the source gives a different number: 400,000"
+      },
+      {
+       "number": "27",
+       "class": "EXACT_MATCH",
+       "evidence": "27",
+       "role": "CORE",
+       "text": "27 — present in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": "Aramco's Jazan refinery — 400,000 barrels a day of diesel and gasoline — has not properly run since 27 July, when drones damaged its tank farm and power complex."
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "800000",
+      "class": "CONTRADICTED",
+      "evidence": "400,000",
+      "note": "800000 barre…: в источнике 400,000 при том же существительном",
+      "role": "CORE",
+      "text": "800000 — the source gives a different number: 400,000"
+     },
+     {
+      "number": "27",
+      "class": "EXACT_MATCH",
+      "evidence": "27",
+      "role": "CORE",
+      "text": "27 — present in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "1f1f3af72a2319bfc5bb2087a1491a39cdb15d78c54aafb0e09dbc2e8de27b5d",
+    "output_sha256": "414a29677dd1254f14778aeea2389bd53e1e8be3a2aba5578987691bfc3b8c34",
+    "full_receipt_sha256": "3d0579710c615f3d4cd4b9f21ffb22a0ce62f1dbd379dcb9bd025bec9c9a5525"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:08Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c04",
+   "arm": "A_genuine",
+   "input": {
+    "claim": "**Vector two: the war itself.** At least nine Gulf refineries have been damaged and shut by the fighting, and the region's refining capacity — 11.7 million barrels a day — has no credible restart timeline",
+    "evidence": [
+     {
+      "text": "**Vector two: the war itself.** At least nine Gulf refineries have been damaged and shut by the fighting, and the region's refining capacity — 11.7 million barrels a day — has no credible restart timeline."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "6e2ade122f4641a1",
+     "verdict": "OK",
+     "message": "The numbers match: the figures in the claim are present in the source. The meaning around the numbers (rise or fall, cause) is not checked by HELIX.",
+     "status": "BOUND",
+     "bindings": [
+      {
+       "number": "two",
+       "class": "EXACT_MATCH",
+       "evidence": "two",
+       "role": "CORE",
+       "text": "two — present in the source"
+      },
+      {
+       "number": "11.7 million",
+       "class": "EXACT_MATCH",
+       "evidence": "11.7 million",
+       "role": "CORE",
+       "text": "11.7 million — present in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": "**Vector two: the war itself.** At least nine Gulf refineries have been damaged and shut by the fighting, and the region's refining capacity — 11.7 million barrels a day — has no credible restart timeline."
+    },
+    "label": "SUPPORTED",
+    "per_evidence": [
+     {
+      "number": "two",
+      "class": "EXACT_MATCH",
+      "evidence": "two",
+      "role": "CORE",
+      "text": "two — present in the source"
+     },
+     {
+      "number": "11.7 million",
+      "class": "EXACT_MATCH",
+      "evidence": "11.7 million",
+      "role": "CORE",
+      "text": "11.7 million — present in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "58068290eed9900e14e06cda99f204ca160b3e3d6f9a74594e4e2fbedd720da5",
+    "output_sha256": "c8495274b7b9da88a9d1462c51ffcf00932eaf2711f026f96c59c25e512da8ab",
+    "full_receipt_sha256": "8885cfac82422adf8b0a5cadd1f8dc9e185e9da2f05302a2743e14f8f378a8aa"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:08Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c04",
+   "arm": "E1_contrary",
+   "input": {
+    "claim": "**Vector two: the war itself.** At least nine Gulf refineries have been damaged and shut by the fighting, and the region's refining capacity — 11.7 million barrels a day — has no credible restart timeline",
+    "evidence": [
+     {
+      "text": "**Vector two: the war itself.** At least nine Gulf refineries have been damaged and shut by the fighting, and the region's refining capacity — 23.4 million barrels a day — has no credible restart timeline."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "87053a4e249744c1",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "two",
+       "class": "EXACT_MATCH",
+       "evidence": "two",
+       "role": "CORE",
+       "text": "two — present in the source"
+      },
+      {
+       "number": "11.7 million",
+       "class": "CONTRADICTED",
+       "evidence": "23.4 million",
+       "note": "11.7 million barre…: в источнике 23.4 million при том же существительном",
+       "role": "CORE",
+       "text": "11.7 million — the source gives a different number: 23.4 million"
+      }
+     ],
+     "warnings": [],
+     "quote": "**Vector two: the war itself.** At least nine Gulf refineries have been damaged and shut by the fighting, and the region's refining capacity — 23.4 million barrels a day — has no credible restart timeline."
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "two",
+      "class": "EXACT_MATCH",
+      "evidence": "two",
+      "role": "CORE",
+      "text": "two — present in the source"
+     },
+     {
+      "number": "11.7 million",
+      "class": "CONTRADICTED",
+      "evidence": "23.4 million",
+      "note": "11.7 million barre…: в источнике 23.4 million при том же существительном",
+      "role": "CORE",
+      "text": "11.7 million — the source gives a different number: 23.4 million"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "ef0b6bb9c7cc3c3742a7c013b9c43b77f0a92d8ceb960dbbfdf4c2739dfaece2",
+    "output_sha256": "b63c9f5e529dede331fc8d88c24807ad56416cb6901d89f1f5c53f4821756737",
+    "full_receipt_sha256": "a3e66de950327dcc987f4c3e0a64e2100f84d84d590c94737ee05e0d63a151df"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:08Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c04",
+   "arm": "C_noise_length",
+   "input": {
+    "claim": "**Vector two: the war itself.** At least nine Gulf refineries have been damaged and shut by the fighting, and the region's refining capacity — 11.7 million barrels a day — has no credible restart timeline",
+    "evidence": [
+     {
+      "text": "were annual supply with could period week facility annual in period the week has demand was from week supply demand week may facility as was facility as market should the capacity in by annual and which of"
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "a3d3f682061a4efd",
+     "verdict": "UNSUPPORTED_NUMBER",
+     "message": "Unsupported: this number is not in the source.",
+     "status": "NEEDS_RECOVERY",
+     "bindings": [
+      {
+       "number": "two",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "DECORATIVE",
+       "text": "two — not found in the source"
+      },
+      {
+       "number": "11.7 million",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "11.7 million — not found in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": null
+    },
+    "label": "NEI",
+    "per_evidence": [
+     {
+      "number": "two",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "DECORATIVE",
+      "text": "two — not found in the source"
+     },
+     {
+      "number": "11.7 million",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "11.7 million — not found in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "2bb89366f8257c61807c02edc5e89958e6cceade74ce90cca76a5edc3f5e051f",
+    "output_sha256": "4cfa040e815a503dc6330ece623cc95753caea8f2f09f6d1b113627071f559db",
+    "full_receipt_sha256": "1243f92c3d50dc902c21b20994a676cb65bab5472689be37988bab8e42699b2f"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:09Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c04",
+   "arm": "B_empty",
+   "input": {
+    "claim": "**Vector two: the war itself.** At least nine Gulf refineries have been damaged and shut by the fighting, and the region's refining capacity — 11.7 million barrels a day — has no credible restart timeline",
+    "evidence": [
+     {
+      "text": ""
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "error": "HTTPError: HTTP Error 422: Unprocessable Entity"
+    },
+    "label": null,
+    "per_evidence": null
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "5933bace5aab54efe927bbe889c36d6b9383bf8667353c13fc409363b51b7686",
+    "output_sha256": "4b2b538e75e16e9fd6f2a26c3de005a38aa4f73242ee71632f5f2dd6786d03e7",
+    "full_receipt_sha256": "c0067278cb31021485fcbc60728f7c63dba21903222005cef4f4711bcb0b7a85"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:09Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c04",
+   "arm": "F_unrelated",
+   "input": {
+    "claim": "**Vector two: the war itself.** At least nine Gulf refineries have been damaged and shut by the fighting, and the region's refining capacity — 11.7 million barrels a day — has no credible restart timeline",
+    "evidence": [
+     {
+      "text": "Roughly a third of Russian refining capacity is out — about 5 million barrels a day — and Russian refining has fallen to its lowest level in over two decades."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "00f01eb9ae8f4f9f",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "two",
+       "class": "EXACT_MATCH",
+       "evidence": "two",
+       "role": "CORE",
+       "text": "two — present in the source"
+      },
+      {
+       "number": "11.7 million",
+       "class": "CONTRADICTED",
+       "evidence": "5 million",
+       "note": "11.7 million barre…: в источнике 5 million при том же существительном",
+       "role": "CORE",
+       "text": "11.7 million — the source gives a different number: 5 million"
+      }
+     ],
+     "warnings": [],
+     "quote": "Roughly a third of Russian refining capacity is out — about 5 million barrels a day — and Russian refining has fallen to its lowest level in over two decades."
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "two",
+      "class": "EXACT_MATCH",
+      "evidence": "two",
+      "role": "CORE",
+      "text": "two — present in the source"
+     },
+     {
+      "number": "11.7 million",
+      "class": "CONTRADICTED",
+      "evidence": "5 million",
+      "note": "11.7 million barre…: в источнике 5 million при том же существительном",
+      "role": "CORE",
+      "text": "11.7 million — the source gives a different number: 5 million"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "51aae2aee24c7567af44ea78d26a92b6c2f8d9587cbef687072006d96a0c92f2",
+    "output_sha256": "3b7c65206baee2ae614eda0b5b41747f04c1dcc83afc439bf1138916cd0ee286",
+    "full_receipt_sha256": "bb5cf0b7491443b019e5c85ec0616bef73e33db4019b4a90216a79e15277ec54"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:09Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c04",
+   "arm": "E2_distorted_source",
+   "input": {
+    "claim": "**Vector two: the war itself.** At least nine Gulf refineries have been damaged and shut by the fighting, and the region's refining capacity — 5.85 million barrels a day — has no credible restart timeline",
+    "evidence": [
+     {
+      "text": "**Vector two: the war itself.** At least nine Gulf refineries have been damaged and shut by the fighting, and the region's refining capacity — 11.7 million barrels a day — has no credible restart timeline."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "2c67ab5a12794951",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "two",
+       "class": "EXACT_MATCH",
+       "evidence": "two",
+       "role": "CORE",
+       "text": "two — present in the source"
+      },
+      {
+       "number": "5.85 million",
+       "class": "CONTRADICTED",
+       "evidence": "11.7 million",
+       "note": "5.85 million barre…: в источнике 11.7 million при том же существительном",
+       "role": "CORE",
+       "text": "5.85 million — the source gives a different number: 11.7 million"
+      }
+     ],
+     "warnings": [],
+     "quote": "**Vector two: the war itself.** At least nine Gulf refineries have been damaged and shut by the fighting, and the region's refining capacity — 11.7 million barrels a day — has no credible restart timeline."
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "two",
+      "class": "EXACT_MATCH",
+      "evidence": "two",
+      "role": "CORE",
+      "text": "two — present in the source"
+     },
+     {
+      "number": "5.85 million",
+      "class": "CONTRADICTED",
+      "evidence": "11.7 million",
+      "note": "5.85 million barre…: в источнике 11.7 million при том же существительном",
+      "role": "CORE",
+      "text": "5.85 million — the source gives a different number: 11.7 million"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "6620620b3d600f09d9098799c59e162477a09bb61fbae02114efc723e6bc3591",
+    "output_sha256": "1b27f8f2942dfbed70ccd2ff759bbe5678ad9d7561460158f9391593543669a4",
+    "full_receipt_sha256": "c1bf356588d19936367b46be708f4bb13b30bce1a83dadd7e62ea02e9ea33b4c"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:09Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c05",
+   "arm": "A_genuine",
+   "input": {
+    "claim": "Roughly a third of Russian refining capacity is out — about 5 million barrels a day — and Russian refining has fallen to its lowest level in over two decades",
+    "evidence": [
+     {
+      "text": "Roughly a third of Russian refining capacity is out — about 5 million barrels a day — and Russian refining has fallen to its lowest level in over two decades."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "daac69f92dd44b2b",
+     "verdict": "OK",
+     "message": "The numbers match: the figures in the claim are present in the source. The meaning around the numbers (rise or fall, cause) is not checked by HELIX.",
+     "status": "BOUND",
+     "bindings": [
+      {
+       "number": "5 million",
+       "class": "EXACT_MATCH",
+       "evidence": "5 million",
+       "role": "CORE",
+       "text": "5 million — present in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": "Roughly a third of Russian refining capacity is out — about 5 million barrels a day — and Russian refining has fallen to its lowest level in over two decades."
+    },
+    "label": "SUPPORTED",
+    "per_evidence": [
+     {
+      "number": "5 million",
+      "class": "EXACT_MATCH",
+      "evidence": "5 million",
+      "role": "CORE",
+      "text": "5 million — present in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "c249f9789926a785448183822a14eaf8805026089fed796035e4ce175497bf0c",
+    "output_sha256": "75883419ee1e27db18b0875213dacdda61e43c4ffe57830297169891f0d5703e",
+    "full_receipt_sha256": "aca9371349f1a752098f7ab1dccc5aee84765fdd865c4042e61c55f5288714d0"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:09Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c05",
+   "arm": "E1_contrary",
+   "input": {
+    "claim": "Roughly a third of Russian refining capacity is out — about 5 million barrels a day — and Russian refining has fallen to its lowest level in over two decades",
+    "evidence": [
+     {
+      "text": "Roughly a third of Russian refining capacity is out — about 10 million barrels a day — and Russian refining has fallen to its lowest level in over two decades."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "3e192cc34c3b4723",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "5 million",
+       "class": "CONTRADICTED",
+       "evidence": "10 million",
+       "note": "5 million barre…: в источнике 10 million при том же существительном",
+       "role": "CORE",
+       "text": "5 million — the source gives a different number: 10 million"
+      }
+     ],
+     "warnings": [],
+     "quote": "Roughly a third of Russian refining capacity is out — about 10 million barrels a day — and Russian refining has fallen to its lowest level in over two decades."
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "5 million",
+      "class": "CONTRADICTED",
+      "evidence": "10 million",
+      "note": "5 million barre…: в источнике 10 million при том же существительном",
+      "role": "CORE",
+      "text": "5 million — the source gives a different number: 10 million"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "37b195403943430aabdbe76cde6caa971df0acbf6145162fff12ce7b90402b37",
+    "output_sha256": "e85823853ac4672fc1808a82a6a1573e2bfa6e70c20f64ec8e96e529acb6b992",
+    "full_receipt_sha256": "b3b87b0e19ef3328470603501da2e2d830e5a9a61a5db2eb7f2d83c515089035"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:09Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c05",
+   "arm": "C_noise_length",
+   "input": {
+    "claim": "Roughly a third of Russian refining capacity is out — about 5 million barrels a day — and Russian refining has fallen to its lowest level in over two decades",
+    "evidence": [
+     {
+      "text": "were which for may week as that in of may demand been to was market supply could have at for has is of output has have from by which been facility could that"
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "ead50dd5c656484c",
+     "verdict": "UNSUPPORTED_NUMBER",
+     "message": "Unsupported: this number is not in the source.",
+     "status": "NEEDS_RECOVERY",
+     "bindings": [
+      {
+       "number": "5 million",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "5 million — not found in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": null
+    },
+    "label": "NEI",
+    "per_evidence": [
+     {
+      "number": "5 million",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "5 million — not found in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "3e41026d4ded3c9cf289aa196beba461ddc4b0b490b5fe684e81ef30e9574b31",
+    "output_sha256": "06eceb2a4beebef8035548f9e3971ab757808b85820c30821152a8d7a92f2b16",
+    "full_receipt_sha256": "2961efc7cc3ac1dac6a5a8c46f39be8a4bb13f740a2edaf59ffe47cad2973644"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:10Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c05",
+   "arm": "B_empty",
+   "input": {
+    "claim": "Roughly a third of Russian refining capacity is out — about 5 million barrels a day — and Russian refining has fallen to its lowest level in over two decades",
+    "evidence": [
+     {
+      "text": ""
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "error": "HTTPError: HTTP Error 422: Unprocessable Entity"
+    },
+    "label": null,
+    "per_evidence": null
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "40d4e44147cc14509025ccd8cc76215fcc4a6727143812ce41429f264f09a477",
+    "output_sha256": "4b2b538e75e16e9fd6f2a26c3de005a38aa4f73242ee71632f5f2dd6786d03e7",
+    "full_receipt_sha256": "fddc9a242ad954356370d9acec95ec8f372b83c088830498e183c046e11e9ada"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:10Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c05",
+   "arm": "F_unrelated",
+   "input": {
+    "claim": "Roughly a third of Russian refining capacity is out — about 5 million barrels a day — and Russian refining has fallen to its lowest level in over two decades",
+    "evidence": [
+     {
+      "text": "Russia, historically one of the world's top diesel exporters, collapsed to near-zero diesel exports by late July, extended its diesel export ban through September, banned gasoline exports through January 2027, and is now importing gasoline from Türkiye — the first time ever."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "c1166dd7f66f417f",
+     "verdict": "UNSUPPORTED_NUMBER",
+     "message": "Unsupported: this number is not in the source.",
+     "status": "NEEDS_RECOVERY",
+     "bindings": [
+      {
+       "number": "5 million",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "5 million — not found in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": null
+    },
+    "label": "NEI",
+    "per_evidence": [
+     {
+      "number": "5 million",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "5 million — not found in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "62833843714baf12c0787176ce25052c6abaa767fa2d779551aa99eedf973bcd",
+    "output_sha256": "04edec31aad1ce1157876b0dc2c1d86b4a7033f1855aa7ab9b32cb30edf61752",
+    "full_receipt_sha256": "4cfe5dbc62af6b13cffdc0220d98d4c3422210bec3ab94c0ace4051025f014ba"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:10Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c05",
+   "arm": "E2_distorted_source",
+   "input": {
+    "claim": "Roughly a third of Russian refining capacity is out — about 2.5 million barrels a day — and Russian refining has fallen to its lowest level in over two decades",
+    "evidence": [
+     {
+      "text": "Roughly a third of Russian refining capacity is out — about 5 million barrels a day — and Russian refining has fallen to its lowest level in over two decades."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "7993205667f04855",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "2.5 million",
+       "class": "CONTRADICTED",
+       "evidence": "5 million",
+       "note": "2.5 million barre…: в источнике 5 million при том же существительном",
+       "role": "CORE",
+       "text": "2.5 million — the source gives a different number: 5 million"
+      }
+     ],
+     "warnings": [],
+     "quote": "Roughly a third of Russian refining capacity is out — about 5 million barrels a day — and Russian refining has fallen to its lowest level in over two decades."
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "2.5 million",
+      "class": "CONTRADICTED",
+      "evidence": "5 million",
+      "note": "2.5 million barre…: в источнике 5 million при том же существительном",
+      "role": "CORE",
+      "text": "2.5 million — the source gives a different number: 5 million"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "e61c41e987d90bb7bc19749af1dea709c7bf50a1d8472533d28ed41eb784cea5",
+    "output_sha256": "dd52bc5fdb9666c8bf401cff919b53941c36292ccb6a76e61a1128aa6317a339",
+    "full_receipt_sha256": "79e40e95c6fc3ab3dc967e5b01912058f7d06d6b1c7c715744de95b21278fff0"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:10Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c06",
+   "arm": "A_genuine",
+   "input": {
+    "claim": "Russia, historically one of the world's top diesel exporters, collapsed to near-zero diesel exports by late July, extended its diesel export ban through September, banned gasoline exports through January 2027, and is now importing gasoline from Türkiye — the first time ever",
+    "evidence": [
+     {
+      "text": "Russia, historically one of the world's top diesel exporters, collapsed to near-zero diesel exports by late July, extended its diesel export ban through September, banned gasoline exports through January 2027, and is now importing gasoline from Türkiye — the first time ever."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "6e7e6c95dcf248bb",
+     "verdict": "OK",
+     "message": "The numbers match: the figures in the claim are present in the source. The meaning around the numbers (rise or fall, cause) is not checked by HELIX.",
+     "status": "BOUND",
+     "bindings": [
+      {
+       "number": "2027",
+       "class": "EXACT_MATCH",
+       "evidence": "2027",
+       "role": "CORE",
+       "text": "2027 — present in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": "Russia, historically one of the world's top diesel exporters, collapsed to near-zero diesel exports by late July, extended its diesel export ban through September, banned gasoline exports through January 2027, and is now importing gasoline from Türkiye — the first time ever."
+    },
+    "label": "SUPPORTED",
+    "per_evidence": [
+     {
+      "number": "2027",
+      "class": "EXACT_MATCH",
+      "evidence": "2027",
+      "role": "CORE",
+      "text": "2027 — present in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "723156e82dde109be651898d0dcda1016ce9fd1d60f4bfd192cff550ee2a4ebc",
+    "output_sha256": "f080492ad7f0c638f5ed9288d7cdfb78809e3912d2a37ad0d7ac35b345a0de8a",
+    "full_receipt_sha256": "064137b9ff2d5a20b62096267c8e820d6081e30defab75e0571de79cb98df89f"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:10Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c06",
+   "arm": "E1_contrary",
+   "input": {
+    "claim": "Russia, historically one of the world's top diesel exporters, collapsed to near-zero diesel exports by late July, extended its diesel export ban through September, banned gasoline exports through January 2027, and is now importing gasoline from Türkiye — the first time ever",
+    "evidence": [
+     {
+      "text": "Russia, historically one of the world's top diesel exporters, collapsed to near-zero diesel exports by late July, extended its diesel export ban through September, banned gasoline exports through January 2028 and is now importing gasoline from Türkiye — the first time ever."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "16f5b0f55f6d458b",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "2027",
+       "class": "CONTRADICTED",
+       "evidence": "2028",
+       "role": "CORE",
+       "text": "2027 — the source gives a different number: 2028"
+      }
+     ],
+     "warnings": [],
+     "quote": "Russia, historically one of the world's top diesel exporters, collapsed to near-zero diesel exports by late July, extended its diesel export ban through September, banned gasoline exports through January 2028 and is now importing gasoline from Türkiye — the first time ever."
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "2027",
+      "class": "CONTRADICTED",
+      "evidence": "2028",
+      "role": "CORE",
+      "text": "2027 — the source gives a different number: 2028"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "6f2e5a4a83894acceba70c8dbd3589ccb7afbdaa1ad78df78800f708a1000cbd",
+    "output_sha256": "539544a309f594b8ec5a8ceace72ae54582a501927560bf416ac1be238c44c97",
+    "full_receipt_sha256": "3a04fa32ebc254a6547f60914bdf1aeb497558c3946b5de9a7de9fe1af259605"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:11Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c06",
+   "arm": "C_noise_length",
+   "input": {
+    "claim": "Russia, historically one of the world's top diesel exporters, collapsed to near-zero diesel exports by late July, extended its diesel export ban through September, banned gasoline exports through January 2027, and is now importing gasoline from Türkiye — the first time ever",
+    "evidence": [
+     {
+      "text": "region has would output market of this were output to by on could week were should supply for quarter were the is might have at should by in with region region earlier with with the the is is by by been its from supply facility is at from should which of could might by as ha"
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "2911c00071cf41c4",
+     "verdict": "UNSUPPORTED_NUMBER",
+     "message": "Unsupported: this number is not in the source.",
+     "status": "NEEDS_RECOVERY",
+     "bindings": [
+      {
+       "number": "2027",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "2027 — not found in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": null
+    },
+    "label": "NEI",
+    "per_evidence": [
+     {
+      "number": "2027",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "2027 — not found in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "1a3300c8819d40a569ce8dda9dc6824fd2bc6b9595f2400aac421dd742627bdb",
+    "output_sha256": "bf22d4a10f749c237d3805cff6497bc875b8fbabb932e5efc15068d9ceec8233",
+    "full_receipt_sha256": "c64d5498fd1310350241e7d8e4f6adb580d6c6e3ddc3188cf45c5dce08389391"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:11Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c06",
+   "arm": "B_empty",
+   "input": {
+    "claim": "Russia, historically one of the world's top diesel exporters, collapsed to near-zero diesel exports by late July, extended its diesel export ban through September, banned gasoline exports through January 2027, and is now importing gasoline from Türkiye — the first time ever",
+    "evidence": [
+     {
+      "text": ""
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "error": "HTTPError: HTTP Error 422: Unprocessable Entity"
+    },
+    "label": null,
+    "per_evidence": null
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "c7f94f84ea14cd8476182f7e67d717e6a8367413d740f5543f264d5674c7af6e",
+    "output_sha256": "4b2b538e75e16e9fd6f2a26c3de005a38aa4f73242ee71632f5f2dd6786d03e7",
+    "full_receipt_sha256": "56058785509209923c767caf0cf6f1010de90be49ff7a2783531d0c45858a50f"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:11Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c06",
+   "arm": "F_unrelated",
+   "input": {
+    "claim": "Russia, historically one of the world's top diesel exporters, collapsed to near-zero diesel exports by late July, extended its diesel export ban through September, banned gasoline exports through January 2027, and is now importing gasoline from Türkiye — the first time ever",
+    "evidence": [
+     {
+      "text": "In Kuwait, Iranian drones hit the Mina al-Ahmadi and Mina Abdullah refineries in March — a third strike on al-Ahmadi in early April suspended roughly 346,000 barrels a day of capacity, and Kuwait's crude exports briefly hit zero."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "086df9f1ee9d4062",
+     "verdict": "UNSUPPORTED_NUMBER",
+     "message": "Unsupported: this number is not in the source.",
+     "status": "NEEDS_RECOVERY",
+     "bindings": [
+      {
+       "number": "2027",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "2027 — not found in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": null
+    },
+    "label": "NEI",
+    "per_evidence": [
+     {
+      "number": "2027",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "2027 — not found in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "b8c3a8a29e6d817bf5708023f25768ddbcd16afc1f1d3952d51a78dda3603dac",
+    "output_sha256": "d4d4ed78ac375084eab30a111791ef44f36ed4290cb26f51a81834a25482c591",
+    "full_receipt_sha256": "cf077d9572ab25a53e5a4357473db08254b3c73e5c042e4dea522d3123c5cf45"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:11Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c06",
+   "arm": "E2_distorted_source",
+   "input": {
+    "claim": "Russia, historically one of the world's top diesel exporters, collapsed to near-zero diesel exports by late July, extended its diesel export ban through September, banned gasoline exports through January 2028 and is now importing gasoline from Türkiye — the first time ever",
+    "evidence": [
+     {
+      "text": "Russia, historically one of the world's top diesel exporters, collapsed to near-zero diesel exports by late July, extended its diesel export ban through September, banned gasoline exports through January 2027, and is now importing gasoline from Türkiye — the first time ever."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "b16e1c0ebb394306",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "2028",
+       "class": "CONTRADICTED",
+       "evidence": "2027",
+       "role": "CORE",
+       "text": "2028 — the source gives a different number: 2027"
+      }
+     ],
+     "warnings": [],
+     "quote": "Russia, historically one of the world's top diesel exporters, collapsed to near-zero diesel exports by late July, extended its diesel export ban through September, banned gasoline exports through January 2027, and is now importing gasoline from Türkiye — the first time ever."
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "2028",
+      "class": "CONTRADICTED",
+      "evidence": "2027",
+      "role": "CORE",
+      "text": "2028 — the source gives a different number: 2027"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "59ded3484330f59afed668b36fa973da8597b722da5de11918ac8558dae17a21",
+    "output_sha256": "63efee9feae71f99acb9be511bf6e1d3b3f5b8a355de64ef21ce2993c4e2313f",
+    "full_receipt_sha256": "1479dea38e7389dd921de1fc151ba1095a225a4f2d6327f8f8cd0e8a719a2d5a"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:11Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c07",
+   "arm": "A_genuine",
+   "input": {
+    "claim": "In Kuwait, Iranian drones hit the Mina al-Ahmadi and Mina Abdullah refineries in March — a third strike on al-Ahmadi in early April suspended roughly 346,000 barrels a day of capacity, and Kuwait's crude exports briefly hit zero",
+    "evidence": [
+     {
+      "text": "In Kuwait, Iranian drones hit the Mina al-Ahmadi and Mina Abdullah refineries in March — a third strike on al-Ahmadi in early April suspended roughly 346,000 barrels a day of capacity, and Kuwait's crude exports briefly hit zero."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "4f13bddb54cb4518",
+     "verdict": "OK",
+     "message": "The numbers match: the figures in the claim are present in the source. The meaning around the numbers (rise or fall, cause) is not checked by HELIX.",
+     "status": "BOUND",
+     "bindings": [
+      {
+       "number": "346,000",
+       "class": "EXACT_MATCH",
+       "evidence": "346,000",
+       "role": "CORE",
+       "text": "346,000 — present in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": "In Kuwait, Iranian drones hit the Mina al-Ahmadi and Mina Abdullah refineries in March — a third strike on al-Ahmadi in early April suspended roughly 346,000 barrels a day of capacity, and Kuwait's crude exports briefly hit zero."
+    },
+    "label": "SUPPORTED",
+    "per_evidence": [
+     {
+      "number": "346,000",
+      "class": "EXACT_MATCH",
+      "evidence": "346,000",
+      "role": "CORE",
+      "text": "346,000 — present in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "0938c7c74f0ef527d9f253df1ccb968d523dbd4667bb53da4cf35d7eadfb7ed0",
+    "output_sha256": "1968e525022ef5eef2ea891f076265a00197bb7e60e11db92d3ffa1a8efcb90c",
+    "full_receipt_sha256": "3cbb74066f5c71e8beb483e50ccc8aba043de5172b26be06aff7aa6c9210f33f"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:12Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c07",
+   "arm": "E1_contrary",
+   "input": {
+    "claim": "In Kuwait, Iranian drones hit the Mina al-Ahmadi and Mina Abdullah refineries in March — a third strike on al-Ahmadi in early April suspended roughly 346,000 barrels a day of capacity, and Kuwait's crude exports briefly hit zero",
+    "evidence": [
+     {
+      "text": "In Kuwait, Iranian drones hit the Mina al-Ahmadi and Mina Abdullah refineries in March — a third strike on al-Ahmadi in early April suspended roughly 692000 barrels a day of capacity, and Kuwait's crude exports briefly hit zero."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "40508593e88e432b",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "346,000",
+       "class": "CONTRADICTED",
+       "evidence": "692000",
+       "note": "346,000 barre…: в источнике 692000 при том же существительном",
+       "role": "CORE",
+       "text": "346,000 — the source gives a different number: 692000"
+      }
+     ],
+     "warnings": [],
+     "quote": "In Kuwait, Iranian drones hit the Mina al-Ahmadi and Mina Abdullah refineries in March — a third strike on al-Ahmadi in early April suspended roughly 692000 barrels a day of capacity, and Kuwait's crude exports briefly hit zero."
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "346,000",
+      "class": "CONTRADICTED",
+      "evidence": "692000",
+      "note": "346,000 barre…: в источнике 692000 при том же существительном",
+      "role": "CORE",
+      "text": "346,000 — the source gives a different number: 692000"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "5075e1cfa16e4d2632b664fee9f794d02bb91c9cc5e1a3d1ccb01f92855ad6d6",
+    "output_sha256": "4f68017fe6753b049e2c3480a7aa09497b55772bc4cb034fd377c4a6dd77c08c",
+    "full_receipt_sha256": "7dc797f9631a665be8952134ffc04d12363c7b29f9179fa49fef5b2f5d418358"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:12Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c07",
+   "arm": "C_noise_length",
+   "input": {
+    "claim": "In Kuwait, Iranian drones hit the Mina al-Ahmadi and Mina Abdullah refineries in March — a third strike on al-Ahmadi in early April suspended roughly 346,000 barrels a day of capacity, and Kuwait's crude exports briefly hit zero",
+    "evidence": [
+     {
+      "text": "quarter that according has and the as capacity annual week could its of have according from might supply supply for from quarter demand has capacity region that reported their that could might has earlier for from facility been f"
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "f3f3271694de479c",
+     "verdict": "UNSUPPORTED_NUMBER",
+     "message": "Unsupported: this number is not in the source.",
+     "status": "NEEDS_RECOVERY",
+     "bindings": [
+      {
+       "number": "346,000",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "346,000 — not found in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": null
+    },
+    "label": "NEI",
+    "per_evidence": [
+     {
+      "number": "346,000",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "346,000 — not found in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "8bd1ebd52abd6f2b41b3f3e34e2e0bd45601c8870de8ff70700af45fb3cc6759",
+    "output_sha256": "6b02959496e0989cd5eb7d38c09b33f0678525ca84f90fed84d5033478b2b369",
+    "full_receipt_sha256": "b01698e7c8172c7d16301ab3d231576f39eb657e695e1fa6259d509708408b90"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:12Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c07",
+   "arm": "B_empty",
+   "input": {
+    "claim": "In Kuwait, Iranian drones hit the Mina al-Ahmadi and Mina Abdullah refineries in March — a third strike on al-Ahmadi in early April suspended roughly 346,000 barrels a day of capacity, and Kuwait's crude exports briefly hit zero",
+    "evidence": [
+     {
+      "text": ""
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "error": "HTTPError: HTTP Error 422: Unprocessable Entity"
+    },
+    "label": null,
+    "per_evidence": null
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "6a793829edc9461dbf5bd611f0d03ff005059c6e280f16c09755b5883f96e7bf",
+    "output_sha256": "4b2b538e75e16e9fd6f2a26c3de005a38aa4f73242ee71632f5f2dd6786d03e7",
+    "full_receipt_sha256": "a898e2f2314f12689bb200e97cdbd5fe79d902ac312497464c6210714ccab1de"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:12Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c07",
+   "arm": "F_unrelated",
+   "input": {
+    "claim": "In Kuwait, Iranian drones hit the Mina al-Ahmadi and Mina Abdullah refineries in March — a third strike on al-Ahmadi in early April suspended roughly 346,000 barrels a day of capacity, and Kuwait's crude exports briefly hit zero",
+    "evidence": [
+     {
+      "text": "Israel's Haifa refinery — 197,000 barrels a day, two-thirds of the country's processing — took Iranian missile hits in March and June;"
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "a1adb57491d2425e",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "346,000",
+       "class": "CONTRADICTED",
+       "evidence": "197,000",
+       "note": "346,000 barre…: в источнике 197,000 при том же существительном",
+       "role": "CORE",
+       "text": "346,000 — the source gives a different number: 197,000"
+      }
+     ],
+     "warnings": [],
+     "quote": "Israel's Haifa refinery — 197,000 barrels a day, two-thirds of the country's processing — took Iranian missile hits in March and June;"
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "346,000",
+      "class": "CONTRADICTED",
+      "evidence": "197,000",
+      "note": "346,000 barre…: в источнике 197,000 при том же существительном",
+      "role": "CORE",
+      "text": "346,000 — the source gives a different number: 197,000"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "5ac542ba5503de7a766ebf5440149ba3e13a4f505d9b7fa823ae8160f93795c7",
+    "output_sha256": "58b54b314fd384e765dad7e01d9b002c8a46121f5c7f6c50d5309cccb75863ce",
+    "full_receipt_sha256": "45727c554ccb49874e4e79eb94c7b33e9944ce7bd0d7e82a73242b60c1ada890"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:12Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c07",
+   "arm": "E2_distorted_source",
+   "input": {
+    "claim": "In Kuwait, Iranian drones hit the Mina al-Ahmadi and Mina Abdullah refineries in March — a third strike on al-Ahmadi in early April suspended roughly 692000 barrels a day of capacity, and Kuwait's crude exports briefly hit zero",
+    "evidence": [
+     {
+      "text": "In Kuwait, Iranian drones hit the Mina al-Ahmadi and Mina Abdullah refineries in March — a third strike on al-Ahmadi in early April suspended roughly 346,000 barrels a day of capacity, and Kuwait's crude exports briefly hit zero."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "fea243ed73e5430e",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "692000",
+       "class": "CONTRADICTED",
+       "evidence": "346,000",
+       "note": "692000 barre…: в источнике 346,000 при том же существительном",
+       "role": "CORE",
+       "text": "692000 — the source gives a different number: 346,000"
+      }
+     ],
+     "warnings": [],
+     "quote": "In Kuwait, Iranian drones hit the Mina al-Ahmadi and Mina Abdullah refineries in March — a third strike on al-Ahmadi in early April suspended roughly 346,000 barrels a day of capacity, and Kuwait's crude exports briefly hit zero."
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "692000",
+      "class": "CONTRADICTED",
+      "evidence": "346,000",
+      "note": "692000 barre…: в источнике 346,000 при том же существительном",
+      "role": "CORE",
+      "text": "692000 — the source gives a different number: 346,000"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "8d2e5e7a53423fda902fa991d2f955079208198696f20c1bdf6f15d3f2e57ada",
+    "output_sha256": "11a3c185009697df9df5e137d633666d9edfb180be90be552044a01e686155f9",
+    "full_receipt_sha256": "8cfd6f5f78a53928745c682876f44b7331dbe4a1c3882c420e687b2b0ab2417f"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:13Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c08",
+   "arm": "A_genuine",
+   "input": {
+    "claim": "Israel's Haifa refinery — 197,000 barrels a day, two-thirds of the country's processing — took Iranian missile hits in March and June;",
+    "evidence": [
+     {
+      "text": "Israel's Haifa refinery — 197,000 barrels a day, two-thirds of the country's processing — took Iranian missile hits in March and June;"
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "b2810f087ec743c8",
+     "verdict": "OK",
+     "message": "The numbers match: the figures in the claim are present in the source. The meaning around the numbers (rise or fall, cause) is not checked by HELIX.",
+     "status": "BOUND",
+     "bindings": [
+      {
+       "number": "197,000",
+       "class": "EXACT_MATCH",
+       "evidence": "197,000",
+       "role": "CORE",
+       "text": "197,000 — present in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": "Israel's Haifa refinery — 197,000 barrels a day, two-thirds of the country's processing — took Iranian missile hits in March and June;"
+    },
+    "label": "SUPPORTED",
+    "per_evidence": [
+     {
+      "number": "197,000",
+      "class": "EXACT_MATCH",
+      "evidence": "197,000",
+      "role": "CORE",
+      "text": "197,000 — present in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "651661a3278ef77594cfb263f68b0df4a090c18daeb903b9d06a5d61a68e80c9",
+    "output_sha256": "b8ae58ccd0e2993760b88fcd86e33240b4616a09e82c73d00ad3aca956f3c2d9",
+    "full_receipt_sha256": "58173e4d63cf05a661ebae81ce7c4adc47db229743adc5d2033fc4c40910d970"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:13Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c08",
+   "arm": "E1_contrary",
+   "input": {
+    "claim": "Israel's Haifa refinery — 197,000 barrels a day, two-thirds of the country's processing — took Iranian missile hits in March and June;",
+    "evidence": [
+     {
+      "text": "Israel's Haifa refinery — 394000 barrels a day, two-thirds of the country's processing — took Iranian missile hits in March and June;"
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "734e8e79c9854c2b",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "197,000",
+       "class": "CONTRADICTED",
+       "evidence": "394000",
+       "note": "197,000 barre…: в источнике 394000 при том же существительном",
+       "role": "CORE",
+       "text": "197,000 — the source gives a different number: 394000"
+      }
+     ],
+     "warnings": [],
+     "quote": "Israel's Haifa refinery — 394000 barrels a day, two-thirds of the country's processing — took Iranian missile hits in March and June;"
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "197,000",
+      "class": "CONTRADICTED",
+      "evidence": "394000",
+      "note": "197,000 barre…: в источнике 394000 при том же существительном",
+      "role": "CORE",
+      "text": "197,000 — the source gives a different number: 394000"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "f6987a5ecc9b3b7cbaf28e6e599bbba9544ee2f5ea4146e2385eb3b11ca77f58",
+    "output_sha256": "b1867e1f808d71bbc31f4465cc323d0f126fe6e87444b778752d4d65a0cb4a9d",
+    "full_receipt_sha256": "184e4f13249e658bfebb060c630d05adcc14516f808b1e0c4a88104de20f2375"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:13Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c08",
+   "arm": "C_noise_length",
+   "input": {
+    "claim": "Israel's Haifa refinery — 197,000 barrels a day, two-thirds of the country's processing — took Iranian missile hits in March and June;",
+    "evidence": [
+     {
+      "text": "its as may output to in supply for could annual to figures is and that reported might in were that demand reported to quarter on was f"
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "3d876b0b32774d10",
+     "verdict": "UNSUPPORTED_NUMBER",
+     "message": "Unsupported: this number is not in the source.",
+     "status": "NEEDS_RECOVERY",
+     "bindings": [
+      {
+       "number": "197,000",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "197,000 — not found in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": null
+    },
+    "label": "NEI",
+    "per_evidence": [
+     {
+      "number": "197,000",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "197,000 — not found in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "7637ccc5183a69f427f1cd3e13b284a98ca9591ed4342a5a4e2528f738bacb1a",
+    "output_sha256": "41ef7fee298e3a102023e275b8257d430d2d1e75daeb40f73d78bd666a1c97b8",
+    "full_receipt_sha256": "cb4a2354a697eeb23dc59c623d78776d3c3757c9b26526ff351754c1989dbc4d"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:13Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c08",
+   "arm": "B_empty",
+   "input": {
+    "claim": "Israel's Haifa refinery — 197,000 barrels a day, two-thirds of the country's processing — took Iranian missile hits in March and June;",
+    "evidence": [
+     {
+      "text": ""
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "error": "HTTPError: HTTP Error 422: Unprocessable Entity"
+    },
+    "label": null,
+    "per_evidence": null
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "0f24134d42bcd4cda0a0163d74a7c482dba1fa76becd7bd467a96bef6d78d71f",
+    "output_sha256": "4b2b538e75e16e9fd6f2a26c3de005a38aa4f73242ee71632f5f2dd6786d03e7",
+    "full_receipt_sha256": "f2fdbe80d815f386928f69dbb3b9c3b7a3c2d6c99d365422e797a28b02d39566"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:13Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c08",
+   "arm": "F_unrelated",
+   "input": {
+    "claim": "Israel's Haifa refinery — 197,000 barrels a day, two-thirds of the country's processing — took Iranian missile hits in March and June;",
+    "evidence": [
+     {
+      "text": "Libya's Zawiya refinery, the country's largest at 120,000 barrels a day, absorbed a week of unclaimed drone strikes in August — naphtha tank, petrol tank, blending plant — forcing force-majeure warnings."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "385f5e57b3a54e4a",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "197,000",
+       "class": "CONTRADICTED",
+       "evidence": "120,000",
+       "note": "197,000 barre…: в источнике 120,000 при том же существительном",
+       "role": "CORE",
+       "text": "197,000 — the source gives a different number: 120,000"
+      }
+     ],
+     "warnings": [],
+     "quote": "Libya's Zawiya refinery, the country's largest at 120,000 barrels a day, absorbed a week of unclaimed drone strikes in August — naphtha tank, petrol tank, blending plant — forcing force-majeure warnings."
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "197,000",
+      "class": "CONTRADICTED",
+      "evidence": "120,000",
+      "note": "197,000 barre…: в источнике 120,000 при том же существительном",
+      "role": "CORE",
+      "text": "197,000 — the source gives a different number: 120,000"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "0c84f202f4c18e7bafd7787d0a65cb743d27d75b5c10c24b521d5e836115d75f",
+    "output_sha256": "9eaf913599c648576be62af3b36f156f871ca304774fb484a448b968378c162a",
+    "full_receipt_sha256": "22b9b4dd80f389165ddf284db2b60cc31c428b7de1bb5404ebf123737c75ac4e"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:14Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c08",
+   "arm": "E2_distorted_source",
+   "input": {
+    "claim": "Israel's Haifa refinery — 394000 barrels a day, two-thirds of the country's processing — took Iranian missile hits in March and June;",
+    "evidence": [
+     {
+      "text": "Israel's Haifa refinery — 197,000 barrels a day, two-thirds of the country's processing — took Iranian missile hits in March and June;"
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "a15e36c56e504e3c",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "394000",
+       "class": "CONTRADICTED",
+       "evidence": "197,000",
+       "note": "394000 barre…: в источнике 197,000 при том же существительном",
+       "role": "CORE",
+       "text": "394000 — the source gives a different number: 197,000"
+      }
+     ],
+     "warnings": [],
+     "quote": "Israel's Haifa refinery — 197,000 barrels a day, two-thirds of the country's processing — took Iranian missile hits in March and June;"
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "394000",
+      "class": "CONTRADICTED",
+      "evidence": "197,000",
+      "note": "394000 barre…: в источнике 197,000 при том же существительном",
+      "role": "CORE",
+      "text": "394000 — the source gives a different number: 197,000"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "f82bc40417a350ef5d803d8381987593f76d8efeefa2bae53cb661f48597ed4f",
+    "output_sha256": "4511e0a668a0cd154638bae7a75ce80f06849500047595ae1528853122fbe588",
+    "full_receipt_sha256": "c4584b5e89bd7cf0d4af1bf54b09c78839a163c12d2e6755fc11c470b2ea3868"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:14Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c09",
+   "arm": "A_genuine",
+   "input": {
+    "claim": "Libya's Zawiya refinery, the country's largest at 120,000 barrels a day, absorbed a week of unclaimed drone strikes in August — naphtha tank, petrol tank, blending plant — forcing force-majeure warnings",
+    "evidence": [
+     {
+      "text": "Libya's Zawiya refinery, the country's largest at 120,000 barrels a day, absorbed a week of unclaimed drone strikes in August — naphtha tank, petrol tank, blending plant — forcing force-majeure warnings."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "1fe867ecc7a94830",
+     "verdict": "OK",
+     "message": "The numbers match: the figures in the claim are present in the source. The meaning around the numbers (rise or fall, cause) is not checked by HELIX.",
+     "status": "BOUND",
+     "bindings": [
+      {
+       "number": "120,000",
+       "class": "EXACT_MATCH",
+       "evidence": "120,000",
+       "role": "CORE",
+       "text": "120,000 — present in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": "Libya's Zawiya refinery, the country's largest at 120,000 barrels a day, absorbed a week of unclaimed drone strikes in August — naphtha tank, petrol tank, blending plant — forcing force-majeure warnings."
+    },
+    "label": "SUPPORTED",
+    "per_evidence": [
+     {
+      "number": "120,000",
+      "class": "EXACT_MATCH",
+      "evidence": "120,000",
+      "role": "CORE",
+      "text": "120,000 — present in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "d541f42cdac14ad6ebc23ceaa32d2be130eeeec9b5a9f33f28a9ca309a0a9c3b",
+    "output_sha256": "84b3864fe8a3aec9de3786786d9c51cc12f901c98d93044690aa90581dcbb3e8",
+    "full_receipt_sha256": "55bbd4424211f6ced3adbd345bc14352adefe5cf68e098a13468989a40ac64e4"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:14Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c09",
+   "arm": "E1_contrary",
+   "input": {
+    "claim": "Libya's Zawiya refinery, the country's largest at 120,000 barrels a day, absorbed a week of unclaimed drone strikes in August — naphtha tank, petrol tank, blending plant — forcing force-majeure warnings",
+    "evidence": [
+     {
+      "text": "Libya's Zawiya refinery, the country's largest at 240000 barrels a day, absorbed a week of unclaimed drone strikes in August — naphtha tank, petrol tank, blending plant — forcing force-majeure warnings."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "b1bf41f73f8f473d",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "120,000",
+       "class": "CONTRADICTED",
+       "evidence": "240000",
+       "note": "120,000 barre…: в источнике 240000 при том же существительном",
+       "role": "CORE",
+       "text": "120,000 — the source gives a different number: 240000"
+      }
+     ],
+     "warnings": [],
+     "quote": "Libya's Zawiya refinery, the country's largest at 240000 barrels a day, absorbed a week of unclaimed drone strikes in August — naphtha tank, petrol tank, blending plant — forcing force-majeure warnings."
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "120,000",
+      "class": "CONTRADICTED",
+      "evidence": "240000",
+      "note": "120,000 barre…: в источнике 240000 при том же существительном",
+      "role": "CORE",
+      "text": "120,000 — the source gives a different number: 240000"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "4eb69e629ade8fa2796794c6ecbd6ed0532a8d79ba3f4d42c10a93b28143a9d3",
+    "output_sha256": "1fc8c0c85c5e03db2772e47321517f5c97a534f7b2da044d4ea1fd1fdff50984",
+    "full_receipt_sha256": "c71cf6697963f0358f134e2a16e5517150d9c6b6eecabf70f69f915c65123f8a"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:14Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c09",
+   "arm": "C_noise_length",
+   "input": {
+    "claim": "Libya's Zawiya refinery, the country's largest at 120,000 barrels a day, absorbed a week of unclaimed drone strikes in August — naphtha tank, petrol tank, blending plant — forcing force-majeure warnings",
+    "evidence": [
+     {
+      "text": "was could should with from and that with were figures is may output of this according this should according quarter from may that according was of have market might week should on capacity has for in sho"
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "8b3c51d4bfbc4c41",
+     "verdict": "UNSUPPORTED_NUMBER",
+     "message": "Unsupported: this number is not in the source.",
+     "status": "NEEDS_RECOVERY",
+     "bindings": [
+      {
+       "number": "120,000",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "120,000 — not found in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": null
+    },
+    "label": "NEI",
+    "per_evidence": [
+     {
+      "number": "120,000",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "120,000 — not found in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "5c0f57af20606736af94e27e563e67811e4146a9b2e2c36596b871eafb11dbbd",
+    "output_sha256": "d6f26c33ff61f171afe232fbcdee59930c9ac866f7b3cfa4d5e75998085c63cf",
+    "full_receipt_sha256": "a26240de1a57497414cc9c3d2ea04568ce99508b11abf976fb3b5f9b137d81c3"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:15Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c09",
+   "arm": "B_empty",
+   "input": {
+    "claim": "Libya's Zawiya refinery, the country's largest at 120,000 barrels a day, absorbed a week of unclaimed drone strikes in August — naphtha tank, petrol tank, blending plant — forcing force-majeure warnings",
+    "evidence": [
+     {
+      "text": ""
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "error": "HTTPError: HTTP Error 422: Unprocessable Entity"
+    },
+    "label": null,
+    "per_evidence": null
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "3a55c07bfd20f5fdab059c279b85e004d3ddcc399660f7d5e25adaeeb19d2abe",
+    "output_sha256": "4b2b538e75e16e9fd6f2a26c3de005a38aa4f73242ee71632f5f2dd6786d03e7",
+    "full_receipt_sha256": "892168960d013650e692fdd6d07d5e2ce247c52bd7d485dacc0e10fdf617606f"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:15Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c09",
+   "arm": "F_unrelated",
+   "input": {
+    "claim": "Libya's Zawiya refinery, the country's largest at 120,000 barrels a day, absorbed a week of unclaimed drone strikes in August — naphtha tank, petrol tank, blending plant — forcing force-majeure warnings",
+    "evidence": [
+     {
+      "text": "Both arrive against buffers that no longer exist: US distillate stocks are the lowest for early September since 1982, and on the East Coast — the region that heats with oil — inventories hit 19.3 million barrels in late August, the lowest in records going back to 1990."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "c0d96945635746c1",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "120,000",
+       "class": "CONTRADICTED",
+       "evidence": "19.3 million",
+       "note": "120,000 barre…: в источнике 19.3 million при том же существительном",
+       "role": "CORE",
+       "text": "120,000 — the source gives a different number: 19.3 million"
+      }
+     ],
+     "warnings": [],
+     "quote": "Both arrive against buffers that no longer exist: US distillate stocks are the lowest for early September since 1982, and on the East Coast — the region that heats with oil — inventories hit 19.3 million barrels in late August, the lowest in records going back to 1990."
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "120,000",
+      "class": "CONTRADICTED",
+      "evidence": "19.3 million",
+      "note": "120,000 barre…: в источнике 19.3 million при том же существительном",
+      "role": "CORE",
+      "text": "120,000 — the source gives a different number: 19.3 million"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "f50c4a89defb99675a5f72984fa9ed91b988f08a387b0962b240ecebde79fb5f",
+    "output_sha256": "c31877ee70db0d9e1c544e8b2066c3ee03a156a98c26a43211ec2d6147077814",
+    "full_receipt_sha256": "31be218fc5c84a18046d7f6a4752ec45ebc9cb3f3cdfa6c74055282a30099ae4"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:15Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c09",
+   "arm": "E2_distorted_source",
+   "input": {
+    "claim": "Libya's Zawiya refinery, the country's largest at 240000 barrels a day, absorbed a week of unclaimed drone strikes in August — naphtha tank, petrol tank, blending plant — forcing force-majeure warnings",
+    "evidence": [
+     {
+      "text": "Libya's Zawiya refinery, the country's largest at 120,000 barrels a day, absorbed a week of unclaimed drone strikes in August — naphtha tank, petrol tank, blending plant — forcing force-majeure warnings."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "9bad4e243fa44d61",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "240000",
+       "class": "CONTRADICTED",
+       "evidence": "120,000",
+       "note": "240000 barre…: в источнике 120,000 при том же существительном",
+       "role": "CORE",
+       "text": "240000 — the source gives a different number: 120,000"
+      }
+     ],
+     "warnings": [],
+     "quote": "Libya's Zawiya refinery, the country's largest at 120,000 barrels a day, absorbed a week of unclaimed drone strikes in August — naphtha tank, petrol tank, blending plant — forcing force-majeure warnings."
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "240000",
+      "class": "CONTRADICTED",
+      "evidence": "120,000",
+      "note": "240000 barre…: в источнике 120,000 при том же существительном",
+      "role": "CORE",
+      "text": "240000 — the source gives a different number: 120,000"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "712dfc66f7b599149483abd0acb5444fbb2d196c8ad08ddf2a59d1a80d2c5e4a",
+    "output_sha256": "e994b12d3e84bf5a837388104774f2e81d646a1808c70e1fea35bf0c5314b8c9",
+    "full_receipt_sha256": "2b001c6105747786bcf3f5882d0dd8dd5c31955c55e175e1ee1aa26aa968d73a"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:15Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c10",
+   "arm": "A_genuine",
+   "input": {
+    "claim": "Both arrive against buffers that no longer exist: US distillate stocks are the lowest for early September since 1982, and on the East Coast — the region that heats with oil — inventories hit 19.3 million barrels in late August, the lowest in records going back to 1990",
+    "evidence": [
+     {
+      "text": "Both arrive against buffers that no longer exist: US distillate stocks are the lowest for early September since 1982, and on the East Coast — the region that heats with oil — inventories hit 19.3 million barrels in late August, the lowest in records going back to 1990."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "94e2dfce1125425a",
+     "verdict": "OK",
+     "message": "The numbers match: the figures in the claim are present in the source. The meaning around the numbers (rise or fall, cause) is not checked by HELIX.",
+     "status": "BOUND",
+     "bindings": [
+      {
+       "number": "1982",
+       "class": "COMPARISON_MATCH",
+       "evidence": "1982",
+       "note": "1982 (ge; в источнике 1982, ge)",
+       "role": "CORE",
+       "text": "1982 — the 'at least' condition holds: the source has 1982"
+      },
+      {
+       "number": "19.3 million",
+       "class": "EXACT_MATCH",
+       "evidence": "19.3 million",
+       "role": "CORE",
+       "text": "19.3 million — present in the source"
+      },
+      {
+       "number": "1990",
+       "class": "EXACT_MATCH",
+       "evidence": "1990",
+       "role": "CORE",
+       "text": "1990 — present in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": "Both arrive against buffers that no longer exist: US distillate stocks are the lowest for early September since 1982, and on the East Coast — the region that heats with oil — inventories hit 19.3 million barrels in late August, the lowest in records going back to 1990."
+    },
+    "label": "SUPPORTED",
+    "per_evidence": [
+     {
+      "number": "1982",
+      "class": "COMPARISON_MATCH",
+      "evidence": "1982",
+      "note": "1982 (ge; в источнике 1982, ge)",
+      "role": "CORE",
+      "text": "1982 — the 'at least' condition holds: the source has 1982"
+     },
+     {
+      "number": "19.3 million",
+      "class": "EXACT_MATCH",
+      "evidence": "19.3 million",
+      "role": "CORE",
+      "text": "19.3 million — present in the source"
+     },
+     {
+      "number": "1990",
+      "class": "EXACT_MATCH",
+      "evidence": "1990",
+      "role": "CORE",
+      "text": "1990 — present in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "6bf4c02328bb3830fd2aaa4c278ea62d612b08aece2bbd47bcdc92ad85288bdc",
+    "output_sha256": "2826fa1cd336ef83d2c1210c19feb9e606283c75738a26156eea994fbb93d1dd",
+    "full_receipt_sha256": "90c16d2fb5f2e9cd7c24906402ae6a6ccb9de98be91157033044a2b5e1ecbcab"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:15Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c10",
+   "arm": "E1_contrary",
+   "input": {
+    "claim": "Both arrive against buffers that no longer exist: US distillate stocks are the lowest for early September since 1982, and on the East Coast — the region that heats with oil — inventories hit 19.3 million barrels in late August, the lowest in records going back to 1990",
+    "evidence": [
+     {
+      "text": "Both arrive against buffers that no longer exist: US distillate stocks are the lowest for early September since 1983 and on the East Coast — the region that heats with oil — inventories hit 19.3 million barrels in late August, the lowest in records going back to 1990."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "0d93f1f0a7bc4547",
+     "verdict": "OK",
+     "message": "The numbers match: the figures in the claim are present in the source. The meaning around the numbers (rise or fall, cause) is not checked by HELIX.",
+     "status": "BOUND",
+     "bindings": [
+      {
+       "number": "1982",
+       "class": "COMPARISON_MATCH",
+       "evidence": "1983",
+       "note": "1982 (ge; в источнике 1983, ge)",
+       "role": "CORE",
+       "text": "1982 — the 'at least' condition holds: the source has 1983"
+      },
+      {
+       "number": "19.3 million",
+       "class": "EXACT_MATCH",
+       "evidence": "19.3 million",
+       "role": "CORE",
+       "text": "19.3 million — present in the source"
+      },
+      {
+       "number": "1990",
+       "class": "EXACT_MATCH",
+       "evidence": "1990",
+       "role": "CORE",
+       "text": "1990 — present in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": "Both arrive against buffers that no longer exist: US distillate stocks are the lowest for early September since 1983 and on the East Coast — the region that heats with oil — inventories hit 19.3 million barrels in late August, the lowest in records going back to 1990."
+    },
+    "label": "SUPPORTED",
+    "per_evidence": [
+     {
+      "number": "1982",
+      "class": "COMPARISON_MATCH",
+      "evidence": "1983",
+      "note": "1982 (ge; в источнике 1983, ge)",
+      "role": "CORE",
+      "text": "1982 — the 'at least' condition holds: the source has 1983"
+     },
+     {
+      "number": "19.3 million",
+      "class": "EXACT_MATCH",
+      "evidence": "19.3 million",
+      "role": "CORE",
+      "text": "19.3 million — present in the source"
+     },
+     {
+      "number": "1990",
+      "class": "EXACT_MATCH",
+      "evidence": "1990",
+      "role": "CORE",
+      "text": "1990 — present in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "8cbdbf72af929d03369f07f76bb3507dfca7e3df7f69e3182f7987094d763c01",
+    "output_sha256": "8b48e753459f6c4a32ca2956a252fcef31fc6274608ca9d7abc7ff65f96be138",
+    "full_receipt_sha256": "d88f2387f3347a9986809a747ff300d0299eabdd6c1df8825f628b46886c483e"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:16Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c10",
+   "arm": "C_noise_length",
+   "input": {
+    "claim": "Both arrive against buffers that no longer exist: US distillate stocks are the lowest for early September since 1982, and on the East Coast — the region that heats with oil — inventories hit 19.3 million barrels in late August, the lowest in records going back to 1990",
+    "evidence": [
+     {
+      "text": "this region could have with at the their figures this period that their demand region and should by earlier reported by by were to on with figures annual in should for been is was might that have is may have their and from the might to should according with of were rep"
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "fd0b569ed57442c2",
+     "verdict": "UNSUPPORTED_NUMBER",
+     "message": "Unsupported: this number is not in the source.",
+     "status": "NEEDS_RECOVERY",
+     "bindings": [
+      {
+       "number": "1982",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "1982 — not found in the source"
+      },
+      {
+       "number": "19.3 million",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "19.3 million — not found in the source"
+      },
+      {
+       "number": "1990",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "1990 — not found in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": null
+    },
+    "label": "NEI",
+    "per_evidence": [
+     {
+      "number": "1982",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "1982 — not found in the source"
+     },
+     {
+      "number": "19.3 million",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "19.3 million — not found in the source"
+     },
+     {
+      "number": "1990",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "1990 — not found in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "750f2c9cfa03e3fbcd8cd101aa0d087cc747fb5e84091d40b5788dfd505933ba",
+    "output_sha256": "59e2712a190165e28c6b4f4c17a9077b64d895628e63345823585d5152ca686c",
+    "full_receipt_sha256": "ebbf9cc3d8991b82d33ec0b03d2434a96cce794d43438236ee14a834c33b9b04"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:16Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c10",
+   "arm": "B_empty",
+   "input": {
+    "claim": "Both arrive against buffers that no longer exist: US distillate stocks are the lowest for early September since 1982, and on the East Coast — the region that heats with oil — inventories hit 19.3 million barrels in late August, the lowest in records going back to 1990",
+    "evidence": [
+     {
+      "text": ""
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "error": "HTTPError: HTTP Error 422: Unprocessable Entity"
+    },
+    "label": null,
+    "per_evidence": null
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "5451a315a860f86d8f8ff3491c4a41ca744b3e3e538a7a3ac7375a1dceed766a",
+    "output_sha256": "4b2b538e75e16e9fd6f2a26c3de005a38aa4f73242ee71632f5f2dd6786d03e7",
+    "full_receipt_sha256": "19511a79fad77224a2c00aefb6ce0d27fffef3b14190ca7c0fae85c83e9e5bba"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:16Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c10",
+   "arm": "F_unrelated",
+   "input": {
+    "claim": "Both arrive against buffers that no longer exist: US distillate stocks are the lowest for early September since 1982, and on the East Coast — the region that heats with oil — inventories hit 19.3 million barrels in late August, the lowest in records going back to 1990",
+    "evidence": [
+     {
+      "text": "The EIA expects national stocks to fall below 100 million barrels this month, first time since 2003, and to stay below the five-year average for most of 2027."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "e228069e6a144145",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "1982",
+       "class": "COMPARISON_MATCH",
+       "evidence": "2003",
+       "note": "1982 (ge; в источнике 2003, ge)",
+       "role": "CORE",
+       "text": "1982 — the 'at least' condition holds: the source has 2003"
+      },
+      {
+       "number": "19.3 million",
+       "class": "CONTRADICTED",
+       "evidence": "100 million",
+       "note": "19.3 million barre…: в источнике 100 million при том же существительном",
+       "role": "CORE",
+       "text": "19.3 million — the source gives a different number: 100 million"
+      },
+      {
+       "number": "1990",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "1990 — not found in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": "The EIA expects national stocks to fall below 100 million barrels this month, first time since 2003, and to stay below the five-year average for most of 2027."
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "1982",
+      "class": "COMPARISON_MATCH",
+      "evidence": "2003",
+      "note": "1982 (ge; в источнике 2003, ge)",
+      "role": "CORE",
+      "text": "1982 — the 'at least' condition holds: the source has 2003"
+     },
+     {
+      "number": "19.3 million",
+      "class": "CONTRADICTED",
+      "evidence": "100 million",
+      "note": "19.3 million barre…: в источнике 100 million при том же существительном",
+      "role": "CORE",
+      "text": "19.3 million — the source gives a different number: 100 million"
+     },
+     {
+      "number": "1990",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "1990 — not found in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "a89b02cd67a521d16154df53278e79fef1adb92ca50de411604ab71a1731e6f9",
+    "output_sha256": "61aee98a0c47fe82dd93d359dbda3c9409819a4091a144de47aede724f248585",
+    "full_receipt_sha256": "af333d9e52aac9fac9f420bfcd990d16ce063f320897640cd99b52d75c5ac1e8"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:16Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c10",
+   "arm": "E2_distorted_source",
+   "input": {
+    "claim": "Both arrive against buffers that no longer exist: US distillate stocks are the lowest for early September since 1983 and on the East Coast — the region that heats with oil — inventories hit 19.3 million barrels in late August, the lowest in records going back to 1990",
+    "evidence": [
+     {
+      "text": "Both arrive against buffers that no longer exist: US distillate stocks are the lowest for early September since 1982, and on the East Coast — the region that heats with oil — inventories hit 19.3 million barrels in late August, the lowest in records going back to 1990."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "3ba46392545a46d4",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "1983",
+       "class": "CONTRADICTED",
+       "evidence": "1982",
+       "role": "CORE",
+       "text": "1983 — the source gives a different number: 1982"
+      },
+      {
+       "number": "19.3 million",
+       "class": "EXACT_MATCH",
+       "evidence": "19.3 million",
+       "role": "CORE",
+       "text": "19.3 million — present in the source"
+      },
+      {
+       "number": "1990",
+       "class": "EXACT_MATCH",
+       "evidence": "1990",
+       "role": "CORE",
+       "text": "1990 — present in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": "Both arrive against buffers that no longer exist: US distillate stocks are the lowest for early September since 1982, and on the East Coast — the region that heats with oil — inventories hit 19.3 million barrels in late August, the lowest in records going back to 1990."
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "1983",
+      "class": "CONTRADICTED",
+      "evidence": "1982",
+      "role": "CORE",
+      "text": "1983 — the source gives a different number: 1982"
+     },
+     {
+      "number": "19.3 million",
+      "class": "EXACT_MATCH",
+      "evidence": "19.3 million",
+      "role": "CORE",
+      "text": "19.3 million — present in the source"
+     },
+     {
+      "number": "1990",
+      "class": "EXACT_MATCH",
+      "evidence": "1990",
+      "role": "CORE",
+      "text": "1990 — present in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "434856429d042b53b2009e34cbf0030c3d648051fa3c01e6af426f96c7f451b9",
+    "output_sha256": "236eae63ef228cd1835f34cae3b09dc8cfeb2e09f2ab99d86e7a4bc0dbdab015",
+    "full_receipt_sha256": "7a699636fc854db3a6b168f3a54705d149648525d7c1356a793c1af19fd5b102"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:16Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c11",
+   "arm": "A_genuine",
+   "input": {
+    "claim": "The EIA expects national stocks to fall below 100 million barrels this month, first time since 2003, and to stay below the five-year average for most of 2027",
+    "evidence": [
+     {
+      "text": "The EIA expects national stocks to fall below 100 million barrels this month, first time since 2003, and to stay below the five-year average for most of 2027."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "ac814d686a2944ba",
+     "verdict": "OK",
+     "message": "The numbers match: the figures in the claim are present in the source. The meaning around the numbers (rise or fall, cause) is not checked by HELIX.",
+     "status": "BOUND",
+     "bindings": [
+      {
+       "number": "100 million",
+       "class": "COMPARISON_MATCH",
+       "evidence": "100 million",
+       "note": "100 million (lt; в источнике 100 million, lt)",
+       "role": "CORE",
+       "text": "100 million — the 'less than' condition holds: the source has 100 million"
+      },
+      {
+       "number": "2003",
+       "class": "COMPARISON_MATCH",
+       "evidence": "2003",
+       "note": "2003 (ge; в источнике 2003, ge)",
+       "role": "CORE",
+       "text": "2003 — the 'at least' condition holds: the source has 2003"
+      },
+      {
+       "number": "five",
+       "class": "EXACT_MATCH",
+       "evidence": "five",
+       "role": "CORE",
+       "text": "five — present in the source"
+      },
+      {
+       "number": "2027",
+       "class": "EXACT_MATCH",
+       "evidence": "2027",
+       "role": "CORE",
+       "text": "2027 — present in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": "The EIA expects national stocks to fall below 100 million barrels this month, first time since 2003, and to stay below the five-year average for most of 2027."
+    },
+    "label": "SUPPORTED",
+    "per_evidence": [
+     {
+      "number": "100 million",
+      "class": "COMPARISON_MATCH",
+      "evidence": "100 million",
+      "note": "100 million (lt; в источнике 100 million, lt)",
+      "role": "CORE",
+      "text": "100 million — the 'less than' condition holds: the source has 100 million"
+     },
+     {
+      "number": "2003",
+      "class": "COMPARISON_MATCH",
+      "evidence": "2003",
+      "note": "2003 (ge; в источнике 2003, ge)",
+      "role": "CORE",
+      "text": "2003 — the 'at least' condition holds: the source has 2003"
+     },
+     {
+      "number": "five",
+      "class": "EXACT_MATCH",
+      "evidence": "five",
+      "role": "CORE",
+      "text": "five — present in the source"
+     },
+     {
+      "number": "2027",
+      "class": "EXACT_MATCH",
+      "evidence": "2027",
+      "role": "CORE",
+      "text": "2027 — present in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "16a25b2ac7aaebb54c6f0770524aebd572c20de3defc9739105d554f3e07aebe",
+    "output_sha256": "87bdfe94de485f920a5a0930bb039fa8e5ff30fa88ef45399934f9aa9516b682",
+    "full_receipt_sha256": "51431002d6046d4df0e70c1a7f04910476a4ce64934f356a9286684f3d0af873"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:17Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c11",
+   "arm": "E1_contrary",
+   "input": {
+    "claim": "The EIA expects national stocks to fall below 100 million barrels this month, first time since 2003, and to stay below the five-year average for most of 2027",
+    "evidence": [
+     {
+      "text": "The EIA expects national stocks to fall below 200 million barrels this month, first time since 2003, and to stay below the five-year average for most of 2027."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "e19aea1130684e8d",
+     "verdict": "UNSUPPORTED_NUMBER",
+     "message": "Unsupported: this number is not in the source.",
+     "status": "NEEDS_RECOVERY",
+     "bindings": [
+      {
+       "number": "100 million",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "100 million — not found in the source"
+      },
+      {
+       "number": "2003",
+       "class": "COMPARISON_MATCH",
+       "evidence": "2003",
+       "note": "2003 (ge; в источнике 2003, ge)",
+       "role": "CORE",
+       "text": "2003 — the 'at least' condition holds: the source has 2003"
+      },
+      {
+       "number": "five",
+       "class": "EXACT_MATCH",
+       "evidence": "five",
+       "role": "CORE",
+       "text": "five — present in the source"
+      },
+      {
+       "number": "2027",
+       "class": "EXACT_MATCH",
+       "evidence": "2027",
+       "role": "CORE",
+       "text": "2027 — present in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": "The EIA expects national stocks to fall below 200 million barrels this month, first time since 2003, and to stay below the five-year average for most of 2027."
+    },
+    "label": "NEI",
+    "per_evidence": [
+     {
+      "number": "100 million",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "100 million — not found in the source"
+     },
+     {
+      "number": "2003",
+      "class": "COMPARISON_MATCH",
+      "evidence": "2003",
+      "note": "2003 (ge; в источнике 2003, ge)",
+      "role": "CORE",
+      "text": "2003 — the 'at least' condition holds: the source has 2003"
+     },
+     {
+      "number": "five",
+      "class": "EXACT_MATCH",
+      "evidence": "five",
+      "role": "CORE",
+      "text": "five — present in the source"
+     },
+     {
+      "number": "2027",
+      "class": "EXACT_MATCH",
+      "evidence": "2027",
+      "role": "CORE",
+      "text": "2027 — present in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "802c354ac732f4f4c1b00d131ae88c25461ae7c84cf88a30ca2aa01dc16bd6cc",
+    "output_sha256": "72d83225ffef44a1137d0db5cdb196949b77b6a734e7a07a71c44e6842e3e803",
+    "full_receipt_sha256": "641642cab54fbe1fb63f3f90209928f487f38052d432d39494182bd9e9473a4d"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:17Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c11",
+   "arm": "C_noise_length",
+   "input": {
+    "claim": "The EIA expects national stocks to fall below 100 million barrels this month, first time since 2003, and to stay below the five-year average for most of 2027",
+    "evidence": [
+     {
+      "text": "quarter and reported week quarter the is this according have output by and market according its in were could and might with period would should might been ha"
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "5e9d46a380ee4baa",
+     "verdict": "UNSUPPORTED_NUMBER",
+     "message": "Unsupported: this number is not in the source.",
+     "status": "NEEDS_RECOVERY",
+     "bindings": [
+      {
+       "number": "100 million",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "100 million — not found in the source"
+      },
+      {
+       "number": "2003",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "2003 — not found in the source"
+      },
+      {
+       "number": "five",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "DECORATIVE",
+       "text": "five — not found in the source"
+      },
+      {
+       "number": "2027",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "2027 — not found in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": null
+    },
+    "label": "NEI",
+    "per_evidence": [
+     {
+      "number": "100 million",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "100 million — not found in the source"
+     },
+     {
+      "number": "2003",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "2003 — not found in the source"
+     },
+     {
+      "number": "five",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "DECORATIVE",
+      "text": "five — not found in the source"
+     },
+     {
+      "number": "2027",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "2027 — not found in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "44c0d0c937df48331856c80655a021b42e920a500b4c33c0259781f22c3dff92",
+    "output_sha256": "1a5507c1fd5ba0eb805532f453d6503192b9540541ffb98385110025fe7de709",
+    "full_receipt_sha256": "00082ac591e0f6ca452034fdb5120e525571cd5cee10293230d3fa48f1e86af2"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:17Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c11",
+   "arm": "B_empty",
+   "input": {
+    "claim": "The EIA expects national stocks to fall below 100 million barrels this month, first time since 2003, and to stay below the five-year average for most of 2027",
+    "evidence": [
+     {
+      "text": ""
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "error": "HTTPError: HTTP Error 422: Unprocessable Entity"
+    },
+    "label": null,
+    "per_evidence": null
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "f939a02164bf87f888cf055ccc853d0a11f6506b07120f301bbf00850f804922",
+    "output_sha256": "4b2b538e75e16e9fd6f2a26c3de005a38aa4f73242ee71632f5f2dd6786d03e7",
+    "full_receipt_sha256": "bc8c99cd116f6b6a5af1a316706d8357e43f5080a218470a214af00a8429957d"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:17Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c11",
+   "arm": "F_unrelated",
+   "input": {
+    "claim": "The EIA expects national stocks to fall below 100 million barrels this month, first time since 2003, and to stay below the five-year average for most of 2027",
+    "evidence": [
+     {
+      "text": "Canadian crude arriving at the US Gulf Coast fell from about 526,000 barrels a day in 2024 to roughly 337,000 in the first half of this year."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "1d8d2c0628e04198",
+     "verdict": "UNSUPPORTED_NUMBER",
+     "message": "Unsupported: this number is not in the source.",
+     "status": "NEEDS_RECOVERY",
+     "bindings": [
+      {
+       "number": "100 million",
+       "class": "COMPARISON_MATCH",
+       "evidence": "526,000",
+       "note": "100 million (lt; в источнике 526,000)",
+       "role": "CORE",
+       "text": "100 million — the 'less than' condition holds: the source has 526,000"
+      },
+      {
+       "number": "2003",
+       "class": "COMPARISON_MATCH",
+       "evidence": "2024",
+       "note": "2003 (ge; в источнике 2024)",
+       "role": "CORE",
+       "text": "2003 — the 'at least' condition holds: the source has 2024"
+      },
+      {
+       "number": "five",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "DECORATIVE",
+       "text": "five — not found in the source"
+      },
+      {
+       "number": "2027",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "2027 — not found in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": "Canadian crude arriving at the US Gulf Coast fell from about 526,000 barrels a day in 2024 to roughly 337,000 in the first half of this year."
+    },
+    "label": "NEI",
+    "per_evidence": [
+     {
+      "number": "100 million",
+      "class": "COMPARISON_MATCH",
+      "evidence": "526,000",
+      "note": "100 million (lt; в источнике 526,000)",
+      "role": "CORE",
+      "text": "100 million — the 'less than' condition holds: the source has 526,000"
+     },
+     {
+      "number": "2003",
+      "class": "COMPARISON_MATCH",
+      "evidence": "2024",
+      "note": "2003 (ge; в источнике 2024)",
+      "role": "CORE",
+      "text": "2003 — the 'at least' condition holds: the source has 2024"
+     },
+     {
+      "number": "five",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "DECORATIVE",
+      "text": "five — not found in the source"
+     },
+     {
+      "number": "2027",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "2027 — not found in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "71cde04111b30063337ec0713d5c740759e9a93c04ebc4a174e4e028710c7755",
+    "output_sha256": "3edc683177960b87b4c0cefe15a916eea3f53e5c49348588219f761a387866f5",
+    "full_receipt_sha256": "73d984b32790adfd4609145a4474ff8b1328c038b48f8de389314b908cca0006"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:17Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c11",
+   "arm": "E2_distorted_source",
+   "input": {
+    "claim": "The EIA expects national stocks to fall below 50 million barrels this month, first time since 2003, and to stay below the five-year average for most of 2027",
+    "evidence": [
+     {
+      "text": "The EIA expects national stocks to fall below 100 million barrels this month, first time since 2003, and to stay below the five-year average for most of 2027."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "b7f6ee31564743cf",
+     "verdict": "UNSUPPORTED_NUMBER",
+     "message": "Unsupported: this number is not in the source.",
+     "status": "NEEDS_RECOVERY",
+     "bindings": [
+      {
+       "number": "50 million",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "50 million — not found in the source"
+      },
+      {
+       "number": "2003",
+       "class": "COMPARISON_MATCH",
+       "evidence": "2003",
+       "note": "2003 (ge; в источнике 2003, ge)",
+       "role": "CORE",
+       "text": "2003 — the 'at least' condition holds: the source has 2003"
+      },
+      {
+       "number": "five",
+       "class": "EXACT_MATCH",
+       "evidence": "five",
+       "role": "CORE",
+       "text": "five — present in the source"
+      },
+      {
+       "number": "2027",
+       "class": "EXACT_MATCH",
+       "evidence": "2027",
+       "role": "CORE",
+       "text": "2027 — present in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": "The EIA expects national stocks to fall below 100 million barrels this month, first time since 2003, and to stay below the five-year average for most of 2027."
+    },
+    "label": "NEI",
+    "per_evidence": [
+     {
+      "number": "50 million",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "50 million — not found in the source"
+     },
+     {
+      "number": "2003",
+      "class": "COMPARISON_MATCH",
+      "evidence": "2003",
+      "note": "2003 (ge; в источнике 2003, ge)",
+      "role": "CORE",
+      "text": "2003 — the 'at least' condition holds: the source has 2003"
+     },
+     {
+      "number": "five",
+      "class": "EXACT_MATCH",
+      "evidence": "five",
+      "role": "CORE",
+      "text": "five — present in the source"
+     },
+     {
+      "number": "2027",
+      "class": "EXACT_MATCH",
+      "evidence": "2027",
+      "role": "CORE",
+      "text": "2027 — present in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "28b241ea0184ef83dfa78064a67fa91dacb6bf81e7e9585710f52b46b1d4f825",
+    "output_sha256": "71b94e457308b2ed4fac55ed16373c8a83eacc08d81b0cf4819aefe0cccaabba",
+    "full_receipt_sha256": "63261eaeeb2c3baf3341e37a8ef5aa9c6bc74714869d11f2b28fddfc94512958"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:18Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c12",
+   "arm": "A_genuine",
+   "input": {
+    "claim": "Canadian crude arriving at the US Gulf Coast fell from about 526,000 barrels a day in 2024 to roughly 337,000 in the first half of this year",
+    "evidence": [
+     {
+      "text": "Canadian crude arriving at the US Gulf Coast fell from about 526,000 barrels a day in 2024 to roughly 337,000 in the first half of this year."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "6fe2acee1a054abc",
+     "verdict": "OK",
+     "message": "The numbers match: the figures in the claim are present in the source. The meaning around the numbers (rise or fall, cause) is not checked by HELIX.",
+     "status": "BOUND",
+     "bindings": [
+      {
+       "number": "526,000",
+       "class": "EXACT_MATCH",
+       "evidence": "526,000",
+       "role": "CORE",
+       "text": "526,000 — present in the source"
+      },
+      {
+       "number": "2024",
+       "class": "EXACT_MATCH",
+       "evidence": "2024",
+       "role": "CORE",
+       "text": "2024 — present in the source"
+      },
+      {
+       "number": "337,000",
+       "class": "EXACT_MATCH",
+       "evidence": "337,000",
+       "role": "CORE",
+       "text": "337,000 — present in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": "Canadian crude arriving at the US Gulf Coast fell from about 526,000 barrels a day in 2024 to roughly 337,000 in the first half of this year."
+    },
+    "label": "SUPPORTED",
+    "per_evidence": [
+     {
+      "number": "526,000",
+      "class": "EXACT_MATCH",
+      "evidence": "526,000",
+      "role": "CORE",
+      "text": "526,000 — present in the source"
+     },
+     {
+      "number": "2024",
+      "class": "EXACT_MATCH",
+      "evidence": "2024",
+      "role": "CORE",
+      "text": "2024 — present in the source"
+     },
+     {
+      "number": "337,000",
+      "class": "EXACT_MATCH",
+      "evidence": "337,000",
+      "role": "CORE",
+      "text": "337,000 — present in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "e7b594b6ebfae583430302596028c6def05711dfb70ab6ae1e4315af3bc4965b",
+    "output_sha256": "d80d2cc99f22772ce92a7585c075612bbaf186cd1910256a559e66cd4a68aeb3",
+    "full_receipt_sha256": "744c468a2cb08fb977b4ea3fb021b310276d3e7449ef9f0a9bf6587073612417"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:18Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c12",
+   "arm": "E1_contrary",
+   "input": {
+    "claim": "Canadian crude arriving at the US Gulf Coast fell from about 526,000 barrels a day in 2024 to roughly 337,000 in the first half of this year",
+    "evidence": [
+     {
+      "text": "Canadian crude arriving at the US Gulf Coast fell from about 1,052,000 barrels a day in 2024 to roughly 337,000 in the first half of this year."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "c0d2f5d04995426b",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "526,000",
+       "class": "CONTRADICTED",
+       "evidence": "1,052,000",
+       "note": "526,000 barre…: в источнике 1,052,000 при том же существительном",
+       "role": "CORE",
+       "text": "526,000 — the source gives a different number: 1,052,000"
+      },
+      {
+       "number": "2024",
+       "class": "EXACT_MATCH",
+       "evidence": "2024",
+       "role": "CORE",
+       "text": "2024 — present in the source"
+      },
+      {
+       "number": "337,000",
+       "class": "EXACT_MATCH",
+       "evidence": "337,000",
+       "role": "CORE",
+       "text": "337,000 — present in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": "Canadian crude arriving at the US Gulf Coast fell from about 1,052,000 barrels a day in 2024 to roughly 337,000 in the first half of this year."
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "526,000",
+      "class": "CONTRADICTED",
+      "evidence": "1,052,000",
+      "note": "526,000 barre…: в источнике 1,052,000 при том же существительном",
+      "role": "CORE",
+      "text": "526,000 — the source gives a different number: 1,052,000"
+     },
+     {
+      "number": "2024",
+      "class": "EXACT_MATCH",
+      "evidence": "2024",
+      "role": "CORE",
+      "text": "2024 — present in the source"
+     },
+     {
+      "number": "337,000",
+      "class": "EXACT_MATCH",
+      "evidence": "337,000",
+      "role": "CORE",
+      "text": "337,000 — present in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "b9fa23e452c6fd72c680ebe47bc3fad79448866fbc9c2d4b4f008796ec1b40e3",
+    "output_sha256": "3acfd661f5224058222d8a56d029d88bbaaeaf2b7f6a2ef8c2471b52f88440c3",
+    "full_receipt_sha256": "f5f9e48a61ebfff9596c85be7328d0d70f74c14f0c6d4381e3bf094b54d72d85"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:18Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c12",
+   "arm": "C_noise_length",
+   "input": {
+    "claim": "Canadian crude arriving at the US Gulf Coast fell from about 526,000 barrels a day in 2024 to roughly 337,000 in the first half of this year",
+    "evidence": [
+     {
+      "text": "earlier demand this earlier figures annual from at figures week facility region at for earlier which as that supply facility and period may e"
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "e5d137cccf834ddf",
+     "verdict": "UNSUPPORTED_NUMBER",
+     "message": "Unsupported: this number is not in the source.",
+     "status": "NEEDS_RECOVERY",
+     "bindings": [
+      {
+       "number": "526,000",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "526,000 — not found in the source"
+      },
+      {
+       "number": "2024",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "2024 — not found in the source"
+      },
+      {
+       "number": "337,000",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "337,000 — not found in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": null
+    },
+    "label": "NEI",
+    "per_evidence": [
+     {
+      "number": "526,000",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "526,000 — not found in the source"
+     },
+     {
+      "number": "2024",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "2024 — not found in the source"
+     },
+     {
+      "number": "337,000",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "337,000 — not found in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "f55f83b055f874ead83b26bda23045914b3248c63b9c9499143cba8d361fcd23",
+    "output_sha256": "45eff24b734dfb69f964b8c35bdae3011f82aaaee98f020ddda0d4a08b2a1f4c",
+    "full_receipt_sha256": "f4a91687ba51faba59d2a0781fd4cef5931d5063d3efc37c7656d0f5b4d02dae"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:18Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c12",
+   "arm": "B_empty",
+   "input": {
+    "claim": "Canadian crude arriving at the US Gulf Coast fell from about 526,000 barrels a day in 2024 to roughly 337,000 in the first half of this year",
+    "evidence": [
+     {
+      "text": ""
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "error": "HTTPError: HTTP Error 422: Unprocessable Entity"
+    },
+    "label": null,
+    "per_evidence": null
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "c81626d7f1fa69b56fc810b292b3f2dd71e2ed935f9080f4fc0a0610740ff003",
+    "output_sha256": "4b2b538e75e16e9fd6f2a26c3de005a38aa4f73242ee71632f5f2dd6786d03e7",
+    "full_receipt_sha256": "b3facb5777ab574231e367f62f2f81660a91ffb2b9723f21c94f77b43afc9ddf"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:18Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c12",
+   "arm": "F_unrelated",
+   "input": {
+    "claim": "Canadian crude arriving at the US Gulf Coast fell from about 526,000 barrels a day in 2024 to roughly 337,000 in the first half of this year",
+    "evidence": [
+     {
+      "text": "On 4 September, the US national average retail diesel price passed $5.85 a gallon, breaking the June 2022 record."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "74ef9da24dde4bc7",
+     "verdict": "UNSUPPORTED_NUMBER",
+     "message": "Unsupported: this number is not in the source.",
+     "status": "NEEDS_RECOVERY",
+     "bindings": [
+      {
+       "number": "526,000",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "526,000 — not found in the source"
+      },
+      {
+       "number": "2024",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "2024 — not found in the source"
+      },
+      {
+       "number": "337,000",
+       "class": "UNVERIFIABLE",
+       "evidence": null,
+       "role": "CORE",
+       "text": "337,000 — not found in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": null
+    },
+    "label": "NEI",
+    "per_evidence": [
+     {
+      "number": "526,000",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "526,000 — not found in the source"
+     },
+     {
+      "number": "2024",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "2024 — not found in the source"
+     },
+     {
+      "number": "337,000",
+      "class": "UNVERIFIABLE",
+      "evidence": null,
+      "role": "CORE",
+      "text": "337,000 — not found in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "28071e6dd2ea31abe281da9a62e81cb22d81fd2edf78c0c7418148aed1fb5c0e",
+    "output_sha256": "f38eff79fbe21c8c78dede42bda18afae512f5d0afcb905d85f6ed363079d3ef",
+    "full_receipt_sha256": "d9669de01605cf9d640915923cfd788799b1393f861f72b3b575caa40b8ee867"
+   }
+  },
+  {
+   "timestamp_utc": "2026-10-31T07:20:19Z",
+   "party": "helix-ai-innovations",
+   "instrument": "null-arm-probe-v1.5 / helix judge /check",
+   "claim_id": "c12",
+   "arm": "E2_distorted_source",
+   "input": {
+    "claim": "Canadian crude arriving at the US Gulf Coast fell from about 1,052,000 barrels a day in 2024 to roughly 337,000 in the first half of this year",
+    "evidence": [
+     {
+      "text": "Canadian crude arriving at the US Gulf Coast fell from about 526,000 barrels a day in 2024 to roughly 337,000 in the first half of this year."
+     }
+    ],
+    "prompt_template": "helixcom.org/api/check (deterministic, no model)",
+    "search_enabled": false
+   },
+   "model": {
+    "name": "helix-check",
+    "version_or_hash": null,
+    "temperature": 0.0,
+    "other_params": {
+     "api": "https://helixcom.org/api/check"
+    }
+   },
+   "output": {
+    "raw": {
+     "id": "e1729f6db1184cc5",
+     "verdict": "CONTRADICTED",
+     "message": "Contradicted: the source gives a different number.",
+     "status": "CONTRADICTED",
+     "bindings": [
+      {
+       "number": "1,052,000",
+       "class": "CONTRADICTED",
+       "evidence": "526,000",
+       "note": "1,052,000 barre…: в источнике 526,000 при том же существительном",
+       "role": "CORE",
+       "text": "1,052,000 — the source gives a different number: 526,000"
+      },
+      {
+       "number": "2024",
+       "class": "EXACT_MATCH",
+       "evidence": "2024",
+       "role": "CORE",
+       "text": "2024 — present in the source"
+      },
+      {
+       "number": "337,000",
+       "class": "EXACT_MATCH",
+       "evidence": "337,000",
+       "role": "CORE",
+       "text": "337,000 — present in the source"
+      }
+     ],
+     "warnings": [],
+     "quote": "Canadian crude arriving at the US Gulf Coast fell from about 526,000 barrels a day in 2024 to roughly 337,000 in the first half of this year."
+    },
+    "label": "REFUTED",
+    "per_evidence": [
+     {
+      "number": "1,052,000",
+      "class": "CONTRADICTED",
+      "evidence": "526,000",
+      "note": "1,052,000 barre…: в источнике 526,000 при том же существительном",
+      "role": "CORE",
+      "text": "1,052,000 — the source gives a different number: 526,000"
+     },
+     {
+      "number": "2024",
+      "class": "EXACT_MATCH",
+      "evidence": "2024",
+      "role": "CORE",
+      "text": "2024 — present in the source"
+     },
+     {
+      "number": "337,000",
+      "class": "EXACT_MATCH",
+      "evidence": "337,000",
+      "role": "CORE",
+      "text": "337,000 — present in the source"
+     }
+    ]
+   },
+   "notes": "model hash unavailable: endpoint version not published",
+   "hashes": {
+    "input_sha256": "3491e650ab1d6d6e34d9136b27d3f3d477022a6a2303798091ce0be8009631e8",
+    "output_sha256": "cddb59206f724ed613839e90b130f7189cf389b73e90ece0fcbc851e37365cf9",
+    "full_receipt_sha256": "b28da6b753626b78b9cae4268ddbd1a409011fcf7b9c6311c161c4ae2c64d65b"
+   }
+  }
+ ],
+ "receipt_count": 72,
+ "kinds": {
+  "c01": "equality",
+  "c02": "year",
+  "c03": "equality",
+  "c04": "inequality",
+  "c05": "inequality",
+  "c06": "year",
+  "c07": "equality",
+  "c08": "equality",
+  "c09": "equality",
+  "c10": "year",
+  "c11": "inequality",
+  "c12": "equality"
+ },
+ "elapsed_s": 14.3,
+ "claims": 12
+}
