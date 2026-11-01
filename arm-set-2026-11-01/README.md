@@ -14,15 +14,69 @@ null arms those claims need before the null-arm question can be answered at all.
 |---|---|
 | `arms_expanded.json` | 238 arms over the 45 kept claims, ready for either judge |
 | `build_arms.py` | the builder; deterministic, stdlib only, no model called |
+| `ARM_MANIFEST.json` | expected verdict and scoring class for **every** arm |
+| `make_manifest.py` | emits the manifest from the arm set |
+| `scoring.py` | the scoring contract, with baselines and a selftest |
 
 Regenerate and verify:
 
 ```bash
-python3 build_arms.py     # writes arms_expanded.json, prints the build report
+python3 build_arms.py       # writes arms_expanded.json, prints the build report
+python3 make_manifest.py    # writes ARM_MANIFEST.json + its sha256
+python3 scoring.py --selftest    # proves the scorer behaves
+python3 scoring.py --baselines   # the numbers a real judge has to beat
 ```
 
 Anyone can run it and confirm nothing was hand-placed. Construction is mechanical
 and seeded from each claim id, so both sides get byte-identical noise.
+
+## The scoring contract
+
+No single aggregate over the 238 arms. Five blocks, reported separately:
+
+1. **A accuracy** — positive arms, determinate label expected
+2. **negative-arm false-SUPPORTED rate** — credulity across B, C, F, G
+3. **over-strictness** — A arms refused or abstained
+4. **REFUTED-class accuracy** — A arms whose expected label is REFUTED
+5. **SUPPORTED-class over-strictness** — A arms whose expected label is SUPPORTED
+
+`E` is **small-n** (13 arms): reported with a Wilson 95 % interval and labelled
+small-n, never as a stable contradiction-accuracy rate.
+
+Every arm's expected verdict is stated in `ARM_MANIFEST.json`, including the
+labels that count as acceptable and the ones that are specifically wrong:
+
+| arm | acceptable | specifically wrong |
+|---|---|---|
+| `A_genuine` | the claim's constructed label | refusal/NEI = over-strictness |
+| `B_empty` | NEI, REFUSAL | SUPPORTED = credulity from no evidence |
+| `C_noise_length` | NEI, REFUSAL | SUPPORTED = mode 2 (length-sensitive) |
+| `E_contradicting` | REFUTED | SUPPORTED = credulity |
+| `F_unrelated` | NEI, REFUSAL, REFUTED\* | SUPPORTED = credulity on irrelevant evidence |
+| `G_permuted` | NEI, REFUSAL | SUPPORTED = mode 1 (content-blind) |
+
+\* `REFUTED` on `F` is admissible only per the S2.10 rule — that passage carries
+a contradicting quantity of the same kind.
+
+`c10.s0.identity` is **prose-only** (no number, no quotation), so the reference
+oracles cannot grade it. It is carried as an **anchor** and excluded from accuracy.
+
+## Baselines — the numbers a judge has to beat
+
+Measured with `python3 scoring.py --baselines`:
+
+| baseline | A accuracy | negative false-SUPPORTED | REFUTED-class | E (small-n) |
+|---|---|---|---|---|
+| always SUPPORTED (credulous) | 0.4773 | **1.0000** (176/176) | 0.0 | 0.0 |
+| always NOT_ENOUGH_INFO | 0.0 | 0.0 | 0.0 | 0.0 |
+| always REFUSAL | 0.0 | 0.0 | 0.0 | 0.0 |
+| diff-engine (string similarity) | 0.5455 | 0.1193 (G: 0.4773) | **0.1304** | 0.0 |
+
+The diff-engine is the one that matters. A pure string matcher clears 54.5 % of
+`A` and 13 % of `REFUTED`, and is caught content-blind on `G` at 47.7 % false
+SUPPORTED. Any judge claiming to read evidence has to beat that row, not the
+credulous one.
+
 
 ## The arms
 

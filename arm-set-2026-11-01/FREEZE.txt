@@ -1,0 +1,11 @@
+# FREEZE — arm set v1, 2026-11-01
+#
+# SHA-256 of each artifact at freeze time. Verify before any run; if a hash
+# differs, the set is not the set that was frozen and the result is not this result.
+
+02d1ba4b92c6f114ec2043587bec7414de8f04813fa7f853e6c765b60a392cb8  arms_expanded.json
+ec7dbf2086a3eb1ed819e57b020f3867e3d291d301ed278723566589b58d721d  ARM_MANIFEST.json
+531a7b40ad1b204519a9c9762b2647b8e227970894addfe92e0988b93e807c59  build_arms.py
+24299e7c69a01ec2ca6936810f64972e3823eebeb444bc39e5f133cb40655692  make_manifest.py
+6d81628d88031aa8f85ec5c9300fe8d1cb9d9b23891f3aeb10782d904f7d96eb  scoring.py
+18c42dce8bc958a8a904b64f56335c3bb5b5bc68908426f7fe573efd05fcd1b1  README.md
