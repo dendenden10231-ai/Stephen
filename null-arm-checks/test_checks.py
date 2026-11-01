@@ -1,6 +1,6 @@
 # Copyright 2026 Denis Vashkevich
 # Licensed under the Apache License, Version 2.0 (see LICENSE).
-"""Tests. Run with pytest, or without it: python3 test_gift.py"""
+"""Tests. Run with pytest, or without it: python3 test_checks.py"""
 from __future__ import annotations
 
 import sys

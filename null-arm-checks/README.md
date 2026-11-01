@@ -23,7 +23,7 @@ Supporting pieces: `number_check.py` (deterministic number/unit/scale/date compa
 ## Run
 
 ```
-python3 test_gift.py            # 12 tests, also under pytest
+python3 test_checks.py            # 12 tests, also under pytest
 python3 -c "import arm_check as a; print(a.check_distorted('11.70 million','11.7 million'))"
 ```
 
@@ -46,3 +46,21 @@ mutation set from your passages (no second refinery): 49 built, 45 kept, 4 dropp
 - HELIX still publishes no endpoint version, so `model.version_or_hash` stays null on our side. A signature proves who issued a receipt, not which model produced it.
 
 Details and the exact rules: `SPEC.md`.
+
+## Update, 1 November 2026
+
+The folder was renamed from `gift-2026-11-01/` to `null-arm-checks/` (and `test_gift.py` to `test_checks.py`). Content is unchanged.
+
+Everything above was re-run on 1 November 2026 before this note, with the same commands:
+
+```
+python3 test_checks.py                                  12/12 passed
+check_distorted('11.70 million', '11.7 million')        INVALID  MATCH
+check_distorted('in 4044', 'in 2022')                   INVALID  NOT_IN_PASSAGE
+check_distorted('in 2021', 'in 2022')                   VALID    DATE_SHIFT -1
+mutation_items_no_second_refinery.json                  49 records: 45 kept, 4 carry a dropped_reason
+```
+
+One clarification about the set: the file holds all 49 records. Four of them have a `dropped_reason` (the oracle could not see the mutation against the passage) and are not part of the 45 to send to a judge; filter on the absence of that field.
+
+Still not done: the 45 claims have not been run against either judge.

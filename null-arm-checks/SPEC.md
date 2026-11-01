@@ -89,4 +89,4 @@ Ed25519 per RFC 8032 over the receipt digest (the hex SHA-256 of the canonical r
 
 ## 9. What this does not claim
 
-No model was called. Nothing here has been run against either judge. The oracles are lexical. Numbers in README are from `python3 test_gift.py` and the commands shown there, 31 October 2026.
+No model was called. Nothing here has been run against either judge. The oracles are lexical. Numbers in README are from `python3 test_checks.py` and the commands shown there; first measured 31 October 2026, re-run 1 November 2026 (see "Update" in README).
