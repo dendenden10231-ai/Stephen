@@ -63,7 +63,30 @@ oracles cannot grade it. It is carried as an **anchor** and excluded from accura
 
 ## Baselines — the numbers a judge has to beat
 
-Measured with `python3 scoring.py --baselines`:
+> **CORRECTION 2026-11-01 (after external audit by Denis Vashkevich).** The
+> baseline table below is **superseded**. It was measured on a v1 arm set with
+> three structural defects, all confirmed:
+>
+> 1. **`G` borrowed by claim index, not passage.** The corpus is 12 passages
+>    across 45 claims (up to six claims per passage), so **33 of 45 `G` arms fed
+>    the claim its own source passage**. They were not permuted-evidence arms.
+> 2. **`C` noise arms carried an empty `source`** — 45 of 45 — so a change of
+>    source could explain a label change rather than the content.
+> 3. **`F` allowed `REFUTED` unconditionally** in the manifest — 45 of 45 —
+>    where rule S2.10 permits it only when that passage carries a contradicting
+>    quantity.
+>
+> Consequence for the headline: the `diff-engine` figure of **0.4773 false
+> SUPPORTED on `G` was an artefact of defect 1**, not a property of the baseline.
+> On a collision-free set the same baseline has `FDR_neg 0.0000`, `Acc_A 0.5319`,
+> and its real weakness is 5 of 27 on the already-distorted half. Anywhere this
+> number was quoted, it is wrong and should be replaced.
+>
+> The v2 proposal (`null-arm-checks-v2`, PR #4) enforces all three invariants in
+> code with assertions, restores `D`, adds `C_num_noise`, and splits `A` into
+> supported and already-distorted halves scored separately.
+
+Measured with `python3 scoring.py --baselines` — **v1, superseded, see correction above**:
 
 | baseline | A accuracy | negative false-SUPPORTED | REFUTED-class | E (small-n) |
 |---|---|---|---|---|
@@ -72,10 +95,14 @@ Measured with `python3 scoring.py --baselines`:
 | always REFUSAL | 0.0 | 0.0 | 0.0 | 0.0 |
 | diff-engine (string similarity) | 0.5455 | 0.1193 (G: 0.4773) | **0.1304** | 0.0 |
 
-The diff-engine is the one that matters. A pure string matcher clears 54.5 % of
-`A` and 13 % of `REFUTED`, and is caught content-blind on `G` at 47.7 % false
-SUPPORTED. Any judge claiming to read evidence has to beat that row, not the
-credulous one.
+Corrected figures on the v2 (assertion-enforced) set, for comparison:
+
+| baseline | Acc(A) | FDR_neg | J_gate |
+|---|---|---|---|
+| always SUPPORTED | 0.4255 | 1.0000 | −0.5745 |
+| always REFUTED | 0.5745 | 0.8652 | −0.4255 |
+| diff-engine | 0.5319 | **0.0000** | 0.5319 |
+| oracle-only | 0.9787 | 0.1199 | **0.7240** |
 
 
 ## The arms
