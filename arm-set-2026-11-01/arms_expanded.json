@@ -1,0 +1,3162 @@
+{
+ "version": "1.0",
+ "built": "2026-11-01",
+ "built_by": "Stephen Hope / Helix AI Innovations (arms only; claims by Denis Vashkevich)",
+ "source_set": "mutation_items_no_second_refinery.json \u2014 45 kept of 49, Apache-2.0",
+ "note": "Arms A-F-G-B-C constructed mechanically per null-arm probe v1.6 rules. C is seeded per claim id (sha256 prefix) so both sides build byte-identical noise; nobody's discretion is in the construction. E exists only for claims whose genuine arm expects SUPPORTED.",
+ "noise_seed_rule": "int(sha256(claim_id)[:12], 16) -> random.Random; word list in build script",
+ "arms": [
+  {
+   "claim_id": "c01.s0.identity",
+   "arm": "A_genuine",
+   "claim": "East Coast (PADD 1) distillate inventories 19.3M bbl week ending 28 August \u2014 lowest on record (back to 1990);",
+   "evidence": [
+    {
+     "text": "East Coast (PADD 1) distillate inventories 19.3M bbl week ending 28 August \u2014 lowest on record (back to 1990);",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "SUPPORTED"
+  },
+  {
+   "claim_id": "c01.s0.identity",
+   "arm": "B_empty",
+   "claim": "East Coast (PADD 1) distillate inventories 19.3M bbl week ending 28 August \u2014 lowest on record (back to 1990);",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c01.s0.identity",
+   "arm": "C_noise_length",
+   "claim": "East Coast (PADD 1) distillate inventories 19.3M bbl week ending 28 August \u2014 lowest on record (back to 1990);",
+   "evidence": [
+    {
+     "text": "ordinary its item common not entry archive figure value standard plain than noted of file volume the for.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c01.s0.identity",
+   "arm": "F_unrelated",
+   "claim": "East Coast (PADD 1) distillate inventories 19.3M bbl week ending 28 August \u2014 lowest on record (back to 1990);",
+   "evidence": [
+    {
+     "text": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~70%)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c02.s1.identity"
+  },
+  {
+   "claim_id": "c01.s0.identity",
+   "arm": "G_permuted",
+   "claim": "East Coast (PADD 1) distillate inventories 19.3M bbl week ending 28 August \u2014 lowest on record (back to 1990);",
+   "evidence": [
+    {
+     "text": "East Coast (PADD 1) distillate inventories 19.3M bbl week ending 28 August \u2014 lowest on record (back to 1990);",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c01.s0.scale_shift"
+  },
+  {
+   "claim_id": "c01.s0.scale_shift",
+   "arm": "A_genuine",
+   "claim": "East Coast (PADD 1) distillate inventories 19.3B bbl week ending 28 August \u2014 lowest on record (back to 1990);",
+   "evidence": [
+    {
+     "text": "East Coast (PADD 1) distillate inventories 19.3M bbl week ending 28 August \u2014 lowest on record (back to 1990);",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c01.s0.scale_shift",
+   "arm": "B_empty",
+   "claim": "East Coast (PADD 1) distillate inventories 19.3B bbl week ending 28 August \u2014 lowest on record (back to 1990);",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c01.s0.scale_shift",
+   "arm": "C_noise_length",
+   "claim": "East Coast (PADD 1) distillate inventories 19.3B bbl week ending 28 August \u2014 lowest on record (back to 1990);",
+   "evidence": [
+    {
+     "text": "register been had that been should at its total or it stated weekly under on formal table season at daily.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c01.s0.scale_shift",
+   "arm": "F_unrelated",
+   "claim": "East Coast (PADD 1) distillate inventories 19.3B bbl week ending 28 August \u2014 lowest on record (back to 1990);",
+   "evidence": [
+    {
+     "text": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~70%)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c02.s1.scale_shift"
+  },
+  {
+   "claim_id": "c01.s0.scale_shift",
+   "arm": "G_permuted",
+   "claim": "East Coast (PADD 1) distillate inventories 19.3B bbl week ending 28 August \u2014 lowest on record (back to 1990);",
+   "evidence": [
+    {
+     "text": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c01.s1.identity"
+  },
+  {
+   "claim_id": "c01.s1.identity",
+   "arm": "A_genuine",
+   "claim": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+   "evidence": [
+    {
+     "text": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "SUPPORTED"
+  },
+  {
+   "claim_id": "c01.s1.identity",
+   "arm": "B_empty",
+   "claim": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c01.s1.identity",
+   "arm": "C_noise_length",
+   "claim": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+   "evidence": [
+    {
+     "text": "but or was measure but value should will noted will basic noted by could.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c01.s1.identity",
+   "arm": "F_unrelated",
+   "claim": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+   "evidence": [
+    {
+     "text": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~70%)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c02.s1.value_shift"
+  },
+  {
+   "claim_id": "c01.s1.identity",
+   "arm": "G_permuted",
+   "claim": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+   "evidence": [
+    {
+     "text": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c01.s1.scale_shift"
+  },
+  {
+   "claim_id": "c01.s1.identity",
+   "arm": "E_contradicting",
+   "claim": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+   "evidence": [
+    {
+     "text": "EIA September STEO: stocks below 100M bbl this month (first since 2002)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "E"
+    }
+   ],
+   "requirement": "must DIFFER from A, in the opposite direction (REFUTED)",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c01.s1.scale_shift",
+   "arm": "A_genuine",
+   "claim": "EIA September STEO: stocks below 100B bbl this month (first since 2003)",
+   "evidence": [
+    {
+     "text": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c01.s1.scale_shift",
+   "arm": "B_empty",
+   "claim": "EIA September STEO: stocks below 100B bbl this month (first since 2003)",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c01.s1.scale_shift",
+   "arm": "C_noise_length",
+   "claim": "EIA September STEO: stocks below 100B bbl this month (first since 2003)",
+   "evidence": [
+    {
+     "text": "but ledger has than detail or list so on row season can which measure.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c01.s1.scale_shift",
+   "arm": "F_unrelated",
+   "claim": "EIA September STEO: stocks below 100B bbl this month (first since 2003)",
+   "evidence": [
+    {
+     "text": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c03.s0.identity"
+  },
+  {
+   "claim_id": "c01.s1.scale_shift",
+   "arm": "G_permuted",
+   "claim": "EIA September STEO: stocks below 100B bbl this month (first since 2003)",
+   "evidence": [
+    {
+     "text": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c01.s1.year_shift"
+  },
+  {
+   "claim_id": "c01.s1.year_shift",
+   "arm": "A_genuine",
+   "claim": "EIA September STEO: stocks below 100M bbl this month (first since 2002)",
+   "evidence": [
+    {
+     "text": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c01.s1.year_shift",
+   "arm": "B_empty",
+   "claim": "EIA September STEO: stocks below 100M bbl this month (first since 2002)",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c01.s1.year_shift",
+   "arm": "C_noise_length",
+   "claim": "EIA September STEO: stocks below 100M bbl this month (first since 2002)",
+   "evidence": [
+    {
+     "text": "value to list its account this at list ordinary detail by can for this.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c01.s1.year_shift",
+   "arm": "F_unrelated",
+   "claim": "EIA September STEO: stocks below 100M bbl this month (first since 2002)",
+   "evidence": [
+    {
+     "text": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c03.s0.unit_swap"
+  },
+  {
+   "claim_id": "c01.s1.year_shift",
+   "arm": "G_permuted",
+   "claim": "EIA September STEO: stocks below 100M bbl this month (first since 2002)",
+   "evidence": [
+    {
+     "text": "\"Russia producing 70% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c02.s0.identity"
+  },
+  {
+   "claim_id": "c02.s0.identity",
+   "arm": "A_genuine",
+   "claim": "\"Russia producing 70% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+   "evidence": [
+    {
+     "text": "\"Russia producing 70% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "SUPPORTED"
+  },
+  {
+   "claim_id": "c02.s0.identity",
+   "arm": "B_empty",
+   "claim": "\"Russia producing 70% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c02.s0.identity",
+   "arm": "C_noise_length",
+   "claim": "\"Russia producing 70% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+   "evidence": [
+    {
+     "text": "at be column this evening figure that is basic for record account value list record such would and noted column register with list on notice for report but.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c02.s0.identity",
+   "arm": "F_unrelated",
+   "claim": "\"Russia producing 70% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+   "evidence": [
+    {
+     "text": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c03.s0.scale_shift"
+  },
+  {
+   "claim_id": "c02.s0.identity",
+   "arm": "G_permuted",
+   "claim": "\"Russia producing 70% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+   "evidence": [
+    {
+     "text": "\"Russia producing 70% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c02.s0.value_shift"
+  },
+  {
+   "claim_id": "c02.s0.identity",
+   "arm": "E_contradicting",
+   "claim": "\"Russia producing 70% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+   "evidence": [
+    {
+     "text": "\"Russia producing 87% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "E"
+    }
+   ],
+   "requirement": "must DIFFER from A, in the opposite direction (REFUTED)",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c02.s0.value_shift",
+   "arm": "A_genuine",
+   "claim": "\"Russia producing 88% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+   "evidence": [
+    {
+     "text": "\"Russia producing 70% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c02.s0.value_shift",
+   "arm": "B_empty",
+   "claim": "\"Russia producing 88% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c02.s0.value_shift",
+   "arm": "C_noise_length",
+   "claim": "\"Russia producing 88% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+   "evidence": [
+    {
+     "text": "account by basic row than for of neutral might have register across measure is summary figure season volume list to is were simple general regular total observed.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c02.s0.value_shift",
+   "arm": "F_unrelated",
+   "claim": "\"Russia producing 88% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+   "evidence": [
+    {
+     "text": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c03.s0.year_shift"
+  },
+  {
+   "claim_id": "c02.s0.value_shift",
+   "arm": "G_permuted",
+   "claim": "\"Russia producing 88% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+   "evidence": [
+    {
+     "text": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~70%)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c02.s1.identity"
+  },
+  {
+   "claim_id": "c02.s1.identity",
+   "arm": "A_genuine",
+   "claim": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~70%)",
+   "evidence": [
+    {
+     "text": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~70%)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "SUPPORTED"
+  },
+  {
+   "claim_id": "c02.s1.identity",
+   "arm": "B_empty",
+   "claim": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~70%)",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c02.s1.identity",
+   "arm": "C_noise_length",
+   "claim": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~70%)",
+   "evidence": [
+    {
+     "text": "if row report measure season common total weekly account would.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c02.s1.identity",
+   "arm": "F_unrelated",
+   "claim": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~70%)",
+   "evidence": [
+    {
+     "text": "nine storage tanks damaged/destroyed by late August",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c03.s1.identity"
+  },
+  {
+   "claim_id": "c02.s1.identity",
+   "arm": "G_permuted",
+   "claim": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~70%)",
+   "evidence": [
+    {
+     "text": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~70%)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c02.s1.scale_shift"
+  },
+  {
+   "claim_id": "c02.s1.identity",
+   "arm": "E_contradicting",
+   "claim": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~70%)",
+   "evidence": [
+    {
+     "text": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~87%)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "E"
+    }
+   ],
+   "requirement": "must DIFFER from A, in the opposite direction (REFUTED)",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c02.s1.scale_shift",
+   "arm": "A_genuine",
+   "claim": "Gasoline production ~80M t/d vs 115k t/d domestic demand (~70%)",
+   "evidence": [
+    {
+     "text": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~70%)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c02.s1.scale_shift",
+   "arm": "B_empty",
+   "claim": "Gasoline production ~80M t/d vs 115k t/d domestic demand (~70%)",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c02.s1.scale_shift",
+   "arm": "C_noise_length",
+   "claim": "Gasoline production ~80M t/d vs 115k t/d domestic demand (~70%)",
+   "evidence": [
+    {
+     "text": "which than ordinary page or with report period or could would.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c02.s1.scale_shift",
+   "arm": "F_unrelated",
+   "claim": "Gasoline production ~80M t/d vs 115k t/d domestic demand (~70%)",
+   "evidence": [
+    {
+     "text": "AAA national average: $5.85/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c04.s0.identity"
+  },
+  {
+   "claim_id": "c02.s1.scale_shift",
+   "arm": "G_permuted",
+   "claim": "Gasoline production ~80M t/d vs 115k t/d domestic demand (~70%)",
+   "evidence": [
+    {
+     "text": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~70%)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c02.s1.value_shift"
+  },
+  {
+   "claim_id": "c02.s1.value_shift",
+   "arm": "A_genuine",
+   "claim": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~88%)",
+   "evidence": [
+    {
+     "text": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~70%)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c02.s1.value_shift",
+   "arm": "B_empty",
+   "claim": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~88%)",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c02.s1.value_shift",
+   "arm": "C_noise_length",
+   "claim": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~88%)",
+   "evidence": [
+    {
+     "text": "page or have plain of daily observed basic across item regular.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c02.s1.value_shift",
+   "arm": "F_unrelated",
+   "claim": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~88%)",
+   "evidence": [
+    {
+     "text": "AAA national average: $5.85/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c04.s0.value_shift"
+  },
+  {
+   "claim_id": "c02.s1.value_shift",
+   "arm": "G_permuted",
+   "claim": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~88%)",
+   "evidence": [
+    {
+     "text": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c03.s0.identity"
+  },
+  {
+   "claim_id": "c03.s0.identity",
+   "arm": "A_genuine",
+   "claim": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "evidence": [
+    {
+     "text": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "SUPPORTED"
+  },
+  {
+   "claim_id": "c03.s0.identity",
+   "arm": "B_empty",
+   "claim": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c03.s0.identity",
+   "arm": "C_noise_length",
+   "claim": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "evidence": [
+    {
+     "text": "has should simple notice can document by detail document would between general value basic across in.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c03.s0.identity",
+   "arm": "F_unrelated",
+   "claim": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "evidence": [
+    {
+     "text": "AAA national average: $5.85/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c04.s0.year_shift"
+  },
+  {
+   "claim_id": "c03.s0.identity",
+   "arm": "G_permuted",
+   "claim": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "evidence": [
+    {
+     "text": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c03.s0.unit_swap"
+  },
+  {
+   "claim_id": "c03.s0.identity",
+   "arm": "E_contradicting",
+   "claim": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "evidence": [
+    {
+     "text": "Jazan (400k b/d) not properly run since 27 July 2025 Houthi drone damage to tank farm and power complex;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "E"
+    }
+   ],
+   "requirement": "must DIFFER from A, in the opposite direction (REFUTED)",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c03.s0.unit_swap",
+   "arm": "A_genuine",
+   "claim": "Jazan (400k barrels per week) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "evidence": [
+    {
+     "text": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c03.s0.unit_swap",
+   "arm": "B_empty",
+   "claim": "Jazan (400k barrels per week) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c03.s0.unit_swap",
+   "arm": "C_noise_length",
+   "claim": "Jazan (400k barrels per week) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "evidence": [
+    {
+     "text": "daily has might has for were for measure column over column detail notice of report record may might.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c03.s0.unit_swap",
+   "arm": "F_unrelated",
+   "claim": "Jazan (400k barrels per week) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "evidence": [
+    {
+     "text": "US diesel crack spread record $112.17/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c05.s0.identity"
+  },
+  {
+   "claim_id": "c03.s0.unit_swap",
+   "arm": "G_permuted",
+   "claim": "Jazan (400k barrels per week) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "evidence": [
+    {
+     "text": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c03.s0.scale_shift"
+  },
+  {
+   "claim_id": "c03.s0.scale_shift",
+   "arm": "A_genuine",
+   "claim": "Jazan (400M b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "evidence": [
+    {
+     "text": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c03.s0.scale_shift",
+   "arm": "B_empty",
+   "claim": "Jazan (400M b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c03.s0.scale_shift",
+   "arm": "C_noise_length",
+   "claim": "Jazan (400M b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "evidence": [
+    {
+     "text": "notice row basic be over page was column so are on between neutral general list for stated figure at.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c03.s0.scale_shift",
+   "arm": "F_unrelated",
+   "claim": "Jazan (400M b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "evidence": [
+    {
+     "text": "US diesel crack spread record $112.17/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c05.s0.value_shift"
+  },
+  {
+   "claim_id": "c03.s0.scale_shift",
+   "arm": "G_permuted",
+   "claim": "Jazan (400M b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "evidence": [
+    {
+     "text": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c03.s0.year_shift"
+  },
+  {
+   "claim_id": "c03.s0.year_shift",
+   "arm": "A_genuine",
+   "claim": "Jazan (400k b/d) not properly run since 27 July 2025 Houthi drone damage to tank farm and power complex;",
+   "evidence": [
+    {
+     "text": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c03.s0.year_shift",
+   "arm": "B_empty",
+   "claim": "Jazan (400k b/d) not properly run since 27 July 2025 Houthi drone damage to tank farm and power complex;",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c03.s0.year_shift",
+   "arm": "C_noise_length",
+   "claim": "Jazan (400k b/d) not properly run since 27 July 2025 Houthi drone damage to tank farm and power complex;",
+   "evidence": [
+    {
+     "text": "with sheet stated of basic as page sheet ordinary item simple row value total file ordinary ledger.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c03.s0.year_shift",
+   "arm": "F_unrelated",
+   "claim": "Jazan (400k b/d) not properly run since 27 July 2025 Houthi drone damage to tank farm and power complex;",
+   "evidence": [
+    {
+     "text": "pre-war baseline ~$20",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c05.s1.identity"
+  },
+  {
+   "claim_id": "c03.s0.year_shift",
+   "arm": "G_permuted",
+   "claim": "Jazan (400k b/d) not properly run since 27 July 2025 Houthi drone damage to tank farm and power complex;",
+   "evidence": [
+    {
+     "text": "nine storage tanks damaged/destroyed by late August",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c03.s1.identity"
+  },
+  {
+   "claim_id": "c03.s1.identity",
+   "arm": "A_genuine",
+   "claim": "nine storage tanks damaged/destroyed by late August",
+   "evidence": [
+    {
+     "text": "nine storage tanks damaged/destroyed by late August",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "SUPPORTED"
+  },
+  {
+   "claim_id": "c03.s1.identity",
+   "arm": "B_empty",
+   "claim": "nine storage tanks damaged/destroyed by late August",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c03.s1.identity",
+   "arm": "C_noise_length",
+   "claim": "nine storage tanks damaged/destroyed by late August",
+   "evidence": [
+    {
+     "text": "volume volume was weekly simple with evening its.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c03.s1.identity",
+   "arm": "F_unrelated",
+   "claim": "nine storage tanks damaged/destroyed by late August",
+   "evidence": [
+    {
+     "text": "pre-war baseline ~$20",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c05.s1.value_shift"
+  },
+  {
+   "claim_id": "c03.s1.identity",
+   "arm": "G_permuted",
+   "claim": "nine storage tanks damaged/destroyed by late August",
+   "evidence": [
+    {
+     "text": "AAA national average: $5.85/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c04.s0.identity"
+  },
+  {
+   "claim_id": "c04.s0.identity",
+   "arm": "A_genuine",
+   "claim": "AAA national average: $5.85/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "evidence": [
+    {
+     "text": "AAA national average: $5.85/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "SUPPORTED"
+  },
+  {
+   "claim_id": "c04.s0.identity",
+   "arm": "B_empty",
+   "claim": "AAA national average: $5.85/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c04.s0.identity",
+   "arm": "C_noise_length",
+   "claim": "AAA national average: $5.85/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "evidence": [
+    {
+     "text": "figure account in detail was account with general can change than list have annual but regular list under.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c04.s0.identity",
+   "arm": "F_unrelated",
+   "claim": "AAA national average: $5.85/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "evidence": [
+    {
+     "text": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 m3 tank destroyed beyond repair);",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c06.s0.identity"
+  },
+  {
+   "claim_id": "c04.s0.identity",
+   "arm": "G_permuted",
+   "claim": "AAA national average: $5.85/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "evidence": [
+    {
+     "text": "AAA national average: $5.85/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c04.s0.value_shift"
+  },
+  {
+   "claim_id": "c04.s0.identity",
+   "arm": "E_contradicting",
+   "claim": "AAA national average: $5.85/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "evidence": [
+    {
+     "text": "AAA national average: $5.85/gal on 4 September 2025 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "E"
+    }
+   ],
+   "requirement": "must DIFFER from A, in the opposite direction (REFUTED)",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c04.s0.value_shift",
+   "arm": "A_genuine",
+   "claim": "AAA national average: $7.31/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "evidence": [
+    {
+     "text": "AAA national average: $5.85/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c04.s0.value_shift",
+   "arm": "B_empty",
+   "claim": "AAA national average: $7.31/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c04.s0.value_shift",
+   "arm": "C_noise_length",
+   "claim": "AAA national average: $7.31/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "evidence": [
+    {
+     "text": "be or may measure ledger standard document archive period column evening sheet would should filing over.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c04.s0.value_shift",
+   "arm": "F_unrelated",
+   "claim": "AAA national average: $7.31/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "evidence": [
+    {
+     "text": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 m3 tank destroyed beyond repair);",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c06.s0.paraphrase_number"
+  },
+  {
+   "claim_id": "c04.s0.value_shift",
+   "arm": "G_permuted",
+   "claim": "AAA national average: $7.31/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "evidence": [
+    {
+     "text": "AAA national average: $5.85/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c04.s0.year_shift"
+  },
+  {
+   "claim_id": "c04.s0.year_shift",
+   "arm": "A_genuine",
+   "claim": "AAA national average: $5.85/gal on 4 September 2025 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "evidence": [
+    {
+     "text": "AAA national average: $5.85/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c04.s0.year_shift",
+   "arm": "B_empty",
+   "claim": "AAA national average: $5.85/gal on 4 September 2025 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c04.s0.year_shift",
+   "arm": "C_noise_length",
+   "claim": "AAA national average: $5.85/gal on 4 September 2025 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "evidence": [
+    {
+     "text": "account entry over basic observed row stated that and would figure value been list ledger plain register.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c04.s0.year_shift",
+   "arm": "F_unrelated",
+   "claim": "AAA national average: $5.85/gal on 4 September 2025 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "evidence": [
+    {
+     "text": "the June strike killed three workers and took the plant fully offline",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c06.s1.identity"
+  },
+  {
+   "claim_id": "c04.s0.year_shift",
+   "arm": "G_permuted",
+   "claim": "AAA national average: $5.85/gal on 4 September 2025 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "evidence": [
+    {
+     "text": "US diesel crack spread record $112.17/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c05.s0.identity"
+  },
+  {
+   "claim_id": "c05.s0.identity",
+   "arm": "A_genuine",
+   "claim": "US diesel crack spread record $112.17/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+   "evidence": [
+    {
+     "text": "US diesel crack spread record $112.17/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "SUPPORTED"
+  },
+  {
+   "claim_id": "c05.s0.identity",
+   "arm": "B_empty",
+   "claim": "US diesel crack spread record $112.17/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c05.s0.identity",
+   "arm": "C_noise_length",
+   "claim": "US diesel crack spread record $112.17/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+   "evidence": [
+    {
+     "text": "ledger file monthly detail and been such summary standard for sheet the such table ordinary observed monthly of.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c05.s0.identity",
+   "arm": "F_unrelated",
+   "claim": "US diesel crack spread record $112.17/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+   "evidence": [
+    {
+     "text": "Vitol and Phillips 66 executives: refined-product deficit structural, more pronounced than crude deficit, into winter",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c07.s0.identity"
+  },
+  {
+   "claim_id": "c05.s0.identity",
+   "arm": "G_permuted",
+   "claim": "US diesel crack spread record $112.17/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+   "evidence": [
+    {
+     "text": "US diesel crack spread record $112.17/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c05.s0.value_shift"
+  },
+  {
+   "claim_id": "c05.s0.identity",
+   "arm": "E_contradicting",
+   "claim": "US diesel crack spread record $112.17/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+   "evidence": [
+    {
+     "text": "US diesel crack spread record $140.17/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "E"
+    }
+   ],
+   "requirement": "must DIFFER from A, in the opposite direction (REFUTED)",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c05.s0.value_shift",
+   "arm": "A_genuine",
+   "claim": "US diesel crack spread record $140.21/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+   "evidence": [
+    {
+     "text": "US diesel crack spread record $112.17/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c05.s0.value_shift",
+   "arm": "B_empty",
+   "claim": "US diesel crack spread record $140.21/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c05.s0.value_shift",
+   "arm": "C_noise_length",
+   "claim": "US diesel crack spread record $140.21/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+   "evidence": [
+    {
+     "text": "to change at record was but that were is by will with regular as total account season report monthly at ledger are.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c05.s0.value_shift",
+   "arm": "F_unrelated",
+   "claim": "US diesel crack spread record $140.21/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+   "evidence": [
+    {
+     "text": "\"At least nine Gulf refineries damaged and shut\";",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c08.s0.identity"
+  },
+  {
+   "claim_id": "c05.s0.value_shift",
+   "arm": "G_permuted",
+   "claim": "US diesel crack spread record $140.21/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+   "evidence": [
+    {
+     "text": "pre-war baseline ~$20",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c05.s1.identity"
+  },
+  {
+   "claim_id": "c05.s1.identity",
+   "arm": "A_genuine",
+   "claim": "pre-war baseline ~$20",
+   "evidence": [
+    {
+     "text": "pre-war baseline ~$20",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "SUPPORTED"
+  },
+  {
+   "claim_id": "c05.s1.identity",
+   "arm": "B_empty",
+   "claim": "pre-war baseline ~$20",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c05.s1.identity",
+   "arm": "C_noise_length",
+   "claim": "pre-war baseline ~$20",
+   "evidence": [
+    {
+     "text": "general change been.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c05.s1.identity",
+   "arm": "F_unrelated",
+   "claim": "pre-war baseline ~$20",
+   "evidence": [
+    {
+     "text": "region's 11.7M b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c08.s1.identity"
+  },
+  {
+   "claim_id": "c05.s1.identity",
+   "arm": "G_permuted",
+   "claim": "pre-war baseline ~$20",
+   "evidence": [
+    {
+     "text": "pre-war baseline ~$20",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c05.s1.value_shift"
+  },
+  {
+   "claim_id": "c05.s1.identity",
+   "arm": "E_contradicting",
+   "claim": "pre-war baseline ~$20",
+   "evidence": [
+    {
+     "text": "pre-war baseline ~$25",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "E"
+    }
+   ],
+   "requirement": "must DIFFER from A, in the opposite direction (REFUTED)",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c05.s1.value_shift",
+   "arm": "A_genuine",
+   "claim": "pre-war baseline ~$25",
+   "evidence": [
+    {
+     "text": "pre-war baseline ~$20",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c05.s1.value_shift",
+   "arm": "B_empty",
+   "claim": "pre-war baseline ~$25",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c05.s1.value_shift",
+   "arm": "C_noise_length",
+   "claim": "pre-war baseline ~$25",
+   "evidence": [
+    {
+     "text": "are is summary daily.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c05.s1.value_shift",
+   "arm": "F_unrelated",
+   "claim": "pre-war baseline ~$25",
+   "evidence": [
+    {
+     "text": "region's 11.7M b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c08.s1.unit_swap"
+  },
+  {
+   "claim_id": "c05.s1.value_shift",
+   "arm": "G_permuted",
+   "claim": "pre-war baseline ~$25",
+   "evidence": [
+    {
+     "text": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 m3 tank destroyed beyond repair);",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c06.s0.identity"
+  },
+  {
+   "claim_id": "c06.s0.identity",
+   "arm": "A_genuine",
+   "claim": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 m3 tank destroyed beyond repair);",
+   "evidence": [
+    {
+     "text": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 m3 tank destroyed beyond repair);",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "SUPPORTED"
+  },
+  {
+   "claim_id": "c06.s0.identity",
+   "arm": "B_empty",
+   "claim": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 m3 tank destroyed beyond repair);",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c06.s0.identity",
+   "arm": "C_noise_length",
+   "claim": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 m3 tank destroyed beyond repair);",
+   "evidence": [
+    {
+     "text": "register across should observed was summary at that might will period can change not may record has it can under figure summary register was with document by general then the change register has archive.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c06.s0.identity",
+   "arm": "F_unrelated",
+   "claim": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 m3 tank destroyed beyond repair);",
+   "evidence": [
+    {
+     "text": "region's 11.7M b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c08.s1.scale_shift"
+  },
+  {
+   "claim_id": "c06.s0.identity",
+   "arm": "G_permuted",
+   "claim": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 m3 tank destroyed beyond repair);",
+   "evidence": [
+    {
+     "text": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 m3 tank destroyed beyond repair);",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c06.s0.paraphrase_number"
+  },
+  {
+   "claim_id": "c06.s0.identity",
+   "arm": "E_contradicting",
+   "claim": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 m3 tank destroyed beyond repair);",
+   "evidence": [
+    {
+     "text": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 15875 m3 tank destroyed beyond repair);",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "E"
+    }
+   ],
+   "requirement": "must DIFFER from A, in the opposite direction (REFUTED)",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c06.s0.paraphrase_number",
+   "arm": "A_genuine",
+   "claim": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 mthree tank destroyed beyond repair);",
+   "evidence": [
+    {
+     "text": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 m3 tank destroyed beyond repair);",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "SUPPORTED"
+  },
+  {
+   "claim_id": "c06.s0.paraphrase_number",
+   "arm": "B_empty",
+   "claim": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 mthree tank destroyed beyond repair);",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c06.s0.paraphrase_number",
+   "arm": "C_noise_length",
+   "claim": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 mthree tank destroyed beyond repair);",
+   "evidence": [
+    {
+     "text": "with archive will formal weekly between its that table measure will at basic been document column register and item which across was its would and have monthly in noted sample period filing then which document.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c06.s0.paraphrase_number",
+   "arm": "F_unrelated",
+   "claim": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 mthree tank destroyed beyond repair);",
+   "evidence": [
+    {
+     "text": "Exact identity of the nine damaged Gulf refineries is JPMorgan-via-AInvest \u2014 named source, no list;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c08.s2.identity"
+  },
+  {
+   "claim_id": "c06.s0.paraphrase_number",
+   "arm": "G_permuted",
+   "claim": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 mthree tank destroyed beyond repair);",
+   "evidence": [
+    {
+     "text": "the June strike killed three workers and took the plant fully offline",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c06.s1.identity"
+  },
+  {
+   "claim_id": "c06.s0.paraphrase_number",
+   "arm": "E_contradicting",
+   "claim": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 mthree tank destroyed beyond repair);",
+   "evidence": [
+    {
+     "text": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 15875 m3 tank destroyed beyond repair);",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "E"
+    }
+   ],
+   "requirement": "must DIFFER from A, in the opposite direction (REFUTED)",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c06.s1.identity",
+   "arm": "A_genuine",
+   "claim": "the June strike killed three workers and took the plant fully offline",
+   "evidence": [
+    {
+     "text": "the June strike killed three workers and took the plant fully offline",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "SUPPORTED"
+  },
+  {
+   "claim_id": "c06.s1.identity",
+   "arm": "B_empty",
+   "claim": "the June strike killed three workers and took the plant fully offline",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c06.s1.identity",
+   "arm": "C_noise_length",
+   "claim": "the June strike killed three workers and took the plant fully offline",
+   "evidence": [
+    {
+     "text": "register can stated notice record common simple are common and record.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c06.s1.identity",
+   "arm": "F_unrelated",
+   "claim": "the June strike killed three workers and took the plant fully offline",
+   "evidence": [
+    {
+     "text": "AAA national average: $5.85/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c09.s0.identity"
+  },
+  {
+   "claim_id": "c06.s1.identity",
+   "arm": "G_permuted",
+   "claim": "the June strike killed three workers and took the plant fully offline",
+   "evidence": [
+    {
+     "text": "Vitol and Phillips 66 executives: refined-product deficit structural, more pronounced than crude deficit, into winter",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c07.s0.identity"
+  },
+  {
+   "claim_id": "c07.s0.identity",
+   "arm": "A_genuine",
+   "claim": "Vitol and Phillips 66 executives: refined-product deficit structural, more pronounced than crude deficit, into winter",
+   "evidence": [
+    {
+     "text": "Vitol and Phillips 66 executives: refined-product deficit structural, more pronounced than crude deficit, into winter",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "SUPPORTED"
+  },
+  {
+   "claim_id": "c07.s0.identity",
+   "arm": "B_empty",
+   "claim": "Vitol and Phillips 66 executives: refined-product deficit structural, more pronounced than crude deficit, into winter",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c07.s0.identity",
+   "arm": "C_noise_length",
+   "claim": "Vitol and Phillips 66 executives: refined-product deficit structural, more pronounced than crude deficit, into winter",
+   "evidence": [
+    {
+     "text": "has volume column neutral register neutral figure detail plain noted can stated has are its by formal register had.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c07.s0.identity",
+   "arm": "F_unrelated",
+   "claim": "Vitol and Phillips 66 executives: refined-product deficit structural, more pronounced than crude deficit, into winter",
+   "evidence": [
+    {
+     "text": "AAA national average: $5.85/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c09.s0.value_shift"
+  },
+  {
+   "claim_id": "c07.s0.identity",
+   "arm": "G_permuted",
+   "claim": "Vitol and Phillips 66 executives: refined-product deficit structural, more pronounced than crude deficit, into winter",
+   "evidence": [
+    {
+     "text": "\"At least nine Gulf refineries damaged and shut\";",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c08.s0.identity"
+  },
+  {
+   "claim_id": "c07.s0.identity",
+   "arm": "E_contradicting",
+   "claim": "Vitol and Phillips 66 executives: refined-product deficit structural, more pronounced than crude deficit, into winter",
+   "evidence": [
+    {
+     "text": "Vitol and Phillips 82 executives: refined-product deficit structural, more pronounced than crude deficit, into winter",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "E"
+    }
+   ],
+   "requirement": "must DIFFER from A, in the opposite direction (REFUTED)",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c08.s0.identity",
+   "arm": "A_genuine",
+   "claim": "\"At least nine Gulf refineries damaged and shut\";",
+   "evidence": [
+    {
+     "text": "\"At least nine Gulf refineries damaged and shut\";",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "SUPPORTED"
+  },
+  {
+   "claim_id": "c08.s0.identity",
+   "arm": "B_empty",
+   "claim": "\"At least nine Gulf refineries damaged and shut\";",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c08.s0.identity",
+   "arm": "C_noise_length",
+   "claim": "\"At least nine Gulf refineries damaged and shut\";",
+   "evidence": [
+    {
+     "text": "which register stated such list is to report than.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c08.s0.identity",
+   "arm": "F_unrelated",
+   "claim": "\"At least nine Gulf refineries damaged and shut\";",
+   "evidence": [
+    {
+     "text": "AAA national average: $5.85/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c09.s0.year_shift"
+  },
+  {
+   "claim_id": "c08.s0.identity",
+   "arm": "G_permuted",
+   "claim": "\"At least nine Gulf refineries damaged and shut\";",
+   "evidence": [
+    {
+     "text": "region's 11.7M b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c08.s1.identity"
+  },
+  {
+   "claim_id": "c08.s1.identity",
+   "arm": "A_genuine",
+   "claim": "region's 11.7M b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "evidence": [
+    {
+     "text": "region's 11.7M b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "SUPPORTED"
+  },
+  {
+   "claim_id": "c08.s1.identity",
+   "arm": "B_empty",
+   "claim": "region's 11.7M b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c08.s1.identity",
+   "arm": "C_noise_length",
+   "claim": "region's 11.7M b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "evidence": [
+    {
+     "text": "regular that and with this register has would total stated at sheet list formal.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c08.s1.identity",
+   "arm": "F_unrelated",
+   "claim": "region's 11.7M b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "evidence": [
+    {
+     "text": "crossed $6 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c09.s1.identity"
+  },
+  {
+   "claim_id": "c08.s1.identity",
+   "arm": "G_permuted",
+   "claim": "region's 11.7M b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "evidence": [
+    {
+     "text": "region's 11.7M b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c08.s1.unit_swap"
+  },
+  {
+   "claim_id": "c08.s1.identity",
+   "arm": "E_contradicting",
+   "claim": "region's 11.7M b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "evidence": [
+    {
+     "text": "region's 11.7B b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "E"
+    }
+   ],
+   "requirement": "must DIFFER from A, in the opposite direction (REFUTED)",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c08.s1.unit_swap",
+   "arm": "A_genuine",
+   "claim": "region's 11.7M barrels per week refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "evidence": [
+    {
+     "text": "region's 11.7M b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c08.s1.unit_swap",
+   "arm": "B_empty",
+   "claim": "region's 11.7M barrels per week refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c08.s1.unit_swap",
+   "arm": "C_noise_length",
+   "claim": "region's 11.7M barrels per week refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "evidence": [
+    {
+     "text": "it common was evening been have could is it under neutral should has of could register.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c08.s1.unit_swap",
+   "arm": "F_unrelated",
+   "claim": "region's 11.7M barrels per week refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "evidence": [
+    {
+     "text": "crossed $6 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c09.s1.value_shift"
+  },
+  {
+   "claim_id": "c08.s1.unit_swap",
+   "arm": "G_permuted",
+   "claim": "region's 11.7M barrels per week refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "evidence": [
+    {
+     "text": "region's 11.7M b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c08.s1.scale_shift"
+  },
+  {
+   "claim_id": "c08.s1.scale_shift",
+   "arm": "A_genuine",
+   "claim": "region's 11.7B b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "evidence": [
+    {
+     "text": "region's 11.7M b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c08.s1.scale_shift",
+   "arm": "B_empty",
+   "claim": "region's 11.7B b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c08.s1.scale_shift",
+   "arm": "C_noise_length",
+   "claim": "region's 11.7B b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "evidence": [
+    {
+     "text": "have with are of its notice at over column neutral should might measure sheet ledger.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c08.s1.scale_shift",
+   "arm": "F_unrelated",
+   "claim": "region's 11.7B b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "evidence": [
+    {
+     "text": "The number that measures this is the crack spread \u2014 the margin between a barrel of crude and the diesel it becomes.",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c10.s0.identity"
+  },
+  {
+   "claim_id": "c08.s1.scale_shift",
+   "arm": "G_permuted",
+   "claim": "region's 11.7B b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "evidence": [
+    {
+     "text": "Exact identity of the nine damaged Gulf refineries is JPMorgan-via-AInvest \u2014 named source, no list;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c08.s2.identity"
+  },
+  {
+   "claim_id": "c08.s2.identity",
+   "arm": "A_genuine",
+   "claim": "Exact identity of the nine damaged Gulf refineries is JPMorgan-via-AInvest \u2014 named source, no list;",
+   "evidence": [
+    {
+     "text": "Exact identity of the nine damaged Gulf refineries is JPMorgan-via-AInvest \u2014 named source, no list;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "SUPPORTED"
+  },
+  {
+   "claim_id": "c08.s2.identity",
+   "arm": "B_empty",
+   "claim": "Exact identity of the nine damaged Gulf refineries is JPMorgan-via-AInvest \u2014 named source, no list;",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c08.s2.identity",
+   "arm": "C_noise_length",
+   "claim": "Exact identity of the nine damaged Gulf refineries is JPMorgan-via-AInvest \u2014 named source, no list;",
+   "evidence": [
+    {
+     "text": "noted weekly table observed on at its are be page ledger account had so period volume list to stated.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c08.s2.identity",
+   "arm": "F_unrelated",
+   "claim": "Exact identity of the nine damaged Gulf refineries is JPMorgan-via-AInvest \u2014 named source, no list;",
+   "evidence": [
+    {
+     "text": "Rystad's Claudio Galimberti: diesel is \"one of the reasons why the government bond yields in the United States are so high\"",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c11.s0.identity"
+  },
+  {
+   "claim_id": "c08.s2.identity",
+   "arm": "G_permuted",
+   "claim": "Exact identity of the nine damaged Gulf refineries is JPMorgan-via-AInvest \u2014 named source, no list;",
+   "evidence": [
+    {
+     "text": "AAA national average: $5.85/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c09.s0.identity"
+  },
+  {
+   "claim_id": "c09.s0.identity",
+   "arm": "A_genuine",
+   "claim": "AAA national average: $5.85/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+   "evidence": [
+    {
+     "text": "AAA national average: $5.85/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "SUPPORTED"
+  },
+  {
+   "claim_id": "c09.s0.identity",
+   "arm": "B_empty",
+   "claim": "AAA national average: $5.85/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c09.s0.identity",
+   "arm": "C_noise_length",
+   "claim": "AAA national average: $5.85/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+   "evidence": [
+    {
+     "text": "evening such table plain figure noted detail period could page entry total filing so which plain.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c09.s0.identity",
+   "arm": "F_unrelated",
+   "claim": "AAA national average: $5.85/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+   "evidence": [
+    {
+     "text": "Rystad's Claudio Galimberti: diesel is \"one of the reasons why the government bond yields in the United States are so high\"",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c11.s0.quote_alteration"
+  },
+  {
+   "claim_id": "c09.s0.identity",
+   "arm": "G_permuted",
+   "claim": "AAA national average: $5.85/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+   "evidence": [
+    {
+     "text": "AAA national average: $5.85/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c09.s0.value_shift"
+  },
+  {
+   "claim_id": "c09.s0.identity",
+   "arm": "E_contradicting",
+   "claim": "AAA national average: $5.85/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+   "evidence": [
+    {
+     "text": "AAA national average: $5.85/gal on 4 September 2025, breaking the 17 June 2022 record of $5.819;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "E"
+    }
+   ],
+   "requirement": "must DIFFER from A, in the opposite direction (REFUTED)",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c09.s0.value_shift",
+   "arm": "A_genuine",
+   "claim": "AAA national average: $7.31/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+   "evidence": [
+    {
+     "text": "AAA national average: $5.85/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c09.s0.value_shift",
+   "arm": "B_empty",
+   "claim": "AAA national average: $7.31/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c09.s0.value_shift",
+   "arm": "C_noise_length",
+   "claim": "AAA national average: $7.31/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+   "evidence": [
+    {
+     "text": "report so been so archive standard but the with will daily period has simple it sample than.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c09.s0.value_shift",
+   "arm": "F_unrelated",
+   "claim": "AAA national average: $7.31/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+   "evidence": [
+    {
+     "text": "Canadian crude to PADD 3: 526k b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c12.s0.identity"
+  },
+  {
+   "claim_id": "c09.s0.value_shift",
+   "arm": "G_permuted",
+   "claim": "AAA national average: $7.31/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+   "evidence": [
+    {
+     "text": "AAA national average: $5.85/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c09.s0.year_shift"
+  },
+  {
+   "claim_id": "c09.s0.year_shift",
+   "arm": "A_genuine",
+   "claim": "AAA national average: $5.85/gal on 4 September 2025, breaking the 17 June 2022 record of $5.819;",
+   "evidence": [
+    {
+     "text": "AAA national average: $5.85/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c09.s0.year_shift",
+   "arm": "B_empty",
+   "claim": "AAA national average: $5.85/gal on 4 September 2025, breaking the 17 June 2022 record of $5.819;",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c09.s0.year_shift",
+   "arm": "C_noise_length",
+   "claim": "AAA national average: $5.85/gal on 4 September 2025, breaking the 17 June 2022 record of $5.819;",
+   "evidence": [
+    {
+     "text": "from if or which with evening or this might should may document this noted simple monthly report.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c09.s0.year_shift",
+   "arm": "F_unrelated",
+   "claim": "AAA national average: $5.85/gal on 4 September 2025, breaking the 17 June 2022 record of $5.819;",
+   "evidence": [
+    {
+     "text": "Canadian crude to PADD 3: 526k b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c12.s0.unit_swap"
+  },
+  {
+   "claim_id": "c09.s0.year_shift",
+   "arm": "G_permuted",
+   "claim": "AAA national average: $5.85/gal on 4 September 2025, breaking the 17 June 2022 record of $5.819;",
+   "evidence": [
+    {
+     "text": "crossed $6 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c09.s1.identity"
+  },
+  {
+   "claim_id": "c09.s1.identity",
+   "arm": "A_genuine",
+   "claim": "crossed $6 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+   "evidence": [
+    {
+     "text": "crossed $6 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "SUPPORTED"
+  },
+  {
+   "claim_id": "c09.s1.identity",
+   "arm": "B_empty",
+   "claim": "crossed $6 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c09.s1.identity",
+   "arm": "C_noise_length",
+   "claim": "crossed $6 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+   "evidence": [
+    {
+     "text": "under notice with column not monthly have were filing document.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c09.s1.identity",
+   "arm": "F_unrelated",
+   "claim": "crossed $6 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+   "evidence": [
+    {
+     "text": "Canadian crude to PADD 3: 526k b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c12.s0.scale_shift"
+  },
+  {
+   "claim_id": "c09.s1.identity",
+   "arm": "G_permuted",
+   "claim": "crossed $6 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+   "evidence": [
+    {
+     "text": "crossed $6 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c09.s1.value_shift"
+  },
+  {
+   "claim_id": "c09.s1.identity",
+   "arm": "E_contradicting",
+   "claim": "crossed $6 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+   "evidence": [
+    {
+     "text": "crossed $6 on 12\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "E"
+    }
+   ],
+   "requirement": "must DIFFER from A, in the opposite direction (REFUTED)",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c09.s1.value_shift",
+   "arm": "A_genuine",
+   "claim": "crossed $8 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+   "evidence": [
+    {
+     "text": "crossed $6 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c09.s1.value_shift",
+   "arm": "B_empty",
+   "claim": "crossed $8 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c09.s1.value_shift",
+   "arm": "C_noise_length",
+   "claim": "crossed $8 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+   "evidence": [
+    {
+     "text": "be at may filing and between ordinary formal account archive.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c09.s1.value_shift",
+   "arm": "F_unrelated",
+   "claim": "crossed $8 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+   "evidence": [
+    {
+     "text": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +6.4% YoY",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c12.s1.identity"
+  },
+  {
+   "claim_id": "c09.s1.value_shift",
+   "arm": "G_permuted",
+   "claim": "crossed $8 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+   "evidence": [
+    {
+     "text": "The number that measures this is the crack spread \u2014 the margin between a barrel of crude and the diesel it becomes.",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c10.s0.identity"
+  },
+  {
+   "claim_id": "c10.s0.identity",
+   "arm": "A_genuine",
+   "claim": "The number that measures this is the crack spread \u2014 the margin between a barrel of crude and the diesel it becomes.",
+   "evidence": [
+    {
+     "text": "The number that measures this is the crack spread \u2014 the margin between a barrel of crude and the diesel it becomes.",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "SUPPORTED"
+  },
+  {
+   "claim_id": "c10.s0.identity",
+   "arm": "B_empty",
+   "claim": "The number that measures this is the crack spread \u2014 the margin between a barrel of crude and the diesel it becomes.",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c10.s0.identity",
+   "arm": "C_noise_length",
+   "claim": "The number that measures this is the crack spread \u2014 the margin between a barrel of crude and the diesel it becomes.",
+   "evidence": [
+    {
+     "text": "notice regular ledger basic report which formal if evening season be filing weekly ledger document common in might.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c10.s0.identity",
+   "arm": "F_unrelated",
+   "claim": "The number that measures this is the crack spread \u2014 the margin between a barrel of crude and the diesel it becomes.",
+   "evidence": [
+    {
+     "text": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +6.4% YoY",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c12.s1.scale_shift"
+  },
+  {
+   "claim_id": "c10.s0.identity",
+   "arm": "G_permuted",
+   "claim": "The number that measures this is the crack spread \u2014 the margin between a barrel of crude and the diesel it becomes.",
+   "evidence": [
+    {
+     "text": "Rystad's Claudio Galimberti: diesel is \"one of the reasons why the government bond yields in the United States are so high\"",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c11.s0.identity"
+  },
+  {
+   "claim_id": "c11.s0.identity",
+   "arm": "A_genuine",
+   "claim": "Rystad's Claudio Galimberti: diesel is \"one of the reasons why the government bond yields in the United States are so high\"",
+   "evidence": [
+    {
+     "text": "Rystad's Claudio Galimberti: diesel is \"one of the reasons why the government bond yields in the United States are so high\"",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "SUPPORTED"
+  },
+  {
+   "claim_id": "c11.s0.identity",
+   "arm": "B_empty",
+   "claim": "Rystad's Claudio Galimberti: diesel is \"one of the reasons why the government bond yields in the United States are so high\"",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c11.s0.identity",
+   "arm": "C_noise_length",
+   "claim": "Rystad's Claudio Galimberti: diesel is \"one of the reasons why the government bond yields in the United States are so high\"",
+   "evidence": [
+    {
+     "text": "file under at as file then morning ordinary document measure will regular which will so across observed formal stated.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c11.s0.identity",
+   "arm": "F_unrelated",
+   "claim": "Rystad's Claudio Galimberti: diesel is \"one of the reasons why the government bond yields in the United States are so high\"",
+   "evidence": [
+    {
+     "text": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +6.4% YoY",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c12.s1.value_shift"
+  },
+  {
+   "claim_id": "c11.s0.identity",
+   "arm": "G_permuted",
+   "claim": "Rystad's Claudio Galimberti: diesel is \"one of the reasons why the government bond yields in the United States are so high\"",
+   "evidence": [
+    {
+     "text": "Rystad's Claudio Galimberti: diesel is \"one of the reasons why the government bond yields in the United States are so high\"",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c11.s0.quote_alteration"
+  },
+  {
+   "claim_id": "c11.s0.quote_alteration",
+   "arm": "A_genuine",
+   "claim": "Rystad's Claudio Galimberti: diesel is \"the main reasons why the government bond yields in the United States are so high\"",
+   "evidence": [
+    {
+     "text": "Rystad's Claudio Galimberti: diesel is \"one of the reasons why the government bond yields in the United States are so high\"",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c11.s0.quote_alteration",
+   "arm": "B_empty",
+   "claim": "Rystad's Claudio Galimberti: diesel is \"the main reasons why the government bond yields in the United States are so high\"",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c11.s0.quote_alteration",
+   "arm": "C_noise_length",
+   "claim": "Rystad's Claudio Galimberti: diesel is \"the main reasons why the government bond yields in the United States are so high\"",
+   "evidence": [
+    {
+     "text": "table sheet common with to are as column sample file might file been so have have were under has might ledger list which.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c11.s0.quote_alteration",
+   "arm": "F_unrelated",
+   "claim": "Rystad's Claudio Galimberti: diesel is \"the main reasons why the government bond yields in the United States are so high\"",
+   "evidence": [
+    {
+     "text": "East Coast (PADD 1) distillate inventories 19.3M bbl week ending 28 August \u2014 lowest on record (back to 1990);",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c01.s0.identity"
+  },
+  {
+   "claim_id": "c11.s0.quote_alteration",
+   "arm": "G_permuted",
+   "claim": "Rystad's Claudio Galimberti: diesel is \"the main reasons why the government bond yields in the United States are so high\"",
+   "evidence": [
+    {
+     "text": "Canadian crude to PADD 3: 526k b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c12.s0.identity"
+  },
+  {
+   "claim_id": "c12.s0.identity",
+   "arm": "A_genuine",
+   "claim": "Canadian crude to PADD 3: 526k b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "evidence": [
+    {
+     "text": "Canadian crude to PADD 3: 526k b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "SUPPORTED"
+  },
+  {
+   "claim_id": "c12.s0.identity",
+   "arm": "B_empty",
+   "claim": "Canadian crude to PADD 3: 526k b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c12.s0.identity",
+   "arm": "C_noise_length",
+   "claim": "Canadian crude to PADD 3: 526k b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "evidence": [
+    {
+     "text": "daily table has daily has neutral common row total filing volume general were notice.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c12.s0.identity",
+   "arm": "F_unrelated",
+   "claim": "Canadian crude to PADD 3: 526k b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "evidence": [
+    {
+     "text": "East Coast (PADD 1) distillate inventories 19.3M bbl week ending 28 August \u2014 lowest on record (back to 1990);",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c01.s0.scale_shift"
+  },
+  {
+   "claim_id": "c12.s0.identity",
+   "arm": "G_permuted",
+   "claim": "Canadian crude to PADD 3: 526k b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "evidence": [
+    {
+     "text": "Canadian crude to PADD 3: 526k b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c12.s0.unit_swap"
+  },
+  {
+   "claim_id": "c12.s0.unit_swap",
+   "arm": "A_genuine",
+   "claim": "Canadian crude to PADD 3: 526k barrels per week (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "evidence": [
+    {
+     "text": "Canadian crude to PADD 3: 526k b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c12.s0.unit_swap",
+   "arm": "B_empty",
+   "claim": "Canadian crude to PADD 3: 526k barrels per week (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c12.s0.unit_swap",
+   "arm": "C_noise_length",
+   "claim": "Canadian crude to PADD 3: 526k barrels per week (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "evidence": [
+    {
+     "text": "detail entry neutral standard neutral may not that annual basic morning period the.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c12.s0.unit_swap",
+   "arm": "F_unrelated",
+   "claim": "Canadian crude to PADD 3: 526k barrels per week (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "evidence": [
+    {
+     "text": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c01.s1.identity"
+  },
+  {
+   "claim_id": "c12.s0.unit_swap",
+   "arm": "G_permuted",
+   "claim": "Canadian crude to PADD 3: 526k barrels per week (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "evidence": [
+    {
+     "text": "Canadian crude to PADD 3: 526k b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c12.s0.scale_shift"
+  },
+  {
+   "claim_id": "c12.s0.scale_shift",
+   "arm": "A_genuine",
+   "claim": "Canadian crude to PADD 3: 526M b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "evidence": [
+    {
+     "text": "Canadian crude to PADD 3: 526k b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c12.s0.scale_shift",
+   "arm": "B_empty",
+   "claim": "Canadian crude to PADD 3: 526M b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c12.s0.scale_shift",
+   "arm": "C_noise_length",
+   "claim": "Canadian crude to PADD 3: 526M b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "evidence": [
+    {
+     "text": "morning regular weekly will notice over report filing but register is from noted by.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c12.s0.scale_shift",
+   "arm": "F_unrelated",
+   "claim": "Canadian crude to PADD 3: 526M b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "evidence": [
+    {
+     "text": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c01.s1.scale_shift"
+  },
+  {
+   "claim_id": "c12.s0.scale_shift",
+   "arm": "G_permuted",
+   "claim": "Canadian crude to PADD 3: 526M b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "evidence": [
+    {
+     "text": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +6.4% YoY",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c12.s1.identity"
+  },
+  {
+   "claim_id": "c12.s1.identity",
+   "arm": "A_genuine",
+   "claim": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +6.4% YoY",
+   "evidence": [
+    {
+     "text": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +6.4% YoY",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "SUPPORTED"
+  },
+  {
+   "claim_id": "c12.s1.identity",
+   "arm": "B_empty",
+   "claim": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +6.4% YoY",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c12.s1.identity",
+   "arm": "C_noise_length",
+   "claim": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +6.4% YoY",
+   "evidence": [
+    {
+     "text": "entry had measure detail change measure ledger column value might report on.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c12.s1.identity",
+   "arm": "F_unrelated",
+   "claim": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +6.4% YoY",
+   "evidence": [
+    {
+     "text": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c01.s1.year_shift"
+  },
+  {
+   "claim_id": "c12.s1.identity",
+   "arm": "G_permuted",
+   "claim": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +6.4% YoY",
+   "evidence": [
+    {
+     "text": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +6.4% YoY",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c12.s1.scale_shift"
+  },
+  {
+   "claim_id": "c12.s1.scale_shift",
+   "arm": "A_genuine",
+   "claim": "total Canadian exports rose \u2014 US imports 4B+ b/d H1 2026, June exports +6.4% YoY",
+   "evidence": [
+    {
+     "text": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +6.4% YoY",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c12.s1.scale_shift",
+   "arm": "B_empty",
+   "claim": "total Canadian exports rose \u2014 US imports 4B+ b/d H1 2026, June exports +6.4% YoY",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c12.s1.scale_shift",
+   "arm": "C_noise_length",
+   "claim": "total Canadian exports rose \u2014 US imports 4B+ b/d H1 2026, June exports +6.4% YoY",
+   "evidence": [
+    {
+     "text": "its and noted ledger season figure on under under weekly can notice that might.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c12.s1.scale_shift",
+   "arm": "F_unrelated",
+   "claim": "total Canadian exports rose \u2014 US imports 4B+ b/d H1 2026, June exports +6.4% YoY",
+   "evidence": [
+    {
+     "text": "\"Russia producing 70% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c02.s0.identity"
+  },
+  {
+   "claim_id": "c12.s1.scale_shift",
+   "arm": "G_permuted",
+   "claim": "total Canadian exports rose \u2014 US imports 4B+ b/d H1 2026, June exports +6.4% YoY",
+   "evidence": [
+    {
+     "text": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +6.4% YoY",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c12.s1.value_shift"
+  },
+  {
+   "claim_id": "c12.s1.value_shift",
+   "arm": "A_genuine",
+   "claim": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +8.0% YoY",
+   "evidence": [
+    {
+     "text": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +6.4% YoY",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "A"
+    }
+   ],
+   "requirement": "determinate label equal to expected",
+   "expected": "REFUTED"
+  },
+  {
+   "claim_id": "c12.s1.value_shift",
+   "arm": "B_empty",
+   "claim": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +8.0% YoY",
+   "evidence": [],
+   "requirement": "NOT_ENOUGH_INFO or REFUSAL; never a determinate label",
+   "expected": "NOT_ENOUGH_INFO"
+  },
+  {
+   "claim_id": "c12.s1.value_shift",
+   "arm": "C_noise_length",
+   "claim": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +8.0% YoY",
+   "evidence": [
+    {
+     "text": "report of as have then on notice summary total than ordinary on are which over.",
+     "source": "",
+     "arm_tag": "C"
+    }
+   ],
+   "requirement": "label must DIFFER from this claim's A label; equality = mode 2 (length-sensitive)",
+   "expected": "!= label(A)"
+  },
+  {
+   "claim_id": "c12.s1.value_shift",
+   "arm": "F_unrelated",
+   "claim": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +8.0% YoY",
+   "evidence": [
+    {
+     "text": "\"Russia producing 70% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "F"
+    }
+   ],
+   "requirement": "REFUTED admissible only if that passage carries a quantity/date of the same kind that contradicts the claim; otherwise NOT_ENOUGH_INFO",
+   "expected": "SEE_RULE",
+   "borrowed_from": "c02.s0.value_shift"
+  },
+  {
+   "claim_id": "c12.s1.value_shift",
+   "arm": "G_permuted",
+   "claim": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +8.0% YoY",
+   "evidence": [
+    {
+     "text": "East Coast (PADD 1) distillate inventories 19.3M bbl week ending 28 August \u2014 lowest on record (back to 1990);",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "G"
+    }
+   ],
+   "requirement": "must not reproduce this claim's A label; equality proves mode 1 (content-blind)",
+   "expected": "!= label(A)",
+   "borrowed_from": "c01.s0.identity"
+  }
+ ]
+}
