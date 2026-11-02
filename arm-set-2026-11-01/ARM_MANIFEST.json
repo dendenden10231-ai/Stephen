@@ -1,0 +1,4318 @@
+{
+ "anchors": [
+  "c10.s0.identity"
+ ],
+ "arms": [
+  {
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "East Coast (PADD 1) distillate inventories 19.3M bbl week ending 28 August \u2014 lowest on record (back to 1990);",
+   "claim_id": "c01.s0.identity",
+   "class": "positive",
+   "expected": "SUPPORTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "REFUTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "East Coast (PADD 1) distillate inventories 19.3M bbl week ending 28 August \u2014 lowest on record (back to 1990);",
+   "claim_id": "c01.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "East Coast (PADD 1) distillate inventories 19.3M bbl week ending 28 August \u2014 lowest on record (back to 1990);",
+   "claim_id": "c01.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c02.s1.identity",
+   "claim": "East Coast (PADD 1) distillate inventories 19.3M bbl week ending 28 August \u2014 lowest on record (back to 1990);",
+   "claim_id": "c01.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c01.s0.scale_shift",
+   "claim": "East Coast (PADD 1) distillate inventories 19.3M bbl week ending 28 August \u2014 lowest on record (back to 1990);",
+   "claim_id": "c01.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "East Coast (PADD 1) distillate inventories 19.3B bbl week ending 28 August \u2014 lowest on record (back to 1990);",
+   "claim_id": "c01.s0.scale_shift",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "East Coast (PADD 1) distillate inventories 19.3B bbl week ending 28 August \u2014 lowest on record (back to 1990);",
+   "claim_id": "c01.s0.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "East Coast (PADD 1) distillate inventories 19.3B bbl week ending 28 August \u2014 lowest on record (back to 1990);",
+   "claim_id": "c01.s0.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c02.s1.scale_shift",
+   "claim": "East Coast (PADD 1) distillate inventories 19.3B bbl week ending 28 August \u2014 lowest on record (back to 1990);",
+   "claim_id": "c01.s0.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c01.s1.identity",
+   "claim": "East Coast (PADD 1) distillate inventories 19.3B bbl week ending 28 August \u2014 lowest on record (back to 1990);",
+   "claim_id": "c01.s0.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+   "claim_id": "c01.s1.identity",
+   "class": "positive",
+   "expected": "SUPPORTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "REFUTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+   "claim_id": "c01.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+   "claim_id": "c01.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c02.s1.value_shift",
+   "claim": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+   "claim_id": "c01.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c01.s1.scale_shift",
+   "claim": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+   "claim_id": "c01.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "E_contradicting",
+   "borrowed_from": null,
+   "claim": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+   "claim_id": "c01.s1.identity",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "credulity"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "EIA September STEO: stocks below 100B bbl this month (first since 2003)",
+   "claim_id": "c01.s1.scale_shift",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "EIA September STEO: stocks below 100B bbl this month (first since 2003)",
+   "claim_id": "c01.s1.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "EIA September STEO: stocks below 100B bbl this month (first since 2003)",
+   "claim_id": "c01.s1.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c03.s0.identity",
+   "claim": "EIA September STEO: stocks below 100B bbl this month (first since 2003)",
+   "claim_id": "c01.s1.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c01.s1.year_shift",
+   "claim": "EIA September STEO: stocks below 100B bbl this month (first since 2003)",
+   "claim_id": "c01.s1.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "EIA September STEO: stocks below 100M bbl this month (first since 2002)",
+   "claim_id": "c01.s1.year_shift",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "EIA September STEO: stocks below 100M bbl this month (first since 2002)",
+   "claim_id": "c01.s1.year_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "EIA September STEO: stocks below 100M bbl this month (first since 2002)",
+   "claim_id": "c01.s1.year_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c03.s0.unit_swap",
+   "claim": "EIA September STEO: stocks below 100M bbl this month (first since 2002)",
+   "claim_id": "c01.s1.year_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c02.s0.identity",
+   "claim": "EIA September STEO: stocks below 100M bbl this month (first since 2002)",
+   "claim_id": "c01.s1.year_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "\"Russia producing 70% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+   "claim_id": "c02.s0.identity",
+   "class": "positive",
+   "expected": "SUPPORTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "REFUTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "\"Russia producing 70% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+   "claim_id": "c02.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "\"Russia producing 70% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+   "claim_id": "c02.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c03.s0.scale_shift",
+   "claim": "\"Russia producing 70% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+   "claim_id": "c02.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c02.s0.value_shift",
+   "claim": "\"Russia producing 70% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+   "claim_id": "c02.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "E_contradicting",
+   "borrowed_from": null,
+   "claim": "\"Russia producing 70% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+   "claim_id": "c02.s0.identity",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "credulity"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "\"Russia producing 88% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+   "claim_id": "c02.s0.value_shift",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "\"Russia producing 88% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+   "claim_id": "c02.s0.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "\"Russia producing 88% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+   "claim_id": "c02.s0.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c03.s0.year_shift",
+   "claim": "\"Russia producing 88% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+   "claim_id": "c02.s0.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c02.s1.identity",
+   "claim": "\"Russia producing 88% of its gasoline needs\" rests on one analysis chain (video + DW figures) \u2014 directionally supported by the T\u00fcrkiye import, kept as [AS GIVEN].",
+   "claim_id": "c02.s0.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~70%)",
+   "claim_id": "c02.s1.identity",
+   "class": "positive",
+   "expected": "SUPPORTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "REFUTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~70%)",
+   "claim_id": "c02.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~70%)",
+   "claim_id": "c02.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c03.s1.identity",
+   "claim": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~70%)",
+   "claim_id": "c02.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c02.s1.scale_shift",
+   "claim": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~70%)",
+   "claim_id": "c02.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "E_contradicting",
+   "borrowed_from": null,
+   "claim": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~70%)",
+   "claim_id": "c02.s1.identity",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "credulity"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "Gasoline production ~80M t/d vs 115k t/d domestic demand (~70%)",
+   "claim_id": "c02.s1.scale_shift",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "Gasoline production ~80M t/d vs 115k t/d domestic demand (~70%)",
+   "claim_id": "c02.s1.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "Gasoline production ~80M t/d vs 115k t/d domestic demand (~70%)",
+   "claim_id": "c02.s1.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c04.s0.identity",
+   "claim": "Gasoline production ~80M t/d vs 115k t/d domestic demand (~70%)",
+   "claim_id": "c02.s1.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c02.s1.value_shift",
+   "claim": "Gasoline production ~80M t/d vs 115k t/d domestic demand (~70%)",
+   "claim_id": "c02.s1.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~88%)",
+   "claim_id": "c02.s1.value_shift",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~88%)",
+   "claim_id": "c02.s1.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~88%)",
+   "claim_id": "c02.s1.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c04.s0.value_shift",
+   "claim": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~88%)",
+   "claim_id": "c02.s1.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c03.s0.identity",
+   "claim": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~88%)",
+   "claim_id": "c02.s1.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "claim_id": "c03.s0.identity",
+   "class": "positive",
+   "expected": "SUPPORTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "REFUTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "claim_id": "c03.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "claim_id": "c03.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c04.s0.year_shift",
+   "claim": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "claim_id": "c03.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c03.s0.unit_swap",
+   "claim": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "claim_id": "c03.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "E_contradicting",
+   "borrowed_from": null,
+   "claim": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "claim_id": "c03.s0.identity",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "credulity"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "Jazan (400k barrels per week) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "claim_id": "c03.s0.unit_swap",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "Jazan (400k barrels per week) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "claim_id": "c03.s0.unit_swap",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "Jazan (400k barrels per week) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "claim_id": "c03.s0.unit_swap",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c05.s0.identity",
+   "claim": "Jazan (400k barrels per week) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "claim_id": "c03.s0.unit_swap",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c03.s0.scale_shift",
+   "claim": "Jazan (400k barrels per week) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "claim_id": "c03.s0.unit_swap",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "Jazan (400M b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "claim_id": "c03.s0.scale_shift",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "Jazan (400M b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "claim_id": "c03.s0.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "Jazan (400M b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "claim_id": "c03.s0.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c05.s0.value_shift",
+   "claim": "Jazan (400M b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "claim_id": "c03.s0.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c03.s0.year_shift",
+   "claim": "Jazan (400M b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+   "claim_id": "c03.s0.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "Jazan (400k b/d) not properly run since 27 July 2025 Houthi drone damage to tank farm and power complex;",
+   "claim_id": "c03.s0.year_shift",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "Jazan (400k b/d) not properly run since 27 July 2025 Houthi drone damage to tank farm and power complex;",
+   "claim_id": "c03.s0.year_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "Jazan (400k b/d) not properly run since 27 July 2025 Houthi drone damage to tank farm and power complex;",
+   "claim_id": "c03.s0.year_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c05.s1.identity",
+   "claim": "Jazan (400k b/d) not properly run since 27 July 2025 Houthi drone damage to tank farm and power complex;",
+   "claim_id": "c03.s0.year_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c03.s1.identity",
+   "claim": "Jazan (400k b/d) not properly run since 27 July 2025 Houthi drone damage to tank farm and power complex;",
+   "claim_id": "c03.s0.year_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "nine storage tanks damaged/destroyed by late August",
+   "claim_id": "c03.s1.identity",
+   "class": "positive",
+   "expected": "SUPPORTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "REFUTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "nine storage tanks damaged/destroyed by late August",
+   "claim_id": "c03.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "nine storage tanks damaged/destroyed by late August",
+   "claim_id": "c03.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c05.s1.value_shift",
+   "claim": "nine storage tanks damaged/destroyed by late August",
+   "claim_id": "c03.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c04.s0.identity",
+   "claim": "nine storage tanks damaged/destroyed by late August",
+   "claim_id": "c03.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "AAA national average: $5.85/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "claim_id": "c04.s0.identity",
+   "class": "positive",
+   "expected": "SUPPORTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "REFUTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "AAA national average: $5.85/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "claim_id": "c04.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "AAA national average: $5.85/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "claim_id": "c04.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c06.s0.identity",
+   "claim": "AAA national average: $5.85/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "claim_id": "c04.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c04.s0.value_shift",
+   "claim": "AAA national average: $5.85/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "claim_id": "c04.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "E_contradicting",
+   "borrowed_from": null,
+   "claim": "AAA national average: $5.85/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "claim_id": "c04.s0.identity",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "credulity"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "AAA national average: $7.31/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "claim_id": "c04.s0.value_shift",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "AAA national average: $7.31/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "claim_id": "c04.s0.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "AAA national average: $7.31/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "claim_id": "c04.s0.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c06.s0.paraphrase_number",
+   "claim": "AAA national average: $7.31/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "claim_id": "c04.s0.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c04.s0.year_shift",
+   "claim": "AAA national average: $7.31/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "claim_id": "c04.s0.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "AAA national average: $5.85/gal on 4 September 2025 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "claim_id": "c04.s0.year_shift",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "AAA national average: $5.85/gal on 4 September 2025 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "claim_id": "c04.s0.year_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "AAA national average: $5.85/gal on 4 September 2025 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "claim_id": "c04.s0.year_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c06.s1.identity",
+   "claim": "AAA national average: $5.85/gal on 4 September 2025 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "claim_id": "c04.s0.year_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c05.s0.identity",
+   "claim": "AAA national average: $5.85/gal on 4 September 2025 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+   "claim_id": "c04.s0.year_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "US diesel crack spread record $112.17/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+   "claim_id": "c05.s0.identity",
+   "class": "positive",
+   "expected": "SUPPORTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "REFUTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "US diesel crack spread record $112.17/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+   "claim_id": "c05.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "US diesel crack spread record $112.17/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+   "claim_id": "c05.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c07.s0.identity",
+   "claim": "US diesel crack spread record $112.17/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+   "claim_id": "c05.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c05.s0.value_shift",
+   "claim": "US diesel crack spread record $112.17/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+   "claim_id": "c05.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "E_contradicting",
+   "borrowed_from": null,
+   "claim": "US diesel crack spread record $112.17/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+   "claim_id": "c05.s0.identity",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "credulity"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "US diesel crack spread record $140.21/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+   "claim_id": "c05.s0.value_shift",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "US diesel crack spread record $140.21/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+   "claim_id": "c05.s0.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "US diesel crack spread record $140.21/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+   "claim_id": "c05.s0.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c08.s0.identity",
+   "claim": "US diesel crack spread record $140.21/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+   "claim_id": "c05.s0.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c05.s1.identity",
+   "claim": "US diesel crack spread record $140.21/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+   "claim_id": "c05.s0.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "pre-war baseline ~$20",
+   "claim_id": "c05.s1.identity",
+   "class": "positive",
+   "expected": "SUPPORTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "REFUTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "pre-war baseline ~$20",
+   "claim_id": "c05.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "pre-war baseline ~$20",
+   "claim_id": "c05.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c08.s1.identity",
+   "claim": "pre-war baseline ~$20",
+   "claim_id": "c05.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c05.s1.value_shift",
+   "claim": "pre-war baseline ~$20",
+   "claim_id": "c05.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "E_contradicting",
+   "borrowed_from": null,
+   "claim": "pre-war baseline ~$20",
+   "claim_id": "c05.s1.identity",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "credulity"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "pre-war baseline ~$25",
+   "claim_id": "c05.s1.value_shift",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "pre-war baseline ~$25",
+   "claim_id": "c05.s1.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "pre-war baseline ~$25",
+   "claim_id": "c05.s1.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c08.s1.unit_swap",
+   "claim": "pre-war baseline ~$25",
+   "claim_id": "c05.s1.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c06.s0.identity",
+   "claim": "pre-war baseline ~$25",
+   "claim_id": "c05.s1.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 m3 tank destroyed beyond repair);",
+   "claim_id": "c06.s0.identity",
+   "class": "positive",
+   "expected": "SUPPORTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "REFUTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 m3 tank destroyed beyond repair);",
+   "claim_id": "c06.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 m3 tank destroyed beyond repair);",
+   "claim_id": "c06.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c08.s1.scale_shift",
+   "claim": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 m3 tank destroyed beyond repair);",
+   "claim_id": "c06.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c06.s0.paraphrase_number",
+   "claim": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 m3 tank destroyed beyond repair);",
+   "claim_id": "c06.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "E_contradicting",
+   "borrowed_from": null,
+   "claim": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 m3 tank destroyed beyond repair);",
+   "claim_id": "c06.s0.identity",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "credulity"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 mthree tank destroyed beyond repair);",
+   "claim_id": "c06.s0.paraphrase_number",
+   "class": "positive",
+   "expected": "SUPPORTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "REFUTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 mthree tank destroyed beyond repair);",
+   "claim_id": "c06.s0.paraphrase_number",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 mthree tank destroyed beyond repair);",
+   "claim_id": "c06.s0.paraphrase_number",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c08.s2.identity",
+   "claim": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 mthree tank destroyed beyond repair);",
+   "claim_id": "c06.s0.paraphrase_number",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c06.s1.identity",
+   "claim": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 mthree tank destroyed beyond repair);",
+   "claim_id": "c06.s0.paraphrase_number",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "E_contradicting",
+   "borrowed_from": null,
+   "claim": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 mthree tank destroyed beyond repair);",
+   "claim_id": "c06.s0.paraphrase_number",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "credulity"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "the June strike killed three workers and took the plant fully offline",
+   "claim_id": "c06.s1.identity",
+   "class": "positive",
+   "expected": "SUPPORTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "REFUTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "the June strike killed three workers and took the plant fully offline",
+   "claim_id": "c06.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "the June strike killed three workers and took the plant fully offline",
+   "claim_id": "c06.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c09.s0.identity",
+   "claim": "the June strike killed three workers and took the plant fully offline",
+   "claim_id": "c06.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c07.s0.identity",
+   "claim": "the June strike killed three workers and took the plant fully offline",
+   "claim_id": "c06.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "Vitol and Phillips 66 executives: refined-product deficit structural, more pronounced than crude deficit, into winter",
+   "claim_id": "c07.s0.identity",
+   "class": "positive",
+   "expected": "SUPPORTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "REFUTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "Vitol and Phillips 66 executives: refined-product deficit structural, more pronounced than crude deficit, into winter",
+   "claim_id": "c07.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "Vitol and Phillips 66 executives: refined-product deficit structural, more pronounced than crude deficit, into winter",
+   "claim_id": "c07.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c09.s0.value_shift",
+   "claim": "Vitol and Phillips 66 executives: refined-product deficit structural, more pronounced than crude deficit, into winter",
+   "claim_id": "c07.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c08.s0.identity",
+   "claim": "Vitol and Phillips 66 executives: refined-product deficit structural, more pronounced than crude deficit, into winter",
+   "claim_id": "c07.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "E_contradicting",
+   "borrowed_from": null,
+   "claim": "Vitol and Phillips 66 executives: refined-product deficit structural, more pronounced than crude deficit, into winter",
+   "claim_id": "c07.s0.identity",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "credulity"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "\"At least nine Gulf refineries damaged and shut\";",
+   "claim_id": "c08.s0.identity",
+   "class": "positive",
+   "expected": "SUPPORTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "REFUTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "\"At least nine Gulf refineries damaged and shut\";",
+   "claim_id": "c08.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "\"At least nine Gulf refineries damaged and shut\";",
+   "claim_id": "c08.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c09.s0.year_shift",
+   "claim": "\"At least nine Gulf refineries damaged and shut\";",
+   "claim_id": "c08.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c08.s1.identity",
+   "claim": "\"At least nine Gulf refineries damaged and shut\";",
+   "claim_id": "c08.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "region's 11.7M b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "claim_id": "c08.s1.identity",
+   "class": "positive",
+   "expected": "SUPPORTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "REFUTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "region's 11.7M b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "claim_id": "c08.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "region's 11.7M b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "claim_id": "c08.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c09.s1.identity",
+   "claim": "region's 11.7M b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "claim_id": "c08.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c08.s1.unit_swap",
+   "claim": "region's 11.7M b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "claim_id": "c08.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "E_contradicting",
+   "borrowed_from": null,
+   "claim": "region's 11.7M b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "claim_id": "c08.s1.identity",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "credulity"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "region's 11.7M barrels per week refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "claim_id": "c08.s1.unit_swap",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "region's 11.7M barrels per week refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "claim_id": "c08.s1.unit_swap",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "region's 11.7M barrels per week refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "claim_id": "c08.s1.unit_swap",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c09.s1.value_shift",
+   "claim": "region's 11.7M barrels per week refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "claim_id": "c08.s1.unit_swap",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c08.s1.scale_shift",
+   "claim": "region's 11.7M barrels per week refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "claim_id": "c08.s1.unit_swap",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "region's 11.7B b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "claim_id": "c08.s1.scale_shift",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "region's 11.7B b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "claim_id": "c08.s1.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "region's 11.7B b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "claim_id": "c08.s1.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c10.s0.identity",
+   "claim": "region's 11.7B b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "claim_id": "c08.s1.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c08.s2.identity",
+   "claim": "region's 11.7B b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+   "claim_id": "c08.s1.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "Exact identity of the nine damaged Gulf refineries is JPMorgan-via-AInvest \u2014 named source, no list;",
+   "claim_id": "c08.s2.identity",
+   "class": "positive",
+   "expected": "SUPPORTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "REFUTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "Exact identity of the nine damaged Gulf refineries is JPMorgan-via-AInvest \u2014 named source, no list;",
+   "claim_id": "c08.s2.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "Exact identity of the nine damaged Gulf refineries is JPMorgan-via-AInvest \u2014 named source, no list;",
+   "claim_id": "c08.s2.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c11.s0.identity",
+   "claim": "Exact identity of the nine damaged Gulf refineries is JPMorgan-via-AInvest \u2014 named source, no list;",
+   "claim_id": "c08.s2.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c09.s0.identity",
+   "claim": "Exact identity of the nine damaged Gulf refineries is JPMorgan-via-AInvest \u2014 named source, no list;",
+   "claim_id": "c08.s2.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "AAA national average: $5.85/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+   "claim_id": "c09.s0.identity",
+   "class": "positive",
+   "expected": "SUPPORTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "REFUTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "AAA national average: $5.85/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+   "claim_id": "c09.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "AAA national average: $5.85/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+   "claim_id": "c09.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c11.s0.quote_alteration",
+   "claim": "AAA national average: $5.85/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+   "claim_id": "c09.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c09.s0.value_shift",
+   "claim": "AAA national average: $5.85/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+   "claim_id": "c09.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "E_contradicting",
+   "borrowed_from": null,
+   "claim": "AAA national average: $5.85/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+   "claim_id": "c09.s0.identity",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "credulity"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "AAA national average: $7.31/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+   "claim_id": "c09.s0.value_shift",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "AAA national average: $7.31/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+   "claim_id": "c09.s0.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "AAA national average: $7.31/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+   "claim_id": "c09.s0.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c12.s0.identity",
+   "claim": "AAA national average: $7.31/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+   "claim_id": "c09.s0.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c09.s0.year_shift",
+   "claim": "AAA national average: $7.31/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+   "claim_id": "c09.s0.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "AAA national average: $5.85/gal on 4 September 2025, breaking the 17 June 2022 record of $5.819;",
+   "claim_id": "c09.s0.year_shift",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "AAA national average: $5.85/gal on 4 September 2025, breaking the 17 June 2022 record of $5.819;",
+   "claim_id": "c09.s0.year_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "AAA national average: $5.85/gal on 4 September 2025, breaking the 17 June 2022 record of $5.819;",
+   "claim_id": "c09.s0.year_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c12.s0.unit_swap",
+   "claim": "AAA national average: $5.85/gal on 4 September 2025, breaking the 17 June 2022 record of $5.819;",
+   "claim_id": "c09.s0.year_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c09.s1.identity",
+   "claim": "AAA national average: $5.85/gal on 4 September 2025, breaking the 17 June 2022 record of $5.819;",
+   "claim_id": "c09.s0.year_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "crossed $6 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+   "claim_id": "c09.s1.identity",
+   "class": "positive",
+   "expected": "SUPPORTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "REFUTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "crossed $6 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+   "claim_id": "c09.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "crossed $6 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+   "claim_id": "c09.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c12.s0.scale_shift",
+   "claim": "crossed $6 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+   "claim_id": "c09.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c09.s1.value_shift",
+   "claim": "crossed $6 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+   "claim_id": "c09.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "E_contradicting",
+   "borrowed_from": null,
+   "claim": "crossed $6 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+   "claim_id": "c09.s1.identity",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "credulity"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "crossed $8 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+   "claim_id": "c09.s1.value_shift",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "crossed $8 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+   "claim_id": "c09.s1.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "crossed $8 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+   "claim_id": "c09.s1.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c12.s1.identity",
+   "claim": "crossed $8 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+   "claim_id": "c09.s1.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c10.s0.identity",
+   "claim": "crossed $8 on 10\u201311 September (AAA $6.06, +63% YoY vs ~$3.71)",
+   "claim_id": "c09.s1.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "anchor": true,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "The number that measures this is the crack spread \u2014 the margin between a barrel of crude and the diesel it becomes.",
+   "claim_id": "c10.s0.identity",
+   "class": "positive",
+   "expected": "SUPPORTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "REFUTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": true,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "The number that measures this is the crack spread \u2014 the margin between a barrel of crude and the diesel it becomes.",
+   "claim_id": "c10.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": true,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "The number that measures this is the crack spread \u2014 the margin between a barrel of crude and the diesel it becomes.",
+   "claim_id": "c10.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": true,
+   "arm": "F_unrelated",
+   "borrowed_from": "c12.s1.scale_shift",
+   "claim": "The number that measures this is the crack spread \u2014 the margin between a barrel of crude and the diesel it becomes.",
+   "claim_id": "c10.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": true,
+   "arm": "G_permuted",
+   "borrowed_from": "c11.s0.identity",
+   "claim": "The number that measures this is the crack spread \u2014 the margin between a barrel of crude and the diesel it becomes.",
+   "claim_id": "c10.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "Rystad's Claudio Galimberti: diesel is \"one of the reasons why the government bond yields in the United States are so high\"",
+   "claim_id": "c11.s0.identity",
+   "class": "positive",
+   "expected": "SUPPORTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "REFUTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "Rystad's Claudio Galimberti: diesel is \"one of the reasons why the government bond yields in the United States are so high\"",
+   "claim_id": "c11.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "Rystad's Claudio Galimberti: diesel is \"one of the reasons why the government bond yields in the United States are so high\"",
+   "claim_id": "c11.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c12.s1.value_shift",
+   "claim": "Rystad's Claudio Galimberti: diesel is \"one of the reasons why the government bond yields in the United States are so high\"",
+   "claim_id": "c11.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c11.s0.quote_alteration",
+   "claim": "Rystad's Claudio Galimberti: diesel is \"one of the reasons why the government bond yields in the United States are so high\"",
+   "claim_id": "c11.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "Rystad's Claudio Galimberti: diesel is \"the main reasons why the government bond yields in the United States are so high\"",
+   "claim_id": "c11.s0.quote_alteration",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "Rystad's Claudio Galimberti: diesel is \"the main reasons why the government bond yields in the United States are so high\"",
+   "claim_id": "c11.s0.quote_alteration",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "Rystad's Claudio Galimberti: diesel is \"the main reasons why the government bond yields in the United States are so high\"",
+   "claim_id": "c11.s0.quote_alteration",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c01.s0.identity",
+   "claim": "Rystad's Claudio Galimberti: diesel is \"the main reasons why the government bond yields in the United States are so high\"",
+   "claim_id": "c11.s0.quote_alteration",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c12.s0.identity",
+   "claim": "Rystad's Claudio Galimberti: diesel is \"the main reasons why the government bond yields in the United States are so high\"",
+   "claim_id": "c11.s0.quote_alteration",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "Canadian crude to PADD 3: 526k b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "claim_id": "c12.s0.identity",
+   "class": "positive",
+   "expected": "SUPPORTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "REFUTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "Canadian crude to PADD 3: 526k b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "claim_id": "c12.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "Canadian crude to PADD 3: 526k b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "claim_id": "c12.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c01.s0.scale_shift",
+   "claim": "Canadian crude to PADD 3: 526k b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "claim_id": "c12.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c12.s0.unit_swap",
+   "claim": "Canadian crude to PADD 3: 526k b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "claim_id": "c12.s0.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "Canadian crude to PADD 3: 526k barrels per week (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "claim_id": "c12.s0.unit_swap",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "Canadian crude to PADD 3: 526k barrels per week (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "claim_id": "c12.s0.unit_swap",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "Canadian crude to PADD 3: 526k barrels per week (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "claim_id": "c12.s0.unit_swap",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c01.s1.identity",
+   "claim": "Canadian crude to PADD 3: 526k barrels per week (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "claim_id": "c12.s0.unit_swap",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c12.s0.scale_shift",
+   "claim": "Canadian crude to PADD 3: 526k barrels per week (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "claim_id": "c12.s0.unit_swap",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "Canadian crude to PADD 3: 526M b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "claim_id": "c12.s0.scale_shift",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "Canadian crude to PADD 3: 526M b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "claim_id": "c12.s0.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "Canadian crude to PADD 3: 526M b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "claim_id": "c12.s0.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c01.s1.scale_shift",
+   "claim": "Canadian crude to PADD 3: 526M b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "claim_id": "c12.s0.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c12.s1.identity",
+   "claim": "Canadian crude to PADD 3: 526M b/d (2024) \u2192 416k (2025) \u2192 ~337k (H1 2026, EIA Jan\u2013Jun);",
+   "claim_id": "c12.s0.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +6.4% YoY",
+   "claim_id": "c12.s1.identity",
+   "class": "positive",
+   "expected": "SUPPORTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "REFUTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +6.4% YoY",
+   "claim_id": "c12.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +6.4% YoY",
+   "claim_id": "c12.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c01.s1.year_shift",
+   "claim": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +6.4% YoY",
+   "claim_id": "c12.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c12.s1.scale_shift",
+   "claim": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +6.4% YoY",
+   "claim_id": "c12.s1.identity",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "total Canadian exports rose \u2014 US imports 4B+ b/d H1 2026, June exports +6.4% YoY",
+   "claim_id": "c12.s1.scale_shift",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "total Canadian exports rose \u2014 US imports 4B+ b/d H1 2026, June exports +6.4% YoY",
+   "claim_id": "c12.s1.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "total Canadian exports rose \u2014 US imports 4B+ b/d H1 2026, June exports +6.4% YoY",
+   "claim_id": "c12.s1.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c02.s0.identity",
+   "claim": "total Canadian exports rose \u2014 US imports 4B+ b/d H1 2026, June exports +6.4% YoY",
+   "claim_id": "c12.s1.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c12.s1.value_shift",
+   "claim": "total Canadian exports rose \u2014 US imports 4B+ b/d H1 2026, June exports +6.4% YoY",
+   "claim_id": "c12.s1.scale_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "A_genuine",
+   "borrowed_from": null,
+   "claim": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +8.0% YoY",
+   "claim_id": "c12.s1.value_shift",
+   "class": "positive",
+   "expected": "REFUTED",
+   "fail_if": {
+    "NOT_ENOUGH_INFO": "over_strict_abstention",
+    "REFUSAL": "over_strict_refusal",
+    "SUPPORTED": "wrong_direction"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "B_empty",
+   "borrowed_from": null,
+   "claim": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +8.0% YoY",
+   "claim_id": "c12.s1.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_nothing",
+    "SUPPORTED": "credulity_no_evidence"
+   },
+   "n_evidence": 0
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "C_noise_length",
+   "borrowed_from": null,
+   "claim": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +8.0% YoY",
+   "claim_id": "c12.s1.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_noise",
+    "SUPPORTED": "mode2_length_sensitive"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "anchor": false,
+   "arm": "F_unrelated",
+   "borrowed_from": "c02.s0.value_shift",
+   "claim": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +8.0% YoY",
+   "claim_id": "c12.s1.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "SUPPORTED": "credulity_irrelevant_evidence"
+   },
+   "n_evidence": 1
+  },
+  {
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "anchor": false,
+   "arm": "G_permuted",
+   "borrowed_from": "c01.s0.identity",
+   "claim": "total Canadian exports rose \u2014 US imports 4M+ b/d H1 2026, June exports +8.0% YoY",
+   "claim_id": "c12.s1.value_shift",
+   "class": "negative",
+   "expected": "NOT_ENOUGH_INFO",
+   "fail_if": {
+    "REFUTED": "refuted_from_other_claim",
+    "SUPPORTED": "mode1_content_blind"
+   },
+   "n_evidence": 1
+  }
+ ],
+ "author": "Helix AI Innovations Inc. (Spider-local, helixclaw node)",
+ "built": "2026-11-01",
+ "counts": {
+  "A_genuine": 45,
+  "B_empty": 45,
+  "C_noise_length": 45,
+  "E_contradicting": 13,
+  "F_unrelated": 45,
+  "G_permuted": 45
+ },
+ "label_vocabulary": {
+  "NOT_ENOUGH_INFO": "the evidence neither supports nor refutes",
+  "REFUSAL": "the judge declined to label",
+  "REFUTED": "the evidence contradicts the claim",
+  "SUPPORTED": "the claim follows from the evidence"
+ },
+ "purpose": "Expected verdict and scoring class for every arm in arms_expanded.json. No arm's verdict and no label's treatment is left to the scorer's discretion.",
+ "scoring_rules": {
+  "abstention_on_negative_arms": "correct: NEI and REFUSAL are both acceptable on B/C/F/G",
+  "aggregate": "no single aggregate over all arms. Score in paired blocks: A alone, negative arms (B/C/F/G) together, E separately as small-n.",
+  "anchors": "excluded from accuracy; reported separately",
+  "determinate_on_negative_arms": "error, named per arm in fail_if; SUPPORTED is credulity and is the headline negative-arm metric",
+  "refuted_on_unrelated": "acceptable on F only, per the S2.10 rule: REFUTED is admissible if that passage carries a contradicting quantity of the same kind",
+  "small_n": "classes with fewer than 30 arms report a Wilson 95% interval and are labelled small-n, never a stable rate."
+ },
+ "total_arms": 238,
+ "version": "1.0"
+}
