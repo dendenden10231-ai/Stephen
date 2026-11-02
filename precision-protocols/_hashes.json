@@ -4,14 +4,15 @@
   {
    "path": "precision-protocols/fresh4-core-v57-2026-11-01.json",
    "what": "fresh4 (VitaminC clean hold-out, seed 8888, 800 pairs): HELIX v5.7, strict and alarm modes",
-   "bytes": 1188,
+   "bytes": 1165,
    "private_original_sha256": "74255810bf6c99d5049c26ad52940756b030aea7dbccea48d319766b2a5f9c79",
-   "published_sha256": "bf4a9178bc73bf3f24077ee4b5031faf3ed9994e55bb0f83f2d2f9090a48096e",
+   "published_sha256": "094f4aa07e8beb0e7e09d78efe9e3d750b0f8215b2e533cada34b7611c48eff4",
    "edits": [
     {
-     "from": "C:\\Users\\Admin\\Desktop\\102\\docs\\замеры\\bucket1_rows_fresh4.csv",
-     "to": "C:/Users/Admin/Desktop/102/docs/замеры/bucket1_rows_fresh4.csv",
-     "occurrences": 1
+     "from": "<absolute path on the author's machine, withheld>",
+     "to": "102/docs/замеры/bucket1_rows_fresh4.csv",
+     "occurrences": 1,
+     "from_rule": "it pointed inside repository 102 at the committed 800-pair sample"
     }
    ],
    "rule": "byte-identical to the private artifact except the listed path values: the author's absolute local paths replaced by repository-relative ones. No reformatting, no re-serialization."
