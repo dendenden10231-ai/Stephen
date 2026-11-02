@@ -1,0 +1,48 @@
+{
+ "выборка": {
+  "файл": "C:/Users/Admin/Desktop/102/docs/замеры/bucket1_rows_fresh4.csv",
+  "пар": 800,
+  "REFUTES": 400,
+  "SUPPORTS": 400
+ },
+ "ядро": "helix_pipeline/engine/привязка_чисел.py (текущее)",
+ "тревога": {
+  "TP": 342,
+  "FP": 88,
+  "FN": 58,
+  "TN": 312,
+  "precision": 0.7953,
+  "precision_ci95": [
+   0.755,
+   0.831
+  ],
+  "recall": 0.855,
+  "FPR": 0.22,
+  "F1": 0.8241
+ },
+ "строго": {
+  "TP": 285,
+  "FP": 15,
+  "FN": 115,
+  "TN": 385,
+  "precision": 0.95,
+  "precision_ci95": [
+   0.919,
+   0.969
+  ],
+  "recall": 0.7125,
+  "FPR": 0.0375,
+  "F1": 0.8143
+ },
+ "статусы": {
+  "BOUND": 321,
+  "CONTRADICTED": 300,
+  "CORE_BOUND_AUX_PRUNED": 42,
+  "NEEDS_RECOVERY": 130,
+  "NO_NUMBERS": 7
+ },
+ "секунд": 0.43,
+ "хеш_ядра_нормализованный": "8f0138c122273913d7e15360d52a44bb490af9ed9755f833cced1a7894153d09",
+ "хеш_ядра_на_диске": "cecbe7ecec63a4df4b12bdced9cc15cca0e6fd1a153eafab47c86b57afa73b05",
+ "метка": "v5.7-точность-01-11 (база main, включая производные числа PR #54)"
+}

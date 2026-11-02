@@ -1,0 +1,47 @@
+{
+ "generated": "2026-11-02",
+ "files": [
+  {
+   "path": "precision-protocols/fresh4-core-v57-2026-11-01.json",
+   "what": "fresh4 (VitaminC clean hold-out, seed 8888, 800 pairs): HELIX v5.7, strict and alarm modes",
+   "bytes": 1188,
+   "private_original_sha256": "74255810bf6c99d5049c26ad52940756b030aea7dbccea48d319766b2a5f9c79",
+   "published_sha256": "bf4a9178bc73bf3f24077ee4b5031faf3ed9994e55bb0f83f2d2f9090a48096e",
+   "edits": [
+    {
+     "from": "C:\\Users\\Admin\\Desktop\\102\\docs\\замеры\\bucket1_rows_fresh4.csv",
+     "to": "C:/Users/Admin/Desktop/102/docs/замеры/bucket1_rows_fresh4.csv",
+     "occurrences": 1
+    }
+   ],
+   "rule": "byte-identical to the private artifact except the listed path values: the author's absolute local paths replaced by repository-relative ones. No reformatting, no re-serialization."
+  },
+  {
+   "path": "precision-protocols/aggrefact-1117-v57-2026-11-01.json",
+   "what": "AggreFact-SOTA test, 1 117 pairs: HELIX v5.7",
+   "bytes": 250154,
+   "private_original_sha256": "ec13335d5772ee92fc3c6492f44d0445c860591b5d4772f3ee392387b7b9416b",
+   "published_sha256": "ec13335d5772ee92fc3c6492f44d0445c860591b5d4772f3ee392387b7b9416b",
+   "edits": [],
+   "rule": "byte-identical to the private artifact except the listed path values: the author's absolute local paths replaced by repository-relative ones. No reformatting, no re-serialization."
+  },
+  {
+   "path": "precision-protocols/aggrefact-1117-main-base-2026-11-01.json",
+   "what": "AggreFact-SOTA test, 1 117 pairs: the main-branch base before the v5.7 edits (the A/B counterpart)",
+   "bytes": 250136,
+   "private_original_sha256": "52d20bde5d31bd8ae6439f4a0da116b9ee323fb3da781d45f9851045f0896823",
+   "published_sha256": "52d20bde5d31bd8ae6439f4a0da116b9ee323fb3da781d45f9851045f0896823",
+   "edits": [],
+   "rule": "byte-identical to the private artifact except the listed path values: the author's absolute local paths replaced by repository-relative ones. No reformatting, no re-serialization."
+  },
+  {
+   "path": "battery/battery-check-list-2026-11-02.json",
+   "what": "AK-MASTER public battery: the exact check list, computed by running the battery over the 12 PROBE-AK calibration scenes",
+   "bytes": 7999,
+   "private_original_sha256": "8cd44e575e6a9ce9b6eb7a81309faf4f68963842188c954f901a7cbbc413491a",
+   "published_sha256": "8cd44e575e6a9ce9b6eb7a81309faf4f68963842188c954f901a7cbbc413491a",
+   "edits": [],
+   "rule": "byte-identical to the private artifact except the listed path values: the author's absolute local paths replaced by repository-relative ones. No reformatting, no re-serialization."
+  }
+ ]
+}

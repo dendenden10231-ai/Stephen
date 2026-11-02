@@ -1,0 +1,307 @@
+{
+  "замерено": "2026-11-02",
+  "battery": "AK-MASTER mechanical audit (form, not facts)",
+  "checks": [
+    {
+      "code": "10.1-OPENING",
+      "check": "Запрещённые зачины",
+      "model_free": true,
+      "statuses_seen": [
+        "FAIL",
+        "PASS"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "10.2-DD",
+      "check": "Divine Density (графит vs алмаз)",
+      "model_free": true,
+      "statuses_seen": [
+        "PASS",
+        "WARN"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "10.2-DOZA",
+      "check": "Наречия → сильный глагол (Дозуа)",
+      "model_free": true,
+      "statuses_seen": [
+        "PASS"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "10.2-HEDGE",
+      "check": "«Как будто» (штамп-сравнение, не 10.2.1)",
+      "model_free": true,
+      "statuses_seen": [
+        "PASS"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "10.2-NEGDEF",
+      "check": "«был не X, а Y» — определение через отрицание",
+      "model_free": true,
+      "statuses_seen": [
+        "PASS"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "10.2-NEGPAR",
+      "check": "«Не потому что X, а потому что Y» (AI-tell)",
+      "model_free": true,
+      "statuses_seen": [
+        "PASS"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "10.2-REFRAME",
+      "check": "«Это не X. Это Y.» (AI-tell)",
+      "model_free": true,
+      "statuses_seen": [
+        "PASS"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "10.2.2+3",
+      "check": "Физиологические якоря / 2+ сенсорных канала",
+      "model_free": true,
+      "statuses_seen": [
+        "FAIL",
+        "PASS",
+        "WARN"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "10.2.2-ABS",
+      "check": "Абстракции без физиологии",
+      "model_free": true,
+      "statuses_seen": [
+        "PASS"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "10.2.4",
+      "check": "Ритм сломан (TST-DA)",
+      "model_free": true,
+      "statuses_seen": [
+        "PASS",
+        "WARN"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "10.2.7",
+      "check": "Непомеченные числа / факты",
+      "model_free": true,
+      "statuses_seen": [
+        "PASS"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "13.SSC-NAMESPACE",
+      "check": "SSC namespace / no bare SSC",
+      "model_free": true,
+      "statuses_seen": [
+        "PASS"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "2.4.DOSTOEVSKY",
+      "check": "Парадокс Достоевского",
+      "model_free": true,
+      "statuses_seen": [
+        "PASS"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "2.4.FOWLES",
+      "check": "Парадокс Фаулза",
+      "model_free": true,
+      "statuses_seen": [
+        "PASS"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "2.4.YANCEY",
+      "check": "Парадокс Янси",
+      "model_free": true,
+      "statuses_seen": [
+        "PASS"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "2.ANTAGONIST-LOGIC",
+      "check": "Внутренняя логика враждебной силы",
+      "model_free": true,
+      "statuses_seen": [
+        "PASS"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "2.VTO-ROUTER",
+      "check": "Совет директоров / маршрутизация вето",
+      "model_free": true,
+      "statuses_seen": [
+        "PASS",
+        "WARN"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "3.CDV",
+      "check": "Причинно-следственная цепочка",
+      "model_free": true,
+      "statuses_seen": [
+        "PASS",
+        "WARN"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "3.LAW-SHADOW",
+      "check": "Закон Тени / паника как топливо",
+      "model_free": true,
+      "statuses_seen": [
+        "PASS"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "3.LAW-Z",
+      "check": "Закон Z / сопротивление и цена",
+      "model_free": true,
+      "statuses_seen": [
+        "PASS"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "6.TST-DR",
+      "check": "Авторское вторжение / сон читателя",
+      "model_free": true,
+      "statuses_seen": [
+        "PASS"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "6.TST-DV",
+      "check": "Тест Двойника / два прочтения",
+      "model_free": true,
+      "statuses_seen": [
+        "WARN"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "6.TST-EV",
+      "check": "ЭВ-ядро / интенсивность / вектор",
+      "model_free": true,
+      "statuses_seen": [
+        "FAIL",
+        "PASS",
+        "WARN"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "6.TST-KIN",
+      "check": "Кинесика / визуальная диалогизация",
+      "model_free": true,
+      "statuses_seen": [
+        "PASS"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "6.TST-MR.L",
+      "check": "Меррил/Лиготти: внешний распад = внутреннему",
+      "model_free": true,
+      "statuses_seen": [
+        "PASS"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "6.TST-PL",
+      "check": "Полифония / автономия голосов",
+      "model_free": true,
+      "statuses_seen": [
+        "PASS"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "6.TST-TW",
+      "check": "Тест Твардовского / враждебный читатель",
+      "model_free": false,
+      "statuses_seen": [
+        "NOT_CONFIGURED"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "8.SCR-T",
+      "check": "Травма / Slow Work / авторское молчание",
+      "model_free": true,
+      "statuses_seen": [
+        "PASS"
+      ],
+      "scenes_seen": 12
+    },
+    {
+      "code": "9.SYN",
+      "check": "Синтаксический режим (Блок 9)",
+      "model_free": true,
+      "statuses_seen": [
+        "WARN"
+      ],
+      "scenes_seen": 12
+    }
+  ],
+  "counts": {
+    "emitted": 29,
+    "model_free": 28,
+    "paid_excluded": 1
+  },
+  "paid_check": {
+    "code": "6.TST-TW",
+    "returned_status": "NOT_CONFIGURED",
+    "note": "The paid judge is never called here. NOT_CONFIGURED is not a pass: the check was not performed, and the endpoint says so per position."
+  },
+  "model_calls": 0,
+  "cost_usd": 0,
+  "calibration": {
+    "corpus": "PROBE-AK (12 scenes, composed 29 Oct 2026 for the null-input probe)",
+    "scenes": 12,
+    "sha256": "591b8609985a2d77989fe72eb927afbdb42b37a9a664748a1ecbda9c410d1e48",
+    "how_built": "the battery is run on every scene and the emitted check codes are collected; nothing in this list is written by hand"
+  },
+  "caps": {
+    "per_minute": 10,
+    "daily_per_address": 60,
+    "daily_total": 2000,
+    "window": "rolling 24 h, counted in process memory; a restart resets the counter",
+    "applies_to": "POST /api/ak/battery/grade; GET /checks is limited per minute only"
+  },
+  "discipline": [
+    "per-position grades, never an aggregate presented as a pass",
+    "UNTESTED where no genuine reply is supplied — an empty input is not a pass",
+    "the exact check list is published, including the paid check that is not run"
+  ],
+  "max_text_chars": 20000
+}
