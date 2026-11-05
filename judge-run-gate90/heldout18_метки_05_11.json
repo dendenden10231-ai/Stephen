@@ -1,0 +1,126 @@
+{
+ "описание": "Held-out run of our judge on the 18 claims of arms_v2.json not used in the 30-claim development slice. Run 2026-11-05 after the wrapper fix (PR #62). k=1 per arm; arm A was run twice by our operational mistake (two instances started at once) and both runs gave identical labels on all 18 rows.",
+ "набор": {
+  "файл": "null-arm-checks-v2/arms_v2.json",
+  "sha256": "2d1771c38f2e67d0f8fb0aad871a700b492cf77cfdd59949f352acf3b02be3b5"
+ },
+ "выбор": {
+  "рецепт": "claims with all three arms A_genuine, G_deranged, C_num_noise (48) minus the 30 used (selection hash a8aaaff0c21e6bdc), sorted by sha256(claim_id)",
+  "хэш_18": "77e427d047729a58",
+  "claim_ids": [
+   "c05.s1.value_shift",
+   "c05.s0.value_shift",
+   "c12.s1.scale_shift",
+   "c08.s1.unit_swap",
+   "c09.s0.year_shift",
+   "c05.s1.identity",
+   "c08.s0.identity",
+   "c01.s1.identity",
+   "c08.s1.scale_shift",
+   "c04.s0.year_shift",
+   "c09.s1.value_shift",
+   "c02.s1.scale_shift",
+   "c12.s0.identity",
+   "c04.s0.value_shift",
+   "c03.s0.unit_swap",
+   "c08.s2.identity",
+   "c03.s1.identity",
+   "c09.s0.value_shift"
+  ]
+ },
+ "задания_сервера": {
+  "A_genuine": [
+   "d3a1749a0adb",
+   "b7eb7fc4ec93"
+  ],
+  "G_deranged": [
+   "adf63b199727"
+  ],
+  "C_num_noise": [
+   "fa7d5270744d"
+  ]
+ },
+ "итог": {
+  "A_genuine": {
+   "correct": 17,
+   "of": 18
+  },
+  "G_deranged": {
+   "false_determinate": 0,
+   "of": 18
+  },
+  "C_num_noise": {
+   "false_determinate": 7,
+   "of": 18,
+   "all_false_determinate_were": "SUPPORTED"
+  }
+ },
+ "метки": {
+  "A_genuine": {
+   "c05.s1.value_shift": "REFUTED",
+   "c05.s0.value_shift": "REFUTED",
+   "c12.s1.scale_shift": "REFUTED",
+   "c08.s1.unit_swap": "REFUTED",
+   "c09.s0.year_shift": "REFUTED",
+   "c05.s1.identity": "SUPPORTED",
+   "c08.s0.identity": "SUPPORTED",
+   "c01.s1.identity": "SUPPORTED",
+   "c08.s1.scale_shift": "REFUTED",
+   "c04.s0.year_shift": "REFUTED",
+   "c09.s1.value_shift": "REFUTED",
+   "c02.s1.scale_shift": "REFUTED",
+   "c12.s0.identity": "SUPPORTED",
+   "c04.s0.value_shift": "REFUTED",
+   "c03.s0.unit_swap": "SUPPORTED",
+   "c08.s2.identity": "SUPPORTED",
+   "c03.s1.identity": "SUPPORTED",
+   "c09.s0.value_shift": "REFUTED"
+  },
+  "G_deranged": {
+   "c05.s1.value_shift": "NOT_ENOUGH_INFO",
+   "c05.s0.value_shift": "UNTESTED",
+   "c12.s1.scale_shift": "NOT_ENOUGH_INFO",
+   "c08.s1.unit_swap": "NOT_ENOUGH_INFO",
+   "c09.s0.year_shift": "NOT_ENOUGH_INFO",
+   "c05.s1.identity": "NOT_ENOUGH_INFO",
+   "c08.s0.identity": "NOT_ENOUGH_INFO",
+   "c01.s1.identity": "NOT_ENOUGH_INFO",
+   "c08.s1.scale_shift": "NOT_ENOUGH_INFO",
+   "c04.s0.year_shift": "NOT_ENOUGH_INFO",
+   "c09.s1.value_shift": "NOT_ENOUGH_INFO",
+   "c02.s1.scale_shift": "NOT_ENOUGH_INFO",
+   "c12.s0.identity": "NOT_ENOUGH_INFO",
+   "c04.s0.value_shift": "NOT_ENOUGH_INFO",
+   "c03.s0.unit_swap": "NOT_ENOUGH_INFO",
+   "c08.s2.identity": "NOT_ENOUGH_INFO",
+   "c03.s1.identity": "NOT_ENOUGH_INFO",
+   "c09.s0.value_shift": "NOT_ENOUGH_INFO"
+  },
+  "C_num_noise": {
+   "c05.s1.value_shift": "SUPPORTED",
+   "c05.s0.value_shift": "NOT_ENOUGH_INFO",
+   "c12.s1.scale_shift": "NOT_ENOUGH_INFO",
+   "c08.s1.unit_swap": "NOT_ENOUGH_INFO",
+   "c09.s0.year_shift": "SUPPORTED",
+   "c05.s1.identity": "NOT_ENOUGH_INFO",
+   "c08.s0.identity": "UNTESTED",
+   "c01.s1.identity": "NOT_ENOUGH_INFO",
+   "c08.s1.scale_shift": "NOT_ENOUGH_INFO",
+   "c04.s0.year_shift": "SUPPORTED",
+   "c09.s1.value_shift": "SUPPORTED",
+   "c02.s1.scale_shift": "NOT_ENOUGH_INFO",
+   "c12.s0.identity": "SUPPORTED",
+   "c04.s0.value_shift": "SUPPORTED",
+   "c03.s0.unit_swap": "NOT_ENOUGH_INFO",
+   "c08.s2.identity": "NOT_ENOUGH_INFO",
+   "c03.s1.identity": "NOT_ENOUGH_INFO",
+   "c09.s0.value_shift": "SUPPORTED"
+  }
+ },
+ "A_промах": "c03.s0.unit_swap: claim says 'barrels per week', evidence says 'b/d'; judge answered SUPPORTED, acceptable is REFUTED",
+ "стоимость_usd_по_счётчику": {
+  "A_дважды": 1.1243,
+  "G_и_C": 1.1202,
+  "всего_held_out": 2.2445
+ }
+}
