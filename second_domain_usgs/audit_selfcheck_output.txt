@@ -1,0 +1,10 @@
+PASS  labels by construction                                                          56 arms; expected label equals the family's contract in every arm; sensor verdict is not an input
+PASS  A_supported passages come from the stored catalogue record                      11 arms; magnitude and place equal the stored record values
+PASS  C_noise_no_quantity carries no number at all                                    11 arms
+PASS  C_num_same_value repeats only the claim's own number(s), no other value         11 arms
+PASS  C_num_contradicting evidence differs from the claim in the one number it names  11 arms, one contradicting quantity per arm (manifest count = 1)
+PASS  D_distorting: evidence value differs from the claim value                       11 arms
+PASS  R_absent_source id is the recorded absence                                      us7000tugp
+PASS  corpus: 12 requested, 11 usable, 1 absent                                       usable=11
+PASS  no record requires a paid tier or a key                                         all request URLs are the public FDSN endpoint, plain GET
+D_distorting arms whose evidence value is not the stored catalogue value: 11 of 11 (declared: the evidence is altered by construction)
