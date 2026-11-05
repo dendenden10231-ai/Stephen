@@ -111,7 +111,7 @@ invalidates it, including a line-ending change: that is defect 3 we logged again
    exactly (checked).
 6. **Not done or only half done:** polarity and negation checks; order permutations inside a multi-evidence arm
    (we now have such arms — `M_diluted`, `R_pair` — but in one order only); injected instructions inside
-   evidence; the second domain (USGS first pass — ours to build, so please don't start it); mechanical paraphrase
+   evidence; the second domain (USGS first pass — built by us at your request, frozen 2026-11-05, see `second_domain_usgs/`); mechanical paraphrase
    arms (400,000 → 400k → four hundred thousand, units held) for over-strictness; and the pre-model forecast
    filter's false positives, which need control claims where "will" sits inside a quotation.
 7. **The judge changed after your three runs:** forecasts and opinions are now stopped by code before the model.
