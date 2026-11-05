@@ -14,3 +14,24 @@ What it does not show (as in the appendix): k=1, 30 of your 48 claims, and pass 
 the defects, so it is a development result, not a held-out measurement. The six false-determinate C rows are
 listed by id in the file. Labels were copied from the server-side job logs; the raw job files remain on the
 server and we can extract any of them on request.
+
+## Addendum: held-out run on the 18 unused claims (2026-11-05, later the same day)
+
+File: `heldout18_метки_05_11.json` (SHA-256 `e5a9e7ed2497e35245b7b3b161327d1c272e924be0adb4450a2e6a02ed02b10e`). The 18 claims are the 48 with all three arms minus the 30 used
+above (selection hash `77e427d047729a58`). Same judge, same wrapper as pass 2 (after the fix). k=1 per arm.
+
+| arm | held-out result |
+|---|---|
+| A_genuine | **17 of 18** correct (0.944) |
+| G_deranged | **0 of 18** false determinate |
+| C_num_noise | **7 of 18** false determinate (0.389), all SUPPORTED |
+
+- Pooled with the 30-claim slice (48 claims, but the first 30 were used to find and fix the defects, so only the
+  18 are held-out): A 46 of 48, G 0 of 48, C 13 of 48 (0.27).
+- The single A miss is `c03.s0.unit_swap` ("barrels per week" in the claim, "b/d" in the evidence; the judge said
+  SUPPORTED, expected REFUTED). It is the same day-versus-week unit class as our open defect M53.
+- **C is not fixed.** 7 of 18 is above the 0.10 threshold from the planning document and worse than the 6 of 30
+  on the development slice. The planned fix (a gate on direct support, in progress on our side) is not applied to this run.
+- Operational note: arm A was run twice because two instances of our script started at once (our mistake). Both runs
+  gave identical labels on all 18 rows. Cost by our counter: $2.2445 for the whole held-out run, $1.1243 of it the duplicate A.
+- Caveats: k=1, 18 claims from one corpus, thresholds unvalidated.
