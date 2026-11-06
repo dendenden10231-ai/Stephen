@@ -23,7 +23,8 @@ So the misclassification was in the metadata field only; no verdict moved. 0 mod
 
 **Digests.** Frozen arms digest (unchanged): `5708832f72365a07902103583f6cfc091594406fd64c0f4f949751b68300075b`.
 Recomputed file declares digest `dc3acd30bb8aa7f61595f7483518fc7a66452a2aa3031272b2c78fdf799434e9`
-(same rule: SHA-256 of `json.dumps(obj, ensure_ascii=False, sort_keys=True, indent=2)` of the whole object;
-byte-level SHA-256 of the file is in `SHA256SUMS.txt`). Anything quoting the field values of the frozen
+(same rule as the frozen file: SHA-256 of `json.dumps(d['руки'], ensure_ascii=False, sort_keys=True, indent=2)`, i.e. of the
+**`руки` array only**, not of the whole object — hashing the whole object gives `604e0a26…`, which is not the declared digest;
+byte-level SHA-256 of the file is in `SHA256SUMS.txt`). Corrected 2026-11-06 after Stephen's re-score; the earlier sentence here was wrong. Anything quoting the field values of the frozen
 file as "what the sensor believed the quantity to be" should cite this addendum instead.
 Caveat: the corrected classifier is our code; the check you can run is to compare the 34 changed rows by hand.

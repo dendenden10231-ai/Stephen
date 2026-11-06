@@ -35,3 +35,36 @@ above (selection hash `77e427d047729a58`). Same judge, same wrapper as pass 2 (a
 - Operational note: arm A was run twice because two instances of our script started at once (our mistake). Both runs
   gave identical labels on all 18 rows. Cost by our counter: $2.2445 for the whole held-out run, $1.1243 of it the duplicate A.
 - Caveats: k=1, 18 claims from one corpus, thresholds unvalidated.
+
+## Addendum 2: what `UNTESTED` is, and every rate with its judged denominator (2026-11-06)
+
+Stephen's re-score found 12 of the 174 published labels are `UNTESTED`. He is right about the count (we get the same 12).
+
+**What `UNTESTED` is.** It is a state set by our code, not a label the model emits. The judge call succeeded (one call, finish
+reason STOP, JSON parsed), but every conclusion the model produced was removed by a code gate afterwards — in the rows we looked
+at, the number gate (a number in the conclusion that is in none of the facts it cites) — so nothing was left to rank. The
+recorded reason is "no judge conclusion rests on the supplied facts". It is not a failed call and not missing data; it is
+"the judge answered, and we threw the answer away". Raw rows for the examples are in the server job logs.
+
+All labels per arm (n = rows; the four labels sum to n):
+
+| run | n | SUPPORTED | REFUTED | NOT_ENOUGH_INFO | UNTESTED |
+|---|---|---|---|---|---|
+| gate90 pass 1, A | 30 | 6 | 3 | 17 | 4 |
+| gate90 pass 2, A | 30 | 16 | 14 | 0 | 0 |
+| gate90 pass 2, G | 30 | 0 | 0 | 27 | 3 |
+| gate90 pass 2, C | 30 | 6 | 0 | 21 | 3 |
+| held-out, A | 18 | 7 | 11 | 0 | 0 |
+| held-out, G | 18 | 0 | 0 | 17 | 1 |
+| held-out, C | 18 | 7 | 0 | 10 | 1 |
+
+Rates, both ways (all rows / judged rows only):
+
+- held-out C false determinate: 7/18 = 0.389 / 7/17 = 0.412
+- gate90 pass 2 C: 6/30 = 0.200 / 6/27 = 0.222
+- gate90 pass 1 A correct: 9/30 = 0.300 / 9/26 = 0.346
+- G, both runs: 0/18 and 0/30 / 0/17 and 0/27
+
+We report both because they answer different questions: "all rows" is what a user of the product sees (no determinate answer is
+shown for an `UNTESTED` row); "judged rows" is the rate over rows the judge actually ranked. Neither moves any conclusion: C is
+above the 0.10 threshold both ways.
