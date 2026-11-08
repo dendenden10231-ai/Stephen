@@ -37,7 +37,7 @@ def test_freeze_lines_match_files():
 def test_every_file_on_disk_is_pinned():
     pinned = {l.split()[1] for l in open(FREEZE, encoding="utf-8") if re.match(r"^[0-9a-f]{64}  ", l)}
     on_disk = {f for f in os.listdir(HERE) if os.path.isfile(os.path.join(HERE, f))}
-    loose = sorted(on_disk - pinned - {"FREEZE_v2_1.txt", "__pycache__"} - {f for f in on_disk if f.endswith(".pyc")})
+    loose = sorted(on_disk - pinned - {"FREEZE_v2_1.txt", "ENVIRONMENT_v2_1.txt", "__pycache__"} - {f for f in on_disk if f.endswith(".pyc")})
     assert not loose, f"файлы без хеша в заморозке: {loose}"
 
 

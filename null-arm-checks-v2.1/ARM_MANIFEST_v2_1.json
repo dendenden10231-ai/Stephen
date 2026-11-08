@@ -5354,8 +5354,7 @@
    "expected": "NOT_ENOUGH_INFO",
    "acceptable": [
     "NOT_ENOUGH_INFO",
-    "REFUSAL",
-    "REFUTED"
+    "REFUSAL"
    ],
    "negative": true,
    "anchor": false,
@@ -5376,6 +5375,21 @@
    "family": "other_document_substitution",
    "fixed_claim": true,
    "subclass": ""
+  },
+  {
+   "claim_id": "c09.s1.identity",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.5
   },
   {
    "claim_id": "c09.s1.identity",
@@ -5477,8 +5491,7 @@
    "expected": "NOT_ENOUGH_INFO",
    "acceptable": [
     "NOT_ENOUGH_INFO",
-    "REFUSAL",
-    "REFUTED"
+    "REFUSAL"
    ],
    "negative": true,
    "anchor": false,
@@ -5513,6 +5526,21 @@
    "family": "same_document_non_rationale",
    "fixed_claim": true,
    "subclass": ""
+  },
+  {
+   "claim_id": "c09.s1.value_shift",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.5
   },
   {
    "claim_id": "c09.s1.value_shift",

@@ -34,6 +34,7 @@ def check_distorted(claim_variant: str, source: str) -> dict:
     return {"status": "INVALID", "distortion": kind,
             "why": {"MATCH": "the variant states the same quantity as the source",
                     "ROUNDED_MATCH": "the variant is a rounding of the source",
+                    "YEAR_UNSTATED": "month and day agree; the year is stated on one side only",
                     "NOT_IN_PASSAGE": "the source has no comparable quantity",
                     "NONE": "nothing to compare"}.get(kind, kind)}
 

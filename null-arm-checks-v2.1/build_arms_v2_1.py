@@ -128,7 +128,7 @@ def num_noise(claim: str, text: str, cid: str) -> str | None:
 
 
 def shares_quantity(claim: str, evidence: str) -> bool:
-    return any(f.kind in ("MATCH", "ROUNDED_MATCH") for f in reconcile(claim, evidence))
+    return any(f.kind in ("MATCH", "ROUNDED_MATCH", "YEAR_UNSTATED") for f in reconcile(claim, evidence))
 
 
 def contradict(sent: str, claim: str) -> tuple[str, str] | None:

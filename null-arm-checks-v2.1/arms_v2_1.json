@@ -8437,15 +8437,14 @@
    "expected": "NOT_ENOUGH_INFO",
    "acceptable": [
     "NOT_ENOUGH_INFO",
-    "REFUSAL",
-    "REFUTED"
+    "REFUSAL"
    ],
    "negative": true,
    "anchor": false,
    "family": "random_irrelevant",
    "fixed_claim": true,
    "borrowed_from": "c12.s0.scale_shift",
-   "rule_S2_10": "REFUTED_ADMISSIBLE"
+   "rule_S2_10": "NEI_EXPECTED"
   },
   {
    "claim_id": "c09.s1.identity",
@@ -8469,6 +8468,29 @@
    "fixed_claim": true,
    "borrowed_from": "c10.s0.identity",
    "rule_S2_10": "NEI_EXPECTED"
+  },
+  {
+   "claim_id": "c09.s1.identity",
+   "arm": "H_high_overlap",
+   "claim": "crossed $6 on 10–11 September (AAA $6.06, +63% YoY vs ~$3.71)",
+   "evidence": [
+    {
+     "text": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "H"
+    }
+   ],
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "borrowed_from": "c01.s1.identity",
+   "overlap": 0.5
   },
   {
    "claim_id": "c09.s1.identity",
@@ -8628,15 +8650,14 @@
    "expected": "NOT_ENOUGH_INFO",
    "acceptable": [
     "NOT_ENOUGH_INFO",
-    "REFUSAL",
-    "REFUTED"
+    "REFUSAL"
    ],
    "negative": true,
    "anchor": false,
    "family": "random_irrelevant",
    "fixed_claim": true,
    "borrowed_from": "c12.s0.year_shift",
-   "rule_S2_10": "REFUTED_ADMISSIBLE"
+   "rule_S2_10": "NEI_EXPECTED"
   },
   {
    "claim_id": "c09.s1.value_shift",
@@ -8681,6 +8702,29 @@
    "anchor": false,
    "family": "same_document_non_rationale",
    "fixed_claim": true
+  },
+  {
+   "claim_id": "c09.s1.value_shift",
+   "arm": "H_high_overlap",
+   "claim": "crossed $8 on 10–11 September (AAA $6.06, +63% YoY vs ~$3.71)",
+   "evidence": [
+    {
+     "text": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+     "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/",
+     "arm_tag": "H"
+    }
+   ],
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "borrowed_from": "c01.s1.identity",
+   "overlap": 0.5
   },
   {
    "claim_id": "c09.s1.value_shift",

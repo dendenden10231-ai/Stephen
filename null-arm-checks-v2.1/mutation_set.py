@@ -181,7 +181,7 @@ def _oracle_agrees(variant: str, passage: str, expected: str) -> bool:
     quotes = quote_check(variant, passage)
     altered = any(q["kind"] != "EXACT" for q in quotes)
     if expected == "SUPPORTED":
-        return kind in ("MATCH", "ROUNDED_MATCH", "NONE") and not altered
+        return kind in ("MATCH", "ROUNDED_MATCH", "YEAR_UNSTATED", "NONE") and not altered
     return altered or kind in ("UNIT_MISMATCH", "SCALE_MISMATCH", "VALUE_MISMATCH", "DATE_SHIFT")
 
 

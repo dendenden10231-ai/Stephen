@@ -14,6 +14,7 @@ model, WHAT the distortion is, so the grader can tell "the judge caught the dist
         UNIT_MISMATCH    same value, different unit
         VALUE_MISMATCH   same unit, different value (relative difference given)
         DATE_SHIFT       a date that differs by whole years or days
+        YEAR_UNSTATED    (v2.1 r2) month/day agree but only one side states the year: not a MATCH
         NOT_IN_PASSAGE   no quantity of that kind in the passage
 
 English text only. Standard library only.
@@ -255,15 +256,21 @@ def reconcile(claim: str, passage: str) -> list[Finding]:
         if not p_dates:
             findings.append(Finding("NOT_IN_PASSAGE", w.text, detail={"type": "date"}))
             continue
-        p_dates_cmp = [_norm(p, w.yearless) for p in p_dates]
-        w_cmp = _norm(w, any(p.yearless for p in p_dates))
-        if w_cmp is not w:
-            w = w_cmp
-        p_dates = p_dates_cmp
-        hit = next((p for p in p_dates if p.start <= w.start and w.end <= p.end or w.start <= p.start and p.end <= w.end), None)
-        if hit:
-            findings.append(Finding("MATCH", w.text, hit.text, {"type": "date"}))
+        # v2.1 r2: a day/month claim without a year is not comparable with a bare year ("2003"):
+        # there is no day in it to compare. Only passage dates that carry a day or a month count.
+        pool = [p for p in p_dates if not (w.yearless and p.precision == "year")]
+        if not pool:
+            findings.append(Finding("NOT_IN_PASSAGE", w.text, detail={"type": "date"}))
             continue
+        pool_cmp = [_norm(p, w.yearless) for p in pool]
+        w_cmp = _norm(w, any(p.yearless for p in pool))
+        hit = next((p for p in pool_cmp if p.start <= w_cmp.start and w_cmp.end <= p.end or w_cmp.start <= p.start and p.end <= w_cmp.end), None)
+        if hit:
+            # v2.1 r2: if only one side states the year, equality of month/day is not equality of the
+            # assertion. Report it as YEAR_UNSTATED, never as MATCH. Both sides yearless: a plain MATCH.
+            findings.append(Finding("YEAR_UNSTATED" if w.yearless != hit.yearless else "MATCH", w.text, hit.text, {"type": "date"}))
+            continue
+        w, p_dates = w_cmp, pool_cmp
         best = min(p_dates, key=lambda p: abs((p.start - w.start).days))
         years = best.start.year - w.start.year
         if years and (best.start.month, best.start.day) == (w.start.month, w.start.day) or (years and w.precision != "day"):
@@ -306,6 +313,6 @@ def reconcile(claim: str, passage: str) -> list[Finding]:
 
 def distortion(claim: str, passage: str) -> str:
     """One word for the grader: the strongest distortion found, or MATCH / NONE."""
-    order = ["UNIT_MISMATCH", "SCALE_MISMATCH", "DATE_SHIFT", "VALUE_MISMATCH", "NOT_IN_PASSAGE", "ROUNDED_MATCH", "MATCH"]
+    order = ["UNIT_MISMATCH", "SCALE_MISMATCH", "DATE_SHIFT", "VALUE_MISMATCH", "NOT_IN_PASSAGE", "YEAR_UNSTATED", "ROUNDED_MATCH", "MATCH"]
     kinds = {f.kind for f in reconcile(claim, passage)}
     return next((k for k in order if k in kinds), "NONE")

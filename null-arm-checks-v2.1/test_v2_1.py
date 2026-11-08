@@ -2,6 +2,7 @@
 # Licensed under the Apache License, Version 2.0 (see LICENSE).
 """Tests for arm set v2: every invariant from the review, checked on the shipped arms_v2_1.json. Run: python3 test_v2_1.py"""
 import json
+import os
 import re
 import sys
 
@@ -26,7 +27,7 @@ def overlap(claim, text):
 ARMS = json.load(open("arms_v2_1.json", encoding="utf-8"))["arms"]
 MAN = json.load(open("ARM_MANIFEST_v2_1.json", encoding="utf-8"))
 ITEMS = {x["id"]: x for x in json.load(open("mutation_items_v2_1.json", encoding="utf-8"))}
-OLD = {x["id"]: x for x in json.load(open("../null-arm-checks/mutation_items_no_second_refinery.json", encoding="utf-8"))}
+OLD = {x["id"]: x for x in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "mutation_items_v1_no_second_refinery.json"), encoding="utf-8"))}
 BY = {}
 for a in ARMS:
     BY.setdefault(a["claim_id"], {})[a["arm"]] = a
@@ -217,7 +218,7 @@ def test_H_high_overlap_is_other_passage_and_still_insufficient():
         assert not shares(h["claim"], ev(h)), cid
         assert h["expected"] == labels.NEI, cid
         n += 1
-    assert n == 28, n   # v2: 29
+    assert n == 30, n   # v2: 29; v2.1 first draft: 28 (two lost to the year-2003 comparison); r2: 30
 
 
 def test_H_beats_the_random_arm_on_overlap():

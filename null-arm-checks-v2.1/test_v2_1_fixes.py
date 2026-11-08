@@ -5,6 +5,7 @@ Run: python3 test_v2_1_fixes.py   (or pytest)"""
 from __future__ import annotations
 
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -42,7 +43,27 @@ def test_day_range_without_year_is_a_date():
     assert distortion("10–11 September", "12–13 September") == "DATE_SHIFT"
     assert distortion("September 10–11", "September 12–13") == "DATE_SHIFT"
     assert distortion("10–11 September", "10–11 September") == "MATCH"
-    assert distortion("10–11 September", "10-11 September 2026") == "MATCH"
+    # r2 (Stephen, 08 Nov): a claim without a year is not the same assertion as one dated 2026
+    assert distortion("10–11 September", "10–11 September 2026") == "YEAR_UNSTATED"
+    assert distortion("10–11 September", "10-11 September 2026") == "YEAR_UNSTATED"
+    assert distortion("10–11 September", "2026-09-10") == "YEAR_UNSTATED"
+    assert distortion("10–11 September 2026", "10–11 September") == "YEAR_UNSTATED"
+    assert distortion("10 September", "10 September 2026") == "YEAR_UNSTATED"
+    assert distortion("10–11 September 2026", "10–11 September 2025") == "DATE_SHIFT"
+
+
+def test_day_range_without_year_is_not_compared_with_a_bare_year():
+    # r2: this is what removed two H arms in the first v2.1 draft ("first since 2003")
+    assert distortion("10–11 September", "stocks below 100M bbl, first since 2003") == "NOT_IN_PASSAGE"
+    assert distortion("10–11 September", "in 2003 the price rose") == "NOT_IN_PASSAGE"
+    assert distortion("1 January 2003", "first since 2003") != "DATE_SHIFT"
+
+
+def test_the_two_h_arms_lost_in_the_first_draft_are_back():
+    import json
+    arms = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "arms_v2_1.json"), encoding="utf-8"))["arms"]
+    have = {(a["claim_id"], a["arm"]) for a in arms}
+    assert ("c09.s1.identity", "H_high_overlap") in have and ("c09.s1.value_shift", "H_high_overlap") in have
 
 
 def test_a_modal_verb_is_not_a_month():

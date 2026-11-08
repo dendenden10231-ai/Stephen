@@ -1,0 +1,643 @@
+[
+ {
+  "id": "c01.s0.identity",
+  "passage_id": "c01",
+  "mutation": "identity",
+  "claim": "East Coast (PADD 1) distillate inventories 19.3M bbl week ending 28 August — lowest on record (back to 1990);",
+  "evidence": [
+   {
+    "text": "East Coast (PADD 1) distillate inventories 19.3M bbl week ending 28 August — lowest on record (back to 1990);",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "SUPPORTED"
+ },
+ {
+  "id": "c01.s0.scale_shift",
+  "passage_id": "c01",
+  "mutation": "scale_shift",
+  "claim": "East Coast (PADD 1) distillate inventories 19.3B bbl week ending 28 August — lowest on record (back to 1990);",
+  "evidence": [
+   {
+    "text": "East Coast (PADD 1) distillate inventories 19.3M bbl week ending 28 August — lowest on record (back to 1990);",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED"
+ },
+ {
+  "id": "c01.s0.year_shift",
+  "passage_id": "c01",
+  "mutation": "year_shift",
+  "claim": "East Coast (PADD 1) distillate inventories 19.3M bbl week ending 28 August — lowest on record (back to 1989);",
+  "evidence": [
+   {
+    "text": "East Coast (PADD 1) distillate inventories 19.3M bbl week ending 28 August — lowest on record (back to 1990);",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED",
+  "dropped_reason": "the oracle cannot see this mutation against the passage"
+ },
+ {
+  "id": "c01.s1.identity",
+  "passage_id": "c01",
+  "mutation": "identity",
+  "claim": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+  "evidence": [
+   {
+    "text": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "SUPPORTED"
+ },
+ {
+  "id": "c01.s1.scale_shift",
+  "passage_id": "c01",
+  "mutation": "scale_shift",
+  "claim": "EIA September STEO: stocks below 100B bbl this month (first since 2003)",
+  "evidence": [
+   {
+    "text": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED"
+ },
+ {
+  "id": "c01.s1.year_shift",
+  "passage_id": "c01",
+  "mutation": "year_shift",
+  "claim": "EIA September STEO: stocks below 100M bbl this month (first since 2002)",
+  "evidence": [
+   {
+    "text": "EIA September STEO: stocks below 100M bbl this month (first since 2003)",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED"
+ },
+ {
+  "id": "c02.s0.identity",
+  "passage_id": "c02",
+  "mutation": "identity",
+  "claim": "\"Russia producing 70% of its gasoline needs\" rests on one analysis chain (video + DW figures) — directionally supported by the Türkiye import, kept as [AS GIVEN].",
+  "evidence": [
+   {
+    "text": "\"Russia producing 70% of its gasoline needs\" rests on one analysis chain (video + DW figures) — directionally supported by the Türkiye import, kept as [AS GIVEN].",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "SUPPORTED"
+ },
+ {
+  "id": "c02.s0.value_shift",
+  "passage_id": "c02",
+  "mutation": "value_shift",
+  "claim": "\"Russia producing 88% of its gasoline needs\" rests on one analysis chain (video + DW figures) — directionally supported by the Türkiye import, kept as [AS GIVEN].",
+  "evidence": [
+   {
+    "text": "\"Russia producing 70% of its gasoline needs\" rests on one analysis chain (video + DW figures) — directionally supported by the Türkiye import, kept as [AS GIVEN].",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED"
+ },
+ {
+  "id": "c02.s1.identity",
+  "passage_id": "c02",
+  "mutation": "identity",
+  "claim": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~70%)",
+  "evidence": [
+   {
+    "text": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~70%)",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "SUPPORTED"
+ },
+ {
+  "id": "c02.s1.scale_shift",
+  "passage_id": "c02",
+  "mutation": "scale_shift",
+  "claim": "Gasoline production ~80M t/d vs 115k t/d domestic demand (~70%)",
+  "evidence": [
+   {
+    "text": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~70%)",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED"
+ },
+ {
+  "id": "c02.s1.value_shift",
+  "passage_id": "c02",
+  "mutation": "value_shift",
+  "claim": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~88%)",
+  "evidence": [
+   {
+    "text": "Gasoline production ~80k t/d vs 115k t/d domestic demand (~70%)",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED"
+ },
+ {
+  "id": "c03.s0.identity",
+  "passage_id": "c03",
+  "mutation": "identity",
+  "claim": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+  "evidence": [
+   {
+    "text": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "SUPPORTED"
+ },
+ {
+  "id": "c03.s0.unit_swap",
+  "passage_id": "c03",
+  "mutation": "unit_swap",
+  "claim": "Jazan (400k barrels per week) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+  "evidence": [
+   {
+    "text": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED"
+ },
+ {
+  "id": "c03.s0.scale_shift",
+  "passage_id": "c03",
+  "mutation": "scale_shift",
+  "claim": "Jazan (400M b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+  "evidence": [
+   {
+    "text": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED"
+ },
+ {
+  "id": "c03.s0.year_shift",
+  "passage_id": "c03",
+  "mutation": "year_shift",
+  "claim": "Jazan (400k b/d) not properly run since 27 July 2025 Houthi drone damage to tank farm and power complex;",
+  "evidence": [
+   {
+    "text": "Jazan (400k b/d) not properly run since 27 July 2026 Houthi drone damage to tank farm and power complex;",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED"
+ },
+ {
+  "id": "c03.s1.identity",
+  "passage_id": "c03",
+  "mutation": "identity",
+  "claim": "nine storage tanks damaged/destroyed by late August",
+  "evidence": [
+   {
+    "text": "nine storage tanks damaged/destroyed by late August",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "SUPPORTED"
+ },
+ {
+  "id": "c04.s0.identity",
+  "passage_id": "c04",
+  "mutation": "identity",
+  "claim": "AAA national average: $5.85/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+  "evidence": [
+   {
+    "text": "AAA national average: $5.85/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "SUPPORTED"
+ },
+ {
+  "id": "c04.s0.value_shift",
+  "passage_id": "c04",
+  "mutation": "value_shift",
+  "claim": "AAA national average: $7.31/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+  "evidence": [
+   {
+    "text": "AAA national average: $5.85/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED"
+ },
+ {
+  "id": "c04.s0.year_shift",
+  "passage_id": "c04",
+  "mutation": "year_shift",
+  "claim": "AAA national average: $5.85/gal on 4 September 2025 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+  "evidence": [
+   {
+    "text": "AAA national average: $5.85/gal on 4 September 2026 (GasBuddy), breaking the 17 June 2022 record of $5.819",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED"
+ },
+ {
+  "id": "c05.s0.identity",
+  "passage_id": "c05",
+  "mutation": "identity",
+  "claim": "US diesel crack spread record $112.17/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+  "evidence": [
+   {
+    "text": "US diesel crack spread record $112.17/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "SUPPORTED"
+ },
+ {
+  "id": "c05.s0.value_shift",
+  "passage_id": "c05",
+  "mutation": "value_shift",
+  "claim": "US diesel crack spread record $140.21/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+  "evidence": [
+   {
+    "text": "US diesel crack spread record $112.17/bbl (LSEG, via Edge/Reuters reporting), intraday record $108.02 on 3 September;",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED"
+ },
+ {
+  "id": "c05.s1.identity",
+  "passage_id": "c05",
+  "mutation": "identity",
+  "claim": "pre-war baseline ~$20",
+  "evidence": [
+   {
+    "text": "pre-war baseline ~$20",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "SUPPORTED"
+ },
+ {
+  "id": "c05.s1.value_shift",
+  "passage_id": "c05",
+  "mutation": "value_shift",
+  "claim": "pre-war baseline ~$25",
+  "evidence": [
+   {
+    "text": "pre-war baseline ~$20",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED"
+ },
+ {
+  "id": "c06.s0.identity",
+  "passage_id": "c06",
+  "mutation": "identity",
+  "claim": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 m3 tank destroyed beyond repair);",
+  "evidence": [
+   {
+    "text": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 m3 tank destroyed beyond repair);",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "SUPPORTED"
+ },
+ {
+  "id": "c06.s0.paraphrase_number",
+  "passage_id": "c06",
+  "mutation": "paraphrase_number",
+  "claim": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 mthree tank destroyed beyond repair);",
+  "evidence": [
+   {
+    "text": "Bazan statements: officials' public line on the Haifa refinery strikes was \"no significant impact\" Interior Ministry documents later showed damage (gas turbines, boilers, a 12,700 m3 tank destroyed beyond repair);",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "SUPPORTED"
+ },
+ {
+  "id": "c06.s1.identity",
+  "passage_id": "c06",
+  "mutation": "identity",
+  "claim": "the June strike killed three workers and took the plant fully offline",
+  "evidence": [
+   {
+    "text": "the June strike killed three workers and took the plant fully offline",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "SUPPORTED"
+ },
+ {
+  "id": "c07.s0.identity",
+  "passage_id": "c07",
+  "mutation": "identity",
+  "claim": "Vitol and Phillips 66 executives: refined-product deficit structural, more pronounced than crude deficit, into winter",
+  "evidence": [
+   {
+    "text": "Vitol and Phillips 66 executives: refined-product deficit structural, more pronounced than crude deficit, into winter",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "SUPPORTED"
+ },
+ {
+  "id": "c08.s0.identity",
+  "passage_id": "c08",
+  "mutation": "identity",
+  "claim": "\"At least nine Gulf refineries damaged and shut\";",
+  "evidence": [
+   {
+    "text": "\"At least nine Gulf refineries damaged and shut\";",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "SUPPORTED"
+ },
+ {
+  "id": "c08.s1.identity",
+  "passage_id": "c08",
+  "mutation": "identity",
+  "claim": "region's 11.7M b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+  "evidence": [
+   {
+    "text": "region's 11.7M b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "SUPPORTED"
+ },
+ {
+  "id": "c08.s1.unit_swap",
+  "passage_id": "c08",
+  "mutation": "unit_swap",
+  "claim": "region's 11.7M barrels per week refining capacity with uncertain restart (JPMorgan, via AInvest).",
+  "evidence": [
+   {
+    "text": "region's 11.7M b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED"
+ },
+ {
+  "id": "c08.s1.scale_shift",
+  "passage_id": "c08",
+  "mutation": "scale_shift",
+  "claim": "region's 11.7B b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+  "evidence": [
+   {
+    "text": "region's 11.7M b/d refining capacity with uncertain restart (JPMorgan, via AInvest).",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED"
+ },
+ {
+  "id": "c08.s2.identity",
+  "passage_id": "c08",
+  "mutation": "identity",
+  "claim": "Exact identity of the nine damaged Gulf refineries is JPMorgan-via-AInvest — named source, no list;",
+  "evidence": [
+   {
+    "text": "Exact identity of the nine damaged Gulf refineries is JPMorgan-via-AInvest — named source, no list;",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "SUPPORTED"
+ },
+ {
+  "id": "c09.s0.identity",
+  "passage_id": "c09",
+  "mutation": "identity",
+  "claim": "AAA national average: $5.85/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+  "evidence": [
+   {
+    "text": "AAA national average: $5.85/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "SUPPORTED"
+ },
+ {
+  "id": "c09.s0.value_shift",
+  "passage_id": "c09",
+  "mutation": "value_shift",
+  "claim": "AAA national average: $7.31/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+  "evidence": [
+   {
+    "text": "AAA national average: $5.85/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED"
+ },
+ {
+  "id": "c09.s0.year_shift",
+  "passage_id": "c09",
+  "mutation": "year_shift",
+  "claim": "AAA national average: $5.85/gal on 4 September 2025, breaking the 17 June 2022 record of $5.819;",
+  "evidence": [
+   {
+    "text": "AAA national average: $5.85/gal on 4 September 2026, breaking the 17 June 2022 record of $5.819;",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED"
+ },
+ {
+  "id": "c09.s1.identity",
+  "passage_id": "c09",
+  "mutation": "identity",
+  "claim": "crossed $6 on 10–11 September (AAA $6.06, +63% YoY vs ~$3.71)",
+  "evidence": [
+   {
+    "text": "crossed $6 on 10–11 September (AAA $6.06, +63% YoY vs ~$3.71)",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "SUPPORTED"
+ },
+ {
+  "id": "c09.s1.value_shift",
+  "passage_id": "c09",
+  "mutation": "value_shift",
+  "claim": "crossed $8 on 10–11 September (AAA $6.06, +63% YoY vs ~$3.71)",
+  "evidence": [
+   {
+    "text": "crossed $6 on 10–11 September (AAA $6.06, +63% YoY vs ~$3.71)",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED"
+ },
+ {
+  "id": "c10.s0.identity",
+  "passage_id": "c10",
+  "mutation": "identity",
+  "claim": "The number that measures this is the crack spread — the margin between a barrel of crude and the diesel it becomes.",
+  "evidence": [
+   {
+    "text": "The number that measures this is the crack spread — the margin between a barrel of crude and the diesel it becomes.",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "SUPPORTED"
+ },
+ {
+  "id": "c11.s0.identity",
+  "passage_id": "c11",
+  "mutation": "identity",
+  "claim": "Rystad's Claudio Galimberti: diesel is \"one of the reasons why the government bond yields in the United States are so high\"",
+  "evidence": [
+   {
+    "text": "Rystad's Claudio Galimberti: diesel is \"one of the reasons why the government bond yields in the United States are so high\"",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "SUPPORTED"
+ },
+ {
+  "id": "c11.s0.quote_alteration",
+  "passage_id": "c11",
+  "mutation": "quote_alteration",
+  "claim": "Rystad's Claudio Galimberti: diesel is \"the main reasons why the government bond yields in the United States are so high\"",
+  "evidence": [
+   {
+    "text": "Rystad's Claudio Galimberti: diesel is \"one of the reasons why the government bond yields in the United States are so high\"",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED"
+ },
+ {
+  "id": "c12.s0.identity",
+  "passage_id": "c12",
+  "mutation": "identity",
+  "claim": "Canadian crude to PADD 3: 526k b/d (2024) → 416k (2025) → ~337k (H1 2026, EIA Jan–Jun);",
+  "evidence": [
+   {
+    "text": "Canadian crude to PADD 3: 526k b/d (2024) → 416k (2025) → ~337k (H1 2026, EIA Jan–Jun);",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "SUPPORTED"
+ },
+ {
+  "id": "c12.s0.unit_swap",
+  "passage_id": "c12",
+  "mutation": "unit_swap",
+  "claim": "Canadian crude to PADD 3: 526k barrels per week (2024) → 416k (2025) → ~337k (H1 2026, EIA Jan–Jun);",
+  "evidence": [
+   {
+    "text": "Canadian crude to PADD 3: 526k b/d (2024) → 416k (2025) → ~337k (H1 2026, EIA Jan–Jun);",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED"
+ },
+ {
+  "id": "c12.s0.scale_shift",
+  "passage_id": "c12",
+  "mutation": "scale_shift",
+  "claim": "Canadian crude to PADD 3: 526M b/d (2024) → 416k (2025) → ~337k (H1 2026, EIA Jan–Jun);",
+  "evidence": [
+   {
+    "text": "Canadian crude to PADD 3: 526k b/d (2024) → 416k (2025) → ~337k (H1 2026, EIA Jan–Jun);",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED"
+ },
+ {
+  "id": "c12.s0.year_shift",
+  "passage_id": "c12",
+  "mutation": "year_shift",
+  "claim": "Canadian crude to PADD 3: 526k b/d (2023) → 416k (2025) → ~337k (H1 2026, EIA Jan–Jun);",
+  "evidence": [
+   {
+    "text": "Canadian crude to PADD 3: 526k b/d (2024) → 416k (2025) → ~337k (H1 2026, EIA Jan–Jun);",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED",
+  "dropped_reason": "the oracle cannot see this mutation against the passage"
+ },
+ {
+  "id": "c12.s1.identity",
+  "passage_id": "c12",
+  "mutation": "identity",
+  "claim": "total Canadian exports rose — US imports 4M+ b/d H1 2026, June exports +6.4% YoY",
+  "evidence": [
+   {
+    "text": "total Canadian exports rose — US imports 4M+ b/d H1 2026, June exports +6.4% YoY",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "SUPPORTED"
+ },
+ {
+  "id": "c12.s1.unit_swap",
+  "passage_id": "c12",
+  "mutation": "unit_swap",
+  "claim": "total Canadian exports rose — US imports 4M+ barrels per week H1 2026, June exports +6.4% YoY",
+  "evidence": [
+   {
+    "text": "total Canadian exports rose — US imports 4M+ b/d H1 2026, June exports +6.4% YoY",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED",
+  "dropped_reason": "the oracle cannot see this mutation against the passage"
+ },
+ {
+  "id": "c12.s1.scale_shift",
+  "passage_id": "c12",
+  "mutation": "scale_shift",
+  "claim": "total Canadian exports rose — US imports 4B+ b/d H1 2026, June exports +6.4% YoY",
+  "evidence": [
+   {
+    "text": "total Canadian exports rose — US imports 4M+ b/d H1 2026, June exports +6.4% YoY",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED"
+ },
+ {
+  "id": "c12.s1.value_shift",
+  "passage_id": "c12",
+  "mutation": "value_shift",
+  "claim": "total Canadian exports rose — US imports 4M+ b/d H1 2026, June exports +8.0% YoY",
+  "evidence": [
+   {
+    "text": "total Canadian exports rose — US imports 4M+ b/d H1 2026, June exports +6.4% YoY",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED"
+ },
+ {
+  "id": "c12.s1.year_shift",
+  "passage_id": "c12",
+  "mutation": "year_shift",
+  "claim": "total Canadian exports rose — US imports 4M+ b/d H1 2025, June exports +6.4% YoY",
+  "evidence": [
+   {
+    "text": "total Canadian exports rose — US imports 4M+ b/d H1 2026, June exports +6.4% YoY",
+    "source": "https://www.linkedin.com/pulse/second-refinery-stephen-hope-fabwc/"
+   }
+  ],
+  "expected": "REFUTED",
+  "dropped_reason": "the oracle cannot see this mutation against the passage"
+ }
+]

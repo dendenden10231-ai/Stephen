@@ -40,3 +40,11 @@ python3 freeze_v2_1.py               # LABEL_MAP_v2_1.json, FREEZE_v2_1.txt
 python3 verify_all_v2_1.py           # one command, exit code is the verdict
 ```
 Standard library only. Environment line in `FREEZE_v2_1.txt` records the machine the freeze was written on.
+
+## Revision r2 (after the review of 08 Nov 2026) — three changes, nothing frozen in v2 touched
+
+1. **Year-less dates no longer claim equality.** `distortion("10–11 September", "10–11 September 2026")` and `distortion("10–11 September", "2026-09-10")` returned `MATCH`; they now return `YEAR_UNSTATED` (month and day agree, the year is stated on one side only). Both sides year-less is still `MATCH`. A different day or month is still `DATE_SHIFT`. `YEAR_UNSTATED` counts as "shares a quantity" when F/G/H donor passages are chosen, and it is not a distortion.
+2. **A day or range without a year is not compared with a bare year.** In the first v2.1 draft `"10–11 September"` was compared with `"2003"` (from "first since 2003") and reported `DATE_SHIFT`, which made that passage look related and silently removed two H arms (`c09.s1.identity`, `c09.s1.value_shift`). That is why `high_overlap_insufficient` went 29 → 28 in the draft. Both arms are back: v2 511 + 14 new = **525 arms** (not 523), H = **30** (v2 29, plus the new `c06.s0.value_shift`). No v2 arm is lost.
+3. **The freeze no longer embeds the machine.** `FREEZE_v2_1.txt` holds only the portable rules and hashes; the operating system and Python version are in `ENVIRONMENT_v2_1.txt`, which is outside the frozen bytes and checked by nothing. `verify_all_v2_1.py` passes 10/10 in a copy of this folder alone. `test_v2_1.py` used to read `../null-arm-checks/mutation_items_no_second_refinery.json` from the v1 folder; that file is now carried here as `mutation_items_v1_no_second_refinery.json` and hashed in the freeze, so v2.1 needs no sibling folder.
+
+Still open from our side: `L11` — our own HELIX sensor does not check day ranges without a year (KNOWN_ISSUES); this folder's checks do.
