@@ -1,0 +1,7228 @@
+{
+ "version": "v2.1",
+ "arms": [
+  {
+   "claim_id": "c01.s0.identity",
+   "arm": "A_genuine",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A_supported"
+  },
+  {
+   "claim_id": "c01.s0.identity",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.identity",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.identity",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.identity",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.identity",
+   "arm": "E_contradicting",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "contradicting_distortion",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.identity",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.identity",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.identity",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.identity",
+   "arm": "M_diluted",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.identity",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c01.s0.scale_shift",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c01.s0.scale_shift",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.scale_shift",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.scale_shift",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.scale_shift",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.scale_shift",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.scale_shift",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.scale_shift",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.scale_shift",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.scale_shift",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.scale_shift",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c01.s0.year_shift",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c01.s0.year_shift",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.year_shift",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.year_shift",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.year_shift",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.year_shift",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.year_shift",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.year_shift",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.year_shift",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.year_shift",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s0.year_shift",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c01.s1.identity",
+   "arm": "A_genuine",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A_supported"
+  },
+  {
+   "claim_id": "c01.s1.identity",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.identity",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.identity",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.identity",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.identity",
+   "arm": "E_contradicting",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "contradicting_distortion",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.identity",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.identity",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.identity",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.identity",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.125
+  },
+  {
+   "claim_id": "c01.s1.identity",
+   "arm": "M_diluted",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.identity",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c01.s1.scale_shift",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c01.s1.scale_shift",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.scale_shift",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.scale_shift",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.scale_shift",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.scale_shift",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.scale_shift",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.scale_shift",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.scale_shift",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.scale_shift",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.125
+  },
+  {
+   "claim_id": "c01.s1.scale_shift",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.scale_shift",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c01.s1.year_shift",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c01.s1.year_shift",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.year_shift",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.year_shift",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.year_shift",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.year_shift",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.year_shift",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.year_shift",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.year_shift",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.year_shift",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.125
+  },
+  {
+   "claim_id": "c01.s1.year_shift",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c01.s1.year_shift",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c02.s0.identity",
+   "arm": "A_genuine",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A_supported"
+  },
+  {
+   "claim_id": "c02.s0.identity",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s0.identity",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s0.identity",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s0.identity",
+   "arm": "E_contradicting",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "contradicting_distortion",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s0.identity",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s0.identity",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s0.identity",
+   "arm": "M_diluted",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s0.identity",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c02.s0.value_shift",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c02.s0.value_shift",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s0.value_shift",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s0.value_shift",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s0.value_shift",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s0.value_shift",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s0.value_shift",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s0.value_shift",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s0.value_shift",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s0.value_shift",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c02.s1.identity",
+   "arm": "A_genuine",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A_supported"
+  },
+  {
+   "claim_id": "c02.s1.identity",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s1.identity",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s1.identity",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s1.identity",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s1.identity",
+   "arm": "E_contradicting",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "contradicting_distortion",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s1.identity",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s1.identity",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s1.identity",
+   "arm": "M_diluted",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s1.identity",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c02.s1.scale_shift",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c02.s1.scale_shift",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s1.scale_shift",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s1.scale_shift",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s1.scale_shift",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s1.scale_shift",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s1.scale_shift",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s1.scale_shift",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s1.scale_shift",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s1.scale_shift",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c02.s1.value_shift",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c02.s1.value_shift",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s1.value_shift",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s1.value_shift",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s1.value_shift",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s1.value_shift",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s1.value_shift",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s1.value_shift",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s1.value_shift",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s1.value_shift",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c02.s1.value_shift",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c03.s0.identity",
+   "arm": "A_genuine",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A_supported"
+  },
+  {
+   "claim_id": "c03.s0.identity",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.identity",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.identity",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.identity",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.identity",
+   "arm": "E_contradicting",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "contradicting_distortion",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.identity",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.identity",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.identity",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.identity",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.182
+  },
+  {
+   "claim_id": "c03.s0.identity",
+   "arm": "M_diluted",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.identity",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c03.s0.unit_swap",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c03.s0.unit_swap",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.unit_swap",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.unit_swap",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.unit_swap",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.unit_swap",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.unit_swap",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.unit_swap",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.unit_swap",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.unit_swap",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.154
+  },
+  {
+   "claim_id": "c03.s0.unit_swap",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.unit_swap",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c03.s0.scale_shift",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c03.s0.scale_shift",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.scale_shift",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.scale_shift",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.scale_shift",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.scale_shift",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.scale_shift",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.scale_shift",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.scale_shift",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.scale_shift",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.182
+  },
+  {
+   "claim_id": "c03.s0.scale_shift",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.scale_shift",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c03.s0.year_shift",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c03.s0.year_shift",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.year_shift",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.year_shift",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.year_shift",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.year_shift",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.year_shift",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.year_shift",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.year_shift",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.year_shift",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.182
+  },
+  {
+   "claim_id": "c03.s0.year_shift",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s0.year_shift",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c03.s1.identity",
+   "arm": "A_genuine",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A_supported"
+  },
+  {
+   "claim_id": "c03.s1.identity",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s1.identity",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s1.identity",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s1.identity",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s1.identity",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s1.identity",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s1.identity",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c03.s1.identity",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.143
+  },
+  {
+   "claim_id": "c03.s1.identity",
+   "arm": "M_diluted",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c04.s0.identity",
+   "arm": "A_genuine",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A_supported"
+  },
+  {
+   "claim_id": "c04.s0.identity",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c04.s0.identity",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c04.s0.identity",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c04.s0.identity",
+   "arm": "E_contradicting",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "contradicting_distortion",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c04.s0.identity",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c04.s0.identity",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c04.s0.identity",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.143
+  },
+  {
+   "claim_id": "c04.s0.identity",
+   "arm": "M_diluted",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c04.s0.identity",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c04.s0.value_shift",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c04.s0.value_shift",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c04.s0.value_shift",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c04.s0.value_shift",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c04.s0.value_shift",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c04.s0.value_shift",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c04.s0.value_shift",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c04.s0.value_shift",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.143
+  },
+  {
+   "claim_id": "c04.s0.value_shift",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c04.s0.value_shift",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c04.s0.year_shift",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c04.s0.year_shift",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c04.s0.year_shift",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c04.s0.year_shift",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c04.s0.year_shift",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c04.s0.year_shift",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c04.s0.year_shift",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c04.s0.year_shift",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.143
+  },
+  {
+   "claim_id": "c04.s0.year_shift",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c04.s0.year_shift",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c05.s0.identity",
+   "arm": "A_genuine",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A_supported"
+  },
+  {
+   "claim_id": "c05.s0.identity",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s0.identity",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s0.identity",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s0.identity",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s0.identity",
+   "arm": "E_contradicting",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "contradicting_distortion",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s0.identity",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s0.identity",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s0.identity",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s0.identity",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.3
+  },
+  {
+   "claim_id": "c05.s0.identity",
+   "arm": "M_diluted",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s0.identity",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c05.s0.value_shift",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c05.s0.value_shift",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s0.value_shift",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s0.value_shift",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s0.value_shift",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s0.value_shift",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s0.value_shift",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s0.value_shift",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s0.value_shift",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s0.value_shift",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.3
+  },
+  {
+   "claim_id": "c05.s0.value_shift",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s0.value_shift",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c05.s1.identity",
+   "arm": "A_genuine",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A_supported"
+  },
+  {
+   "claim_id": "c05.s1.identity",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s1.identity",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s1.identity",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s1.identity",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s1.identity",
+   "arm": "E_contradicting",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "contradicting_distortion",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s1.identity",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s1.identity",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s1.identity",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s1.identity",
+   "arm": "M_diluted",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s1.identity",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c05.s1.value_shift",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c05.s1.value_shift",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s1.value_shift",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s1.value_shift",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s1.value_shift",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s1.value_shift",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s1.value_shift",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s1.value_shift",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s1.value_shift",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s1.value_shift",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c05.s1.value_shift",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c06.s0.identity",
+   "arm": "A_genuine",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A_supported"
+  },
+  {
+   "claim_id": "c06.s0.identity",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c06.s0.identity",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c06.s0.identity",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c06.s0.identity",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c06.s0.identity",
+   "arm": "E_contradicting",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "contradicting_distortion",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c06.s0.identity",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c06.s0.identity",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c06.s0.identity",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c06.s0.identity",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.091
+  },
+  {
+   "claim_id": "c06.s0.identity",
+   "arm": "M_diluted",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c06.s0.identity",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c06.s0.value_shift",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c06.s0.value_shift",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c06.s0.value_shift",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c06.s0.value_shift",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c06.s0.value_shift",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c06.s0.value_shift",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c06.s0.value_shift",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c06.s0.value_shift",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c06.s0.value_shift",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c06.s0.value_shift",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.091
+  },
+  {
+   "claim_id": "c06.s0.value_shift",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c06.s0.value_shift",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c06.s1.identity",
+   "arm": "A_genuine",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A_supported"
+  },
+  {
+   "claim_id": "c06.s1.identity",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c06.s1.identity",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c06.s1.identity",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c06.s1.identity",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c06.s1.identity",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c06.s1.identity",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c06.s1.identity",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c06.s1.identity",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.111
+  },
+  {
+   "claim_id": "c06.s1.identity",
+   "arm": "M_diluted",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c07.s0.identity",
+   "arm": "A_genuine",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A_supported"
+  },
+  {
+   "claim_id": "c07.s0.identity",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c07.s0.identity",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c07.s0.identity",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c07.s0.identity",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c07.s0.identity",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c07.s0.identity",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c07.s0.identity",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.077
+  },
+  {
+   "claim_id": "c07.s0.identity",
+   "arm": "M_diluted",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s0.identity",
+   "arm": "A_genuine",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A_supported"
+  },
+  {
+   "claim_id": "c08.s0.identity",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s0.identity",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s0.identity",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s0.identity",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s0.identity",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s0.identity",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s0.identity",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s0.identity",
+   "arm": "M_diluted",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.identity",
+   "arm": "A_genuine",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A_supported"
+  },
+  {
+   "claim_id": "c08.s1.identity",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.identity",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.identity",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.identity",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.identity",
+   "arm": "E_contradicting",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "contradicting_distortion",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.identity",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.identity",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.identity",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.identity",
+   "arm": "M_diluted",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.identity",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c08.s1.unit_swap",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c08.s1.unit_swap",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.unit_swap",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.unit_swap",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.unit_swap",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.unit_swap",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.unit_swap",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.unit_swap",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.unit_swap",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.unit_swap",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.1
+  },
+  {
+   "claim_id": "c08.s1.unit_swap",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.unit_swap",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c08.s1.scale_shift",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c08.s1.scale_shift",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.scale_shift",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.scale_shift",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.scale_shift",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.scale_shift",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.scale_shift",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.scale_shift",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.scale_shift",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.scale_shift",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s1.scale_shift",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c08.s2.identity",
+   "arm": "A_genuine",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A_supported"
+  },
+  {
+   "claim_id": "c08.s2.identity",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s2.identity",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s2.identity",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s2.identity",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s2.identity",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s2.identity",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s2.identity",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c08.s2.identity",
+   "arm": "M_diluted",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.identity",
+   "arm": "A_genuine",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A_supported"
+  },
+  {
+   "claim_id": "c09.s0.identity",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.identity",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.identity",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.identity",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.identity",
+   "arm": "E_contradicting",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "contradicting_distortion",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.identity",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.identity",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.identity",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.identity",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.167
+  },
+  {
+   "claim_id": "c09.s0.identity",
+   "arm": "M_diluted",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.identity",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c09.s0.value_shift",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c09.s0.value_shift",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.value_shift",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.value_shift",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.value_shift",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.value_shift",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.value_shift",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.value_shift",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.value_shift",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.value_shift",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.167
+  },
+  {
+   "claim_id": "c09.s0.value_shift",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.value_shift",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c09.s0.year_shift",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c09.s0.year_shift",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.year_shift",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.year_shift",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.year_shift",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.year_shift",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.year_shift",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.year_shift",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.year_shift",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.year_shift",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.167
+  },
+  {
+   "claim_id": "c09.s0.year_shift",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s0.year_shift",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c09.s1.identity",
+   "arm": "A_genuine",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A_supported"
+  },
+  {
+   "claim_id": "c09.s1.identity",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s1.identity",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s1.identity",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s1.identity",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s1.identity",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s1.identity",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s1.identity",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.5
+  },
+  {
+   "claim_id": "c09.s1.identity",
+   "arm": "M_diluted",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s1.value_shift",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c09.s1.value_shift",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s1.value_shift",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s1.value_shift",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s1.value_shift",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s1.value_shift",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s1.value_shift",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s1.value_shift",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s1.value_shift",
+   "arm": "S_same_document",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_document_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s1.value_shift",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.5
+  },
+  {
+   "claim_id": "c09.s1.value_shift",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c09.s1.value_shift",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c10.s0.identity",
+   "arm": "A_genuine",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": true,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A_supported"
+  },
+  {
+   "claim_id": "c10.s0.identity",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": true,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c10.s0.identity",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": true,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c10.s0.identity",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": true,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c10.s0.identity",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": true,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c10.s0.identity",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": true,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c10.s0.identity",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": true,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c10.s0.identity",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": true,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.25
+  },
+  {
+   "claim_id": "c10.s0.identity",
+   "arm": "M_diluted",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": true,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c11.s0.identity",
+   "arm": "A_genuine",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A_supported"
+  },
+  {
+   "claim_id": "c11.s0.identity",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c11.s0.identity",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c11.s0.identity",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c11.s0.identity",
+   "arm": "E_contradicting",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "contradicting_distortion",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c11.s0.identity",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c11.s0.identity",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c11.s0.identity",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.091
+  },
+  {
+   "claim_id": "c11.s0.identity",
+   "arm": "M_diluted",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c11.s0.identity",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c11.s0.quote_alteration",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c11.s0.quote_alteration",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c11.s0.quote_alteration",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c11.s0.quote_alteration",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c11.s0.quote_alteration",
+   "arm": "D_noise_topic",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "same_topic_non_rationale",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c11.s0.quote_alteration",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c11.s0.quote_alteration",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c11.s0.quote_alteration",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c11.s0.quote_alteration",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.083
+  },
+  {
+   "claim_id": "c11.s0.quote_alteration",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c11.s0.quote_alteration",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c12.s0.identity",
+   "arm": "A_genuine",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A_supported"
+  },
+  {
+   "claim_id": "c12.s0.identity",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.identity",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.identity",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.identity",
+   "arm": "E_contradicting",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "contradicting_distortion",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.identity",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.identity",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.identity",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.333
+  },
+  {
+   "claim_id": "c12.s0.identity",
+   "arm": "M_diluted",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.identity",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c12.s0.unit_swap",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c12.s0.unit_swap",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.unit_swap",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.unit_swap",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.unit_swap",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.unit_swap",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.unit_swap",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.unit_swap",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.2
+  },
+  {
+   "claim_id": "c12.s0.unit_swap",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.unit_swap",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c12.s0.scale_shift",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c12.s0.scale_shift",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.scale_shift",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.scale_shift",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.scale_shift",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.scale_shift",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.scale_shift",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.scale_shift",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.333
+  },
+  {
+   "claim_id": "c12.s0.scale_shift",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.scale_shift",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c12.s0.year_shift",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c12.s0.year_shift",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.year_shift",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.year_shift",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.year_shift",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.year_shift",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.year_shift",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.year_shift",
+   "arm": "H_high_overlap",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "high_overlap_insufficient",
+   "fixed_claim": true,
+   "subclass": "",
+   "overlap": 0.333
+  },
+  {
+   "claim_id": "c12.s0.year_shift",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s0.year_shift",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c12.s1.identity",
+   "arm": "A_genuine",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A_supported"
+  },
+  {
+   "claim_id": "c12.s1.identity",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.identity",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.identity",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.identity",
+   "arm": "E_contradicting",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "contradicting_distortion",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.identity",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.identity",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.identity",
+   "arm": "M_diluted",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.identity",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c12.s1.unit_swap",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c12.s1.unit_swap",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.unit_swap",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.unit_swap",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.unit_swap",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.unit_swap",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.unit_swap",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.unit_swap",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.unit_swap",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c12.s1.scale_shift",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c12.s1.scale_shift",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.scale_shift",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.scale_shift",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.scale_shift",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.scale_shift",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.scale_shift",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.scale_shift",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.scale_shift",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c12.s1.value_shift",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c12.s1.value_shift",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.value_shift",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.value_shift",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.value_shift",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.value_shift",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.value_shift",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.value_shift",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.value_shift",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "c12.s1.year_shift",
+   "arm": "A_genuine",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "full_support",
+   "fixed_claim": false,
+   "subclass": "A2_distorted_claim"
+  },
+  {
+   "claim_id": "c12.s1.year_shift",
+   "arm": "B_empty",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "placeholder",
+   "fixed_claim": false,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.year_shift",
+   "arm": "C_noise_length",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.year_shift",
+   "arm": "C_num_noise",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "length_matched_noise_with_claim_numbers",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.year_shift",
+   "arm": "E_restore",
+   "expected": "SUPPORTED",
+   "acceptable": [
+    "SUPPORTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "restored_match",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.year_shift",
+   "arm": "F_unrelated",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "random_irrelevant",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.year_shift",
+   "arm": "G_deranged",
+   "expected": "NOT_ENOUGH_INFO",
+   "acceptable": [
+    "NOT_ENOUGH_INFO",
+    "REFUSAL",
+    "REFUTED"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "other_document_substitution",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.year_shift",
+   "arm": "M_diluted",
+   "expected": "REFUTED",
+   "acceptable": [
+    "REFUTED"
+   ],
+   "negative": false,
+   "anchor": false,
+   "family": "diluted_support",
+   "fixed_claim": true,
+   "subclass": ""
+  },
+  {
+   "claim_id": "c12.s1.year_shift",
+   "arm": "R_pair",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": true,
+   "subclass": "",
+   "constructed_pair": true
+  },
+  {
+   "claim_id": "typed.c06",
+   "arm": "R_disagree",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "conflicting_sources",
+   "fixed_claim": false,
+   "subclass": "T_disagree"
+  },
+  {
+   "claim_id": "typed.c07",
+   "arm": "P_forecast_own",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "forecast_as_fact",
+   "fixed_claim": false,
+   "subclass": "T_forecast_own"
+  },
+  {
+   "claim_id": "typed.c07",
+   "arm": "P_forecast_weaken",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "forecast_weakened",
+   "fixed_claim": false,
+   "subclass": "T_forecast_weaken",
+   "no_source_available": true
+  },
+  {
+   "claim_id": "typed.c07",
+   "arm": "P_forecast_borrowed",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "forecast_borrowed_evidence",
+   "fixed_claim": false,
+   "subclass": "T_forecast_borrowed"
+  },
+  {
+   "claim_id": "typed.c08",
+   "arm": "N_no_source",
+   "expected": "REFUSAL",
+   "acceptable": [
+    "REFUSAL"
+   ],
+   "negative": true,
+   "anchor": false,
+   "family": "cited_source_absent",
+   "fixed_claim": false,
+   "subclass": "T_no_source",
+   "no_source_available": true
+  }
+ ]
+}

@@ -1,0 +1,515 @@
+{
+ "exclusions": [
+  {
+   "id": "c01.s0.paraphrase_number",
+   "mutation": "paraphrase_number",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c01.s0.unit_swap",
+   "mutation": "unit_swap",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c01.s0.value_shift",
+   "mutation": "value_shift",
+   "reason": "number_without_recognised_measure: 1) distillate i"
+  },
+  {
+   "id": "c01.s0.quote_alteration",
+   "mutation": "quote_alteration",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c01.s1.paraphrase_number",
+   "mutation": "paraphrase_number",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c01.s1.unit_swap",
+   "mutation": "unit_swap",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c01.s1.value_shift",
+   "mutation": "value_shift",
+   "reason": "only_years_or_days_of_month_or_rounding_unchanged"
+  },
+  {
+   "id": "c01.s1.quote_alteration",
+   "mutation": "quote_alteration",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c02.s0.paraphrase_number",
+   "mutation": "paraphrase_number",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c02.s0.unit_swap",
+   "mutation": "unit_swap",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c02.s0.scale_shift",
+   "mutation": "scale_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c02.s0.year_shift",
+   "mutation": "year_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c02.s0.quote_alteration",
+   "mutation": "quote_alteration",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c02.s1.paraphrase_number",
+   "mutation": "paraphrase_number",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c02.s1.unit_swap",
+   "mutation": "unit_swap",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c02.s1.year_shift",
+   "mutation": "year_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c02.s1.quote_alteration",
+   "mutation": "quote_alteration",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c03.s0.paraphrase_number",
+   "mutation": "paraphrase_number",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c03.s0.value_shift",
+   "mutation": "value_shift",
+   "reason": "only_years_or_days_of_month_or_rounding_unchanged"
+  },
+  {
+   "id": "c03.s0.quote_alteration",
+   "mutation": "quote_alteration",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c03.s1.paraphrase_number",
+   "mutation": "paraphrase_number",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c03.s1.unit_swap",
+   "mutation": "unit_swap",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c03.s1.scale_shift",
+   "mutation": "scale_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c03.s1.value_shift",
+   "mutation": "value_shift",
+   "reason": "no_number"
+  },
+  {
+   "id": "c03.s1.year_shift",
+   "mutation": "year_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c03.s1.quote_alteration",
+   "mutation": "quote_alteration",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c04.s0.paraphrase_number",
+   "mutation": "paraphrase_number",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c04.s0.unit_swap",
+   "mutation": "unit_swap",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c04.s0.scale_shift",
+   "mutation": "scale_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c04.s0.quote_alteration",
+   "mutation": "quote_alteration",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c05.s0.paraphrase_number",
+   "mutation": "paraphrase_number",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c05.s0.unit_swap",
+   "mutation": "unit_swap",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c05.s0.scale_shift",
+   "mutation": "scale_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c05.s0.year_shift",
+   "mutation": "year_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c05.s0.quote_alteration",
+   "mutation": "quote_alteration",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c05.s1.paraphrase_number",
+   "mutation": "paraphrase_number",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c05.s1.unit_swap",
+   "mutation": "unit_swap",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c05.s1.scale_shift",
+   "mutation": "scale_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c05.s1.year_shift",
+   "mutation": "year_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c05.s1.quote_alteration",
+   "mutation": "quote_alteration",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c06.s0.paraphrase_number",
+   "mutation": "paraphrase_number",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c06.s0.unit_swap",
+   "mutation": "unit_swap",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c06.s0.scale_shift",
+   "mutation": "scale_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c06.s0.year_shift",
+   "mutation": "year_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c06.s0.quote_alteration",
+   "mutation": "quote_alteration",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c06.s1.paraphrase_number",
+   "mutation": "paraphrase_number",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c06.s1.unit_swap",
+   "mutation": "unit_swap",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c06.s1.scale_shift",
+   "mutation": "scale_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c06.s1.value_shift",
+   "mutation": "value_shift",
+   "reason": "no_number"
+  },
+  {
+   "id": "c06.s1.year_shift",
+   "mutation": "year_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c06.s1.quote_alteration",
+   "mutation": "quote_alteration",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c07.s0.paraphrase_number",
+   "mutation": "paraphrase_number",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c07.s0.unit_swap",
+   "mutation": "unit_swap",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c07.s0.scale_shift",
+   "mutation": "scale_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c07.s0.value_shift",
+   "mutation": "value_shift",
+   "reason": "number_without_recognised_measure: 66 executives: r"
+  },
+  {
+   "id": "c07.s0.year_shift",
+   "mutation": "year_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c07.s0.quote_alteration",
+   "mutation": "quote_alteration",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c08.s0.paraphrase_number",
+   "mutation": "paraphrase_number",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c08.s0.unit_swap",
+   "mutation": "unit_swap",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c08.s0.scale_shift",
+   "mutation": "scale_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c08.s0.value_shift",
+   "mutation": "value_shift",
+   "reason": "no_number"
+  },
+  {
+   "id": "c08.s0.year_shift",
+   "mutation": "year_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c08.s0.quote_alteration",
+   "mutation": "quote_alteration",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c08.s1.paraphrase_number",
+   "mutation": "paraphrase_number",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c08.s1.value_shift",
+   "mutation": "value_shift",
+   "reason": "no_number"
+  },
+  {
+   "id": "c08.s1.year_shift",
+   "mutation": "year_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c08.s1.quote_alteration",
+   "mutation": "quote_alteration",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c08.s2.paraphrase_number",
+   "mutation": "paraphrase_number",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c08.s2.unit_swap",
+   "mutation": "unit_swap",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c08.s2.scale_shift",
+   "mutation": "scale_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c08.s2.value_shift",
+   "mutation": "value_shift",
+   "reason": "no_number"
+  },
+  {
+   "id": "c08.s2.year_shift",
+   "mutation": "year_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c08.s2.quote_alteration",
+   "mutation": "quote_alteration",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c09.s0.paraphrase_number",
+   "mutation": "paraphrase_number",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c09.s0.unit_swap",
+   "mutation": "unit_swap",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c09.s0.scale_shift",
+   "mutation": "scale_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c09.s0.quote_alteration",
+   "mutation": "quote_alteration",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c09.s1.paraphrase_number",
+   "mutation": "paraphrase_number",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c09.s1.unit_swap",
+   "mutation": "unit_swap",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c09.s1.scale_shift",
+   "mutation": "scale_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c09.s1.year_shift",
+   "mutation": "year_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c09.s1.quote_alteration",
+   "mutation": "quote_alteration",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c10.s0.paraphrase_number",
+   "mutation": "paraphrase_number",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c10.s0.unit_swap",
+   "mutation": "unit_swap",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c10.s0.scale_shift",
+   "mutation": "scale_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c10.s0.value_shift",
+   "mutation": "value_shift",
+   "reason": "no_number"
+  },
+  {
+   "id": "c10.s0.year_shift",
+   "mutation": "year_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c10.s0.quote_alteration",
+   "mutation": "quote_alteration",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c11.s0.paraphrase_number",
+   "mutation": "paraphrase_number",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c11.s0.unit_swap",
+   "mutation": "unit_swap",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c11.s0.scale_shift",
+   "mutation": "scale_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c11.s0.value_shift",
+   "mutation": "value_shift",
+   "reason": "no_number"
+  },
+  {
+   "id": "c11.s0.year_shift",
+   "mutation": "year_shift",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c12.s0.paraphrase_number",
+   "mutation": "paraphrase_number",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c12.s0.value_shift",
+   "mutation": "value_shift",
+   "reason": "number_without_recognised_measure: 3: 526k b/d (20"
+  },
+  {
+   "id": "c12.s0.quote_alteration",
+   "mutation": "quote_alteration",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c12.s1.paraphrase_number",
+   "mutation": "paraphrase_number",
+   "reason": "mutation_not_applicable"
+  },
+  {
+   "id": "c12.s1.quote_alteration",
+   "mutation": "quote_alteration",
+   "reason": "mutation_not_applicable"
+  }
+ ],
+ "summary": {
+  "candidates_with_variant": 49,
+  "dropped": 0,
+  "kept": 49,
+  "new_by_mutation": {
+   "value_shift": 1
+  },
+  "new_in_v2_1": [
+   "c06.s0.value_shift"
+  ],
+  "no_variant_by_reason": {
+   "mutation_not_applicable": 86,
+   "no_number": 7,
+   "number_without_recognised_measure": 3,
+   "only_years_or_days_of_month_or_rounding_unchanged": 2
+  },
+  "no_variant_candidates": 98,
+  "v2_ids_no_longer_kept": [],
+  "v2_ids_still_kept": 48,
+  "v2_kept": 48
+ }
+}

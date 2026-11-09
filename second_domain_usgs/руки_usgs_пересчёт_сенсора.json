@@ -1,0 +1,1024 @@
+{
+  "домен": "USGS earthquake catalogue",
+  "переснято": "2026-11-05",
+  "причина": "классификатор величин выбирал класс по одному токену, а число — первым в тексте; «magnitude 4.8 at 199 km» читалось как 4800 метров (spatial_distance). Замороженный файл не тронут, пересчёт отдельно",
+  "замороженный_источник": {
+    "файл": "руки_usgs_заморозка.json",
+    "sha256": "5708832f72365a07902103583f6cfc091594406fd64c0f4f949751b68300075b",
+    "рук": 56
+  },
+  "sha256": "dc3acd30bb8aa7f61595f7483518fc7a66452a2aa3031272b2c78fdf799434e9",
+  "рук": 56,
+  "семьи": [
+    "A_supported",
+    "C_noise_no_quantity",
+    "C_num_contradicting",
+    "C_num_same_value",
+    "D_distorting",
+    "R_absent_source"
+  ],
+  "модельных_вызовов": 0,
+  "стоимость_usd": 0,
+  "сенсор_совпал": 33,
+  "сенсор_в_компетенции": 33,
+  "сдвиги": {
+    "класс": {
+      "spatial_distance → seismic_magnitude": 22,
+      "None → None": 11,
+      "spatial_distance → None": 11,
+      "focal_depth → focal_depth": 11,
+      "mass_stock → None": 1
+    },
+    "вердикт": {
+      "OK → OK": 23,
+      "UNSUPPORTED_NUMBER → UNSUPPORTED_NUMBER": 11,
+      "CONTRADICTED → CONTRADICTED": 22
+    }
+  },
+  "руки": [
+    {
+      "family": "A_supported",
+      "expected": "SUPPORTED",
+      "claim": "The catalogue records magnitude 4.8 at 199 km NW of Port-Olry, Vanuatu.",
+      "evidence": "magnitude 4.8 at 199 km NW of Port-Olry, Vanuatu",
+      "source_id": "us7000tule",
+      "comparable_quantity": {
+        "quantity": "seismic_magnitude",
+        "claim_value": 4.8,
+        "evidence_value": 4.8
+      },
+      "sensor_verdict": "OK",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 4800.0,
+        "evidence_value": 4800.0
+      }
+    },
+    {
+      "family": "C_noise_no_quantity",
+      "expected": "NOT_ENOUGH_INFO",
+      "claim": "The catalogue records magnitude 4.8 at 199 km NW of Port-Olry, Vanuatu.",
+      "evidence": "Seismic activity was reported near Vanuatu.",
+      "source_id": "us7000tule",
+      "comparable_quantity": null,
+      "sensor_verdict": "UNSUPPORTED_NUMBER",
+      "sensor_in_scope": false,
+      "sensor_matches_expected": null,
+      "comparable_quantity_было": null
+    },
+    {
+      "family": "C_num_same_value",
+      "expected": "NOT_ENOUGH_INFO",
+      "claim": "The catalogue records magnitude 4.8 at 199 km NW of Port-Olry, Vanuatu.",
+      "evidence": "The number 4.8 appears in a bulletin line about 199 km NW of Port-Olry, Vanuatu without stating which quantity it measures.",
+      "source_id": "us7000tule",
+      "comparable_quantity": null,
+      "sensor_verdict": "OK",
+      "sensor_in_scope": false,
+      "sensor_matches_expected": null,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 4800.0,
+        "evidence_value": 4800.0
+      }
+    },
+    {
+      "family": "C_num_contradicting",
+      "expected": "REFUTED",
+      "claim": "The catalogue records magnitude 4.8 at 199 km NW of Port-Olry, Vanuatu.",
+      "evidence": "magnitude 5.3 at 199 km NW of Port-Olry, Vanuatu",
+      "source_id": "us7000tule",
+      "comparable_quantity": {
+        "quantity": "seismic_magnitude",
+        "claim_value": 4.8,
+        "evidence_value": 5.3
+      },
+      "sensor_verdict": "CONTRADICTED",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 4800.0,
+        "evidence_value": 5300.0
+      }
+    },
+    {
+      "family": "D_distorting",
+      "expected": "REFUTED",
+      "claim": "The event depth is 10.0 km.",
+      "evidence": "depth 23.0 km beneath 199 km NW of Port-Olry, Vanuatu",
+      "source_id": "us7000tule",
+      "comparable_quantity": {
+        "quantity": "focal_depth",
+        "claim_value": 10000.0,
+        "evidence_value": 23000.0
+      },
+      "sensor_verdict": "CONTRADICTED",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "focal_depth",
+        "claim_value": 10000.0,
+        "evidence_value": 23000.0
+      }
+    },
+    {
+      "family": "A_supported",
+      "expected": "SUPPORTED",
+      "claim": "The catalogue records magnitude 5.2 at 200 km NW of Port-Olry, Vanuatu.",
+      "evidence": "magnitude 5.2 at 200 km NW of Port-Olry, Vanuatu",
+      "source_id": "us7000tuky",
+      "comparable_quantity": {
+        "quantity": "seismic_magnitude",
+        "claim_value": 5.2,
+        "evidence_value": 5.2
+      },
+      "sensor_verdict": "OK",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 5200.0,
+        "evidence_value": 5200.0
+      }
+    },
+    {
+      "family": "C_noise_no_quantity",
+      "expected": "NOT_ENOUGH_INFO",
+      "claim": "The catalogue records magnitude 5.2 at 200 km NW of Port-Olry, Vanuatu.",
+      "evidence": "Seismic activity was reported near Vanuatu.",
+      "source_id": "us7000tuky",
+      "comparable_quantity": null,
+      "sensor_verdict": "UNSUPPORTED_NUMBER",
+      "sensor_in_scope": false,
+      "sensor_matches_expected": null,
+      "comparable_quantity_было": null
+    },
+    {
+      "family": "C_num_same_value",
+      "expected": "NOT_ENOUGH_INFO",
+      "claim": "The catalogue records magnitude 5.2 at 200 km NW of Port-Olry, Vanuatu.",
+      "evidence": "The number 5.2 appears in a bulletin line about 200 km NW of Port-Olry, Vanuatu without stating which quantity it measures.",
+      "source_id": "us7000tuky",
+      "comparable_quantity": null,
+      "sensor_verdict": "OK",
+      "sensor_in_scope": false,
+      "sensor_matches_expected": null,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 5200.0,
+        "evidence_value": 5200.0
+      }
+    },
+    {
+      "family": "C_num_contradicting",
+      "expected": "REFUTED",
+      "claim": "The catalogue records magnitude 5.2 at 200 km NW of Port-Olry, Vanuatu.",
+      "evidence": "magnitude 5.7 at 200 km NW of Port-Olry, Vanuatu",
+      "source_id": "us7000tuky",
+      "comparable_quantity": {
+        "quantity": "seismic_magnitude",
+        "claim_value": 5.2,
+        "evidence_value": 5.7
+      },
+      "sensor_verdict": "CONTRADICTED",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 5200.0,
+        "evidence_value": 5700.0
+      }
+    },
+    {
+      "family": "D_distorting",
+      "expected": "REFUTED",
+      "claim": "The event depth is 10.0 km.",
+      "evidence": "depth 23.0 km beneath 200 km NW of Port-Olry, Vanuatu",
+      "source_id": "us7000tuky",
+      "comparable_quantity": {
+        "quantity": "focal_depth",
+        "claim_value": 10000.0,
+        "evidence_value": 23000.0
+      },
+      "sensor_verdict": "CONTRADICTED",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "focal_depth",
+        "claim_value": 10000.0,
+        "evidence_value": 23000.0
+      }
+    },
+    {
+      "family": "A_supported",
+      "expected": "SUPPORTED",
+      "claim": "The catalogue records magnitude 6.0 at 58 km SSE of Shima, Japan.",
+      "evidence": "magnitude 6.0 at 58 km SSE of Shima, Japan",
+      "source_id": "us7000tuku",
+      "comparable_quantity": {
+        "quantity": "seismic_magnitude",
+        "claim_value": 6.0,
+        "evidence_value": 6.0
+      },
+      "sensor_verdict": "OK",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 6000.0,
+        "evidence_value": 6000.0
+      }
+    },
+    {
+      "family": "C_noise_no_quantity",
+      "expected": "NOT_ENOUGH_INFO",
+      "claim": "The catalogue records magnitude 6.0 at 58 km SSE of Shima, Japan.",
+      "evidence": "Seismic activity was reported near Japan.",
+      "source_id": "us7000tuku",
+      "comparable_quantity": null,
+      "sensor_verdict": "UNSUPPORTED_NUMBER",
+      "sensor_in_scope": false,
+      "sensor_matches_expected": null,
+      "comparable_quantity_было": null
+    },
+    {
+      "family": "C_num_same_value",
+      "expected": "NOT_ENOUGH_INFO",
+      "claim": "The catalogue records magnitude 6.0 at 58 km SSE of Shima, Japan.",
+      "evidence": "The number 6.0 appears in a bulletin line about 58 km SSE of Shima, Japan without stating which quantity it measures.",
+      "source_id": "us7000tuku",
+      "comparable_quantity": null,
+      "sensor_verdict": "OK",
+      "sensor_in_scope": false,
+      "sensor_matches_expected": null,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 6000.0,
+        "evidence_value": 6000.0
+      }
+    },
+    {
+      "family": "C_num_contradicting",
+      "expected": "REFUTED",
+      "claim": "The catalogue records magnitude 6.0 at 58 km SSE of Shima, Japan.",
+      "evidence": "magnitude 6.5 at 58 km SSE of Shima, Japan",
+      "source_id": "us7000tuku",
+      "comparable_quantity": {
+        "quantity": "seismic_magnitude",
+        "claim_value": 6.0,
+        "evidence_value": 6.5
+      },
+      "sensor_verdict": "CONTRADICTED",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 6000.0,
+        "evidence_value": 6500.0
+      }
+    },
+    {
+      "family": "D_distorting",
+      "expected": "REFUTED",
+      "claim": "The event depth is 352.4 km.",
+      "evidence": "depth 707.8 km beneath 58 km SSE of Shima, Japan",
+      "source_id": "us7000tuku",
+      "comparable_quantity": {
+        "quantity": "focal_depth",
+        "claim_value": 352400.0,
+        "evidence_value": 707800.0
+      },
+      "sensor_verdict": "CONTRADICTED",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "focal_depth",
+        "claim_value": 352400.0,
+        "evidence_value": 707800.0
+      }
+    },
+    {
+      "family": "A_supported",
+      "expected": "SUPPORTED",
+      "claim": "The catalogue records magnitude 5.0 at 115 km SE of Bushehr, Iran.",
+      "evidence": "magnitude 5.0 at 115 km SE of Bushehr, Iran",
+      "source_id": "us7000tukm",
+      "comparable_quantity": {
+        "quantity": "seismic_magnitude",
+        "claim_value": 5.0,
+        "evidence_value": 5.0
+      },
+      "sensor_verdict": "OK",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 5000.0,
+        "evidence_value": 5000.0
+      }
+    },
+    {
+      "family": "C_noise_no_quantity",
+      "expected": "NOT_ENOUGH_INFO",
+      "claim": "The catalogue records magnitude 5.0 at 115 km SE of Bushehr, Iran.",
+      "evidence": "Seismic activity was reported near Iran.",
+      "source_id": "us7000tukm",
+      "comparable_quantity": null,
+      "sensor_verdict": "UNSUPPORTED_NUMBER",
+      "sensor_in_scope": false,
+      "sensor_matches_expected": null,
+      "comparable_quantity_было": null
+    },
+    {
+      "family": "C_num_same_value",
+      "expected": "NOT_ENOUGH_INFO",
+      "claim": "The catalogue records magnitude 5.0 at 115 km SE of Bushehr, Iran.",
+      "evidence": "The number 5.0 appears in a bulletin line about 115 km SE of Bushehr, Iran without stating which quantity it measures.",
+      "source_id": "us7000tukm",
+      "comparable_quantity": null,
+      "sensor_verdict": "OK",
+      "sensor_in_scope": false,
+      "sensor_matches_expected": null,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 5000.0,
+        "evidence_value": 5000.0
+      }
+    },
+    {
+      "family": "C_num_contradicting",
+      "expected": "REFUTED",
+      "claim": "The catalogue records magnitude 5.0 at 115 km SE of Bushehr, Iran.",
+      "evidence": "magnitude 5.5 at 115 km SE of Bushehr, Iran",
+      "source_id": "us7000tukm",
+      "comparable_quantity": {
+        "quantity": "seismic_magnitude",
+        "claim_value": 5.0,
+        "evidence_value": 5.5
+      },
+      "sensor_verdict": "CONTRADICTED",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 5000.0,
+        "evidence_value": 5500.0
+      }
+    },
+    {
+      "family": "D_distorting",
+      "expected": "REFUTED",
+      "claim": "The event depth is 10.0 km.",
+      "evidence": "depth 23.0 km beneath 115 km SE of Bushehr, Iran",
+      "source_id": "us7000tukm",
+      "comparable_quantity": {
+        "quantity": "focal_depth",
+        "claim_value": 10000.0,
+        "evidence_value": 23000.0
+      },
+      "sensor_verdict": "CONTRADICTED",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "focal_depth",
+        "claim_value": 10000.0,
+        "evidence_value": 23000.0
+      }
+    },
+    {
+      "family": "A_supported",
+      "expected": "SUPPORTED",
+      "claim": "The catalogue records magnitude 4.5 at 111 km ESE of Atka, Alaska.",
+      "evidence": "magnitude 4.5 at 111 km ESE of Atka, Alaska",
+      "source_id": "us7000tuk4",
+      "comparable_quantity": {
+        "quantity": "seismic_magnitude",
+        "claim_value": 4.5,
+        "evidence_value": 4.5
+      },
+      "sensor_verdict": "OK",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 4500.0,
+        "evidence_value": 4500.0
+      }
+    },
+    {
+      "family": "C_noise_no_quantity",
+      "expected": "NOT_ENOUGH_INFO",
+      "claim": "The catalogue records magnitude 4.5 at 111 km ESE of Atka, Alaska.",
+      "evidence": "Seismic activity was reported near Alaska.",
+      "source_id": "us7000tuk4",
+      "comparable_quantity": null,
+      "sensor_verdict": "UNSUPPORTED_NUMBER",
+      "sensor_in_scope": false,
+      "sensor_matches_expected": null,
+      "comparable_quantity_было": null
+    },
+    {
+      "family": "C_num_same_value",
+      "expected": "NOT_ENOUGH_INFO",
+      "claim": "The catalogue records magnitude 4.5 at 111 km ESE of Atka, Alaska.",
+      "evidence": "The number 4.5 appears in a bulletin line about 111 km ESE of Atka, Alaska without stating which quantity it measures.",
+      "source_id": "us7000tuk4",
+      "comparable_quantity": null,
+      "sensor_verdict": "OK",
+      "sensor_in_scope": false,
+      "sensor_matches_expected": null,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 4500.0,
+        "evidence_value": 4500.0
+      }
+    },
+    {
+      "family": "C_num_contradicting",
+      "expected": "REFUTED",
+      "claim": "The catalogue records magnitude 4.5 at 111 km ESE of Atka, Alaska.",
+      "evidence": "magnitude 5.0 at 111 km ESE of Atka, Alaska",
+      "source_id": "us7000tuk4",
+      "comparable_quantity": {
+        "quantity": "seismic_magnitude",
+        "claim_value": 4.5,
+        "evidence_value": 5.0
+      },
+      "sensor_verdict": "CONTRADICTED",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 4500.0,
+        "evidence_value": 5000.0
+      }
+    },
+    {
+      "family": "D_distorting",
+      "expected": "REFUTED",
+      "claim": "The event depth is 44.9 km.",
+      "evidence": "depth 92.8 km beneath 111 km ESE of Atka, Alaska",
+      "source_id": "us7000tuk4",
+      "comparable_quantity": {
+        "quantity": "focal_depth",
+        "claim_value": 44900.0,
+        "evidence_value": 92800.0
+      },
+      "sensor_verdict": "CONTRADICTED",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "focal_depth",
+        "claim_value": 44900.0,
+        "evidence_value": 92800.0
+      }
+    },
+    {
+      "family": "A_supported",
+      "expected": "SUPPORTED",
+      "claim": "The catalogue records magnitude 4.5 at 121 km SE of Atka, Alaska.",
+      "evidence": "magnitude 4.5 at 121 km SE of Atka, Alaska",
+      "source_id": "aka2026vpcige",
+      "comparable_quantity": {
+        "quantity": "seismic_magnitude",
+        "claim_value": 4.5,
+        "evidence_value": 4.5
+      },
+      "sensor_verdict": "OK",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 4500.0,
+        "evidence_value": 4500.0
+      }
+    },
+    {
+      "family": "C_noise_no_quantity",
+      "expected": "NOT_ENOUGH_INFO",
+      "claim": "The catalogue records magnitude 4.5 at 121 km SE of Atka, Alaska.",
+      "evidence": "Seismic activity was reported near Alaska.",
+      "source_id": "aka2026vpcige",
+      "comparable_quantity": null,
+      "sensor_verdict": "UNSUPPORTED_NUMBER",
+      "sensor_in_scope": false,
+      "sensor_matches_expected": null,
+      "comparable_quantity_было": null
+    },
+    {
+      "family": "C_num_same_value",
+      "expected": "NOT_ENOUGH_INFO",
+      "claim": "The catalogue records magnitude 4.5 at 121 km SE of Atka, Alaska.",
+      "evidence": "The number 4.5 appears in a bulletin line about 121 km SE of Atka, Alaska without stating which quantity it measures.",
+      "source_id": "aka2026vpcige",
+      "comparable_quantity": null,
+      "sensor_verdict": "OK",
+      "sensor_in_scope": false,
+      "sensor_matches_expected": null,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 4500.0,
+        "evidence_value": 4500.0
+      }
+    },
+    {
+      "family": "C_num_contradicting",
+      "expected": "REFUTED",
+      "claim": "The catalogue records magnitude 4.5 at 121 km SE of Atka, Alaska.",
+      "evidence": "magnitude 5.0 at 121 km SE of Atka, Alaska",
+      "source_id": "aka2026vpcige",
+      "comparable_quantity": {
+        "quantity": "seismic_magnitude",
+        "claim_value": 4.5,
+        "evidence_value": 5.0
+      },
+      "sensor_verdict": "CONTRADICTED",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 4500.0,
+        "evidence_value": 5000.0
+      }
+    },
+    {
+      "family": "D_distorting",
+      "expected": "REFUTED",
+      "claim": "The event depth is 1.0 km.",
+      "evidence": "depth 5.0 km beneath 121 km SE of Atka, Alaska",
+      "source_id": "aka2026vpcige",
+      "comparable_quantity": {
+        "quantity": "focal_depth",
+        "claim_value": 1000.0,
+        "evidence_value": 5000.0
+      },
+      "sensor_verdict": "CONTRADICTED",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "focal_depth",
+        "claim_value": 1000.0,
+        "evidence_value": 5000.0
+      }
+    },
+    {
+      "family": "A_supported",
+      "expected": "SUPPORTED",
+      "claim": "The catalogue records magnitude 5.2 at 4 km S of Bajo Corral, Panama.",
+      "evidence": "magnitude 5.2 at 4 km S of Bajo Corral, Panama",
+      "source_id": "us7000tujf",
+      "comparable_quantity": {
+        "quantity": "seismic_magnitude",
+        "claim_value": 5.2,
+        "evidence_value": 5.2
+      },
+      "sensor_verdict": "OK",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 5200.0,
+        "evidence_value": 5200.0
+      }
+    },
+    {
+      "family": "C_noise_no_quantity",
+      "expected": "NOT_ENOUGH_INFO",
+      "claim": "The catalogue records magnitude 5.2 at 4 km S of Bajo Corral, Panama.",
+      "evidence": "Seismic activity was reported near Panama.",
+      "source_id": "us7000tujf",
+      "comparable_quantity": null,
+      "sensor_verdict": "UNSUPPORTED_NUMBER",
+      "sensor_in_scope": false,
+      "sensor_matches_expected": null,
+      "comparable_quantity_было": null
+    },
+    {
+      "family": "C_num_same_value",
+      "expected": "NOT_ENOUGH_INFO",
+      "claim": "The catalogue records magnitude 5.2 at 4 km S of Bajo Corral, Panama.",
+      "evidence": "The number 5.2 appears in a bulletin line about 4 km S of Bajo Corral, Panama without stating which quantity it measures.",
+      "source_id": "us7000tujf",
+      "comparable_quantity": null,
+      "sensor_verdict": "OK",
+      "sensor_in_scope": false,
+      "sensor_matches_expected": null,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 5200.0,
+        "evidence_value": 5200.0
+      }
+    },
+    {
+      "family": "C_num_contradicting",
+      "expected": "REFUTED",
+      "claim": "The catalogue records magnitude 5.2 at 4 km S of Bajo Corral, Panama.",
+      "evidence": "magnitude 5.7 at 4 km S of Bajo Corral, Panama",
+      "source_id": "us7000tujf",
+      "comparable_quantity": {
+        "quantity": "seismic_magnitude",
+        "claim_value": 5.2,
+        "evidence_value": 5.7
+      },
+      "sensor_verdict": "CONTRADICTED",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 5200.0,
+        "evidence_value": 5700.0
+      }
+    },
+    {
+      "family": "D_distorting",
+      "expected": "REFUTED",
+      "claim": "The event depth is 10.0 km.",
+      "evidence": "depth 23.0 km beneath 4 km S of Bajo Corral, Panama",
+      "source_id": "us7000tujf",
+      "comparable_quantity": {
+        "quantity": "focal_depth",
+        "claim_value": 10000.0,
+        "evidence_value": 23000.0
+      },
+      "sensor_verdict": "CONTRADICTED",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "focal_depth",
+        "claim_value": 10000.0,
+        "evidence_value": 23000.0
+      }
+    },
+    {
+      "family": "A_supported",
+      "expected": "SUPPORTED",
+      "claim": "The catalogue records magnitude 4.5 at 295 km ESE of Tadine, New Caledonia.",
+      "evidence": "magnitude 4.5 at 295 km ESE of Tadine, New Caledonia",
+      "source_id": "us7000tumt",
+      "comparable_quantity": {
+        "quantity": "seismic_magnitude",
+        "claim_value": 4.5,
+        "evidence_value": 4.5
+      },
+      "sensor_verdict": "OK",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 4500.0,
+        "evidence_value": 4500.0
+      }
+    },
+    {
+      "family": "C_noise_no_quantity",
+      "expected": "NOT_ENOUGH_INFO",
+      "claim": "The catalogue records magnitude 4.5 at 295 km ESE of Tadine, New Caledonia.",
+      "evidence": "Seismic activity was reported near New Caledonia.",
+      "source_id": "us7000tumt",
+      "comparable_quantity": null,
+      "sensor_verdict": "UNSUPPORTED_NUMBER",
+      "sensor_in_scope": false,
+      "sensor_matches_expected": null,
+      "comparable_quantity_было": null
+    },
+    {
+      "family": "C_num_same_value",
+      "expected": "NOT_ENOUGH_INFO",
+      "claim": "The catalogue records magnitude 4.5 at 295 km ESE of Tadine, New Caledonia.",
+      "evidence": "The number 4.5 appears in a bulletin line about 295 km ESE of Tadine, New Caledonia without stating which quantity it measures.",
+      "source_id": "us7000tumt",
+      "comparable_quantity": null,
+      "sensor_verdict": "OK",
+      "sensor_in_scope": false,
+      "sensor_matches_expected": null,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 4500.0,
+        "evidence_value": 4500.0
+      }
+    },
+    {
+      "family": "C_num_contradicting",
+      "expected": "REFUTED",
+      "claim": "The catalogue records magnitude 4.5 at 295 km ESE of Tadine, New Caledonia.",
+      "evidence": "magnitude 5.0 at 295 km ESE of Tadine, New Caledonia",
+      "source_id": "us7000tumt",
+      "comparable_quantity": {
+        "quantity": "seismic_magnitude",
+        "claim_value": 4.5,
+        "evidence_value": 5.0
+      },
+      "sensor_verdict": "CONTRADICTED",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 4500.0,
+        "evidence_value": 5000.0
+      }
+    },
+    {
+      "family": "D_distorting",
+      "expected": "REFUTED",
+      "claim": "The event depth is 10.0 km.",
+      "evidence": "depth 23.0 km beneath 295 km ESE of Tadine, New Caledonia",
+      "source_id": "us7000tumt",
+      "comparable_quantity": {
+        "quantity": "focal_depth",
+        "claim_value": 10000.0,
+        "evidence_value": 23000.0
+      },
+      "sensor_verdict": "CONTRADICTED",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "focal_depth",
+        "claim_value": 10000.0,
+        "evidence_value": 23000.0
+      }
+    },
+    {
+      "family": "A_supported",
+      "expected": "SUPPORTED",
+      "claim": "The catalogue records magnitude 5.0 at 196 km NW of Port-Olry, Vanuatu.",
+      "evidence": "magnitude 5.0 at 196 km NW of Port-Olry, Vanuatu",
+      "source_id": "us7000tuif",
+      "comparable_quantity": {
+        "quantity": "seismic_magnitude",
+        "claim_value": 5.0,
+        "evidence_value": 5.0
+      },
+      "sensor_verdict": "OK",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 5000.0,
+        "evidence_value": 5000.0
+      }
+    },
+    {
+      "family": "C_noise_no_quantity",
+      "expected": "NOT_ENOUGH_INFO",
+      "claim": "The catalogue records magnitude 5.0 at 196 km NW of Port-Olry, Vanuatu.",
+      "evidence": "Seismic activity was reported near Vanuatu.",
+      "source_id": "us7000tuif",
+      "comparable_quantity": null,
+      "sensor_verdict": "UNSUPPORTED_NUMBER",
+      "sensor_in_scope": false,
+      "sensor_matches_expected": null,
+      "comparable_quantity_было": null
+    },
+    {
+      "family": "C_num_same_value",
+      "expected": "NOT_ENOUGH_INFO",
+      "claim": "The catalogue records magnitude 5.0 at 196 km NW of Port-Olry, Vanuatu.",
+      "evidence": "The number 5.0 appears in a bulletin line about 196 km NW of Port-Olry, Vanuatu without stating which quantity it measures.",
+      "source_id": "us7000tuif",
+      "comparable_quantity": null,
+      "sensor_verdict": "OK",
+      "sensor_in_scope": false,
+      "sensor_matches_expected": null,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 5000.0,
+        "evidence_value": 5000.0
+      }
+    },
+    {
+      "family": "C_num_contradicting",
+      "expected": "REFUTED",
+      "claim": "The catalogue records magnitude 5.0 at 196 km NW of Port-Olry, Vanuatu.",
+      "evidence": "magnitude 5.5 at 196 km NW of Port-Olry, Vanuatu",
+      "source_id": "us7000tuif",
+      "comparable_quantity": {
+        "quantity": "seismic_magnitude",
+        "claim_value": 5.0,
+        "evidence_value": 5.5
+      },
+      "sensor_verdict": "CONTRADICTED",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 5000.0,
+        "evidence_value": 5500.0
+      }
+    },
+    {
+      "family": "D_distorting",
+      "expected": "REFUTED",
+      "claim": "The event depth is 10.0 km.",
+      "evidence": "depth 23.0 km beneath 196 km NW of Port-Olry, Vanuatu",
+      "source_id": "us7000tuif",
+      "comparable_quantity": {
+        "quantity": "focal_depth",
+        "claim_value": 10000.0,
+        "evidence_value": 23000.0
+      },
+      "sensor_verdict": "CONTRADICTED",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "focal_depth",
+        "claim_value": 10000.0,
+        "evidence_value": 23000.0
+      }
+    },
+    {
+      "family": "A_supported",
+      "expected": "SUPPORTED",
+      "claim": "The catalogue records magnitude 4.9 at 236 km NW of Port-Olry, Vanuatu.",
+      "evidence": "magnitude 4.9 at 236 km NW of Port-Olry, Vanuatu",
+      "source_id": "us7000tuht",
+      "comparable_quantity": {
+        "quantity": "seismic_magnitude",
+        "claim_value": 4.9,
+        "evidence_value": 4.9
+      },
+      "sensor_verdict": "OK",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 4900.0,
+        "evidence_value": 4900.0
+      }
+    },
+    {
+      "family": "C_noise_no_quantity",
+      "expected": "NOT_ENOUGH_INFO",
+      "claim": "The catalogue records magnitude 4.9 at 236 km NW of Port-Olry, Vanuatu.",
+      "evidence": "Seismic activity was reported near Vanuatu.",
+      "source_id": "us7000tuht",
+      "comparable_quantity": null,
+      "sensor_verdict": "UNSUPPORTED_NUMBER",
+      "sensor_in_scope": false,
+      "sensor_matches_expected": null,
+      "comparable_quantity_было": null
+    },
+    {
+      "family": "C_num_same_value",
+      "expected": "NOT_ENOUGH_INFO",
+      "claim": "The catalogue records magnitude 4.9 at 236 km NW of Port-Olry, Vanuatu.",
+      "evidence": "The number 4.9 appears in a bulletin line about 236 km NW of Port-Olry, Vanuatu without stating which quantity it measures.",
+      "source_id": "us7000tuht",
+      "comparable_quantity": null,
+      "sensor_verdict": "OK",
+      "sensor_in_scope": false,
+      "sensor_matches_expected": null,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 4900.0,
+        "evidence_value": 4900.0
+      }
+    },
+    {
+      "family": "C_num_contradicting",
+      "expected": "REFUTED",
+      "claim": "The catalogue records magnitude 4.9 at 236 km NW of Port-Olry, Vanuatu.",
+      "evidence": "magnitude 5.4 at 236 km NW of Port-Olry, Vanuatu",
+      "source_id": "us7000tuht",
+      "comparable_quantity": {
+        "quantity": "seismic_magnitude",
+        "claim_value": 4.9,
+        "evidence_value": 5.4
+      },
+      "sensor_verdict": "CONTRADICTED",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 4900.0,
+        "evidence_value": 5400.0
+      }
+    },
+    {
+      "family": "D_distorting",
+      "expected": "REFUTED",
+      "claim": "The event depth is 10.0 km.",
+      "evidence": "depth 23.0 km beneath 236 km NW of Port-Olry, Vanuatu",
+      "source_id": "us7000tuht",
+      "comparable_quantity": {
+        "quantity": "focal_depth",
+        "claim_value": 10000.0,
+        "evidence_value": 23000.0
+      },
+      "sensor_verdict": "CONTRADICTED",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "focal_depth",
+        "claim_value": 10000.0,
+        "evidence_value": 23000.0
+      }
+    },
+    {
+      "family": "A_supported",
+      "expected": "SUPPORTED",
+      "claim": "The catalogue records magnitude 2.8 at 80 km SSE of Akutan, Alaska.",
+      "evidence": "magnitude 2.8 at 80 km SSE of Akutan, Alaska",
+      "source_id": "us7000tuhv",
+      "comparable_quantity": {
+        "quantity": "seismic_magnitude",
+        "claim_value": 2.8,
+        "evidence_value": 2.8
+      },
+      "sensor_verdict": "OK",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 2800.0,
+        "evidence_value": 2800.0
+      }
+    },
+    {
+      "family": "C_noise_no_quantity",
+      "expected": "NOT_ENOUGH_INFO",
+      "claim": "The catalogue records magnitude 2.8 at 80 km SSE of Akutan, Alaska.",
+      "evidence": "Seismic activity was reported near Alaska.",
+      "source_id": "us7000tuhv",
+      "comparable_quantity": null,
+      "sensor_verdict": "UNSUPPORTED_NUMBER",
+      "sensor_in_scope": false,
+      "sensor_matches_expected": null,
+      "comparable_quantity_было": null
+    },
+    {
+      "family": "C_num_same_value",
+      "expected": "NOT_ENOUGH_INFO",
+      "claim": "The catalogue records magnitude 2.8 at 80 km SSE of Akutan, Alaska.",
+      "evidence": "The number 2.8 appears in a bulletin line about 80 km SSE of Akutan, Alaska without stating which quantity it measures.",
+      "source_id": "us7000tuhv",
+      "comparable_quantity": null,
+      "sensor_verdict": "OK",
+      "sensor_in_scope": false,
+      "sensor_matches_expected": null,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 2800.0,
+        "evidence_value": 2800.0
+      }
+    },
+    {
+      "family": "C_num_contradicting",
+      "expected": "REFUTED",
+      "claim": "The catalogue records magnitude 2.8 at 80 km SSE of Akutan, Alaska.",
+      "evidence": "magnitude 3.3 at 80 km SSE of Akutan, Alaska",
+      "source_id": "us7000tuhv",
+      "comparable_quantity": {
+        "quantity": "seismic_magnitude",
+        "claim_value": 2.8,
+        "evidence_value": 3.3
+      },
+      "sensor_verdict": "CONTRADICTED",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "spatial_distance",
+        "claim_value": 2800.0,
+        "evidence_value": 3300.0
+      }
+    },
+    {
+      "family": "D_distorting",
+      "expected": "REFUTED",
+      "claim": "The event depth is 35.0 km.",
+      "evidence": "depth 73.0 km beneath 80 km SSE of Akutan, Alaska",
+      "source_id": "us7000tuhv",
+      "comparable_quantity": {
+        "quantity": "focal_depth",
+        "claim_value": 35000.0,
+        "evidence_value": 73000.0
+      },
+      "sensor_verdict": "CONTRADICTED",
+      "sensor_in_scope": true,
+      "sensor_matches_expected": true,
+      "comparable_quantity_было": {
+        "quantity": "focal_depth",
+        "claim_value": 35000.0,
+        "evidence_value": 73000.0
+      }
+    },
+    {
+      "family": "R_absent_source",
+      "expected": "REFUSAL",
+      "claim": "The catalogue records event us7000tugp with magnitude 5.0.",
+      "evidence": "This event identifier was CONSTRUCTED for the refusal arm, not taken from a catalogue listing: the USGS window 2026-10-24 to 2026-11-04 without a magnitude filter holds 3236 events and does not contain it, and the eventid route answers HTTP 404. Measured 05.11.2026 by scripts/проба_происхождения_usgs.py; three control identifiers from the same window answer HTTP 200 on the same route.",
+      "source_id": "us7000tugp",
+      "comparable_quantity": null,
+      "sensor_verdict": "OK",
+      "sensor_in_scope": false,
+      "sensor_matches_expected": null,
+      "comparable_quantity_было": {
+        "quantity": "mass_stock",
+        "claim_value": 7000000.0,
+        "evidence_value": 2026000.0
+      }
+    }
+  ]
+}

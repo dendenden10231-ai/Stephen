@@ -1,0 +1,49 @@
+{
+ "aliases": {
+  "ABSTAIN": "REFUSAL",
+  "CONTRADICTED": "REFUTED",
+  "EXACT_MATCH": "SUPPORTED",
+  "FALSE": "REFUTED",
+  "NEEDS_RECOVERY": "NOT_ENOUGH_INFO",
+  "NEI": "NOT_ENOUGH_INFO",
+  "NOT_ENOUGH_INFO": "NOT_ENOUGH_INFO",
+  "NO_EVIDENCE": "REFUSAL",
+  "NO_NUMBERS": "REFUSAL",
+  "OK": "SUPPORTED",
+  "REF": "REFUTED",
+  "REFUSED": "REFUSAL",
+  "REFUTED": "REFUTED",
+  "SCOPE_EXCLUDED": "REFUSAL",
+  "SUP": "SUPPORTED",
+  "SUPPORTED": "SUPPORTED",
+  "TRUE": "SUPPORTED",
+  "UNRESOLVED": "REFUSAL",
+  "UNSUPPORTED_NUMBER": "NOT_ENOUGH_INFO",
+  "UNT": "UNTESTED",
+  "UNTESTED": "UNTESTED"
+ },
+ "decisions": {
+  "NEEDS_RECOVERY": {
+   "mapped_to": "NOT_ENOUGH_INFO",
+   "reason": "in supplied-evidence mode there is no second search, so a number the source does not carry is missing information, not a declined task",
+   "sensitivity_switch": "python3 scoring_v2.py --needs-recovery refusal"
+  },
+  "NO_NUMBERS": {
+   "mapped_to": "REFUSAL",
+   "reason": "scope exclusion by the pre-model filter, not a verdict on evidence"
+  },
+  "UNT / UNTESTED": {
+   "mapped_to": "UNTESTED",
+   "reason": "v2.1: the judge answered and code removed the answer; not a refusal and not a verdict. v2 mapped it to REFUSAL, which put these rows inside the judged denominators"
+  }
+ },
+ "scale": [
+  "SUPPORTED",
+  "REFUTED",
+  "NOT_ENOUGH_INFO",
+  "REFUSAL",
+  "UNTESTED"
+ ],
+ "unmapped_behaviour": "norm() returns the string unchanged; an unmapped label is a defect, not a fallback",
+ "version": "v2.1-draft"
+}

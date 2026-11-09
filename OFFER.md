@@ -13,12 +13,21 @@ not judge opinions or forecasts. Your probe can be pointed at it the same way it
 was pointed at our core: one claim per position, a genuine source per position,
 the null arms in place of the source.
 
-## 2. Hosted battery endpoint — not built yet
+## 2. Hosted battery endpoint — live since 2 November 2026
 
 Agreed in your PART 2: an endpoint rather than source, per-position discipline,
-`UNTESTED` where no genuine reply is supplied. The AK-MASTER battery has 28
-checks, 27 of them model-free; the endpoint will publish its exact check list
-under a daily cap. We will send the URL when it is live — not before.
+`UNTESTED` where no genuine reply is supplied. It is now serving:
+`GET https://helixcom.org/api/ak/battery/checks` publishes the exact list, `POST
+https://helixcom.org/api/ak/battery/grade` grades one position. The list is computed
+by running the battery over the 12 PROBE-AK calibration scenes and it emits **29
+checks, 28 of them model-free**; the one paid check (`6.TST-TW`) stays in the list and
+returns `NOT_CONFIGURED` rather than being quietly dropped. Caps: 10 requests a
+minute, 60 positions per address per day, 2 000 per day in total. The published list
+and the caveats are in `battery/README.md` and `battery/battery-check-list-2026-11-02.json`.
+
+The earlier sentence in this file, "28 checks, 27 of them model-free", was a 29 August
+count taken over a whole book. It is kept in the dated passports where it belongs and
+is not the enumeration the endpoint publishes.
 
 ## 3. The paid judge — on request, at our cost
 
@@ -52,7 +61,7 @@ under an hour:
 
 | what | number | command |
 |---|---|---|
-| HELIX core modules | 113 (38 577 lines) | module registry |
+| HELIX core modules | 119 (39 948 lines) — recounted 2 Nov 2026 | module registry |
 | written HELIX specification | 51 876 lines in 23 files | `cat helix_pipeline/docs/specs/*.md \| wc -l` |
 | states the specs name / unreachable by code | 949 / 0, across 5 specs | `python -m helix_pipeline.engine.helix_contract_audit` |
 | Mr. Helix capsules / states / unreachable | 99 / 583 / 0 | `python -m mr_helix.engine.capsule_contract_audit` |
